@@ -1,0 +1,440 @@
+
+fsm_encoding {663251632525} sequential
+
+fsm_state_encoding {663251632525} 0001 {00}
+
+fsm_state_encoding {663251632525} ST_BUS_REQ {01}
+
+fsm_state_encoding {663251632525} ST_BUS_DAT {10}
+
+fsm_state_encoding {663251632525} ST_BUS_WAIT {11}
+
+fsm_registers {663251632525} {genblk1®bus_sm_cs[1]}  {genblk1®bus_sm_cs[0]} 
+
+fsm_encoding {5545354453524} sequential
+
+fsm_state_encoding {5545354453524} 00 {00}
+
+fsm_state_encoding {5545354453524} 01 {01}
+
+fsm_state_encoding {5545354453524} 10 {10}
+
+fsm_registers {5545354453524} {cs_sm[1]}  {cs_sm[0]} 
+
+fsm_encoding {5545354453524} sequential
+
+fsm_state_encoding {5545354453524} 00 {00}
+
+fsm_state_encoding {5545354453524} 01 {01}
+
+fsm_state_encoding {5545354453524} 10 {10}
+
+fsm_registers {5545354453524} {cs_sm[1]}  {cs_sm[0]} 
+
+fsm_encoding {5520834208323} onehot
+
+fsm_state_encoding {5520834208323} 00001 {00001}
+
+fsm_state_encoding {5520834208323} 00010 {00010}
+
+fsm_state_encoding {5520834208323} 00100 {00100}
+
+fsm_state_encoding {5520834208323} 01000 {01000}
+
+fsm_state_encoding {5520834208323} 10000 {10000}
+
+fsm_registers {5520834208323} {cs_sm[4]}  {cs_sm[3]}  {cs_sm[2]}  {cs_sm[1]}  {cs_sm[0]} 
+
+fsm_encoding {5520834208323} onehot
+
+fsm_state_encoding {5520834208323} 00001 {00001}
+
+fsm_state_encoding {5520834208323} 00010 {00010}
+
+fsm_state_encoding {5520834208323} 00100 {00100}
+
+fsm_state_encoding {5520834208323} 01000 {01000}
+
+fsm_state_encoding {5520834208323} 10000 {10000}
+
+fsm_registers {5520834208323} {cs_sm[4]}  {cs_sm[3]}  {cs_sm[2]}  {cs_sm[1]}  {cs_sm[0]} 
+
+fsm_encoding {5520834208323} onehot
+
+fsm_state_encoding {5520834208323} 00001 {00001}
+
+fsm_state_encoding {5520834208323} 00010 {00010}
+
+fsm_state_encoding {5520834208323} 00100 {00100}
+
+fsm_state_encoding {5520834208323} 01000 {01000}
+
+fsm_state_encoding {5520834208323} 10000 {10000}
+
+fsm_registers {5520834208323} {cs_sm[4]}  {cs_sm[3]}  {cs_sm[2]}  {cs_sm[1]}  {cs_sm[0]} 
+
+fsm_encoding {56359435922} onehot
+
+fsm_state_encoding {56359435922} ST_IDLE {000000001}
+
+fsm_state_encoding {56359435922} ST_READ {000000010}
+
+fsm_state_encoding {56359435922} ST_WWAIT {000000100}
+
+fsm_state_encoding {56359435922} ST_WRITE {000001000}
+
+fsm_state_encoding {56359435922} ST_WRITEP {000010000}
+
+fsm_state_encoding {56359435922} ST_RENABLE {000100000}
+
+fsm_state_encoding {56359435922} ST_WENABLE {001000000}
+
+fsm_state_encoding {56359435922} ST_WENABLEP {010000000}
+
+fsm_state_encoding {56359435922} ST_ERROR {100000000}
+
+fsm_registers {56359435922} {cs_ahbl_sm[8]}  {cs_ahbl_sm[7]}  {cs_ahbl_sm[6]}  {cs_ahbl_sm[5]}  {cs_ahbl_sm[4]}  {cs_ahbl_sm[3]}  {cs_ahbl_sm[2]}  {cs_ahbl_sm[1]}  {cs_ahbl_sm[0]} 
+
+fsm_encoding {56508450821} sequential
+
+fsm_state_encoding {56508450821} 00 {00}
+
+fsm_state_encoding {56508450821} 01 {01}
+
+fsm_state_encoding {56508450821} 11 {10}
+
+fsm_registers {56508450821} {buff_valid_r[1]}  {buff_valid_r[0]} 
+
+fsm_encoding {538283448283420} onehot
+
+fsm_state_encoding {538283448283420} 000 {00001}
+
+fsm_state_encoding {538283448283420} 001 {00010}
+
+fsm_state_encoding {538283448283420} 010 {00100}
+
+fsm_state_encoding {538283448283420} 011 {01000}
+
+fsm_state_encoding {538283448283420} 100 {10000}
+
+fsm_registers {538283448283420} {IBusSimplePlugin_injector_port_state[4]}  {IBusSimplePlugin_injector_port_state[3]}  {IBusSimplePlugin_injector_port_state[2]}  {IBusSimplePlugin_injector_port_state[1]}  {IBusSimplePlugin_injector_port_state[0]} 
+
+fsm_encoding {673211632119} sequential
+
+fsm_state_encoding {673211632119} 0001 {00}
+
+fsm_state_encoding {673211632119} ST_BUS_REQ {01}
+
+fsm_state_encoding {673211632119} ST_BUS_DAT {10}
+
+fsm_state_encoding {673211632119} ST_BUS_WAIT {11}
+
+fsm_registers {673211632119} {genblk1®bus_sm_cs[1]}  {genblk1®bus_sm_cs[0]} 
+
+fsm_encoding {6446534465318} sequential
+
+fsm_state_encoding {6446534465318} IDLE {00}
+
+fsm_state_encoding {6446534465318} LOW {01}
+
+fsm_state_encoding {6446534465318} WAIT {10}
+
+fsm_state_encoding {6446534465318} HIGH {11}
+
+fsm_registers {6446534465318} {sclk_state_r[1]}  {sclk_state_r[0]} 
+
+fsm_encoding {6442894428917} onehot
+
+fsm_state_encoding {6442894428917} IDLE_STATE {0000001}
+
+fsm_state_encoding {6442894428917} WAIT_SCL1 {0000010}
+
+fsm_state_encoding {6442894428917} WAIT_START {0000100}
+
+fsm_state_encoding {6442894428917} DETECT {0001000}
+
+fsm_state_encoding {6442894428917} GEN_SDA0 {0010000}
+
+fsm_state_encoding {6442894428917} WAIT_SCL0 {0100000}
+
+fsm_state_encoding {6442894428917} HOLD_SCL0 {1000000}
+
+fsm_registers {6442894428917} {state[6]}  {state[5]}  {state[4]}  {state[3]}  {state[2]}  {state[1]}  {state[0]} 
+
+fsm_encoding {6444614446116} sequential
+
+fsm_state_encoding {6444614446116} 00 {00}
+
+fsm_state_encoding {6444614446116} 01 {01}
+
+fsm_state_encoding {6444614446116} 10 {10}
+
+fsm_registers {6444614446116} {state[1]}  {state[0]} 
+
+fsm_encoding {6422554225515} onehot
+
+fsm_state_encoding {6422554225515} IDLE_STATE {000000000001}
+
+fsm_state_encoding {6422554225515} POL_STATE {000000000010}
+
+fsm_state_encoding {6422554225515} START_STATE {000000000100}
+
+fsm_state_encoding {6422554225515} SCL_EN_STATE {000000001000}
+
+fsm_state_encoding {6422554225515} SLVADR_MSB_STATE {000000010000}
+
+fsm_state_encoding {6422554225515} SLVADR_LSB_STATE {000000100000}
+
+fsm_state_encoding {6422554225515} TX_STATE {000001000000}
+
+fsm_state_encoding {6422554225515} RX_STATE {000010000000}
+
+fsm_state_encoding {6422554225515} SCL_DISABLE_STATE {000100000000}
+
+fsm_state_encoding {6422554225515} STOP_STATE {001000000000}
+
+fsm_state_encoding {6422554225515} ARBT_WAIT {010000000000}
+
+fsm_state_encoding {6422554225515} RS_10BIT_WAIT {100000000000}
+
+fsm_registers {6422554225515} {state[11]}  {state[10]}  {state[9]}  {state[8]}  {state[7]}  {state[6]}  {state[5]}  {state[4]}  {state[3]}  {state[2]}  {state[1]}  {state[0]} 
+
+fsm_encoding {6419324193214} onehot
+
+fsm_state_encoding {6419324193214} TX_IDLE {0000000001}
+
+fsm_state_encoding {6419324193214} TX_BIT0 {0000000010}
+
+fsm_state_encoding {6419324193214} TX_BIT1 {0000000100}
+
+fsm_state_encoding {6419324193214} TX_BIT2 {0000001000}
+
+fsm_state_encoding {6419324193214} TX_BIT3 {0000010000}
+
+fsm_state_encoding {6419324193214} TX_BIT4 {0000100000}
+
+fsm_state_encoding {6419324193214} TX_BIT5 {0001000000}
+
+fsm_state_encoding {6419324193214} TX_BIT6 {0010000000}
+
+fsm_state_encoding {6419324193214} TX_BIT7 {0100000000}
+
+fsm_state_encoding {6419324193214} TX_RD_ACK {1000000000}
+
+fsm_registers {6419324193214} {state[9]}  {state[8]}  {state[7]}  {state[6]}  {state[5]}  {state[4]}  {state[3]}  {state[2]}  {state[1]}  {state[0]} 
+
+fsm_encoding {6416774167713} onehot
+
+fsm_state_encoding {6416774167713} RX_IDLE {0000000001}
+
+fsm_state_encoding {6416774167713} RX_BIT0 {0000000010}
+
+fsm_state_encoding {6416774167713} RX_BIT1 {0000000100}
+
+fsm_state_encoding {6416774167713} RX_BIT2 {0000001000}
+
+fsm_state_encoding {6416774167713} RX_BIT3 {0000010000}
+
+fsm_state_encoding {6416774167713} RX_BIT4 {0000100000}
+
+fsm_state_encoding {6416774167713} RX_BIT5 {0001000000}
+
+fsm_state_encoding {6416774167713} RX_BIT6 {0010000000}
+
+fsm_state_encoding {6416774167713} RX_BIT7 {0100000000}
+
+fsm_state_encoding {6416774167713} RX_WR_ACK {1000000000}
+
+fsm_registers {6416774167713} {state[9]}  {state[8]}  {state[7]}  {state[6]}  {state[5]}  {state[4]}  {state[3]}  {state[2]}  {state[1]}  {state[0]} 
+
+fsm_encoding {646471664712} sequential
+
+fsm_state_encoding {646471664712} 0001 {00}
+
+fsm_state_encoding {646471664712} ST_BUS_REQ {01}
+
+fsm_state_encoding {646471664712} ST_BUS_DAT {10}
+
+fsm_state_encoding {646471664712} ST_BUS_WAIT {11}
+
+fsm_registers {646471664712} {reg_mode®bus_sm_cs[1]}  {reg_mode®bus_sm_cs[0]} 
+
+fsm_encoding {6524734247311} onehot
+
+fsm_state_encoding {6524734247311} 00001 {00001}
+
+fsm_state_encoding {6524734247311} 00010 {00010}
+
+fsm_state_encoding {6524734247311} 00100 {00100}
+
+fsm_state_encoding {6524734247311} 01000 {01000}
+
+fsm_state_encoding {6524734247311} 10000 {10000}
+
+fsm_registers {6524734247311} {spi_fsm[4]}  {spi_fsm[3]}  {spi_fsm[2]}  {spi_fsm[1]}  {spi_fsm[0]} 
+
+fsm_encoding {65134516134510} sequential
+
+fsm_state_encoding {65134516134510} 0001 {00}
+
+fsm_state_encoding {65134516134510} ST_BUS_REQ {01}
+
+fsm_state_encoding {65134516134510} ST_BUS_DAT {10}
+
+fsm_state_encoding {65134516134510} ST_BUS_WAIT {11}
+
+fsm_registers {65134516134510} {reg_mode®bus_sm_cs[1]}  {reg_mode®bus_sm_cs[0]} 
+
+fsm_encoding {5413381213389} sequential
+
+fsm_state_encoding {5413381213389} ERR_NORMAL_MODE {00}
+
+fsm_state_encoding {5413381213389} ERR_T1 {01}
+
+fsm_state_encoding {5413381213389} ERR_T2 {10}
+
+fsm_registers {5413381213389} {genblk5®err_sm_r[1]}  {genblk5®err_sm_r[0]} 
+
+fsm_encoding {5413261213268} onehot
+
+fsm_state_encoding {5413261213268} SM_IDLE {000000001}
+
+fsm_state_encoding {5413261213268} SM_WRITE_NSEQ {000000010}
+
+fsm_state_encoding {5413261213268} SM_WRITE_SEQ {000000100}
+
+fsm_state_encoding {5413261213268} SM_READ_NSEQ_WAIT {000001000}
+
+fsm_state_encoding {5413261213268} SM_READ_NSEQ_RESULT {000010000}
+
+fsm_state_encoding {5413261213268} SM_READ_SEQ_INIT {000100000}
+
+fsm_state_encoding {5413261213268} SM_READ_SEQ_BURST {001000000}
+
+fsm_state_encoding {5413261213268} SM_WRITE_TO_READ {010000000}
+
+fsm_state_encoding {5413261213268} SM_BUSY {100000000}
+
+fsm_registers {5413261213268} {genblk5®bridge_sm_r[8]}  {genblk5®bridge_sm_r[7]}  {genblk5®bridge_sm_r[6]}  {genblk5®bridge_sm_r[5]}  {genblk5®bridge_sm_r[4]}  {genblk5®bridge_sm_r[3]}  {genblk5®bridge_sm_r[2]}  {genblk5®bridge_sm_r[1]}  {genblk5®bridge_sm_r[0]} 
+
+fsm_encoding {5413381213389} sequential
+
+fsm_state_encoding {5413381213389} ERR_NORMAL_MODE {00}
+
+fsm_state_encoding {5413381213389} ERR_T1 {01}
+
+fsm_state_encoding {5413381213389} ERR_T2 {10}
+
+fsm_registers {5413381213389} {genblk5®err_sm_r[1]}  {genblk5®err_sm_r[0]} 
+
+fsm_encoding {5413261213268} onehot
+
+fsm_state_encoding {5413261213268} SM_IDLE {000000001}
+
+fsm_state_encoding {5413261213268} SM_WRITE_NSEQ {000000010}
+
+fsm_state_encoding {5413261213268} SM_WRITE_SEQ {000000100}
+
+fsm_state_encoding {5413261213268} SM_READ_NSEQ_WAIT {000001000}
+
+fsm_state_encoding {5413261213268} SM_READ_NSEQ_RESULT {000010000}
+
+fsm_state_encoding {5413261213268} SM_READ_SEQ_INIT {000100000}
+
+fsm_state_encoding {5413261213268} SM_READ_SEQ_BURST {001000000}
+
+fsm_state_encoding {5413261213268} SM_WRITE_TO_READ {010000000}
+
+fsm_state_encoding {5413261213268} SM_BUSY {100000000}
+
+fsm_registers {5413261213268} {genblk5®bridge_sm_r[8]}  {genblk5®bridge_sm_r[7]}  {genblk5®bridge_sm_r[6]}  {genblk5®bridge_sm_r[5]}  {genblk5®bridge_sm_r[4]}  {genblk5®bridge_sm_r[3]}  {genblk5®bridge_sm_r[2]}  {genblk5®bridge_sm_r[1]}  {genblk5®bridge_sm_r[0]} 
+
+fsm_encoding {5810701610707} sequential
+
+fsm_state_encoding {5810701610707} idle {00}
+
+fsm_state_encoding {5810701610707} int0 {01}
+
+fsm_state_encoding {5810701610707} int1 {10}
+
+fsm_state_encoding {5810701610707} int2 {11}
+
+fsm_registers {5810701610707} {nfifo_int®cs_state[1]}  {nfifo_int®cs_state[0]} 
+
+fsm_encoding {581590415906} onehot
+
+fsm_state_encoding {581590415906} idle {00001}
+
+fsm_state_encoding {581590415906} shift {00010}
+
+fsm_state_encoding {581590415906} parity {00100}
+
+fsm_state_encoding {581590415906} stop {01000}
+
+fsm_state_encoding {581590415906} idle1 {10000}
+
+fsm_registers {581590415906} {cs_state[4]}  {cs_state[3]}  {cs_state[2]}  {cs_state[1]}  {cs_state[0]} 
+
+fsm_encoding {5822531622535} onehot
+
+fsm_state_encoding {5822531622535} start {0000001}
+
+fsm_state_encoding {5822531622535} shift {0000010}
+
+fsm_state_encoding {5822531622535} parity {0000100}
+
+fsm_state_encoding {5822531622535} stop_1bit {0001000}
+
+fsm_state_encoding {5822531622535} stop_2bit {0010000}
+
+fsm_state_encoding {5822531622535} stop_halfbit {0100000}
+
+fsm_state_encoding {5822531622535} start1 {1000000}
+
+fsm_registers {5822531622535} {nfifo_fsm®tx_state[6]}  {nfifo_fsm®tx_state[5]}  {nfifo_fsm®tx_state[4]}  {nfifo_fsm®tx_state[3]}  {nfifo_fsm®tx_state[2]}  {nfifo_fsm®tx_state[1]}  {nfifo_fsm®tx_state[0]} 
+
+fsm_encoding {622811428113} sequential
+
+fsm_state_encoding {622811428113} RD_IDLE {0}
+
+fsm_state_encoding {622811428113} RD_DATA {1}
+
+fsm_registers {622811428113} {cur_rd_state[0]} 
+
+fsm_encoding {622733427334} sequential
+
+fsm_state_encoding {622733427334} WR_IDLE {00}
+
+fsm_state_encoding {622733427334} WR_DATA {01}
+
+fsm_state_encoding {622733427334} WR_RESP {10}
+
+fsm_registers {622733427334} {cur_wr_state[1]}  {cur_wr_state[0]} 
+
+fsm_encoding {621152016115202} sequential
+
+fsm_state_encoding {621152016115202} 00 {00}
+
+fsm_state_encoding {621152016115202} 01 {01}
+
+fsm_state_encoding {621152016115202} 10 {10}
+
+fsm_state_encoding {621152016115202} 11 {11}
+
+fsm_registers {621152016115202} {WO_WR_ACCESS_BLK®i_ext_slv_prt_bresp_sig[1]}  {WO_WR_ACCESS_BLK®i_ext_slv_prt_bresp_sig[0]} 
+
+fsm_encoding {631189411891} onehot
+
+fsm_state_encoding {631189411891} IDLE_STATE {000001}
+
+fsm_state_encoding {631189411891} WRITE_FINISH {000010}
+
+fsm_state_encoding {631189411891} WWRITE {000100}
+
+fsm_state_encoding {631189411891} WBRESP {001000}
+
+fsm_state_encoding {631189411891} RREAD {010000}
+
+fsm_state_encoding {631189411891} READ_FINISH {100000}
+
+fsm_registers {631189411891} {pres_state[5]}  {pres_state[4]}  {pres_state[3]}  {pres_state[2]}  {pres_state[1]}  {pres_state[0]} 

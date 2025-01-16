@@ -1,0 +1,14 @@
+###File created by Lattice CPE. Do not modify.###
+create_clock -name {clk_i} -period 20 [get_ports clk_i] originating in instance lscc_i2cm1_inst in IP lscc_i2cm1 was removed because it is defined at a clock input pin of the IP. User constraints should ensure the corresponding top-level port is correctly constrained at the top-level. If kept it may cause incorrect slack calculation.
+
+create_clock -name {clki_i} -period 40 [get_ports clki_i] originating in instance pll_60m in IP pll_60m was removed because it is defined at a clock input pin of the IP. User constraints should ensure the corresponding top-level port is correctly constrained at the top-level. If kept it may cause incorrect slack calculation.
+
+ldc_set_port -iobuf {PULLMODE=UP} [get_ports scl_io] originating in instance lscc_i2cm1_inst in IP lscc_i2cm1 was updated to ldc_set_port -iobuf {PULLMODE=UP} [get_ports i2cm_scl] and kept.
+
+ldc_set_port -iobuf {PULLMODE=UP} [get_ports scl_io] originating in instance lscc_i2cm1_inst in IP lscc_i2cm1 was kept as is.
+
+ldc_set_port -iobuf {PULLMODE=UP} [get_ports sda_io] originating in instance lscc_i2cm1_inst in IP lscc_i2cm1 was updated to ldc_set_port -iobuf {PULLMODE=UP} [get_ports i2cm_sda] and kept.
+
+# IO_TYPE constraint - Refclk originating in instance pll_60m in IP pll_60m was kept as is.
+
+

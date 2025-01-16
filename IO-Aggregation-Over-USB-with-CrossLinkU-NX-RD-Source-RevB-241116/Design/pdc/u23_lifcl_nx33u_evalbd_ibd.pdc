@@ -1,0 +1,110 @@
+################################################################################################################
+#                                     Pin assignments
+################################################################################################################
+# ------------------------------------------------------------------------------------------------------|
+# Top file name     |  J11 Header   | Name in schematics | FPGA Pin number  | Voltage |
+#                   |   Pin         |                    |                  |  Bank   |
+# ------------------|---------------|--------------------|------------------|         |
+#   i2cm0_sda       |     4         |     PMODB4         |   E2             | VCCIO1  |
+#   i2cm0_scl       |     3         |     PMODB3         |   E1             | VCCIO1  |
+#   i2cm1_sda       |     10        |     PMODA10        |   B1             | VCCIO1  |
+#   i2cm1_scl       |     9         |     PMODB9         |   G1             | VCCIO1  |
+# GPIO LED - D5 LED on the board. FPGA pin is G6.
+#-------------------------------------------------------------------------------------------------------|
+#--------------------------------
+# Clock and reset
+#--------------------------------
+ldc_set_location -site {G7} [get_ports clk_25m_i]
+ldc_set_port -iobuf {IO_TYPE=LVCMOS12H} [get_ports clk_25m_i]
+#--------------------------------
+#  GPIO 0
+#--------------------------------
+ldc_set_location -site {G6} [get_ports {gpio_0_z[0]}]
+ldc_set_port -iobuf {IO_TYPE=LVCMOS12H} [get_ports {gpio_0_z[0]}]
+ldc_set_location -site {L4} [get_ports {gpio_0_z[1]}]
+ldc_set_port -iobuf {IO_TYPE=LVCMOS18H} [get_ports {gpio_0_z[1]}]
+#--------------------------------
+# UART
+#--------------------------------
+ldc_set_location -site {H2} [get_ports uart_rxd_i]
+ldc_set_port -iobuf {IO_TYPE=LVCMOS18H} [get_ports uart_rxd_i]
+ldc_set_location -site {J2} [get_ports uart_txd_o]
+ldc_set_port -iobuf {SLEWRATE=FAST IO_TYPE=LVCMOS18H} [get_ports uart_txd_o]
+#--------------------------------
+# USB 3.0 Data Lines
+#--------------------------------
+ldc_set_location -site {A7} [get_ports u3_txp_o]
+ldc_set_location -site {A6} [get_ports u3_txm_o]
+ldc_set_location -site {A8} [get_ports u3_rxp_i]
+ldc_set_location -site {B8} [get_ports u3_rxm_i]
+#--------------------------------
+# USB 2.0 Data Lines
+#--------------------------------
+ldc_set_location -site {D7} [get_ports dp_z]
+ldc_set_location -site {E7} [get_ports dm_z]
+#Pull Mode - NONE
+#We are working in slave mode and there is an external 1.5K pull up resistor connected on D+ line.
+#There must not be any internal pull up/down resistors inside FPGA on these pins. Hence, we have set it to NONE.
+ldc_set_port -iobuf {PULLMODE=NONE DRIVE=16} [get_ports dp_z]
+ldc_set_port -iobuf {PULLMODE=NONE DRIVE=16} [get_ports dm_z]
+#--------------------------------
+# USB23 Power Signal
+#--------------------------------
+ldc_set_location -site {E5} [get_ports vbus_z]
+ldc_set_location -site {E8} [get_ports REFINCLKEXTM_i]
+ldc_set_location -site {F8} [get_ports REFINCLKEXTP_i]
+#--------------------------------
+# I2C lines
+#--------------------------------
+ldc_set_location -site {M4} [get_ports i2cm_sda]
+ldc_set_location -site {M5} [get_ports i2cm_scl]
+#ldc_set_location -site {B1} [get_ports i2cs_sda]
+#ldc_set_location -site {G1} [get_ports i2cs_scl]
+#----------------------------------------------------------------
+#Reason for adding these PULLMODE-UP constraint:
+#When I2C device is not connected with the I2C bus, I2C master can't drive the SCL or SDA line. Due to this, I2C operation
+#got failed because I2C master got stucked and it has not timeout which can handle this. Due to this, Application and
+#RISC-V also got stucked. To tackle this situation, we have added this constraint and let I2C Master drive the SCL and
+#SDA line even if I2C Slave device is not connected.
+#----------------------------------------------------------------
+ldc_set_port -iobuf {PULLMODE=UP CLAMP=ON DIFFRESISTOR=OFF DRIVE=8 IO_TYPE=LVCMOS18H} [get_ports i2cm_scl]
+ldc_set_port -iobuf {PULLMODE=UP IO_TYPE=LVCMOS18H} [get_ports i2cm_sda]
+#ldc_set_port -iobuf {PULLMODE=UP CLAMP=ON DIFFRESISTOR=OFF DRIVE=8} [get_ports i2cs_scl]
+#ldc_set_port -iobuf {PULLMODE=UP} [get_ports i2cs_sda]
+#--------------------------------
+# SPI lines
+#--------------------------------
+ldc_set_location -site {B4} [get_ports spim_sclk_o]
+ldc_set_location -site {B3} [get_ports spim_ssn_o]
+ldc_set_location -site {D4} [get_ports spim_mosi_o]
+ldc_set_location -site {D3} [get_ports spim_miso_i]
+#ldc_set_location -site {F2} [get_ports spis_sclk_i]
+#ldc_set_location -site {F1} [get_ports spis_ssn_i]
+#ldc_set_location -site {D2} [get_ports spis_mosi_i]
+#ldc_set_location -site {D1} [get_ports spis_miso_o]
+#-------------------------------------------------------------------------------------------------------------------------------------------------
+#Timing constraints
+#-------------------------------------------------------------------------------------------------------------------------------------------------
+create_clock -name {clk_25MHz} -period 40 [get_ports clk_25m_i]
+create_generated_clock -name {clk_60MHz} -source [get_pins pll_60m/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK] -divide_by 5 -multiply_by 12 [get_pins pll_60m/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP]
+#-------------------------------------------------------------------------------------------------------------------------------------------------
+#Other IO assignments
+#-------------------------------------------------------------------------------------------------------------------------------------------------
+ldc_set_sysconfig {JTAG_PORT=ENABLE SLAVE_SPI_PORT=DISABLE SLAVE_I3C_PORT=DISABLE SLAVE_I2C_PORT=DISABLE}
+#-----------------------------------------------------------
+#Voltage level of each IO bank
+#-----------------------------------------------------------
+ldc_set_sysconfig {CONFIGIO_VOLTAGE_BANK1=3.3 CONFIGIO_VOLTAGE_BANK0=1.8 MCCLK_FREQ=3.5 DONE_EX=OFF}
+ldc_set_vcc -bank 0 1.8
+ldc_set_vcc -bank 1 3.29999995231628
+ldc_set_vcc -bank 2 1.79999995231628
+ldc_set_vcc -bank 3 1.19999995231628
+ldc_set_vcc -bank 4 1.79999995231628
+# False path constraint
+set_false_path -from [get_pins -hierarchical -regexp .*reset_n_f1.*]
+set_false_path -from [get_pins -hierarchical -regexp .*reset_n_f2.*]
+ldc_set_port -iobuf {DRIVE=8 SLEWRATE=FAST IO_TYPE=LVCMOS18} [get_ports spim_sclk_o]
+ldc_set_port -iobuf {SLEWRATE=FAST CLAMP=OFF OPENDRAIN=OFF IO_TYPE=LVCMOS18 DRIVE=8} [get_ports spim_ssn_o]
+ldc_set_port -iobuf {SLEWRATE=FAST IO_TYPE=LVCMOS18} [get_ports spim_mosi_o]
+ldc_set_port -iobuf {IO_TYPE=LVCMOS18} [get_ports spim_miso_i]
+set_clock_uncertainty 1 [get_clocks clk_60MHz]

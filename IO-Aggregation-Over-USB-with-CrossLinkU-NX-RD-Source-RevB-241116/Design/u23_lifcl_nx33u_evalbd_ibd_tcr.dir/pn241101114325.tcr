@@ -1,0 +1,5 @@
+#Start recording tcl command: 10/30/2024 18:02:06
+#Project Location: C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design; Project name: u23_lifcl_nx33u_evalbd_ibd
+prj_open "C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/u23_lifcl_nx33u_evalbd_ibd.rdf"
+prj_run Export -impl impl_1
+#Stop recording: 11/1/2024 11:43:25

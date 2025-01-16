@@ -1,0 +1,8 @@
+-ver "C:/lscc/radiant/2024.2/ip/pmi/pmi_lifcl.v"
+-lib pmi -vhd "C:/lscc/radiant/2024.2/ip/pmi/pmi_lifcl.vhd"
+-ver "C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/rtl/pll/pll_60m/rtl/pll_60m.v"
+-sdc "C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/rtl/pll/pll_60m/constraints/pll_60m.ldc"
+-path "C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/rtl/pll/pll_60m" "C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design"
+-top pll_60m
+-a "LIFCL"
+-t "LIFCL-33U"

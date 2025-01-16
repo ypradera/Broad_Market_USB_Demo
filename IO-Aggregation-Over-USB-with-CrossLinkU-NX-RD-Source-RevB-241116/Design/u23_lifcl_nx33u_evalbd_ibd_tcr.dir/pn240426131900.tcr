@@ -1,0 +1,6 @@
+#Start recording tcl command: 4/25/2024 23:43:28
+#Project Location: C:/Wei_design_milestone3__2/Design; Project name: u23_lifcl_nx33u_evalbd_ibd
+prj_open "C:/Wei_design_milestone3__2/Design/u23_lifcl_nx33u_evalbd_ibd.rdf"
+launch_programmer_prj "C:/lscc/radiant/2023.2"
+launch_programmer_prj "C:/lscc/radiant/2023.2"
+#Stop recording: 4/26/2024 13:19:00

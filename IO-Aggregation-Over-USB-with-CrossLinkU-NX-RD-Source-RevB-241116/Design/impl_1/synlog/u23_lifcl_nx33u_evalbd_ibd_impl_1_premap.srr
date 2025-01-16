@@ -1,0 +1,542 @@
+# Wed Nov  6 22:14:52 2024
+
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: V-2023.09LR-2
+Install: C:\lscc\radiant\2024.2\synpbase
+OS: Windows 10 or later
+Hostname: L101448
+
+Implementation : impl_1
+Synopsys Lattice Technology Pre-mapping, Version map202309lat, Build 220R, Built Oct 23 2024 08:37:51, @
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 182MB peak: 182MB)
+
+
+Done reading skeleton netlist (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:04s; Memory used current: 211MB peak: 211MB)
+
+Reading constraint file: C:\lscc\radiant\2024.2\scripts\tcl\flow\radiant_synplify_vars.tcl
+Reading constraint file: C:\Users\whan\Documents\AppProject\USB_LIFCL_NX33U\RD_IOA_USB2_REVB\Design\impl_1\u23_lifcl_nx33u_evalbd_ibd_impl_1_cpe.ldc
+@W: MT536 |Found constraint file with both legacy-style and FPGA timing constraints. 
+@L: C:\Users\whan\Documents\AppProject\USB_LIFCL_NX33U\RD_IOA_USB2_REVB\Design\impl_1\u23_lifcl_nx33u_evalbd_ibd_impl_1_scck.rpt 
+See clock summary report "C:\Users\whan\Documents\AppProject\USB_LIFCL_NX33U\RD_IOA_USB2_REVB\Design\impl_1\u23_lifcl_nx33u_evalbd_ibd_impl_1_scck.rpt"
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 256MB peak: 256MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 256MB peak: 257MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 271MB peak: 271MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 272MB peak: 273MB)
+
+NConnInternalConnection caching is on
+@N: FX493 |Applying initial value "0" on instance inputArea_target.
+@W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
+@N: FX493 |Applying initial value "0000" on instance jtag_tap_fsm_state[3:0].
+@N: FX493 |Applying initial value "00000000" on instance mem_LUT\.mem_reg\.async\.data_buff_r[7:0].
+@N: FX493 |Applying initial value "010" on instance genblk5\.ahbl_hsize_p_r[2:0].
+@N: FX493 |Applying initial value "00000000000000000" on instance genblk5\.rd_prev_r[16:0].
+@N: FX493 |Applying initial value "0" on instance genblk5\.ahbl_hresp_r.
+@N: FX493 |Applying initial value "1" on instance genblk5\.ahbl_hreadyout_ext_r.
+@W: BN132 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\u23_lifclu_nx33_prpl_bldr\u23_lifclu_nx33_prpl_bldr\lib\latticesemi.com\module\ahbl0\1.3.2\rtl\ahbl0.v":5528:4:5528:9|Removing sequential instance nxU_prpl_bldr.ahbl0_inst.lscc_ahbl_interconnect_inst.ahbl_lite_crossbar.u_lscc_ahbl_crossbar.input_stage_reg[1].u_lscc_ahbl_input_stage.regs_has_data_2_r because it is equivalent to instance nxU_prpl_bldr.ahbl0_inst.lscc_ahbl_interconnect_inst.ahbl_lite_crossbar.u_lscc_ahbl_crossbar.input_stage_reg[1].u_lscc_ahbl_input_stage.regs_has_data_r. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\u23_lifclu_nx33_prpl_bldr\u23_lifclu_nx33_prpl_bldr\lib\latticesemi.com\ip\uart0\1.3.0\rtl\uart0.v":2491:16:2491:21|Removing sequential instance nxU_prpl_bldr.uart0_inst.lscc_uart_inst.u_txmitt.nfifo_thrrdy.thr_ready because it is equivalent to instance nxU_prpl_bldr.uart0_inst.lscc_uart_inst.u_txmitt.genblk4.thr_empty. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":2811:4:2811:9|Removing sequential instance axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.U_DEF_SLAVE.s_split_arready because it is equivalent to instance axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.U_DEF_SLAVE.s_arready. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":2733:4:2733:9|Removing sequential instance axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.U_DEF_SLAVE.s_split_awready because it is equivalent to instance axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.U_DEF_SLAVE.s_awready. To keep the instance, apply constraint syn_preserve=1 on the instance.
+
+Starting HSTDM IP insertion (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 331MB peak: 331MB)
+
+
+Finished HSTDM IP insertion (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 331MB peak: 332MB)
+
+@N: MO111 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\rtl\pll\pll_60m\rtl\pll_60m.v":304:22:304:33|Tristate driver apb_prdata_o_1 (in view: work.pll_60m_ipgen_lscc_pll_Z1_layer0(verilog)) on net apb_prdata_o_1 (in view: work.pll_60m_ipgen_lscc_pll_Z1_layer0(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\rtl\pll\pll_60m\rtl\pll_60m.v":304:22:304:33|Tristate driver apb_prdata_o_2 (in view: work.pll_60m_ipgen_lscc_pll_Z1_layer0(verilog)) on net apb_prdata_o_2 (in view: work.pll_60m_ipgen_lscc_pll_Z1_layer0(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\rtl\pll\pll_60m\rtl\pll_60m.v":304:22:304:33|Tristate driver apb_prdata_o_3 (in view: work.pll_60m_ipgen_lscc_pll_Z1_layer0(verilog)) on net apb_prdata_o_3 (in view: work.pll_60m_ipgen_lscc_pll_Z1_layer0(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\rtl\pll\pll_60m\rtl\pll_60m.v":304:22:304:33|Tristate driver apb_prdata_o_4 (in view: work.pll_60m_ipgen_lscc_pll_Z1_layer0(verilog)) on net apb_prdata_o_4 (in view: work.pll_60m_ipgen_lscc_pll_Z1_layer0(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\rtl\pll\pll_60m\rtl\pll_60m.v":304:22:304:33|Tristate driver apb_prdata_o_5 (in view: work.pll_60m_ipgen_lscc_pll_Z1_layer0(verilog)) on net apb_prdata_o_5 (in view: work.pll_60m_ipgen_lscc_pll_Z1_layer0(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\rtl\pll\pll_60m\rtl\pll_60m.v":304:22:304:33|Tristate driver apb_prdata_o_6 (in view: work.pll_60m_ipgen_lscc_pll_Z1_layer0(verilog)) on net apb_prdata_o_6 (in view: work.pll_60m_ipgen_lscc_pll_Z1_layer0(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\rtl\pll\pll_60m\rtl\pll_60m.v":304:22:304:33|Tristate driver apb_prdata_o_7 (in view: work.pll_60m_ipgen_lscc_pll_Z1_layer0(verilog)) on net apb_prdata_o_7 (in view: work.pll_60m_ipgen_lscc_pll_Z1_layer0(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\rtl\pll\pll_60m\rtl\pll_60m.v":304:22:304:33|Tristate driver apb_prdata_o_8 (in view: work.pll_60m_ipgen_lscc_pll_Z1_layer0(verilog)) on net apb_prdata_o_8 (in view: work.pll_60m_ipgen_lscc_pll_Z1_layer0(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\rtl\pll\pll_60m\rtl\pll_60m.v":302:16:302:27|Tristate driver apb_pready_o (in view: work.pll_60m_ipgen_lscc_pll_Z1_layer0(verilog)) on net apb_pready_o (in view: work.pll_60m_ipgen_lscc_pll_Z1_layer0(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\rtl\pll\pll_60m\rtl\pll_60m.v":303:16:303:28|Tristate driver apb_pslverr_o (in view: work.pll_60m_ipgen_lscc_pll_Z1_layer0(verilog)) on net apb_pslverr_o (in view: work.pll_60m_ipgen_lscc_pll_Z1_layer0(verilog)) has its enable tied to GND.
+@W: MO156 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":14282:4:14282:9|RAM Ram[20:0] removed due to constant propagation. 
+@W: MO129 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\u23_lifclu_nx33_prpl_bldr\u23_lifclu_nx33_prpl_bldr\lib\latticesemi.com\ip\sysmem0\2.3.0\rtl\sysmem0.v":1250:12:1250:17|Sequential instance nxU_prpl_bldr.sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.genblk5.ahbl_hsize_p_r[0] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\u23_lifclu_nx33_prpl_bldr\u23_lifclu_nx33_prpl_bldr\lib\latticesemi.com\ip\sysmem0\2.3.0\rtl\sysmem0.v":1250:12:1250:17|Sequential instance nxU_prpl_bldr.sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.genblk5.ahbl_hsize_p_r[1] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\u23_lifclu_nx33_prpl_bldr\u23_lifclu_nx33_prpl_bldr\lib\latticesemi.com\ip\sysmem0\2.3.0\rtl\sysmem0.v":1250:12:1250:17|Sequential instance nxU_prpl_bldr.sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.genblk5.ahbl_hsize_p_r[2] is reduced to a combinational gate by constant propagation.
+@W: MO156 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":14282:4:14282:9|RAM Ram[49:0] removed due to constant propagation. 
+@W: MO156 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":14282:4:14282:9|RAM Ram[1:0] removed due to constant propagation. 
+@W: MO129 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":4902:64:4902:69|Sequential instance axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_mas_blk[0].u_ext_mas_port.RO_WR_BLK.AXI4_EXTMAS_BLK.EXT_SLV_BLK[1].ACTUAL_SLV_BLK.EXTMAS_CNCT_EXTSLV_BLK.AXI4_EXTSLV_BLK.UP_BLK.upsize_rd_cnt_reg[0] is reduced to a combinational gate by constant propagation.
+
+Started DisTri Cleanup (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 333MB peak: 333MB)
+
+
+Finished DisTri Cleanup (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 333MB peak: 334MB)
+
+@N: BN115 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\u23_lifclu_nx33_prpl_bldr\u23_lifclu_nx33_prpl_bldr\lib\latticesemi.com\ip\sysmem0\2.3.0\rtl\sysmem0.v":9375:45:9375:53|Removing instance AHBL_ARB\.u_arbiter (in view: work.sysmem0_ipgen_lscc_sys_mem_Z49_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\u23_lifclu_nx33_prpl_bldr\u23_lifclu_nx33_prpl_bldr\lib\latticesemi.com\module\u23_config_intf_feedthrough\1.0.0\rtl\u23_config_intf_feedthrough.v":64:29:64:58|Removing instance lscc_ahb_lite_feedthrough_inst (in view: work.u23_config_intf_feedthrough(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\u23_lifclu_nx33_prpl_bldr\u23_lifclu_nx33_prpl_bldr\u23_lifclu_nx33_prpl_bldr_des.v":414:32:414:63|Removing instance u23_config_intf_feedthrough_inst (in view: work.u23_lifclu_nx33_prpl_bldr_des(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":13771:19:13771:31|Removing instance u_gen_memfile (in view: work.axi4_interconnect_ipgen_gen_fifo_3s_21s_0s_8s_0(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":7537:79:7537:98|Removing instance genblk1\.u_rr_ext_mas_awr_arb (in view: work.axi4_interconnect_ipgen_ext_slv_awr_arb_1s_32s_11s_4s_0_6s_0_0s_1s_2(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":7537:79:7537:98|Removing instance genblk1\.u_rr_ext_mas_awr_arb (in view: work.axi4_interconnect_ipgen_ext_slv_awr_arb_1s_32s_11s_4s_0_6s_0_0s_1s_1(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":7566:4:7566:9|Removing sequential instance so_awaddr[31:0] (in view: work.axi4_interconnect_ipgen_ext_slv_awr_arb_1s_32s_11s_4s_0_6s_0_0s_1s_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":7566:4:7566:9|Removing sequential instance so_awburst[1:0] (in view: work.axi4_interconnect_ipgen_ext_slv_awr_arb_1s_32s_11s_4s_0_6s_0_0s_1s_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":7566:4:7566:9|Removing sequential instance so_awcache[3:0] (in view: work.axi4_interconnect_ipgen_ext_slv_awr_arb_1s_32s_11s_4s_0_6s_0_0s_1s_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":7566:4:7566:9|Removing sequential instance so_awid_1[5:0] (in view: work.axi4_interconnect_ipgen_ext_slv_awr_arb_1s_32s_11s_4s_0_6s_0_0s_1s_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":7566:4:7566:9|Removing sequential instance so_awlen[7:0] (in view: work.axi4_interconnect_ipgen_ext_slv_awr_arb_1s_32s_11s_4s_0_6s_0_0s_1s_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":7566:4:7566:9|Removing sequential instance so_awlock[0] (in view: work.axi4_interconnect_ipgen_ext_slv_awr_arb_1s_32s_11s_4s_0_6s_0_0s_1s_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":7566:4:7566:9|Removing sequential instance so_awprot[2:0] (in view: work.axi4_interconnect_ipgen_ext_slv_awr_arb_1s_32s_11s_4s_0_6s_0_0s_1s_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":7566:4:7566:9|Removing sequential instance so_awsize[2:0] (in view: work.axi4_interconnect_ipgen_ext_slv_awr_arb_1s_32s_11s_4s_0_6s_0_0s_1s_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN115 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":7537:79:7537:98|Removing instance genblk1\.u_rr_ext_mas_awr_arb (in view: work.axi4_interconnect_ipgen_ext_slv_awr_arb_1s_32s_11s_4s_0_6s_0_0s_1s_0(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":7794:4:7794:9|Removing sequential instance so_wdata[63:0] (in view: work.axi4_interconnect_ipgen_ext_slv_dwr_arb_1s_4s_64s_16s_0_4s_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":7794:4:7794:9|Removing sequential instance so_wstrb[7:0] (in view: work.axi4_interconnect_ipgen_ext_slv_dwr_arb_1s_4s_64s_16s_0_4s_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN115 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":7294:79:7294:98|Removing instance genblk1\.u_rr_ext_mas_ard_arb (in view: work.axi4_interconnect_ipgen_ext_slv_ard_arb_1s_32s_11s_4s_0s_6s_0_0s_1s_2(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":7294:79:7294:98|Removing instance genblk1\.u_rr_ext_mas_ard_arb (in view: work.axi4_interconnect_ipgen_ext_slv_ard_arb_1s_32s_11s_4s_0s_6s_0_0s_1s_1(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":7323:4:7323:9|Removing sequential instance so_araddr[31:0] (in view: work.axi4_interconnect_ipgen_ext_slv_ard_arb_1s_32s_11s_4s_0s_6s_0_0s_1s_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":7323:4:7323:9|Removing sequential instance so_arburst[1:0] (in view: work.axi4_interconnect_ipgen_ext_slv_ard_arb_1s_32s_11s_4s_0s_6s_0_0s_1s_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":7323:4:7323:9|Removing sequential instance so_arcache[3:0] (in view: work.axi4_interconnect_ipgen_ext_slv_ard_arb_1s_32s_11s_4s_0s_6s_0_0s_1s_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":7323:4:7323:9|Removing sequential instance so_arid_1[5:0] (in view: work.axi4_interconnect_ipgen_ext_slv_ard_arb_1s_32s_11s_4s_0s_6s_0_0s_1s_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":7323:4:7323:9|Removing sequential instance so_arlen[7:0] (in view: work.axi4_interconnect_ipgen_ext_slv_ard_arb_1s_32s_11s_4s_0s_6s_0_0s_1s_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":7323:4:7323:9|Removing sequential instance so_arlock[0] (in view: work.axi4_interconnect_ipgen_ext_slv_ard_arb_1s_32s_11s_4s_0s_6s_0_0s_1s_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":7323:4:7323:9|Removing sequential instance so_arprot[2:0] (in view: work.axi4_interconnect_ipgen_ext_slv_ard_arb_1s_32s_11s_4s_0s_6s_0_0s_1s_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":7323:4:7323:9|Removing sequential instance so_arsize[2:0] (in view: work.axi4_interconnect_ipgen_ext_slv_ard_arb_1s_32s_11s_4s_0s_6s_0_0s_1s_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN115 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":7294:79:7294:98|Removing instance genblk1\.u_rr_ext_mas_ard_arb (in view: work.axi4_interconnect_ipgen_ext_slv_ard_arb_1s_32s_11s_4s_0s_6s_0_0s_1s_0(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":13771:19:13771:31|Removing instance u_gen_memfile (in view: work.axi4_interconnect_ipgen_gen_fifo_3s_13s_0s_8s_1(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":13771:19:13771:31|Removing instance u_gen_memfile (in view: work.axi4_interconnect_ipgen_gen_fifo_3s_17s_0s_8s_1(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":13771:19:13771:31|Removing instance u_gen_memfile (in view: work.axi4_interconnect_ipgen_gen_fifo_6s_50_0s_64s_1(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":11520:16:11520:21|Removing sequential instance WO_WR_ACCESS_BLK\.i_ext_slv_prt_bresp_sig[3:0] (in view: work.axi4_interconnect_ipgen_ext_slv_port_Z61_layer0_0(verilog)) of type view:PrimLib.statemachine(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":8394:52:8394:57|Removing sequential instance WO_WR_ACCESS_BLK\.AXI4_EXTSLV_AW_BLK\.EXT_MAS_BLK\[0\]\.EXTSLV_CNCT_EXTMAS_BLK\.AXI4_EXTMAS_BLK\.DOWN_BLK\.req_size_le_ext_slv (in view: work.axi4_interconnect_ipgen_ext_slv_port_Z61_layer0_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":11914:52:11914:57|Removing sequential instance RO_WR_ACCESS_BLK\.AXI4_EXTSLV_AR_BLK\.EXT_MAS_BLK\[0\]\.EXTSLV_CNCT_EXTMAS_BLK\.AXI4_EXTMAS_BLK\.DOWN_BLK\.req_size_le_ext_slv (in view: work.axi4_interconnect_ipgen_ext_slv_port_Z61_layer0_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":7566:4:7566:9|Removing sequential instance mo_sj_awready_int[0] (in view: work.axi4_interconnect_ipgen_ext_slv_awr_arb_1s_32s_11s_4s_0_6s_0_0s_1s_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":7566:4:7566:9|Removing sequential instance mo_sj_split_awready_int[0] (in view: work.axi4_interconnect_ipgen_ext_slv_awr_arb_1s_32s_11s_4s_0_6s_0_0s_1s_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":7794:4:7794:9|Removing sequential instance mo_sj_wready_int[0] (in view: work.axi4_interconnect_ipgen_ext_slv_dwr_arb_1s_4s_64s_16s_0_4s_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":7323:4:7323:9|Removing sequential instance mo_sj_arready_int[0] (in view: work.axi4_interconnect_ipgen_ext_slv_ard_arb_1s_32s_11s_4s_0s_6s_0_0s_1s_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":7323:4:7323:9|Removing sequential instance mo_sj_split_arready_int[0] (in view: work.axi4_interconnect_ipgen_ext_slv_ard_arb_1s_32s_11s_4s_0s_6s_0_0s_1s_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN115 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":13771:19:13771:31|Removing instance u_gen_memfile (in view: work.axi4_interconnect_ipgen_gen_fifo_3s_1s_0s_8_1_2(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":13771:19:13771:31|Removing instance u_gen_memfile (in view: work.axi4_interconnect_ipgen_gen_fifo_3s_1s_0s_8_1_1(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":7566:4:7566:9|Removing sequential instance so_awaddr[31:0] (in view: work.axi4_interconnect_ipgen_ext_slv_awr_arb_1s_32s_11s_4s_0_6s_0_0s_1s_2(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":7566:4:7566:9|Removing sequential instance so_awsize[2:0] (in view: work.axi4_interconnect_ipgen_ext_slv_awr_arb_1s_32s_11s_4s_0_6s_0_0s_1s_2(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":7566:4:7566:9|Removing sequential instance so_awlen[7:0] (in view: work.axi4_interconnect_ipgen_ext_slv_awr_arb_1s_32s_11s_4s_0_6s_0_0s_1s_2(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":7566:4:7566:9|Removing sequential instance so_awburst[1:0] (in view: work.axi4_interconnect_ipgen_ext_slv_awr_arb_1s_32s_11s_4s_0_6s_0_0s_1s_2(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":7566:4:7566:9|Removing sequential instance so_awcache[3:0] (in view: work.axi4_interconnect_ipgen_ext_slv_awr_arb_1s_32s_11s_4s_0_6s_0_0s_1s_2(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":7566:4:7566:9|Removing sequential instance so_awprot[2:0] (in view: work.axi4_interconnect_ipgen_ext_slv_awr_arb_1s_32s_11s_4s_0_6s_0_0s_1s_2(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":7566:4:7566:9|Removing sequential instance so_awlock[0] (in view: work.axi4_interconnect_ipgen_ext_slv_awr_arb_1s_32s_11s_4s_0_6s_0_0s_1s_2(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":7566:4:7566:9|Removing sequential instance so_awcache[3:0] (in view: work.axi4_interconnect_ipgen_ext_slv_awr_arb_1s_32s_11s_4s_0_6s_0_0s_1s_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":7566:4:7566:9|Removing sequential instance so_awlock[0] (in view: work.axi4_interconnect_ipgen_ext_slv_awr_arb_1s_32s_11s_4s_0_6s_0_0s_1s_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":7794:4:7794:9|Removing sequential instance so_wdata[63:0] (in view: work.axi4_interconnect_ipgen_ext_slv_dwr_arb_1s_4s_64s_1s_0_1s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":7794:4:7794:9|Removing sequential instance so_wstrb[7:0] (in view: work.axi4_interconnect_ipgen_ext_slv_dwr_arb_1s_4s_64s_1s_0_1s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":7323:4:7323:9|Removing sequential instance so_araddr[31:0] (in view: work.axi4_interconnect_ipgen_ext_slv_ard_arb_1s_32s_11s_4s_0s_6s_0_0s_1s_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":7323:4:7323:9|Removing sequential instance so_arsize[2:0] (in view: work.axi4_interconnect_ipgen_ext_slv_ard_arb_1s_32s_11s_4s_0s_6s_0_0s_1s_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":7323:4:7323:9|Removing sequential instance so_arburst[1:0] (in view: work.axi4_interconnect_ipgen_ext_slv_ard_arb_1s_32s_11s_4s_0s_6s_0_0s_1s_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":7323:4:7323:9|Removing sequential instance so_arcache[3:0] (in view: work.axi4_interconnect_ipgen_ext_slv_ard_arb_1s_32s_11s_4s_0s_6s_0_0s_1s_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":7323:4:7323:9|Removing sequential instance so_arprot[2:0] (in view: work.axi4_interconnect_ipgen_ext_slv_ard_arb_1s_32s_11s_4s_0s_6s_0_0s_1s_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":7323:4:7323:9|Removing sequential instance so_arlock[0] (in view: work.axi4_interconnect_ipgen_ext_slv_ard_arb_1s_32s_11s_4s_0s_6s_0_0s_1s_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":7323:4:7323:9|Removing sequential instance so_arcache[3:0] (in view: work.axi4_interconnect_ipgen_ext_slv_ard_arb_1s_32s_11s_4s_0s_6s_0_0s_1s_2(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":7323:4:7323:9|Removing sequential instance so_arlock[0] (in view: work.axi4_interconnect_ipgen_ext_slv_ard_arb_1s_32s_11s_4s_0s_6s_0_0s_1s_2(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":14282:4:14282:9|Removing sequential instance Ram[0] (in view: work.axi4_interconnect_ipgen_gen_memfile_3s_1s_0s_8_0(verilog)) of type view:PrimLib.ram1(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":14282:4:14282:9|Removing sequential instance Ram[0] (in view: work.axi4_interconnect_ipgen_gen_memfile_3s_1s_0s_8_1_2(verilog)) of type view:PrimLib.ram1(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":9539:24:9539:29|Removing sequential instance WO_WR_ACCESS_BLK\.AXI4_SLV_AWBLK\.o_ext_slv_prt_awaddr[31:0] (in view: work.axi4_interconnect_ipgen_ext_slv_port_Z61_layer0_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":9539:24:9539:29|Removing sequential instance WO_WR_ACCESS_BLK\.AXI4_SLV_AWBLK\.o_ext_slv_prt_awlen[7:0] (in view: work.axi4_interconnect_ipgen_ext_slv_port_Z61_layer0_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":11450:16:11450:21|Removing sequential instance WO_WR_ACCESS_BLK\.o_ext_slv_prt_wlast (in view: work.axi4_interconnect_ipgen_ext_slv_port_Z61_layer0_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":13047:24:13047:29|Removing sequential instance RO_WR_ACCESS_BLK\.AXI4_SLV_ARBLK\.o_ext_slv_prt_araddr[31:0] (in view: work.axi4_interconnect_ipgen_ext_slv_port_Z61_layer0_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":13047:24:13047:29|Removing sequential instance RO_WR_ACCESS_BLK\.AXI4_SLV_ARBLK\.o_ext_slv_prt_arlen[7:0] (in view: work.axi4_interconnect_ipgen_ext_slv_port_Z61_layer0_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":11520:16:11520:21|Removing sequential instance WO_WR_ACCESS_BLK\.o_ext_slv_prt_bready (in view: work.axi4_interconnect_ipgen_ext_slv_port_Z61_layer0_0(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":13149:16:13149:21|Removing sequential instance RO_WR_ACCESS_BLK\.o_ext_slv_prt_rready (in view: work.axi4_interconnect_ipgen_ext_slv_port_Z61_layer0_0(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":11450:16:11450:21|Removing sequential instance WO_WR_ACCESS_BLK\.o_ext_slv_prt_wstrb[3:0] (in view: work.axi4_interconnect_ipgen_ext_slv_port_Z61_layer0_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":7566:4:7566:9|Removing sequential instance mo_sj_split_awready_int[0] (in view: work.axi4_interconnect_ipgen_ext_slv_awr_arb_1s_32s_11s_4s_0_6s_0_0s_1s_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":7566:4:7566:9|Removing sequential instance mo_sj_split_awready_int[0] (in view: work.axi4_interconnect_ipgen_ext_slv_awr_arb_1s_32s_11s_4s_0_6s_0_0s_1s_2(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":7323:4:7323:9|Removing sequential instance mo_sj_split_arready_int[0] (in view: work.axi4_interconnect_ipgen_ext_slv_ard_arb_1s_32s_11s_4s_0s_6s_0_0s_1s_2(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":7323:4:7323:9|Removing sequential instance mo_sj_split_arready_int[0] (in view: work.axi4_interconnect_ipgen_ext_slv_ard_arb_1s_32s_11s_4s_0s_6s_0_0s_1s_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":3565:24:3565:29|Removing sequential instance WO_WR_BLK\.EXT_MAS_CDC_DIS_BLK\.o_m_awcache[3:0] (in view: work.axi4_interconnect_ipgen_ext_mas_port_Z59_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":3565:24:3565:29|Removing sequential instance WO_WR_BLK\.EXT_MAS_CDC_DIS_BLK\.o_m_awlock[0] (in view: work.axi4_interconnect_ipgen_ext_mas_port_Z59_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":4357:24:4357:29|Removing sequential instance RO_WR_BLK\.EXT_MAS_CDC_DIS_BLK\.o_m_arcache[3:0] (in view: work.axi4_interconnect_ipgen_ext_mas_port_Z59_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":4357:24:4357:29|Removing sequential instance RO_WR_BLK\.EXT_MAS_CDC_DIS_BLK\.o_m_arlock[0] (in view: work.axi4_interconnect_ipgen_ext_mas_port_Z59_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":12907:16:12907:21|Removing sequential instance RO_WR_ACCESS_BLK\.o_s_split_arready (in view: work.axi4_interconnect_ipgen_ext_slv_port_Z61_layer0_0(verilog)) of type view:PrimLib.dffse(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\u23_lifclu_nx33_prpl_bldr\u23_lifclu_nx33_prpl_bldr\lib\latticesemi.com\module\ahbl0\1.3.2\rtl\ahbl0.v":5528:4:5528:9|Removing sequential instance reg_hprot_slv[2:0] (in view: work.ahbl0_ipgen_lscc_ahbl_input_stage_32s_0_1_2_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\u23_lifclu_nx33_prpl_bldr\u23_lifclu_nx33_prpl_bldr\lib\latticesemi.com\module\ahbl0\1.3.2\rtl\ahbl0.v":5528:4:5528:9|Removing sequential instance reg_hprot_slv[3:0] (in view: work.ahbl0_ipgen_lscc_ahbl_input_stage_32s_0_1_2_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":12907:16:12907:21|Removing sequential instance RO_WR_ACCESS_BLK\.o_s_split_arready (in view: work.axi4_interconnect_ipgen_ext_slv_port_Z61_layer0_1(verilog)) of type view:PrimLib.dffse(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_to_ahbl_bridge\1.1.1\rtl\axi4_to_ahbl_bridge.v":1189:4:1189:9|Removing sequential instance ahb_mas_prot_o_1[2:0] (in view: work.axi4_to_ahbl_bridge_ipgen_lscc_axi2ahb_lite_Z64_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":9539:24:9539:29|Removing sequential instance WO_WR_ACCESS_BLK\.AXI4_SLV_AWBLK\.o_ext_slv_prt_awprot[2:0] (in view: work.axi4_interconnect_ipgen_ext_slv_port_Z61_layer0_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":13047:24:13047:29|Removing sequential instance RO_WR_ACCESS_BLK\.AXI4_SLV_ARBLK\.o_ext_slv_prt_arprot[2:0] (in view: work.axi4_interconnect_ipgen_ext_slv_port_Z61_layer0_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":9969:56:9969:61|Removing sequential instance WO_WR_ACCESS_BLK\.AXI4_EXTSLV_WDATA_BLK\.EXT_MAS_LOOP_BLK\[0\]\.EXT_SLV_CONNECTED_BLK\.AXI4_EXTMAS_BLK\.DOWN_BLK\.lsb_addr[2:0] (in view: work.axi4_interconnect_ipgen_ext_slv_port_Z61_layer0_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":9969:56:9969:61|Removing sequential instance WO_WR_ACCESS_BLK\.AXI4_EXTSLV_WDATA_BLK\.EXT_MAS_LOOP_BLK\[0\]\.EXT_SLV_CONNECTED_BLK\.AXI4_EXTMAS_BLK\.DOWN_BLK\.pending_xfer (in view: work.axi4_interconnect_ipgen_ext_slv_port_Z61_layer0_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":13736:4:13736:9|Removing sequential instance rd_ptr[5:0] (in view: work.axi4_interconnect_ipgen_gen_fifo_6s_50_0s_64s_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":13719:4:13719:9|Removing sequential instance wr_ptr[5:0] (in view: work.axi4_interconnect_ipgen_gen_fifo_6s_50_0s_64s_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":13736:4:13736:9|Removing sequential instance rd_ptr[2:0] (in view: work.axi4_interconnect_ipgen_gen_fifo_3s_1s_0s_8_1_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":13719:4:13719:9|Removing sequential instance wr_ptr[2:0] (in view: work.axi4_interconnect_ipgen_gen_fifo_3s_1s_0s_8_1_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":13736:4:13736:9|Removing sequential instance rd_ptr[2:0] (in view: work.axi4_interconnect_ipgen_gen_fifo_3s_17s_0s_8s_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":13719:4:13719:9|Removing sequential instance wr_ptr[2:0] (in view: work.axi4_interconnect_ipgen_gen_fifo_3s_17s_0s_8s_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":13736:4:13736:9|Removing sequential instance rd_ptr[2:0] (in view: work.axi4_interconnect_ipgen_gen_fifo_3s_13s_0s_8s_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":13719:4:13719:9|Removing sequential instance wr_ptr[2:0] (in view: work.axi4_interconnect_ipgen_gen_fifo_3s_13s_0s_8s_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":13736:4:13736:9|Removing sequential instance rd_ptr[2:0] (in view: work.axi4_interconnect_ipgen_gen_fifo_3s_1s_0s_8_1_2(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":13719:4:13719:9|Removing sequential instance wr_ptr[2:0] (in view: work.axi4_interconnect_ipgen_gen_fifo_3s_1s_0s_8_1_2(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":4902:64:4902:69|Removing sequential instance RO_WR_BLK\.AXI4_EXTMAS_BLK\.EXT_SLV_BLK\[1\]\.ACTUAL_SLV_BLK\.EXTMAS_CNCT_EXTSLV_BLK\.AXI4_EXTSLV_BLK\.UP_BLK\.upsize_rd_cnt[2:0] (in view: work.axi4_interconnect_ipgen_ext_mas_port_Z59_layer0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":13736:4:13736:9|Removing sequential instance rd_ptr[2:0] (in view: work.axi4_interconnect_ipgen_gen_fifo_3s_21s_0s_8s_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":13719:4:13719:9|Removing sequential instance wr_ptr[2:0] (in view: work.axi4_interconnect_ipgen_gen_fifo_3s_21s_0s_8s_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+Encoding state machine genblk1\.bus_sm_cs[3:0] (in view: work.HW_ver_gpio_ipgen_lscc_apb2lmmi_32s_6s_1s_1_2_4_8_4s(verilog))
+original code -> new code
+   0001 -> 00
+   0010 -> 01
+   0100 -> 10
+   1000 -> 11
+@N: MO225 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\u23_lifclu_nx33_prpl_bldr\u23_lifclu_nx33_prpl_bldr\lib\latticesemi.com\ip\hw_ver_gpio\1.6.2\rtl\hw_ver_gpio.v":325:16:325:21|There are no possible illegal states for state machine genblk1\.bus_sm_cs[3:0] (in view: work.HW_ver_gpio_ipgen_lscc_apb2lmmi_32s_6s_1s_1_2_4_8_4s(verilog)); safe FSM implementation is not required.
+Encoding state machine cs_sm[2:0] (in view: work.ahbl0_ipgen_lscc_ahbl_default_slv_32s_2s_0s_1s_2s_0_1_2_0(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine cs_sm[2:0] (in view: work.ahbl0_ipgen_lscc_ahbl_default_slv_32s_2s_0s_1s_2s_0_1_2_1(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine cs_sm[4:0] (in view: work.ahbl0_ipgen_lscc_ahbl_arbmux_Z14_layer0_2(verilog))
+original code -> new code
+   00001 -> 00001
+   00010 -> 00010
+   00100 -> 00100
+   01000 -> 01000
+   10000 -> 10000
+Encoding state machine cs_sm[4:0] (in view: work.ahbl0_ipgen_lscc_ahbl_arbmux_Z14_layer0_1(verilog))
+original code -> new code
+   00001 -> 00001
+   00010 -> 00010
+   00100 -> 00100
+   01000 -> 01000
+   10000 -> 10000
+Encoding state machine cs_sm[4:0] (in view: work.ahbl0_ipgen_lscc_ahbl_arbmux_Z14_layer0_0(verilog))
+original code -> new code
+   00001 -> 00001
+   00010 -> 00010
+   00100 -> 00100
+   01000 -> 01000
+   10000 -> 10000
+Encoding state machine cs_ahbl_sm[8:0] (in view: work.ahbl2apb0_ipgen_lscc_ahbl2apb_Z16_layer0(verilog))
+original code -> new code
+   000000001 -> 000000001
+   000000010 -> 000000010
+   000000100 -> 000000100
+   000001000 -> 000001000
+   000010000 -> 000010000
+   000100000 -> 000100000
+   001000000 -> 001000000
+   010000000 -> 010000000
+   100000000 -> 100000000
+Encoding state machine buff_valid_r[2:0] (in view: work.ahbl2apb0_ipgen_lscc_ahbl2apb_Z16_layer0(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   11 -> 10
+Encoding state machine <encrypted> (in view: work.cpu0_ipgen_Riscv_Dbg_IMC(verilog))
+original code -> new code
+   000 -> 00001
+   001 -> 00010
+   010 -> 00100
+   011 -> 01000
+   100 -> 10000
+Encoding state machine genblk1\.bus_sm_cs[3:0] (in view: work.gpio0_ipgen_lscc_apb2lmmi_2s_6s_1s_1_2_4_8_4s(verilog))
+original code -> new code
+   0001 -> 00
+   0010 -> 01
+   0100 -> 10
+   1000 -> 11
+@N: MO225 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\u23_lifclu_nx33_prpl_bldr\u23_lifclu_nx33_prpl_bldr\lib\latticesemi.com\ip\gpio0\1.6.2\rtl\gpio0.v":321:16:321:21|There are no possible illegal states for state machine genblk1\.bus_sm_cs[3:0] (in view: work.gpio0_ipgen_lscc_apb2lmmi_2s_6s_1s_1_2_4_8_4s(verilog)); safe FSM implementation is not required.
+Encoding state machine <encrypted> (in view: work.lscc_i2cm1_ipgen_lscc_sclk_gen(verilog))
+original code -> new code
+   0001 -> 00
+   0010 -> 01
+   0100 -> 10
+   1000 -> 11
+Encoding state machine <encrypted> (in view: work.lscc_i2cm1_ipgen_lscc_i2c_master_start_gen_Z26_layer0(verilog))
+original code -> new code
+   000 -> 0000001
+   001 -> 0000010
+   010 -> 0000100
+   011 -> 0001000
+   100 -> 0010000
+   101 -> 0100000
+   110 -> 1000000
+Encoding state machine <encrypted> (in view: work.lscc_i2cm1_ipgen_lscc_i2c_master_stop_gen_10s_60s_283s_79s_31s_0_1_2_3(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine <encrypted> (in view: work.lscc_i2cm1_ipgen_lscc_i2c_master_cntrl_fsm(verilog))
+original code -> new code
+   0000 -> 000000000001
+   0001 -> 000000000010
+   0010 -> 000000000100
+   0011 -> 000000001000
+   0100 -> 000000010000
+   0101 -> 000000100000
+   0110 -> 000001000000
+   0111 -> 000010000000
+   1000 -> 000100000000
+   1001 -> 001000000000
+   1010 -> 010000000000
+   1011 -> 100000000000
+Encoding state machine <encrypted> (in view: work.lscc_i2cm1_ipgen_lscc_i2c_master_byte_tx_fsm(verilog))
+original code -> new code
+   0000 -> 0000000001
+   0001 -> 0000000010
+   0010 -> 0000000100
+   0011 -> 0000001000
+   0100 -> 0000010000
+   0101 -> 0000100000
+   0110 -> 0001000000
+   0111 -> 0010000000
+   1000 -> 0100000000
+   1001 -> 1000000000
+Encoding state machine <encrypted> (in view: work.lscc_i2cm1_ipgen_lscc_i2c_master_byte_rx_fsm(verilog))
+original code -> new code
+   0000 -> 0000000001
+   0001 -> 0000000010
+   0010 -> 0000000100
+   0011 -> 0000001000
+   0100 -> 0000010000
+   0101 -> 0000100000
+   0110 -> 0001000000
+   0111 -> 0010000000
+   1000 -> 0100000000
+   1001 -> 1000000000
+Encoding state machine <encrypted> (in view: work.lscc_i2cm1_ipgen_lscc_apb2lmmi_8s_4s_1s_0s_1_2_4_8_4s(verilog))
+original code -> new code
+   0001 -> 00
+   0010 -> 01
+   0100 -> 10
+   1000 -> 11
+Encoding state machine <encrypted> (in view: work.lscc_spim1_ipgen_lscc_spi_master_lmmi_device_8s_16s_0s_1s_2s_3s_4s_5s_4s_4294967295s(verilog))
+original code -> new code
+   00001 -> 00001
+   00010 -> 00010
+   00100 -> 00100
+   01000 -> 01000
+   10000 -> 10000
+Encoding state machine <encrypted> (in view: work.lscc_spim1_ipgen_lscc_apb2lmmi_32s_6s_1s_0s_1_2_4_8_4s(verilog))
+original code -> new code
+   0001 -> 00
+   0010 -> 01
+   0100 -> 10
+   1000 -> 11
+Encoding state machine genblk5\.err_sm_r[2:0] (in view: work.sysmem0_ipgen_lscc_ahblmem_subordinate_Z50_layer0_1(verilog))
+original code -> new code
+   001 -> 00
+   010 -> 01
+   100 -> 10
+Encoding state machine genblk5\.bridge_sm_r[8:0] (in view: work.sysmem0_ipgen_lscc_ahblmem_subordinate_Z50_layer0_1(verilog))
+original code -> new code
+   00000000000001 -> 000000001
+   00000000000010 -> 000000010
+   00000000000100 -> 000000100
+   00000000100000 -> 000001000
+   00000001000000 -> 000010000
+   00000010000000 -> 000100000
+   00000100000000 -> 001000000
+   00001000000000 -> 010000000
+   00010000000000 -> 100000000
+@N: FX493 |Applying initial value "1" on instance genblk5\.bridge_sm_r[0].
+@N: FX493 |Applying initial value "0" on instance genblk5\.bridge_sm_r[1].
+@N: FX493 |Applying initial value "0" on instance genblk5\.bridge_sm_r[2].
+@N: FX493 |Applying initial value "0" on instance genblk5\.bridge_sm_r[3].
+@N: FX493 |Applying initial value "0" on instance genblk5\.bridge_sm_r[4].
+@N: FX493 |Applying initial value "0" on instance genblk5\.bridge_sm_r[5].
+@N: FX493 |Applying initial value "0" on instance genblk5\.bridge_sm_r[6].
+@N: FX493 |Applying initial value "0" on instance genblk5\.bridge_sm_r[7].
+@N: FX493 |Applying initial value "0" on instance genblk5\.bridge_sm_r[8].
+Encoding state machine genblk5\.err_sm_r[2:0] (in view: work.sysmem0_ipgen_lscc_ahblmem_subordinate_Z50_layer0_0(verilog))
+original code -> new code
+   001 -> 00
+   010 -> 01
+   100 -> 10
+Encoding state machine genblk5\.bridge_sm_r[8:0] (in view: work.sysmem0_ipgen_lscc_ahblmem_subordinate_Z50_layer0_0(verilog))
+original code -> new code
+   00000000000001 -> 000000001
+   00000000000010 -> 000000010
+   00000000000100 -> 000000100
+   00000000100000 -> 000001000
+   00000001000000 -> 000010000
+   00000010000000 -> 000100000
+   00000100000000 -> 001000000
+   00001000000000 -> 010000000
+   00010000000000 -> 100000000
+@N: FX493 |Applying initial value "1" on instance genblk5\.bridge_sm_r[0].
+@N: FX493 |Applying initial value "0" on instance genblk5\.bridge_sm_r[1].
+@N: FX493 |Applying initial value "0" on instance genblk5\.bridge_sm_r[2].
+@N: FX493 |Applying initial value "0" on instance genblk5\.bridge_sm_r[3].
+@N: FX493 |Applying initial value "0" on instance genblk5\.bridge_sm_r[4].
+@N: FX493 |Applying initial value "0" on instance genblk5\.bridge_sm_r[5].
+@N: FX493 |Applying initial value "0" on instance genblk5\.bridge_sm_r[6].
+@N: FX493 |Applying initial value "0" on instance genblk5\.bridge_sm_r[7].
+@N: FX493 |Applying initial value "0" on instance genblk5\.bridge_sm_r[8].
+Encoding state machine nfifo_int\.cs_state[3:0] (in view: work.uart0_ipgen_lscc_uart_intface_Z55_layer0(verilog))
+original code -> new code
+   000 -> 00
+   001 -> 01
+   010 -> 10
+   011 -> 11
+@N: MO225 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\u23_lifclu_nx33_prpl_bldr\u23_lifclu_nx33_prpl_bldr\lib\latticesemi.com\ip\uart0\1.3.0\rtl\uart0.v":1070:16:1070:21|There are no possible illegal states for state machine nfifo_int\.cs_state[3:0] (in view: work.uart0_ipgen_lscc_uart_intface_Z55_layer0(verilog)); safe FSM implementation is not required.
+Encoding state machine cs_state[4:0] (in view: work.uart0_ipgen_lscc_uart_rxcver_8s_0s_5s_1_2_4_8_16_MachXO3D(verilog))
+original code -> new code
+   00001 -> 00001
+   00010 -> 00010
+   00100 -> 00100
+   01000 -> 01000
+   10000 -> 10000
+Encoding state machine nfifo_fsm\.tx_state[6:0] (in view: work.uart0_ipgen_lscc_uart_txmitt_8s_0s_7s_1_2_4_8_16_32_64(verilog))
+original code -> new code
+   0000001 -> 0000001
+   0000010 -> 0000010
+   0000100 -> 0000100
+   0001000 -> 0001000
+   0010000 -> 0010000
+   0100000 -> 0100000
+   1000000 -> 1000000
+Encoding state machine cur_rd_state[1:0] (in view: work.axi4_interconnect_ipgen_def_slave_32s_32s_11s_64s_4s_0_1_2_1_2(verilog))
+original code -> new code
+   01 -> 0
+   10 -> 1
+@N: MO225 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":2811:4:2811:9|There are no possible illegal states for state machine cur_rd_state[1:0] (in view: work.axi4_interconnect_ipgen_def_slave_32s_32s_11s_64s_4s_0_1_2_1_2(verilog)); safe FSM implementation is not required.
+Encoding state machine cur_wr_state[2:0] (in view: work.axi4_interconnect_ipgen_def_slave_32s_32s_11s_64s_4s_0_1_2_1_2(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine WO_WR_ACCESS_BLK\.i_ext_slv_prt_bresp_sig[3:0] (in view: work.axi4_interconnect_ipgen_ext_slv_port_Z61_layer0_1(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+@N: MO225 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv":11520:16:11520:21|There are no possible illegal states for state machine WO_WR_ACCESS_BLK\.i_ext_slv_prt_bresp_sig[3:0] (in view: work.axi4_interconnect_ipgen_ext_slv_port_Z61_layer0_1(verilog)); safe FSM implementation is not required.
+Encoding state machine pres_state[5:0] (in view: work.axi4_to_ahbl_bridge_ipgen_lscc_axi2ahb_lite_Z64_layer0(verilog))
+original code -> new code
+   000 -> 000001
+   001 -> 000010
+   010 -> 000100
+   011 -> 001000
+   100 -> 010000
+   101 -> 100000
+
+Starting clock optimization report phase (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:08s; Memory used current: 342MB peak: 342MB)
+
+@W: MO197 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\u23_lifclu_nx33_prpl_bldr\u23_lifclu_nx33_prpl_bldr\lib\latticesemi.com\module\ahbl0\1.3.2\rtl\ahbl0.v":2083:4:2083:9|Removing FSM register cs_sm[3] (in view view:work.ahbl0_ipgen_lscc_ahbl_arbmux_Z14_layer0_2(verilog)) because its output is a constant.
+@W: MO197 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\u23_lifclu_nx33_prpl_bldr\u23_lifclu_nx33_prpl_bldr\lib\latticesemi.com\module\ahbl0\1.3.2\rtl\ahbl0.v":2083:4:2083:9|Removing FSM register cs_sm[3] (in view view:work.ahbl0_ipgen_lscc_ahbl_arbmux_Z14_layer0_1(verilog)) because its output is a constant.
+@W: MO197 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\u23_lifclu_nx33_prpl_bldr\u23_lifclu_nx33_prpl_bldr\lib\latticesemi.com\module\ahbl0\1.3.2\rtl\ahbl0.v":2083:4:2083:9|Removing FSM register cs_sm[3] (in view view:work.ahbl0_ipgen_lscc_ahbl_arbmux_Z14_layer0_0(verilog)) because its output is a constant.
+@W: MO197 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\u23_lifclu_nx33_prpl_bldr\u23_lifclu_nx33_prpl_bldr\lib\latticesemi.com\ip\sysmem0\2.3.0\rtl\sysmem0.v":1326:12:1326:17|Removing FSM register genblk5\.bridge_sm_r[8] (in view view:work.sysmem0_ipgen_lscc_ahblmem_subordinate_Z50_layer0_1(verilog)) because its output is a constant.
+@W: MO197 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\u23_lifclu_nx33_prpl_bldr\u23_lifclu_nx33_prpl_bldr\lib\latticesemi.com\ip\sysmem0\2.3.0\rtl\sysmem0.v":1326:12:1326:17|Removing FSM register genblk5\.bridge_sm_r[6] (in view view:work.sysmem0_ipgen_lscc_ahblmem_subordinate_Z50_layer0_1(verilog)) because its output is a constant.
+@W: MO197 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\u23_lifclu_nx33_prpl_bldr\u23_lifclu_nx33_prpl_bldr\lib\latticesemi.com\ip\sysmem0\2.3.0\rtl\sysmem0.v":1326:12:1326:17|Removing FSM register genblk5\.bridge_sm_r[5] (in view view:work.sysmem0_ipgen_lscc_ahblmem_subordinate_Z50_layer0_1(verilog)) because its output is a constant.
+@W: MO197 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\u23_lifclu_nx33_prpl_bldr\u23_lifclu_nx33_prpl_bldr\lib\latticesemi.com\ip\sysmem0\2.3.0\rtl\sysmem0.v":1326:12:1326:17|Removing FSM register genblk5\.bridge_sm_r[2] (in view view:work.sysmem0_ipgen_lscc_ahblmem_subordinate_Z50_layer0_1(verilog)) because its output is a constant.
+@W: MO197 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\u23_lifclu_nx33_prpl_bldr\u23_lifclu_nx33_prpl_bldr\lib\latticesemi.com\ip\sysmem0\2.3.0\rtl\sysmem0.v":1326:12:1326:17|Removing FSM register genblk5\.bridge_sm_r[1] (in view view:work.sysmem0_ipgen_lscc_ahblmem_subordinate_Z50_layer0_1(verilog)) because its output is a constant.
+@W: MO197 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\u23_lifclu_nx33_prpl_bldr\u23_lifclu_nx33_prpl_bldr\lib\latticesemi.com\module\ahbl0\1.3.2\rtl\ahbl0.v":2083:4:2083:9|Removing FSM register cs_sm[4] (in view view:work.ahbl0_ipgen_lscc_ahbl_arbmux_Z14_layer0_2(verilog)) because its output is a constant.
+@W: MO197 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\u23_lifclu_nx33_prpl_bldr\u23_lifclu_nx33_prpl_bldr\lib\latticesemi.com\module\ahbl0\1.3.2\rtl\ahbl0.v":2083:4:2083:9|Removing FSM register cs_sm[4] (in view view:work.ahbl0_ipgen_lscc_ahbl_arbmux_Z14_layer0_1(verilog)) because its output is a constant.
+@W: MO197 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\u23_lifclu_nx33_prpl_bldr\u23_lifclu_nx33_prpl_bldr\lib\latticesemi.com\module\ahbl0\1.3.2\rtl\ahbl0.v":2083:4:2083:9|Removing FSM register cs_sm[4] (in view view:work.ahbl0_ipgen_lscc_ahbl_arbmux_Z14_layer0_0(verilog)) because its output is a constant.
+@W: MO197 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\u23_lifclu_nx33_prpl_bldr\u23_lifclu_nx33_prpl_bldr\lib\latticesemi.com\ip\sysmem0\2.3.0\rtl\sysmem0.v":1338:12:1338:17|Removing FSM register genblk5\.err_sm_r[0] (in view view:work.sysmem0_ipgen_lscc_ahblmem_subordinate_Z50_layer0_1(verilog)) because its output is a constant.
+@W: MO197 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\u23_lifclu_nx33_prpl_bldr\u23_lifclu_nx33_prpl_bldr\lib\latticesemi.com\ip\sysmem0\2.3.0\rtl\sysmem0.v":1326:12:1326:17|Removing FSM register genblk5\.bridge_sm_r[7] (in view view:work.sysmem0_ipgen_lscc_ahblmem_subordinate_Z50_layer0_1(verilog)) because its output is a constant.
+@W: MO197 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\u23_lifclu_nx33_prpl_bldr\u23_lifclu_nx33_prpl_bldr\lib\latticesemi.com\ip\sysmem0\2.3.0\rtl\sysmem0.v":1338:12:1338:17|Removing FSM register genblk5\.err_sm_r[1] (in view view:work.sysmem0_ipgen_lscc_ahblmem_subordinate_Z50_layer0_1(verilog)) because its output is a constant.
+
+Finished clock optimization report phase (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:09s; Memory used current: 343MB peak: 343MB)
+
+@N: FX1184 |Applying syn_allowed_resources blockrams=64 on top level netlist u23_lifcl_nx33u_evalbd_ibd 
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:09s; Memory used current: 343MB peak: 344MB)
+
+Some data will not be shown as it is part of encrypted module
+
+
+Clock Summary
+******************
+
+          Start                                                                    Requested     Requested     Clock        Clock                     Clock
+Level     Clock                                                                    Frequency     Period        Type         Group                     Load 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+0 -       System                                                                   200.0 MHz     5.000         system       system_clkgroup           0    
+                                                                                                                                                           
+0 -       pll_60m_ipgen_lscc_pll_Z1_layer0|clkop_o_inferred_clock                  200.0 MHz     5.000         inferred     Inferred_clkgroup_0_1     6541 
+                                                                                                                                                           
+0 -       cpu0_ipgen_vex_jtag_bridge_Z22_layer0|bbICH_inferred_clock               200.0 MHz     5.000         inferred     Inferred_clkgroup_0_2     83   
+                                                                                                                                                           
+0 -       cpu0_ipgen_vex_jtag_bridge_Z22_layer0|bqAaKcoy7LeAHb1_inferred_clock     200.0 MHz     5.000         inferred     Inferred_clkgroup_0_3     9    
+===========================================================================================================================================================
+
+
+
+Clock Load Summary
+***********************
+
+                                                                         Clock     Source                                                        Clock Pin                                                                           Non-clock Pin     Non-clock Pin
+Clock                                                                    Load      Pin                                                           Seq Example                                                                         Seq Example       Comb Example 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                                                   0         -                                                             -                                                                                   -                 -            
+                                                                                                                                                                                                                                                                    
+pll_60m_ipgen_lscc_pll_Z1_layer0|clkop_o_inferred_clock                  6541      pll_60m.lscc_pll_inst.gen_no_refclk_mon\.u_PLL.CLKOP(PLL)     axi_ahb_conv.axi4_to_ahbl_bridge_inst.lscc_axi2ahb_lite_inst.axi_slv_bvalid_o.C     -                 -            
+                                                                                                                                                                                                                                                                    
+cpu0_ipgen_vex_jtag_bridge_Z22_layer0|bbICH_inferred_clock               83        -                                                             -                                                                                   -                 -            
+                                                                                                                                                                                                                                                                    
+cpu0_ipgen_vex_jtag_bridge_Z22_layer0|bqAaKcoy7LeAHb1_inferred_clock     9         -                                                             -                                                                                   -                 -            
+====================================================================================================================================================================================================================================================================
+
+@W: MT530 :"c:\users\whan\documents\appproject\usb_lifcl_nx33u\rd_ioa_usb2_revb\design\rtl\resetn_sync.sv":68:2:68:10|Found inferred clock pll_60m_ipgen_lscc_pll_Z1_layer0|clkop_o_inferred_clock which controls 6541 sequential elements including rs_pll_locked_60m.reset_n_f1. This clock has no specified timing constraint which may adversely impact design performance. 
+
+ICG Latch Removal Summary:
+Number of ICG latches removed: 0
+Number of ICG latches not removed:	0
+
+
+@S |Clock Optimization Summary
+
+
+
+#### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
+
+1 non-gated/non-generated clock tree(s) driving 9 clock pin(s) of sequential element(s)
+2 gated/generated clock tree(s) driving 5930 clock pin(s) of sequential element(s)
+0 instances converted, 5930 sequential instances remain driven by gated/generated clocks
+
+=========================== Non-Gated/Non-Generated Clocks ============================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance
+---------------------------------------------------------------------------------------
+@KP:ckid0_141     ENCRYPTED           JTAGH19                9          ENCRYPTED      
+=======================================================================================
+================================================================================ Gated/Generated Clocks ================================================================================
+Clock Tree ID     Driving Element                                          Drive Element Type     Unconverted Fanout     Sample Instance                  Explanation                   
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@KP:ckid0_137     pll_60m.lscc_pll_inst.gen_no_refclk_mon\.u_PLL.CLKOP     PLL                    5847                   rs_pll_locked_60m.reset_n_f1     Clock Optimization not enabled
+@KP:ckid0_140     ENCRYPTED                                                DCC                    83                     ENCRYPTED                        Clock Optimization not enabled
+========================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######
+
+
+Summary of user generated gated clocks:
+0 user generated gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+
+@N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
+Finished Pre Mapping Phase.
+
+Starting constraint checker (Real Time elapsed 0h:00m:16s; CPU Time elapsed 0h:00m:15s; Memory used current: 332MB peak: 344MB)
+
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:16s; CPU Time elapsed 0h:00m:16s; Memory used current: 334MB peak: 344MB)
+
+
+Finished constraint checker (Real Time elapsed 0h:00m:17s; CPU Time elapsed 0h:00m:16s; Memory used current: 338MB peak: 344MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:17s; CPU Time elapsed 0h:00m:16s; Memory used current: 234MB peak: 344MB)
+
+Process took 0h:00m:17s realtime, 0h:00m:17s cputime
+# Wed Nov  6 22:15:09 2024
+
+###########################################################]

@@ -1,0 +1,53 @@
+Resource Usage Report
+Part: lifcl_33u-7
+
+Register bits: 5419 of 27648 (20%)
+PIC Latch:       0
+I/O cells:       11
+
+Details:
+BB:             4
+BFD1P3KX:       2
+CCU2:           658
+DCC:            1
+DPR16X4:        191
+FD1P3BX:        151
+FD1P3DX:        3490
+FD1P3IX:        1752
+FD1P3JX:        25
+GSR:            1
+IB:             3
+IFD1P3BX:       1
+INV:            48
+JTAGH19:        1
+LRAM:           2
+LUT4:           7308
+MULT18X18:      2
+MULT18X36:      2
+OB:             4
+PDPSC16K:       7
+PLL:            1
+USB23:          1
+VHI:            202
+VLO:            204
+WIDEFN9:        196
+
+Resource Usage inside macros:
+Registers: 0
+LUTs: 0
+EBRs: 0
+LRAMs: 0
+DSPs: 0
+Distributed RAMs: 0
+Carry Chains: 0
+Blackboxes: 0
+
+Mapping Summary:
+Total number of registers: 5419 + 0 = 5419 of 27648 (19.60%)
+Total number of LUTs: 7308 + 0 = 7308 
+Total number of EBRs: 7 + 0 = 7 of 64 (10.94%)
+Total number of LRAMs: 2 + 0 = 2 of 5 (40.00%)
+Total number of DSPs: 4 + 0 = 4 of 64 (6.25%)
+Total number of Distributed RAMs: 191 + 0 = 191 
+Total number of Carry Chains: 658 + 0 = 658 
+Total number of BlackBoxes: 411 + 0 = 411 

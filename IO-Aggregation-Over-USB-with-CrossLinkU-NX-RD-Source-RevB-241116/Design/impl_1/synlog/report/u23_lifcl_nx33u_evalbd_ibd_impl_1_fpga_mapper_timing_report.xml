@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *************************************************************************************
+FILE DESCRIPTION
+Max Top 5 critical clocks will be reported. For rest user needs to refer to Detailed report
+*******************************************************************************************-->
+<report_table display_priority="2" name="Timing Summary">
+<report_link name="Detailed report">
+<data>C:\Users\whan\Documents\AppProject\USB_LIFCL_NX33U\RD_IOA_USB2_REVB\Design\impl_1\synlog\u23_lifcl_nx33u_evalbd_ibd_impl_1_fpga_mapper.srr</data>
+<title>START OF TIMING REPORT</title>
+</report_link>
+<row>
+<data tcl_name="clock_name">Clock Name</data>
+<data tcl_name="req_freq">Req Freq</data>
+<data tcl_name="est_freq">Est Freq</data>
+<data tcl_name="slack">Slack</data>
+</row>
+<row>
+<data>cpu0_ipgen_vex_jtag_bridge_Z22_layer0|bbICH_inferred_clock</data>
+<data>200.0 MHz</data>
+<data>147.1 MHz</data>
+<data>-0.899</data>
+</row>
+<row>
+<data>cpu0_ipgen_vex_jtag_bridge_Z22_layer0|bqAaKcoy7LeAHb1_inferred_clock</data>
+<data>200.0 MHz</data>
+<data>258.5 MHz</data>
+<data>0.566</data>
+</row>
+<row>
+<data>pll_60m_ipgen_lscc_pll_Z1_layer0|clkop_o_inferred_clock</data>
+<data>200.0 MHz</data>
+<data>99.3 MHz</data>
+<data>-5.071</data>
+</row>
+<row>
+<data>System</data>
+<data>200.0 MHz</data>
+<data>142.0 MHz</data>
+<data>-2.045</data>
+</row>
+</report_table>

@@ -1,0 +1,986 @@
+
+pnmainc -log pnmain "u23_lifcl_nx33u_evalbd_ibd_impl_1_map.tcl"
+map:  version Radiant Software (64-bit) 2024.2.b.23.0
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+Command line:   map -pdc C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/pdc/u23_lifcl_nx33u_evalbd_ibd.pdc -i u23_lifcl_nx33u_evalbd_ibd_impl_1_syn.udb -o u23_lifcl_nx33u_evalbd_ibd_impl_1_map.udb -mp u23_lifcl_nx33u_evalbd_ibd_impl_1.mrp -hierrpt -gui -msgset C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/promote.xml 
+
+Loading device for application GENERIC from file 'jd5u27a.nph' in environment: C:/lscc/radiant/2024.2/ispfpga.
+Package Status:                     Final          Version 2.
+
+
+
+Design:  u23_lifcl_nx33u_evalbd_ibd
+Family:  LIFCL
+Device:  LIFCL-33U
+Package: FCCSP104
+Performance Grade:  7_High-Performance_1.0V
+
+Running general design DRC...
+
+WARNING <51011063> - IO instance nxU_prpl_bldr/cpu0_inst/riscvsmall_inst/secured_instance_71_4/secured_instance_67_2/secured_instance_62_17/secured_instance_205_103 is not connected to any port, it is ignored.
+WARNING <51011063> - IO instance nxU_prpl_bldr/cpu0_inst/riscvsmall_inst/secured_instance_71_4/secured_instance_67_2/secured_instance_62_17/secured_instance_205_104 is not connected to any port, it is ignored.
+WARNING <51011063> - IO instance nxU_prpl_bldr/cpu0_inst/riscvsmall_inst/secured_instance_71_4/secured_instance_67_2/secured_instance_62_17/secured_instance_205_105 is not connected to any port, it is ignored.
+WARNING <51011063> - IO instance nxU_prpl_bldr/cpu0_inst/riscvsmall_inst/secured_instance_71_4/secured_instance_67_2/secured_instance_62_17/secured_instance_205_106 is not connected to any port, it is ignored.
+
+
+
+Design Summary:
+   Number of registers:        5474 out of 27801 (20%)
+      Number of SLICE         registers: 5471 out of 27648 (20%)
+      Number of PIO Input     registers:    3 out of    51 (6%)
+      Number of PIO Output    registers:    0 out of    51 (0%)
+      Number of PIO Tri-State registers:    0 out of    51 (0%)
+   Number of LUT4s:            10219 out of 27648 (37%)
+      Number used as logic LUT4s:                       7743
+      Number used as distributed RAM:                   1146 (6 per 16X4 RAM)
+      Number used as ripple logic:                      1330 (2 per CCU2)
+   Number of PIOs used/reserved:   18 out of    51 (35%)
+      Number of PIOs reserved:      7 (per sysConfig and/or prohibit constraint)
+      Number of PIOs used:         11
+        Number of PIOs used for single ended IO:        11
+        Number of PIO pairs used for differential IO:    0
+
+        Number allocated to regular speed PIOs:     4 out of   19 (21%)
+        Number allocated to high speed PIOs:        7 out of   32 (22%)
+   Number of Dedicated IO used for AON/USB23:   10 out of   13 (77%)
+   Number of IDDR/ODDR/TDDR functions used:      0 out of   134 (0%)
+   Number of IOs using at least one DDR function: 0 (0 differential)
+   Number of Block RAMs:          7 out of 64 (11%)
+   Number of Large RAMs:          2 out of 5 (40%)
+   Number of Logical DSP Functions:
+      Number of Pre-Adders (9+9):    0 out of 128 (0%)
+      Number of Multipliers (18x18): 6 out of 64 (9%)
+         Number of 9X9:        0 (1 18x18 = 2   9x9)
+         Number of 18x18:      2 (1 18x18 = 1 18x18)
+         Number of 18x36:      2 (2 18x18 = 1 18x36)
+         Number of 36x36:      0 (4 18x18 = 1 36x36)
+      Number of 54-bit Accumulators: 0 out of 32 (0%)
+      Number of 18-bit Registers:    2 out of 128 (2%)
+   Number of Physical DSP Components:
+      Number of PREADD9:             12 out of 128 (9%)
+         Used PREADD9:               0
+         Bypassed PREADD9:           12
+      Number of MULT9:               12 out of 128 (9%)
+         Used MULT9:                 12
+         Bypassed MULT9:             0
+      Number of MULT18:              6 out of 64 (9%)
+         Used MULT18:                6
+         Disabled MULT18:            0
+      Number of MULT18X36:           2 out of 32 (6%)
+         Used MULT18X36:             2
+         Disabled MULT18X36:         0
+      Number of MULT36:              0 out of 16 (0%)
+      Number of ACC54:               0 out of 32 (0%)
+      Number of REG18:               10 out of 128 (8%)
+         Used REG18:                 2
+         Bypassed REG18:             8
+   Number of PLLs:                1 out of 1 (100%)
+   Number of DDRDLLs:             0 out of 2 (0%)
+   Number of DLLDELs:             0 out of 6 (0%)
+   Number of DCSs:                0 out of 1 (0%)
+   Number of DCCs:                1 out of 38 (3%)
+   Number of PCLKDIVs:            0 out of 1 (0%)
+   Number of ECLKDIVs:            0 out of 12 (0%)
+   Number of ECLKSYNCs:           0 out of 12 (0%)
+   Number of PMUs:                0 out of 1 (0%)
+   Number of BNKREF18s:           0 out of 3 (0%)
+   Number of BNKREF33s:           0 out of 2 (0%)
+   Number of I2CFIFOs:            0 out of 1 (0%)
+   Number of Oscillator:          0 out of 1 (0%)
+   Number of USB:                 1 out of 1 (100%)
+   Number of AON:                 0 out of 1 (0%)
+   Number of GSR:                 0 out of 1 (0%)
+   Number of Cryptographic Block: 0 out of 1 (0%)
+   Number of Config IP:           0 out of 1 (0%)
+                 TSALL:           0 out of 1 (0%)
+   Number of JTAG:                1 out of 1 (100%)
+   Number of Config LMMI:         0 out of 1 (0%)
+   Number of Config MULTIBOOT:    0 out of 1 (0%)
+   Number of SED:                 0 out of 1 (0%)
+   Number of Config WDT:          0 out of 1 (0%)
+   Number of Clocks:  4
+      Net clk_25m_i_c: 1 loads, 1 rising, 0 falling (Driver: Port clk_25m_i)
+      Net clk_pll_60m: 5546 loads, 5546 rising, 0 falling (Driver: Pin pll_60m.lscc_pll_inst.gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP)
+      Net secured_signal_2379: 63 loads, 5 rising, 58 falling (Driver: Pin secured_comp_2130/JTCK)
+      Net secured_signal_2410: 83 loads, 82 rising, 1 falling (Driver: Pin secured_comp_2089/CLKO)
+   Number of Clock Enables:  332
+      Net VCC: 13 loads, 0 SLICEs
+      Net nxU_prpl_bldr.HW_ver_gpio_inst.lscc_gpio_inst.genblk1.lscc_gpio_lmmi_0.int_type_r_1_sqmuxa: 32 loads, 32 SLICEs
+      Net nxU_prpl_bldr.HW_ver_gpio_inst.lscc_gpio_inst.genblk1.lscc_gpio_lmmi_0.int_method_r_1_sqmuxa: 32 loads, 32 SLICEs
+      Net nxU_prpl_bldr.HW_ver_gpio_inst.lscc_gpio_inst.genblk1.lscc_gpio_lmmi_0.direction_r_1_sqmuxa: 32 loads, 32 SLICEs
+      Net nxU_prpl_bldr.HW_ver_gpio_inst.lscc_gpio_inst.genblk1.lscc_gpio_lmmi_0.int_enable_r_1_sqmuxa: 32 loads, 32 SLICEs
+      Net nxU_prpl_bldr.HW_ver_gpio_inst.lscc_gpio_inst.genblk1.lscc_gpio_lmmi_0.un1_gpio_out_r22_i_a2: 32 loads, 32 SLICEs
+      Net nxU_prpl_bldr.HW_ver_gpio_inst.lscc_gpio_inst.genblk2.lscc_apb2lmmi_0.bus_sm_cs[1]: 2 loads, 2 SLICEs
+      Net nxU_prpl_bldr.HW_ver_gpio_inst.lscc_gpio_inst.genblk2.lscc_apb2lmmi_0.apb_pready_o_RNO: 1 loads, 1 SLICEs
+      Net nxU_prpl_bldr.HW_ver_gpio_inst.lscc_gpio_inst.genblk2.lscc_apb2lmmi_0.lmmi_offset_nxt_0_sqmuxa: 36 loads, 36 SLICEs
+      Net nxU_prpl_bldr.HW_ver_gpio_inst.lscc_gpio_inst.genblk2.lscc_apb2lmmi_0.apb_pslverr_nxt_0_sqmuxa: 32 loads, 32 SLICEs
+      Net nxU_prpl_bldr.ahbl0_inst.lscc_ahbl_interconnect_inst.ahbl_lite_crossbar.u_lscc_ahbl_crossbar.input_stage_reg[0].u_lscc_ahbl_input_stage.regs_has_data_r7: 35 loads, 35 SLICEs
+      Net nxU_prpl_bldr.ahbl0_inst.lscc_ahbl_interconnect_inst.ahbl_lite_crossbar.u_lscc_ahbl_crossbar.input_stage_reg[0].u_lscc_ahbl_input_stage.un1_regs_has_data_r7_0: 3 loads, 3 SLICEs
+      Net nxU_prpl_bldr.ahbl0_inst_AHBL_M00_interconnect_HREADYOUT: 3 loads, 3 SLICEs
+      Net nxU_prpl_bldr.cpu0_inst_AHBL_M1_DATA_interconnect_HREADYOUT: 1 loads, 1 SLICEs
+      Net nxU_prpl_bldr.ahbl0_inst.lscc_ahbl_interconnect_inst.ahbl_lite_crossbar.u_lscc_ahbl_crossbar.input_stage_reg[1].u_lscc_ahbl_input_stage.regs_has_data_r7: 39 loads, 39 SLICEs
+      Net u23_axi_2_ahbl_intf_hreadyout: 1 loads, 1 SLICEs
+      Net nxU_prpl_bldr.ahbl0_inst.lscc_ahbl_interconnect_inst.ahbl_lite_crossbar.u_lscc_ahbl_crossbar.input_stage_reg[1].u_lscc_ahbl_input_stage.regs_has_data_r_RNO: 1 loads, 1 SLICEs
+      Net nxU_prpl_bldr.ahbl0_inst.lscc_ahbl_interconnect_inst.ahbl_lite_crossbar.u_lscc_ahbl_crossbar.bus[0].u_lscc_ahbl_bus.u_lscc_ahbl_multiplexor.N_1122_i: 4 loads, 4 SLICEs
+      Net nxU_prpl_bldr.ahbl0_inst.lscc_ahbl_interconnect_inst.ahbl_lite_crossbar.u_lscc_ahbl_crossbar.bus[0].u_lscc_ahbl_bus.u_lscc_ahbl_multiplexor.N_1172_i: 1 loads, 1 SLICEs
+      Net nxU_prpl_bldr.ahbl0_inst.lscc_ahbl_interconnect_inst.ahbl_lite_crossbar.u_lscc_ahbl_crossbar.ahbl_bus_m2s_hready[3]: 1 loads, 1 SLICEs
+      Net nxU_prpl_bldr.ahbl0_inst.lscc_ahbl_interconnect_inst.ahbl_lite_crossbar.u_lscc_ahbl_crossbar.bus[1].u_lscc_ahbl_bus.u_lscc_ahbl_multiplexor.ahbl_hsel_dec_r_0_sqmuxa: 2 loads, 2 SLICEs
+      Net nxU_prpl_bldr.ahbl0_inst.lscc_ahbl_interconnect_inst.ahbl_lite_crossbar.u_lscc_ahbl_crossbar.arbiter_mux[0].u_lscc_ahbl_arbmux.u_lscc_ahbl_arbiter.round_robin.u_fair_arb.set_new_gnt: 1 loads, 1 SLICEs
+      Net nxU_prpl_bldr.ahbl2apb0_inst.lscc_ahbl2apb_inst.un1_apb_pslverr_i_6_0_o6_RNI6SCM7: 32 loads, 32 SLICEs
+      Net nxU_prpl_bldr.ahbl2apb0_inst.lscc_ahbl2apb_inst.un2_ns_ahbl_sm_1_0: 24 loads, 24 SLICEs
+      Net nxU_prpl_bldr.ahbl2apb0_inst.lscc_ahbl2apb_inst.N_1155_i: 25 loads, 25 SLICEs
+      Net nxU_prpl_bldr.ahbl2apb0_inst.lscc_ahbl2apb_inst.N_655_i: 32 loads, 32 SLICEs
+      Net nxU_prpl_bldr.ahbl2apb0_inst_APB_M0_interconnect_PSELx: 5 loads, 5 SLICEs
+      Net secured_signal_1709: 3 loads, 3 SLICEs
+      Net secured_signal_1924: 34 loads, 34 SLICEs
+      Net secured_signal_1972: 5 loads, 5 SLICEs
+      Net secured_signal_1973: 5 loads, 5 SLICEs
+      Net secured_signal_1984: 5 loads, 5 SLICEs
+      Net secured_signal_2011: 1 loads, 1 SLICEs
+      Net secured_signal_2232: 64 loads, 64 SLICEs
+      Net secured_signal_2233: 8 loads, 8 SLICEs
+      Net secured_signal_2234: 8 loads, 8 SLICEs
+      Net secured_signal_2235: 8 loads, 8 SLICEs
+      Net secured_signal_2236: 8 loads, 8 SLICEs
+      Net secured_signal_2237: 8 loads, 8 SLICEs
+      Net secured_signal_2238: 8 loads, 8 SLICEs
+      Net secured_signal_2239: 8 loads, 8 SLICEs
+      Net secured_signal_2240: 8 loads, 8 SLICEs
+      Net secured_signal_2375: 2 loads, 2 SLICEs
+      Net secured_signal_2385: 1 loads, 1 SLICEs
+      Net secured_signal_2391: 1 loads, 1 SLICEs
+      Net secured_signal_2393: 2 loads, 2 SLICEs
+      Net secured_signal_2442: 23 loads, 23 SLICEs
+      Net secured_signal_2503: 17 loads, 17 SLICEs
+      Net secured_signal_2534: 4 loads, 4 SLICEs
+      Net secured_signal_2553: 34 loads, 34 SLICEs
+      Net secured_signal_2556: 4 loads, 4 SLICEs
+      Net secured_signal_2558: 1 loads, 1 SLICEs
+      Net secured_signal_2562: 2 loads, 2 SLICEs
+      Net secured_signal_2676: 32 loads, 32 SLICEs
+      Net secured_signal_2690: 2 loads, 2 SLICEs
+      Net secured_signal_2697: 32 loads, 32 SLICEs
+      Net secured_signal_2771: 1 loads, 1 SLICEs
+      Net secured_signal_2774: 1 loads, 1 SLICEs
+      Net secured_signal_2779: 8 loads, 8 SLICEs
+      Net secured_signal_2780: 65 loads, 65 SLICEs
+      Net secured_signal_2855: 32 loads, 32 SLICEs
+      Net secured_signal_2857: 32 loads, 32 SLICEs
+      Net secured_signal_2918: 2 loads, 0 SLICEs
+      Net secured_signal_3122: 32 loads, 32 SLICEs
+      Net secured_signal_3198: 32 loads, 32 SLICEs
+      Net secured_signal_3449: 1 loads, 1 SLICEs
+      Net secured_signal_3461: 1 loads, 1 SLICEs
+      Net secured_signal_3465: 32 loads, 32 SLICEs
+      Net secured_signal_3467: 5 loads, 5 SLICEs
+      Net secured_signal_3468: 2 loads, 2 SLICEs
+      Net secured_signal_3485: 1 loads, 1 SLICEs
+      Net secured_signal_3782: 1 loads, 1 SLICEs
+      Net secured_signal_3786: 16 loads, 16 SLICEs
+      Net secured_signal_3787: 1 loads, 1 SLICEs
+      Net secured_signal_3860: 1 loads, 1 SLICEs
+      Net secured_signal_3865: 2 loads, 2 SLICEs
+      Net secured_signal_3866: 1 loads, 1 SLICEs
+      Net nxU_prpl_bldr.cpu0_inst_AHBL_M0_INSTR_interconnect_HREADYOUT: 1 loads, 1 SLICEs
+      Net secured_signal_3879: 1 loads, 1 SLICEs
+      Net secured_signal_3881: 32 loads, 32 SLICEs
+      Net secured_signal_4267: 1 loads, 1 SLICEs
+      Net secured_signal_4273: 15 loads, 15 SLICEs
+      Net secured_signal_4283: 30 loads, 30 SLICEs
+      Net secured_signal_4285: 32 loads, 32 SLICEs
+      Net secured_signal_4308: 1 loads, 1 SLICEs
+      Net secured_signal_4311: 3 loads, 3 SLICEs
+      Net secured_signal_4467: 1 loads, 1 SLICEs
+      Net secured_signal_4543: 5 loads, 5 SLICEs
+      Net secured_signal_4544: 1 loads, 1 SLICEs
+      Net secured_signal_4630: 35 loads, 35 SLICEs
+      Net secured_signal_4865: 1 loads, 1 SLICEs
+      Net secured_signal_4978: 1 loads, 1 SLICEs
+      Net secured_signal_4980: 1 loads, 1 SLICEs
+      Net secured_signal_4981: 1 loads, 1 SLICEs
+      Net secured_signal_5086: 252 loads, 248 SLICEs
+      Net secured_signal_5089: 38 loads, 38 SLICEs
+      Net secured_signal_5350: 1 loads, 1 SLICEs
+      Net secured_signal_5427: 1 loads, 1 SLICEs
+      Net secured_signal_5497: 32 loads, 32 SLICEs
+      Net secured_signal_5598: 1 loads, 1 SLICEs
+      Net secured_signal_5625: 32 loads, 32 SLICEs
+      Net secured_signal_6566: 1 loads, 1 SLICEs
+      Net secured_signal_6567: 189 loads, 189 SLICEs
+      Net secured_signal_6583: 32 loads, 32 SLICEs
+      Net secured_signal_7343: 35 loads, 35 SLICEs
+      Net nxU_prpl_bldr.gpio0_inst.lscc_gpio_inst.genblk1.lscc_gpio_lmmi_0.un1_gpio_out_r22_i: 2 loads, 2 SLICEs
+      Net nxU_prpl_bldr.gpio0_inst.lscc_gpio_inst.genblk1.lscc_gpio_lmmi_0.int_enable_r_1_sqmuxa: 2 loads, 2 SLICEs
+      Net nxU_prpl_bldr.gpio0_inst.lscc_gpio_inst.genblk1.lscc_gpio_lmmi_0.direction_r_1_sqmuxa: 2 loads, 2 SLICEs
+      Net nxU_prpl_bldr.gpio0_inst.lscc_gpio_inst.genblk1.lscc_gpio_lmmi_0.int_method_r_1_sqmuxa: 2 loads, 2 SLICEs
+      Net nxU_prpl_bldr.gpio0_inst.lscc_gpio_inst.genblk1.lscc_gpio_lmmi_0.int_type_r_1_sqmuxa: 2 loads, 2 SLICEs
+      Net nxU_prpl_bldr.gpio0_inst.lscc_gpio_inst.genblk2.lscc_apb2lmmi_0.bus_sm_cs[1]: 2 loads, 2 SLICEs
+      Net nxU_prpl_bldr.gpio0_inst.lscc_gpio_inst.genblk2.lscc_apb2lmmi_0.lmmi_wdata_nxt_0_sqmuxa: 6 loads, 6 SLICEs
+      Net nxU_prpl_bldr.gpio0_inst.lscc_gpio_inst.genblk2.lscc_apb2lmmi_0.apb_pslverr_nxt_1_sqmuxa_1_i: 1 loads, 1 SLICEs
+      Net nxU_prpl_bldr.gpio0_inst.lscc_gpio_inst.genblk2.lscc_apb2lmmi_0.apb_pslverr_nxt_0_sqmuxa: 2 loads, 2 SLICEs
+      Net secured_signal_9216: 16 loads, 16 SLICEs
+      Net secured_signal_9231: 8 loads, 8 SLICEs
+      Net secured_signal_9279: 1 loads, 1 SLICEs
+      Net secured_signal_9282: 1 loads, 1 SLICEs
+      Net secured_signal_9324: 1 loads, 1 SLICEs
+      Net secured_signal_9363: 11 loads, 11 SLICEs
+      Net secured_signal_9369: 1 loads, 1 SLICEs
+      Net secured_signal_9409: 10 loads, 10 SLICEs
+      Net secured_signal_9410: 1 loads, 1 SLICEs
+      Net secured_signal_9462: 10 loads, 10 SLICEs
+      Net secured_signal_9463: 1 loads, 1 SLICEs
+      Net secured_signal_9542: 1 loads, 1 SLICEs
+      Net secured_signal_9550: 8 loads, 8 SLICEs
+      Net secured_signal_9552: 1 loads, 1 SLICEs
+      Net secured_signal_9613: 1 loads, 1 SLICEs
+      Net secured_signal_9632: 1 loads, 1 SLICEs
+      Net secured_signal_9643: 1 loads, 1 SLICEs
+      Net secured_signal_9648: 1 loads, 1 SLICEs
+      Net secured_signal_9665: 8 loads, 8 SLICEs
+      Net secured_signal_9692: 22 loads, 22 SLICEs
+      Net secured_signal_9695: 1 loads, 1 SLICEs
+      Net secured_signal_9719: 1 loads, 1 SLICEs
+      Net secured_signal_9721: 1 loads, 1 SLICEs
+      Net secured_signal_9723: 1 loads, 1 SLICEs
+      Net secured_signal_9724: 1 loads, 1 SLICEs
+      Net secured_signal_9727: 1 loads, 1 SLICEs
+      Net secured_signal_9729: 1 loads, 1 SLICEs
+      Net secured_signal_9731: 1 loads, 1 SLICEs
+      Net secured_signal_9733: 1 loads, 1 SLICEs
+      Net secured_signal_9735: 1 loads, 1 SLICEs
+      Net secured_signal_9762: 8 loads, 8 SLICEs
+      Net secured_signal_9770: 2 loads, 2 SLICEs
+      Net secured_signal_9814: 1 loads, 1 SLICEs
+      Net secured_signal_9825: 4 loads, 4 SLICEs
+      Net secured_signal_9826: 8 loads, 8 SLICEs
+      Net secured_signal_9827: 7 loads, 7 SLICEs
+      Net secured_signal_9828: 8 loads, 8 SLICEs
+      Net secured_signal_9829: 7 loads, 7 SLICEs
+      Net secured_signal_9830: 8 loads, 8 SLICEs
+      Net secured_signal_9831: 8 loads, 8 SLICEs
+      Net secured_signal_9832: 3 loads, 3 SLICEs
+      Net secured_signal_9995: 7 loads, 7 SLICEs
+      Net secured_signal_9996: 7 loads, 7 SLICEs
+      Net secured_signal_10183: 8 loads, 8 SLICEs
+      Net secured_signal_10484: 7 loads, 7 SLICEs
+      Net secured_signal_10498: 8 loads, 8 SLICEs
+      Net secured_signal_10502: 7 loads, 7 SLICEs
+      Net secured_signal_10665: 8 loads, 8 SLICEs
+      Net secured_signal_10669: 13 loads, 13 SLICEs
+      Net secured_signal_10692: 1 loads, 1 SLICEs
+      Net secured_signal_10750: 8 loads, 8 SLICEs
+      Net secured_signal_10752: 8 loads, 8 SLICEs
+      Net secured_signal_10779: 6 loads, 6 SLICEs
+      Net secured_signal_10780: 8 loads, 8 SLICEs
+      Net secured_signal_10781: 7 loads, 7 SLICEs
+      Net secured_signal_10782: 1 loads, 1 SLICEs
+      Net secured_signal_10793: 9 loads, 9 SLICEs
+      Net secured_signal_10796: 1 loads, 1 SLICEs
+      Net secured_signal_10945: 9 loads, 9 SLICEs
+      Net secured_signal_11100: 9 loads, 9 SLICEs
+      Net secured_signal_11103: 1 loads, 0 SLICEs
+      Net secured_signal_11110: 1 loads, 0 SLICEs
+      Net secured_signal_11161: 1 loads, 0 SLICEs
+      Net secured_signal_11163: 9 loads, 9 SLICEs
+      Net secured_signal_11336: 9 loads, 9 SLICEs
+      Net secured_signal_11340: 1 loads, 0 SLICEs
+      Net secured_signal_11408: 1 loads, 1 SLICEs
+      Net secured_signal_11413: 1 loads, 1 SLICEs
+      Net secured_signal_11465: 1 loads, 1 SLICEs
+      Net secured_signal_11492: 8 loads, 8 SLICEs
+      Net secured_signal_11514: 1 loads, 1 SLICEs
+      Net secured_signal_11520: 4 loads, 4 SLICEs
+      Net secured_signal_11549: 1 loads, 1 SLICEs
+      Net secured_signal_11562: 8 loads, 8 SLICEs
+      Net secured_signal_11567: 13 loads, 13 SLICEs
+      Net nxU_prpl_bldr.uart0_inst.lscc_uart_inst.u_intface.thr_nonfifo_0_sqmuxa: 8 loads, 8 SLICEs
+      Net nxU_prpl_bldr.uart0_inst.lscc_uart_inst.u_intface.ier_1_sqmuxa: 3 loads, 3 SLICEs
+      Net nxU_prpl_bldr.uart0_inst.lscc_uart_inst.u_intface.lcr_1_sqmuxa: 7 loads, 7 SLICEs
+      Net nxU_prpl_bldr.uart0_inst.lscc_uart_inst.u_intface.divisorce[8]: 8 loads, 8 SLICEs
+      Net nxU_prpl_bldr.uart0_inst.lscc_uart_inst.u_intface.divisorce[0]: 8 loads, 8 SLICEs
+      Net nxU_prpl_bldr.uart0_inst.lscc_uart_inst.u_intface.data_8bit26: 8 loads, 8 SLICEs
+      Net nxU_prpl_bldr.uart0_inst.lscc_uart_inst.u_rxcver.un1_rbr_rd_1: 1 loads, 1 SLICEs
+      Net nxU_prpl_bldr.uart0_inst.lscc_uart_inst.u_rxcver.N_476_i: 1 loads, 1 SLICEs
+      Net nxU_prpl_bldr.uart0_inst.lscc_uart_inst.u_rxcver.un1_cs_state_3_i: 1 loads, 1 SLICEs
+      Net nxU_prpl_bldr.uart0_inst.lscc_uart_inst.u_rxcver.un1_hunt_1: 1 loads, 1 SLICEs
+      Net nxU_prpl_bldr.uart0_inst.lscc_uart_inst.u_rxcver.N_43: 1 loads, 1 SLICEs
+      Net nxU_prpl_bldr.uart0_inst.lscc_uart_inst.u_rxcver.rbr24: 8 loads, 8 SLICEs
+      Net nxU_prpl_bldr.uart0_inst.lscc_uart_inst.u_rxcver.un1_lsr_rd: 4 loads, 4 SLICEs
+      Net nxU_prpl_bldr.uart0_inst.lscc_uart_inst.u_rxcver.N_475_i: 12 loads, 12 SLICEs
+      Net nxU_prpl_bldr.uart0_inst.lscc_uart_inst.u_txmitt.tx_state[0]: 17 loads, 17 SLICEs
+      Net nxU_prpl_bldr.uart0_inst.lscc_uart_inst.u_txmitt.un2_counter_eq_1_1_0: 9 loads, 9 SLICEs
+      Net nxU_prpl_bldr.uart0_inst.lscc_uart_inst.u_txmitt.un1_thr_wr_1: 1 loads, 1 SLICEs
+      Net nxU_prpl_bldr.uart0_inst.lscc_uart_inst.u_txmitt.un1_tsr_empty8: 1 loads, 1 SLICEs
+      Net AHBL_to_LMMI_converter_inst.lmmi_request_o_4: 15 loads, 15 SLICEs
+      Net AHBL_to_LMMI_converter_inst.un1_ahbl_hreadyout_o10_i[0]: 1 loads, 1 SLICEs
+      Net AHBL_to_LMMI_converter_inst.lmmi_wr_rdn_o_1_sqmuxa_i: 2 loads, 2 SLICEs
+      Net AHBL_to_LMMI_converter_inst.ahbl_hrdata_o_0_sqmuxa: 32 loads, 32 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_mas_blk[0].u_ext_mas_port.un4_o_ext_mas_prt_rvalid_i: 1 loads, 1 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_mas_blk[0].u_ext_mas_port.nxt_int_ext_mas_prt_rid[1]_0_sqmuxa: 38 loads, 38 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_mas_blk[0].u_ext_mas_port.nxt_int_ext_mas_prt_rresp[1]_1_sqmuxa_i: 2 loads, 2 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_mas_blk[0].u_ext_mas_port.nxt_lsb_addr_5_sqmuxa: 3 loads, 3 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_mas_blk[0].u_ext_mas_port.ext_mas_wrff_rd_en: 72 loads, 72 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_mas_blk[0].u_ext_mas_port.un2_nxt_o_m_wvalid_i: 1 loads, 1 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_mas_blk[0].u_ext_mas_port.nxt_int_ext_mas_prt_rresp[0]_1_sqmuxa_i: 2 loads, 2 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_mas_blk[0].u_ext_mas_port.nxt_rd_up_state_1_sqmuxa_i: 1 loads, 1 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_mas_blk[0].u_ext_mas_port.nxt_rd_up_state_1_sqmuxa_1_i: 1 loads, 1 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_mas_blk[0].u_ext_mas_port.rd_cnte: 8 loads, 8 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_mas_blk[0].u_ext_mas_port.nxt_lsb_addr_1_sqmuxa_2_1: 6 loads, 6 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_mas_blk[0].u_ext_mas_port._decfrac0_RNIE3E9M: 32 loads, 32 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_mas_blk[0].u_ext_mas_port.un1_nxt_int_ext_mas_prt_rvalid_4_i[0]: 1 loads, 1 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_mas_blk[0].u_ext_mas_port.un1_nxt_int_ext_mas_prt_rvalid_5_i[0]: 1 loads, 1 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_mas_blk[0].u_ext_mas_port.un4_nxt_int_ext_mas_prt_rresp_RNIKR8QF: 32 loads, 32 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_mas_blk[0].u_ext_mas_port.un1_nxt_int_ext_mas_prt_rvalid_1_i[0]: 1 loads, 1 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_mas_blk[0].u_ext_mas_port.un1_nxt_int_ext_mas_prt_rvalid_i[0]: 1 loads, 1 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_mas_blk[0].u_ext_mas_port.rdata_ff_wr_en: 6 loads, 3 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_mas_blk[0].u_ext_mas_port.rdata_ff_rd_en: 3 loads, 3 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_mas_blk[0].u_ext_mas_port.ext_mas_awff_rd_en: 51 loads, 51 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_mas_blk[0].u_ext_mas_port.ext_mas_arff_rd_en: 51 loads, 51 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_mas_blk[0].u_ext_mas_port.sar_ff_rd_en_0: 3 loads, 3 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_mas_blk[0].u_ext_mas_port.mas_wresp_ff_rd_en: 8 loads, 8 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_mas_blk[0].u_ext_mas_port.rdata_ff_rd_en_o: 67 loads, 67 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_mas_blk[0].u_ext_mas_port.un2_nxt_o_ext_mas_prt_bvalid_i: 1 loads, 1 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_slv_prt_to_cb_awready[2]: 1 loads, 1 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.u_axi_cross_bar.extmas_blk[0].WO_WR_ACCESS_BLK.wr_ord_disable_blk.u_ext_mas_wrresp_arb.nxt_mo_bvalid_3_sqmuxa_i: 1 loads, 1 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.u_axi_cross_bar.extmas_blk[0].WO_WR_ACCESS_BLK.wr_ord_disable_blk.u_ext_mas_wrresp_arb.nxt_mo_bresp_2_sqmuxa_i: 8 loads, 8 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.u_axi_cross_bar.extmas_blk[0].WO_WR_ACCESS_BLK.wr_ord_disable_blk.u_ext_mas_wrresp_arb.genblk2.u_rr_ext_mas_wrresp_arb.prev_gnt4: 3 loads, 3 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_slv_prt_to_cb_arready[0]: 1 loads, 1 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.u_axi_cross_bar.extmas_blk[0].RO_WR_ACCESS_BLK.rd_ord_disable_blk.u_ext_mas_rdresp_arb.N_13: 1 loads, 1 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.u_axi_cross_bar.extmas_blk[0].RO_WR_ACCESS_BLK.rd_ord_disable_blk.u_ext_mas_rdresp_arb.un1_nxt_mo_rlast_0_sqmuxa_1_0_0: 41 loads, 41 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.u_axi_cross_bar.extmas_blk[0].RO_WR_ACCESS_BLK.rd_ord_disable_blk.u_ext_mas_rdresp_arb.genblk2.u_rr_ext_mas_rdresp_arb.prev_gnt4: 3 loads, 3 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.u_axi_cross_bar.extslv_blk[2].WO_WR_ACCESS_BLK.u_ext_slv_wrresp_ifc.un6_so_m_bvalid_i: 1 loads, 1 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.u_axi_cross_bar.extslv_blk[1].WO_WR_ACCESS_BLK.u_ext_slv_wrresp_ifc.un6_so_m_bvalid_i: 1 loads, 1 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.u_axi_cross_bar.extslv_blk[0].WO_WR_ACCESS_BLK.u_ext_slv_wrresp_ifc.un6_so_m_bvalid_i: 1 loads, 1 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.u_axi_cross_bar.extslv_blk[2].WO_WR_ACCESS_BLK.u_ext_slv_awr_arb.nxt_so_awvalid12: 1 loads, 1 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.u_axi_cross_bar.extslv_blk[2].WO_WR_ACCESS_BLK.u_ext_slv_awr_arb.nxt_so_awvalid8: 6 loads, 6 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_slv_prt_to_cb_awready[0]: 1 loads, 1 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.u_axi_cross_bar.extslv_blk[0].WO_WR_ACCESS_BLK.u_ext_slv_awr_arb.nxt_so_awvalid8: 51 loads, 51 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.u_axi_cross_bar.extslv_blk[0].WO_WR_ACCESS_BLK.u_ext_slv_awr_arb.nxt_so_awvalid12: 1 loads, 1 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.u_axi_cross_bar.extslv_blk[2].WO_WR_ACCESS_BLK.def_slave.u_ext_slv_dwr_arb.ext_mas_awr_gnt_ff_wr_en: 1 loads, 1 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.u_axi_cross_bar.extslv_blk[2].WO_WR_ACCESS_BLK.def_slave.u_ext_slv_dwr_arb.un13_sj_ext_mas_dwr_gnt_i[0]: 2 loads, 2 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.u_axi_cross_bar.extslv_blk[0].WO_WR_ACCESS_BLK.ext_slave.u_ext_slv_dwr_arb.nxt_so_wvalid9: 72 loads, 72 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.u_axi_cross_bar.extslv_blk[0].WO_WR_ACCESS_BLK.ext_slave.u_ext_slv_dwr_arb.cb_to_ext_slv_prt_ext_mas_dwr_gnt_i[0]: 2 loads, 2 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.u_axi_cross_bar.extslv_blk[1].RO_WR_ACCESS_BLK.u_ext_slv_rdresp_ifc.un1_nxt_so_m_rvalid38_2_i: 1 loads, 1 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.u_axi_cross_bar.extslv_blk[2].RO_WR_ACCESS_BLK.u_ext_slv_rdresp_ifc.un1_nxt_so_m_rvalid38_1_i: 6 loads, 6 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.u_axi_cross_bar.extslv_blk[2].RO_WR_ACCESS_BLK.u_ext_slv_rdresp_ifc.un1_nxt_so_m_rvalid38_2_i: 1 loads, 1 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.u_axi_cross_bar.extslv_blk[2].RO_WR_ACCESS_BLK.u_ext_slv_rdresp_ifc.un1_nxt_so_m_rvalid38_i: 1 loads, 1 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.u_axi_cross_bar.extslv_blk[0].RO_WR_ACCESS_BLK.u_ext_slv_rdresp_ifc.N_42: 39 loads, 39 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.u_axi_cross_bar.extslv_blk[0].RO_WR_ACCESS_BLK.u_ext_slv_rdresp_ifc.N_40: 1 loads, 1 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.u_axi_cross_bar.extslv_blk[0].RO_WR_ACCESS_BLK.u_ext_slv_rdresp_ifc.N_44: 1 loads, 1 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.u_axi_cross_bar.extslv_blk[0].RO_WR_ACCESS_BLK.u_ext_slv_ard_arb.nxt_so_arvalid8: 51 loads, 51 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.u_axi_cross_bar.extslv_blk[0].RO_WR_ACCESS_BLK.u_ext_slv_ard_arb.nxt_so_arvalid12: 1 loads, 1 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_slv_prt_to_cb_arready[2]: 1 loads, 1 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.u_axi_cross_bar.extslv_blk[2].RO_WR_ACCESS_BLK.u_ext_slv_ard_arb.nxt_so_arvalid8: 14 loads, 14 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.u_axi_cross_bar.extslv_blk[2].RO_WR_ACCESS_BLK.u_ext_slv_ard_arb.nxt_so_arvalid12: 1 loads, 1 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.U_DEF_SLAVE.nxt_s_ruser_0_sqmuxa: 6 loads, 6 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.U_DEF_SLAVE.s_bvalid_RNO: 1 loads, 1 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.U_DEF_SLAVE.nxt_s_buser_0_sqmuxa: 6 loads, 6 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.U_DEF_SLAVE.s_awready_RNO: 1 loads, 1 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.U_DEF_SLAVE.s_wready_RNO_0: 1 loads, 1 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.U_DEF_SLAVE.s_arready_RNO: 1 loads, 1 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.U_DEF_SLAVE.un1_nxt_s_rlast_0_sqmuxa_2_i: 2 loads, 2 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.U_DEF_SLAVE.rd_len_cnte: 8 loads, 8 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_slv_blk[0].u_ext_slv_port.i_s_ext_mas_dwr_gnt_final[0][0]: 1 loads, 1 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_slv_blk[0].u_ext_slv_port.un6_o_ext_slv_prt_arvalid_i: 1 loads, 1 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_slv_blk[0].u_ext_slv_port.un4_o_s_bvalid_i: 1 loads, 1 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_slv_blk[0].u_ext_slv_port.nxt_aw_wr_cnt18: 11 loads, 11 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_slv_blk[0].u_ext_slv_port.un1_nxt_aw_wr_cnt18_2_i: 5 loads, 5 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_slv_blk[0].u_ext_slv_port.nxt_ar_rd_cnt18: 11 loads, 11 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_slv_blk[0].u_ext_slv_port.un1_nxt_ar_rd_cnt18_2_i: 5 loads, 5 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_slv_blk[0].u_ext_slv_port.nxt_wr_cnt170: 1 loads, 1 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_slv_blk[0].u_ext_slv_port.nxt_pending_xfer_1_sqmuxa: 1 loads, 1 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_slv_blk[0].u_ext_slv_port.un1_nxt_aw_wr_cnt17_4_i: 2 loads, 2 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_slv_blk[0].u_ext_slv_port.un1_nxt_ar_rd_cnt17_4_i: 2 loads, 2 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_slv_blk[0].u_ext_slv_port.un1_nxt_wr_cnt171_i: 36 loads, 36 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_slv_blk[0].u_ext_slv_port.un1_nxt_wr_cnt170_1_i: 3 loads, 3 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_slv_blk[0].u_ext_slv_port.un1_nxt_ar_rd_cnt19_1_i: 8 loads, 8 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_slv_blk[0].u_ext_slv_port.un6_o_ext_slv_prt_awvalid_i: 1 loads, 1 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_slv_blk[0].u_ext_slv_port.un1_nxt_aw_wr_cnt19_i: 8 loads, 8 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_slv_blk[0].u_ext_slv_port.nxt_btype_1_sqmuxa_1: 2 loads, 2 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_slv_blk[0].u_ext_slv_port.fixed_len_cnte: 4 loads, 4 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_slv_blk[0].u_ext_slv_port.un1_saw_ff_rdata[0]: 36 loads, 36 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_slv_blk[0].u_ext_slv_port.un25_nxt_wr_last_pending_xfer_i: 1 loads, 1 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_slv_blk[0].u_ext_slv_port.un1_i_s_ext_mas_dwr_gnt_final_i: 1 loads, 1 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_slv_blk[0].u_ext_slv_port.un6_o_ext_slv_prt_wvalid_i: 1 loads, 1 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_slv_blk[0].u_ext_slv_port.N_55: 41 loads, 41 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_slv_blk[0].u_ext_slv_port.N_2195: 1 loads, 1 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_slv_blk[0].u_ext_slv_port.ext_slv_wresp_ff_rd_en: 7 loads, 7 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_slv_blk[0].u_ext_slv_port.nxt_o_s_awready3: 2 loads, 2 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_slv_blk[0].u_ext_slv_port.nxt_o_s_arready3: 1 loads, 1 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_slv_blk[0].u_ext_slv_port.nxt_m_wlast_1_sqmuxa_i: 2 loads, 2 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_slv_blk[0].u_ext_slv_port.N_21_i: 40 loads, 40 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_slv_blk[0].u_ext_slv_port.un2_o_ext_slv_prt_awvalid_i: 50 loads, 50 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_slv_blk[0].u_ext_slv_port.N_2206_i: 33 loads, 33 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_slv_blk[0].u_ext_slv_port.un2_o_ext_slv_prt_arvalid_i: 50 loads, 50 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_slv_blk[1].u_ext_slv_port.un1_nxt_o_s_rvalid12_i[0]: 1 loads, 1 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_slv_blk[1].u_ext_slv_port.un1_nxt_o_s_rvalid13_i[0]: 1 loads, 1 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_slv_blk[1].u_ext_slv_port.ext_slv_wresp_ff_rd_en: 3 loads, 3 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_slv_blk[1].u_ext_slv_port.ext_slv_rd_ff_rd_en: 7 loads, 7 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_slv_blk[1].u_ext_slv_port.un4_o_s_bvalid_i: 1 loads, 1 SLICEs
+      Net axi_ahb_conv.axi4_to_ahbl_bridge_inst.lscc_axi2ahb_lite_inst.next_len_reg_3_sqmuxa: 6 loads, 6 SLICEs
+      Net axi_ahb_conv.axi4_to_ahbl_bridge_inst.lscc_axi2ahb_lite_inst.pres_state[0]: 2 loads, 2 SLICEs
+      Net axi_ahb_conv.axi4_to_ahbl_bridge_inst.lscc_axi2ahb_lite_inst.pres_state[3]: 1 loads, 1 SLICEs
+      Net axi_ahb_conv.axi4_to_ahbl_bridge_inst.lscc_axi2ahb_lite_inst.un1_ahb_mas_mastlock_o_5_i: 1 loads, 1 SLICEs
+      Net axi_ahb_conv.axi4_to_ahbl_bridge_inst.lscc_axi2ahb_lite_inst.un1_ahb_mas_mastlock_o_22_i: 1 loads, 1 SLICEs
+      Net axi_ahb_conv.axi4_to_ahbl_bridge_inst.lscc_axi2ahb_lite_inst.un1_ahb_mas_mastlock_o_18_i: 32 loads, 32 SLICEs
+      Net axi_ahb_conv.axi4_to_ahbl_bridge_inst.lscc_axi2ahb_lite_inst.un1_ahb_mas_mastlock_o_24_i: 2 loads, 2 SLICEs
+      Net axi_ahb_conv.axi4_to_ahbl_bridge_inst.lscc_axi2ahb_lite_inst.un1_pres_state_4_i: 1 loads, 1 SLICEs
+      Net axi_ahb_conv.axi4_to_ahbl_bridge_inst.lscc_axi2ahb_lite_inst.un1_next_axi_slv_arready_o31_4_i: 1 loads, 1 SLICEs
+      Net axi_ahb_conv.axi4_to_ahbl_bridge_inst.lscc_axi2ahb_lite_inst.un1_pres_state_8_i: 32 loads, 32 SLICEs
+      Net axi_ahb_conv.axi4_to_ahbl_bridge_inst.lscc_axi2ahb_lite_inst.N_3447_i: 6 loads, 6 SLICEs
+      Net axi_ahb_conv.axi4_to_ahbl_bridge_inst.lscc_axi2ahb_lite_inst.un1_ahb_mas_mastlock_o_15_i: 1 loads, 1 SLICEs
+      Net axi_ahb_conv.axi4_to_ahbl_bridge_inst.lscc_axi2ahb_lite_inst.un1_next_axi_slv_arready_o31_2_i: 1 loads, 1 SLICEs
+      Net axi_ahb_conv.axi4_to_ahbl_bridge_inst.lscc_axi2ahb_lite_inst.next_r_valid_1_sqmuxa_3: 32 loads, 32 SLICEs
+      Net axi_ahb_conv.axi4_to_ahbl_bridge_inst.lscc_axi2ahb_lite_inst.un1_next_data_reg_0_sqmuxa: 33 loads, 33 SLICEs
+      Net axi_ahb_conv.axi4_to_ahbl_bridge_inst.lscc_axi2ahb_lite_inst.N_29: 1 loads, 1 SLICEs
+      Net axi_ahb_conv.axi4_to_ahbl_bridge_inst.lscc_axi2ahb_lite_inst.next_r_user_0_sqmuxa: 6 loads, 6 SLICEs
+      Net axi_ahb_conv.axi4_to_ahbl_bridge_inst.lscc_axi2ahb_lite_inst.un1_next_axi_slv_arready_o_0_sqmuxa: 2 loads, 2 SLICEs
+      Net axi_ahb_conv.axi4_to_ahbl_bridge_inst.lscc_axi2ahb_lite_inst.un1_ahb_mas_mastlock_o_11_i: 1 loads, 1 SLICEs
+   Number of LSRs:  53
+      Net VCC: 22 loads, 0 SLICEs
+      Net pll_60m.lscc_pll_inst.pll_60m_locked: 2 loads, 2 SLICEs
+      Net risc_v_system_reset_n_60m: 3 loads, 0 SLICEs
+      Net risc_v_system_reset_n_60m_i: 1819 loads, 1812 SLICEs
+      Net nxU_prpl_bldr.risc_v_system_reset_n: 1145 loads, 1138 SLICEs
+      Net secured_signal_1669: 1 loads, 1 SLICEs
+      Net secured_signal_1820: 7 loads, 7 SLICEs
+      Net secured_signal_2394: 63 loads, 62 SLICEs
+      Net secured_signal_2537: 36 loads, 36 SLICEs
+      Net secured_signal_2542: 1 loads, 1 SLICEs
+      Net secured_signal_2692: 16 loads, 16 SLICEs
+      Net secured_signal_2853: 2 loads, 2 SLICEs
+      Net secured_signal_2854: 212 loads, 212 SLICEs
+      Net secured_signal_2909: 1 loads, 1 SLICEs
+      Net secured_signal_3480: 1 loads, 1 SLICEs
+      Net secured_signal_4401: 1 loads, 1 SLICEs
+      Net secured_signal_5086: 1 loads, 1 SLICEs
+      Net secured_signal_5814: 1 loads, 1 SLICEs
+      Net secured_signal_9190: 208 loads, 208 SLICEs
+      Net secured_signal_9193: 1 loads, 1 SLICEs
+      Net secured_signal_9496: 1 loads, 1 SLICEs
+      Net secured_signal_9849: 111 loads, 111 SLICEs
+      Net secured_signal_9851: 103 loads, 103 SLICEs
+      Net secured_signal_9987: 2 loads, 2 SLICEs
+      Net secured_signal_9988: 2 loads, 2 SLICEs
+      Net secured_signal_9989: 2 loads, 2 SLICEs
+      Net secured_signal_9990: 2 loads, 2 SLICEs
+      Net secured_signal_10324: 2 loads, 2 SLICEs
+      Net secured_signal_10325: 2 loads, 2 SLICEs
+      Net secured_signal_10326: 2 loads, 2 SLICEs
+      Net secured_signal_10327: 2 loads, 2 SLICEs
+      Net secured_signal_10684: 131 loads, 131 SLICEs
+      Net secured_signal_10686: 131 loads, 131 SLICEs
+      Net secured_signal_11355: 1 loads, 1 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_mas_blk[0].u_ext_mas_port.awaddr_dwrsel_ff_wr_en: 4 loads, 4 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_mas_blk[0].u_ext_mas_port.ext_mas_wrff_wr_en: 19 loads, 19 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_mas_blk[0].u_ext_mas_port.ext_mas_arff_wr_en: 14 loads, 14 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_mas_blk[0].u_ext_mas_port.ext_mas_awff_wr_en: 14 loads, 14 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_mas_blk[0].u_ext_mas_port.WO_WR_BLK.CUSTOM_BRESP_FF_BLK.u_mas_wresp_fifo.mas_wresp_ff_wr_en: 3 loads, 3 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_mas_blk[0].u_ext_mas_port.RO_WR_BLK.AXI4_EXTMAS_BLK.EXT_SLV_BLK[0].ACTUAL_SLV_BLK.EXTMAS_CNCT_EXTSLV_BLK.AXI4_EXTSLV_BLK.UP_BLK.CUSTOM_FF_BLK.u_saraddr_arsize_arlen_arburst_fifo.sar_ff_wr_en: 6 loads, 6 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.u_axi_cross_bar.extslv_blk[0].WO_WR_ACCESS_BLK.ext_slave.u_ext_slv_dwr_arb.ext_mas_awr_gnt_ff_wr_en: 1 loads, 1 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_slv_blk[0].u_ext_slv_port.un1_ext_slv_wr_issue_ff_wr_en: 14 loads, 14 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_slv_blk[0].u_ext_slv_port.un1_ext_slv_rd_issue_ff_wr_en: 14 loads, 14 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_slv_blk[0].u_ext_slv_port.i_ext_slv_prt_bvalid_sig: 2 loads, 2 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_slv_blk[0].u_ext_slv_port.saw_ff_wr_en: 4 loads, 4 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_slv_blk[0].u_ext_slv_port.WO_WR_ACCESS_BLK.CUSTOM_EXT_SLV_WDATA_FF_BLK.u_ext_slv_wdata_ff.u_gen_memfile.Ram_and_0: 10 loads, 10 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_slv_blk[0].u_ext_slv_port.WO_WR_ACCESS_BLK.CUSTOM_EXT_SLV_WDATA_FF_BLK.u_ext_slv_wdata_ff.u_gen_memfile.Ram_and_2: 10 loads, 10 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_slv_blk[0].u_ext_slv_port.WO_WR_ACCESS_BLK.CUSTOM_EXT_SLV_WDATA_FF_BLK.u_ext_slv_wdata_ff.u_gen_memfile.Ram_and_4: 10 loads, 10 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_slv_blk[0].u_ext_slv_port.WO_WR_ACCESS_BLK.CUSTOM_EXT_SLV_WDATA_FF_BLK.u_ext_slv_wdata_ff.u_gen_memfile.Ram_and_114: 10 loads, 10 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_slv_blk[0].u_ext_slv_port.RO_WR_ACCESS_BLK.CUSTOM_FF_BLK.u_ext_slv_rd_fifo.u_gen_memfile.Ram_and_0: 10 loads, 10 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_slv_blk[0].u_ext_slv_port.RO_WR_ACCESS_BLK.CUSTOM_FF_BLK.u_ext_slv_rd_fifo.u_gen_memfile.Ram_and_4: 10 loads, 10 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_slv_blk[0].u_ext_slv_port.RO_WR_ACCESS_BLK.CUSTOM_FF_BLK.u_ext_slv_rd_fifo.u_gen_memfile.Ram_and_2: 10 loads, 10 SLICEs
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_slv_blk[0].u_ext_slv_port.RO_WR_ACCESS_BLK.CUSTOM_FF_BLK.u_ext_slv_rd_fifo.u_gen_memfile.Ram_and_120: 10 loads, 10 SLICEs
+   Top 10 highest fanout non-clock nets:
+      Net risc_v_system_reset_n_60m_i: 1819 loads
+      Net nxU_prpl_bldr.risc_v_system_reset_n: 1185 loads
+      Net secured_signal_5086: 348 loads
+      Net VCC: 330 loads
+      Net secured_signal_2854: 259 loads
+      Net secured_signal_9190: 211 loads
+      Net secured_signal_6567: 189 loads
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_slv_blk[0].u_ext_slv_port.RO_WR_ACCESS_BLK.CUSTOM_FF_BLK.u_ext_slv_rd_fifo.rd_ptr[2]: 162 loads
+      Net axi_ahb_conv.axi4_interconnect_inst.lscc_axi_interconnect_inst.u_lscc_sync_axi_interconnect.ext_slv_blk[0].u_ext_slv_port.RO_WR_ACCESS_BLK.CUSTOM_FF_BLK.u_ext_slv_rd_fifo.rd_ptr[3]: 162 loads
+      Net secured_signal_3445: 162 loads
+Running physical design DRC...
+
+ 
+
+
+   Number of warnings:  4
+   Number of criticals: 0
+   Number of errors:    0
+
+Constraint Summary:
+   Total number of constraints: 48
+   Total number of constraints dropped: 0
+
+
+Total CPU Time: 21 secs  
+Total REAL Time: 22 secs  
+Peak Memory Usage: 597 MB
+
+Checksum -- map: ea3171dab5cdb41b5c752ddaed6b83a66af6f646
+Thank you for using Radiant. Total CPU/Elapsed time: 0 secs /23 secs 
+
+pnmainc -log pnmain "u23_lifcl_nx33u_evalbd_ibd_impl_1_par.tcl"
+
+PAR: Place And Route Radiant Software (64-bit) 2024.2.b.23.0.
+PARed on: Thu Nov  7 14:10:41 2024
+
+Command Line: par -w -t 1 -cores 1 -hsp m -exp parPathBased=OFF \
+	u23_lifcl_nx33u_evalbd_ibd_impl_1_map.udb \
+	u23_lifcl_nx33u_evalbd_ibd_impl_1_par.dir/5_1.udb 
+
+Loading u23_lifcl_nx33u_evalbd_ibd_impl_1_map.udb ...
+Loading device for application GENERIC from file 'jd5u27a.nph' in environment: C:/lscc/radiant/2024.2/ispfpga.
+Package Status:                     Final          Version 2.
+Performance Hardware Data Status:   Final          Version 1.6.
+
+
+
+Design:  u23_lifcl_nx33u_evalbd_ibd
+Family:  LIFCL
+Device:  LIFCL-33U
+Package: FCCSP104
+Performance Grade:   7_High-Performance_1.0V
+
+Constraint Summary
+   Total number of constraints: 34
+   Total number of constraints dropped: 0
+
+WARNING <71241014> - The PLL clock port [clk_25m_i] is assigned to a non-PLL clock dedicated pin [G7], which might affect the clock performance. Use dedicated PLL clock resources for the port.
+
+Device SLICE utilization summary after final SLICE packing:
+   SLICE          10367/13824        74% used
+
+Skipping device clock for pll_60m.lscc_pll_inst.gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+User defined clock being used
+WARNING <70001949> - The object rs_pll_locked_60m/reset_n_f1_reg.ff_inst/CLK in the option &quot;-from&quot; of constraint set_false_path -from [get_pins -hierarchical -regexp .*reset_n_f1.*] is not valid.
+WARNING <70001949> - The object rs_pll_locked_60m/reset_n_f1_reg.ff_inst/LSR in the option &quot;-from&quot; of constraint set_false_path -from [get_pins -hierarchical -regexp .*reset_n_f1.*] is not valid.
+WARNING <70001949> - The object rs_r5_sys_rstn_60m/reset_n_f1_reg.ff_inst/CLK in the option &quot;-from&quot; of constraint set_false_path -from [get_pins -hierarchical -regexp .*reset_n_f1.*] is not valid.
+WARNING <70001949> - The object rs_r5_sys_rstn_60m/reset_n_f1_reg.ff_inst/LSR in the option &quot;-from&quot; of constraint set_false_path -from [get_pins -hierarchical -regexp .*reset_n_f1.*] is not valid.
+WARNING <70001949> - The object rs_pll_locked_60m/reset_n_f2.ff_inst/DF in the option &quot;-from&quot; of constraint set_false_path -from [get_pins -hierarchical -regexp .*reset_n_f2.*] is not valid.
+WARNING <70001949> - The object rs_pll_locked_60m/reset_n_f2.ff_inst/CLK in the option &quot;-from&quot; of constraint set_false_path -from [get_pins -hierarchical -regexp .*reset_n_f2.*] is not valid.
+WARNING <70001949> - The object rs_pll_locked_60m/reset_n_f2.ff_inst/LSR in the option &quot;-from&quot; of constraint set_false_path -from [get_pins -hierarchical -regexp .*reset_n_f2.*] is not valid.
+WARNING <70001949> - The object rs_r5_sys_rstn_60m/reset_n_f2_RNIMHRC/A in the option &quot;-from&quot; of constraint set_false_path -from [get_pins -hierarchical -regexp .*reset_n_f2.*] is not valid.
+WARNING <70001949> - The object rs_r5_sys_rstn_60m/reset_n_f2.ff_inst/DF in the option &quot;-from&quot; of constraint set_false_path -from [get_pins -hierarchical -regexp .*reset_n_f2.*] is not valid.
+WARNING <70001949> - The object rs_r5_sys_rstn_60m/reset_n_f2.ff_inst/CLK in the option &quot;-from&quot; of constraint set_false_path -from [get_pins -hierarchical -regexp .*reset_n_f2.*] is not valid.
+WARNING <70001949> - The object rs_r5_sys_rstn_60m/reset_n_f2.ff_inst/LSR in the option &quot;-from&quot; of constraint set_false_path -from [get_pins -hierarchical -regexp .*reset_n_f2.*] is not valid.
+PLL user clock clk_60MHz phase shift 0 degrees
+Number of Signals: 19045
+Number of Connections: 58132
+Device utilization summary:
+
+   VHI                   1/1           100% used
+   DCC                   1/38            3% used
+   EBR                   7/64           11% used
+   MULT9                12/128           9% used
+   MULT18                6/64            9% used
+   MULT18X36             2/32            6% used
+   REG18                10/128           8% used
+   PREADD9              12/128           9% used
+   LRAM                  2/5            40% used
+   IOLOGIC               3/32            9% used
+   SEIO18                7/32           22% used
+                         7/32           21% bonded
+   SEIO33                4/51            8% used
+                         4/19           21% bonded
+   PLL                   1/1           100% used
+   CONFIG_JTAG           1/1           100% used
+   APIO                 10/16           63% used
+   USB23                 1/1           100% used
+   SLICE             10367/13824        75% used
+     LUT             10219/27648        37% used
+     REG              5471/27648        20% used
+
+
+Pin Constraint Summary:
+   11 out of 11 pins locked (100% locked).
+INFO: signal 'nxU_prpl_bldr.cpu0_inst.riscvsmall_inst.Ib1w9tjglomgvCgAIkup60xKDx.IbCuo3aEvk5cF25j4DHzkJGG2F.NbqAaKcoy7LeAHb1' driving mixed DCC load types requires multi-feedlines.
+
+INFO: PLL REFCLK driver locked at CLKPIN 'G7' is not a dedicated PLL input pin, assign signal 'clk_25m_i_c' to PCLK tree.
+INFO: signal 'nxU_prpl_bldr.cpu0_inst.riscvsmall_inst.Ib1w9tjglomgvCgAIkup60xKDx.IbCuo3aEvk5cF25j4DHzkJGG2F.NbqAaKcoy7LeAHb1' driving mixed DCC load types requires multi-feedlines.
+Starting Placer Phase 0 (HIER). CPU time: 27 secs , REAL time: 28 secs 
+...........
+Finished Placer Phase 0 (HIER). CPU time: 38 secs , REAL time: 39 secs 
+
+
+.   
+Starting Placer Phase 1. CPU time: 39 secs , REAL time: 40 secs 
+..  ..
+....................
+
+Placer score = 5369974.
+Finished Placer Phase 1. CPU time: 1 mins 55 secs , REAL time: 1 mins 57 secs 
+
+Starting Placer Phase 2.
+.
+
+Placer score =  5269543
+Finished Placer Phase 2.  CPU time: 1 mins 58 secs , REAL time: 2 mins 
+
+
+------------------ Clock Report ------------------
+
+Global Clock Resources:
+  CLK_PIN    : 1 out of 13 (7%)
+  PLL        : 1 out of 1 (100%)
+  DCS        : 0 out of 1 (0%)
+  DCC        : 1 out of 38 (2%)
+  ECLKDIV    : 0 out of 12 (0%)
+  PCLKDIV    : 0 out of 1 (0%)
+  OSC        : 0 out of 1 (0%)
+
+Global Clocks:
+  PRIMARY "clk_pll_60m" from CLKOP on comp "pll_60m.lscc_pll_inst.gen_no_refclk_mon.u_PLL.PLL_inst" on PLL site "PLL_LLC", clk load = 5255, ce load = 0, sr load = 0
+  PRIMARY "nxU_prpl_bldr.cpu0_inst.riscvsmall_inst.Ib1w9tjglomgvCgAIkup60xKDx.IbCuo3aEvk5cF25j4DHzkJGG2F.NbqAaKcoy7LeAHb1" from JTCK on comp "nxU_prpl_bldr.cpu0_inst.riscvsmall_inst.Ib1w9tjglomgvCgAIkup60xKDx.IbCuo3aEvk5cF25j4DHzkJGG2F.genblk3.jtag.jtagg_u" on site "TCONFIG_JTAG_CORE31", clk load = 58, ce load = 0, sr load = 0
+  PRIMARY "risc_v_system_reset_n_60m_i" from F0 on comp "rs_r5_sys_rstn_60m.reset_n_f2_RNIMHRC" on site "R38C25A", clk load = 0, ce load = 0, sr load = 1650
+  PRIMARY "nxU_prpl_bldr.risc_v_system_reset_n" from Q0 on comp "nxU_prpl_bldr.cpu0_inst.riscvsmall_inst.Ib1w9tjglomgvCgAIkup60xKDx.IdmsCC83jqGag9CKFl9b1a3AFBjxqdlgK.ff_inst" on site "R38C26A", clk load = 0, ce load = 0, sr load = 1127
+  PRIMARY "clk_25m_i_c" from comp "clk_25m_i" on CLK_PIN site "G7 (PB16A)", clk load = 1, ce load = 0, sr load = 0
+  PRIMARY DCC "nxU_prpl_bldr.cpu0_inst.riscvsmall_inst.Ib1w9tjglomgvCgAIkup60xKDx.NbbICH" from comp "nxU_prpl_bldr.cpu0_inst.riscvsmall_inst.Ib1w9tjglomgvCgAIkup60xKDx.IbCuo3aEvk5cF25j4DHzkJGG2F.Iohm428if6nkdrszemy5wAmC" on DCC site "DCC_T0", total # of clk loads = 83
+     - DCC input "nxU_prpl_bldr.cpu0_inst.riscvsmall_inst.Ib1w9tjglomgvCgAIkup60xKDx.IbCuo3aEvk5cF25j4DHzkJGG2F.NbqAaKcoy7LeAHb1" from JTCK on comp "nxU_prpl_bldr.cpu0_inst.riscvsmall_inst.Ib1w9tjglomgvCgAIkup60xKDx.IbCuo3aEvk5cF25j4DHzkJGG2F.genblk3.jtag.jtagg_u" on site "TCONFIG_JTAG_CORE31"
+
+  PRIMARY  : 6 out of 16 (37%)
+
+Edge Clocks:
+
+  No edge clock selected.
+
+
+--------------- End of Clock Report ---------------
+
+
+I/O Usage Summary (final):
+   4 out of 51 (7.8%) SEIO33 sites used.
+   4 out of 19 (21.1%) bonded SEIO33 sites used.
+   Number of SEIO33 components: 4; differential: 0
+   Number of Vref pins used: 0
+   7 out of 32 (21.9%) SEIO18 sites used.
+   7 out of 32 (21.9%) bonded SEIO18 sites used.
+   Number of SEIO18 components: 7; differential: 0
+   0 out of 16 (0.0%) DIFFIO18 sites used.
+   0 out of 16 (0.0%) bonded DIFFIO18 sites used.
+   Number of DIFFIO18 components: 0; differential: 0
+
+I/O Bank Usage Summary:
++----------+---------------+------------+------------+------------+
+| I/O Bank | Usage         | Bank Vccio | Bank Vref1 | Bank Vref2 |
++----------+---------------+------------+------------+------------+
+| 0        | 4 / 8 ( 50%)  | 1.8V       | -          | -          |
+| 1        | 0 / 11 (  0%) | 3.3V       | -          | -          |
+| 2        | 5 / 16 ( 31%) | 1.8V       | -          | -          |
+| 3        | 2 / 12 ( 16%) | 1.2V       | -          | -          |
+| 4        | 0 / 4 (  0%)  | 1.8V       | -          | -          |
++----------+---------------+------------+------------+------------+
+
+Total Placer CPU time: 1 mins 59 secs , REAL time: 2 mins 
+
+
+Checksum -- place: f0226d5d778b5c5e7cd85706b21992f72b30dd74
+Writing design to file u23_lifcl_nx33u_evalbd_ibd_impl_1_par.dir/5_1.udb ...
+
+WARNING <71241014> - The PLL clock port [clk_25m_i] is assigned to a non-PLL clock dedicated pin [G7], which might affect the clock performance. Use dedicated PLL clock resources for the port.
+
+Start NBR router at 14:12:49 11/07/24
+
+*****************************************************************
+Info: NBR allows conflicts(one node used by more than one signal)
+      in the earlier iterations. In each iteration, it tries to  
+      solve the conflicts while keeping the critical connections 
+      routed as short as possible. The routing process is said to
+      be completed when no conflicts exist and all connections   
+      are routed.                                                
+Note: NBR uses a different method to calculate timing slacks. The
+      worst slack and total negative slack may not be the same as
+      that in timing report. You should always run the timing    
+      tool to verify your design.                                
+*****************************************************************
+
+Starting routing resource preassignment
+Preassignment Summary:
+--------------------------------------------------------------------------------
+3245 connections routed with dedicated routing resources
+6 global clock signals routed
+16348 connections routed (of 58132 total) (28.12%)
+---------------------------------------------------------
+Clock routing summary:
+Primary clocks (12 used out of 32 available):
+    Signal "clk_25m_i_c" (9, 25)
+       Clock   loads: 1     out of     1 routed (100.00%)
+    Signal "clk_pll_60m" (2, 18)
+       Clock   loads: 5255  out of  5255 routed (100.00%)
+    Signal "risc_v_system_reset_n_60m_i" (0, 16)
+       Control loads: 1650  out of  1650 routed (100.00%)
+    Signal "nxU_prpl_bldr.risc_v_system_reset_n" (10, 26)
+       Control loads: 1127  out of  1127 routed (100.00%)
+       Data    loads: 0     out of    40 routed (  0.00%)
+    Signal "nxU_prpl_bldr.cpu0_inst.riscvsmall_inst.Ib1w9tjglomgvCgAIkup60xKDx.IbCuo3aEvk5cF25j4DHzkJGG2F.NbqAaKcoy7LeAHb1" (3, 19)
+       Clock   loads: 58    out of    58 routed (100.00%)
+       Data    loads: 1     out of     1 routed (100.00%)
+    Signal "nxU_prpl_bldr.cpu0_inst.riscvsmall_inst.Ib1w9tjglomgvCgAIkup60xKDx.NbbICH" (4, 20)
+       Clock   loads: 83    out of    83 routed (100.00%)
+Other clocks:
+    Signal "pll_60m.lscc_pll_inst.intclkop_w"
+       Clock   loads: 1     out of     1 routed (100.00%)
+---------------------------------------------------------
+--------------------------------------------------------------------------------
+Completed routing resource preassignment
+Mixed mode activated
+Skipping device clock for pll_60m.lscc_pll_inst.gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+User defined clock being used
+WARNING <70001949> - The object rs_pll_locked_60m/reset_n_f1_reg.ff_inst/CLK in the option &quot;-from&quot; of constraint set_false_path -from [get_pins -hierarchical -regexp .*reset_n_f1.*] is not valid.
+WARNING <70001949> - The object rs_pll_locked_60m/reset_n_f1_reg.ff_inst/LSR in the option &quot;-from&quot; of constraint set_false_path -from [get_pins -hierarchical -regexp .*reset_n_f1.*] is not valid.
+WARNING <70001949> - The object rs_r5_sys_rstn_60m/reset_n_f1_reg.ff_inst/CLK in the option &quot;-from&quot; of constraint set_false_path -from [get_pins -hierarchical -regexp .*reset_n_f1.*] is not valid.
+WARNING <70001949> - The object rs_r5_sys_rstn_60m/reset_n_f1_reg.ff_inst/LSR in the option &quot;-from&quot; of constraint set_false_path -from [get_pins -hierarchical -regexp .*reset_n_f1.*] is not valid.
+WARNING <70001949> - The object rs_pll_locked_60m/reset_n_f2.ff_inst/DF in the option &quot;-from&quot; of constraint set_false_path -from [get_pins -hierarchical -regexp .*reset_n_f2.*] is not valid.
+WARNING <70001949> - The object rs_pll_locked_60m/reset_n_f2.ff_inst/CLK in the option &quot;-from&quot; of constraint set_false_path -from [get_pins -hierarchical -regexp .*reset_n_f2.*] is not valid.
+WARNING <70001949> - The object rs_pll_locked_60m/reset_n_f2.ff_inst/LSR in the option &quot;-from&quot; of constraint set_false_path -from [get_pins -hierarchical -regexp .*reset_n_f2.*] is not valid.
+WARNING <70001949> - The object rs_r5_sys_rstn_60m/reset_n_f2_RNIMHRC/A in the option &quot;-from&quot; of constraint set_false_path -from [get_pins -hierarchical -regexp .*reset_n_f2.*] is not valid.
+WARNING <70001949> - The object rs_r5_sys_rstn_60m/reset_n_f2.ff_inst/DF in the option &quot;-from&quot; of constraint set_false_path -from [get_pins -hierarchical -regexp .*reset_n_f2.*] is not valid.
+WARNING <70001949> - The object rs_r5_sys_rstn_60m/reset_n_f2.ff_inst/CLK in the option &quot;-from&quot; of constraint set_false_path -from [get_pins -hierarchical -regexp .*reset_n_f2.*] is not valid.
+WARNING <70001949> - The object rs_r5_sys_rstn_60m/reset_n_f2.ff_inst/LSR in the option &quot;-from&quot; of constraint set_false_path -from [get_pins -hierarchical -regexp .*reset_n_f2.*] is not valid.
+PLL user clock clk_60MHz phase shift 0 degrees
+    TimerIf::skewscore 0
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Routing in Serial Mode ......
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                
+Start NBR section for initial routing at 14:13:11 11/07/24
+Level 4, iteration 1
+        7218(0.47%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 1.606ns/0.000ns; real time: 49 secs 
+
+Info: Initial congestion level at 75.00% usage is 0
+Info: Initial congestion area  at 75.00% usage is 2 (0.05%)
+
+Start NBR section for normal routing at 14:13:38 11/07/24
+Level 4, iteration 1
+        5749(0.38%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 1.627ns/0.000ns; real time: 1 mins 11 secs 
+Level 4, iteration 2
+        1302(0.09%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 1.627ns/0.000ns; real time: 1 mins 21 secs 
+Level 4, iteration 3
+        495(0.03%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 1.627ns/0.000ns; real time: 1 mins 26 secs 
+Level 4, iteration 4
+        203(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 1.627ns/0.000ns; real time: 1 mins 30 secs 
+Level 4, iteration 5
+        67(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 1.627ns/0.000ns; real time: 1 mins 32 secs 
+Level 4, iteration 6
+        29(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 1.627ns/0.000ns; real time: 1 mins 34 secs 
+Level 4, iteration 7
+        14(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 1.627ns/0.000ns; real time: 1 mins 35 secs 
+Level 4, iteration 8
+        6(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 1.627ns/0.000ns; real time: 1 mins 37 secs 
+Level 4, iteration 9
+        0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 1.627ns/0.000ns; real time: 1 mins 37 secs 
+
+Start NBR section for setup/hold timing optimization with effort level 3 at 14:14:25 11/07/24
+Changing speed to m;   changing temperature to 0
+CRITICAL <62001129> - The number of hold timing errors (8416) exceeds the threshold value (250) so hold timing correction is disabled. You can use "-exp parHoldUnlimited=1" to force hold correction, but it may significantly increase the runtime.
+Changing speed to 10;   changing temperature to 85
+
+Start NBR section for post-routing at 14:14:37 11/07/24
+
+End NBR router with 0 unrouted connection(s)
+
+Checksum -- route: bee977d2a3f942267b99f8533c1266d26f7d90c
+
+Total CPU time 1 mins 57 secs 
+Total REAL time: 1 mins 58 secs 
+Completely routed.
+End of route.  58132 routed (100.00%); 0 unrouted.
+
+Writing design to file u23_lifcl_nx33u_evalbd_ibd_impl_1_par.dir/5_1.udb ...
+
+
+PAR_SUMMARY::Run status = Completed
+PAR_SUMMARY::Number of unrouted conns = 0
+PAR_SUMMARY::Estimated worst slack<setup/<ns>> = 1.627
+PAR_SUMMARY::Timing score<setup/<ns>> = 0.000
+PAR_SUMMARY::Estimated worst slack<hold/<ns>> = -1.536
+PAR_SUMMARY::Timing score<hold/<ns>> = 4008.307
+PAR_SUMMARY::Number of errors = 0
+
+Note: user must run 'timing' for timing closure signoff.
+
+Total CPU  Time: 4 mins 8 secs 
+Total REAL Time: 4 mins 11 secs 
+Peak Memory Usage: 974.00 MB
+
+
+par done!
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+Thank you for using Radiant. Total CPU/Elapsed time: 0 secs /4 mins 12 secs 
+
+timing -sethld -v 10 -u 10 -endpoints 10 -nperend 1 -sp 7_High-Performance_1.0V -hsp m   -pwrprd -html -rpt "u23_lifcl_nx33u_evalbd_ibd_impl_1.twr" "u23_lifcl_nx33u_evalbd_ibd_impl_1.udb" 
+timing -sethld -v 10 -u 10 -endpoints 10 -nperend 1 -sp 7_High-Performance_1.0V -hsp m -pwrprd -html -rpt u23_lifcl_nx33u_evalbd_ibd_impl_1.twr u23_lifcl_nx33u_evalbd_ibd_impl_1.udb -gui -msgset C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/promote.xml
+Starting design reading...
+Loading device for application GENERIC from file 'jd5u27a.nph' in environment: C:/lscc/radiant/2024.2/ispfpga.
+Package Status:                     Final          Version 2.
+Performance Hardware Data Status:   Final          Version 1.6.
+Loading udb::Database ...
+Design:  u23_lifcl_nx33u_evalbd_ibd
+Family:  LIFCL
+Device:  LIFCL-33U
+Package: FCCSP104
+Performance Grade:   7_High-Performance_1.0V
+
+
+
+Successfully loading udb, 3.06 seconds
+
+Initializing timer
+Starting design annotation....
+Skipping device clock for pll_60m.lscc_pll_inst.gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+User defined clock being used
+WARNING <70001949> - The object rs_pll_locked_60m/reset_n_f1_reg.ff_inst/CLK in the option &quot;-from&quot; of constraint set_false_path -from [get_pins -hierarchical -regexp .*reset_n_f1.*] is not valid.
+WARNING <70001949> - The object rs_pll_locked_60m/reset_n_f1_reg.ff_inst/LSR in the option &quot;-from&quot; of constraint set_false_path -from [get_pins -hierarchical -regexp .*reset_n_f1.*] is not valid.
+WARNING <70001949> - The object rs_r5_sys_rstn_60m/reset_n_f1_reg.ff_inst/CLK in the option &quot;-from&quot; of constraint set_false_path -from [get_pins -hierarchical -regexp .*reset_n_f1.*] is not valid.
+WARNING <70001949> - The object rs_r5_sys_rstn_60m/reset_n_f1_reg.ff_inst/LSR in the option &quot;-from&quot; of constraint set_false_path -from [get_pins -hierarchical -regexp .*reset_n_f1.*] is not valid.
+WARNING <70001949> - The object rs_pll_locked_60m/reset_n_f2.ff_inst/DF in the option &quot;-from&quot; of constraint set_false_path -from [get_pins -hierarchical -regexp .*reset_n_f2.*] is not valid.
+WARNING <70001949> - The object rs_pll_locked_60m/reset_n_f2.ff_inst/CLK in the option &quot;-from&quot; of constraint set_false_path -from [get_pins -hierarchical -regexp .*reset_n_f2.*] is not valid.
+WARNING <70001949> - The object rs_pll_locked_60m/reset_n_f2.ff_inst/LSR in the option &quot;-from&quot; of constraint set_false_path -from [get_pins -hierarchical -regexp .*reset_n_f2.*] is not valid.
+WARNING <70001949> - The object rs_r5_sys_rstn_60m/reset_n_f2_RNIMHRC/A in the option &quot;-from&quot; of constraint set_false_path -from [get_pins -hierarchical -regexp .*reset_n_f2.*] is not valid.
+WARNING <70001949> - The object rs_r5_sys_rstn_60m/reset_n_f2.ff_inst/DF in the option &quot;-from&quot; of constraint set_false_path -from [get_pins -hierarchical -regexp .*reset_n_f2.*] is not valid.
+WARNING <70001949> - The object rs_r5_sys_rstn_60m/reset_n_f2.ff_inst/CLK in the option &quot;-from&quot; of constraint set_false_path -from [get_pins -hierarchical -regexp .*reset_n_f2.*] is not valid.
+WARNING <70001949> - The object rs_r5_sys_rstn_60m/reset_n_f2.ff_inst/LSR in the option &quot;-from&quot; of constraint set_false_path -from [get_pins -hierarchical -regexp .*reset_n_f2.*] is not valid.
+PLL user clock clk_60MHz phase shift 0 degrees
+7_High-Performance_1.0V
+
+Starting full timing analysis...
+Performance Hardware Data Status:   Final          Version 1.6.
+Connections ignored  5375  counted  48549  covered  47949
+Changing speed to 7_High-Performance_1.0V;   changing temperature to 0
+Changing speed to m;   changing temperature to 0
+
+STA Runtime and Peak Memory Usage :
+Total CPU Time: 21 secs 
+Total REAL Time: 22 secs 
+Peak Memory Usage: 768 MB
+
+ 21.550439s wall, 19.203125s user + 1.953125s system = 21.156250s CPU (98.2%)
+
+
+tmcheck -twr "u23_lifcl_nx33u_evalbd_ibd_impl_1.twr"  
+
+pnmainc -log pnmain "u23_lifcl_nx33u_evalbd_ibd_impl_1_bit.tcl"
+Loading u23_lifcl_nx33u_evalbd_ibd_impl_1.udb ...
+Loading device for application GENERIC from file 'jd5u27a.nph' in environment: C:/lscc/radiant/2024.2/ispfpga.
+Package Status:                     Final          Version 2.
+Performance Hardware Data Status:   Final          Version 1.6.
+
+
+
+Design:  u23_lifcl_nx33u_evalbd_ibd
+Family:  LIFCL
+Device:  LIFCL-33U
+Package: FCCSP104
+Performance Grade:   7_High-Performance_1.0V
+
+Constraint Summary
+   Total number of constraints: 33
+   Total number of constraints dropped: 0
+
+Successfully loading design udb and device data from disks and to up-layer in CPU time: 7 secs , REAL time: 8 secs 
+
+
+
+BITGEN: Bitstream Generator Radiant Software (64-bit) 2024.2.b.23.0
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+
+Running DRC.
+DRC detected 0 errors and 0 warnings.
+
+Preference Summary:
++---------------------------------+---------------------------------+
+|  Preference                     |  Current Setting                |
++---------------------------------+---------------------------------+
+|                        DONE_EX  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                        DONE_OD  |                            ON*  |
++---------------------------------+---------------------------------+
+|                  CONFIG_SECURE  |                           OFF*  |
++---------------------------------+---------------------------------+
+|               EARLY_IO_RELEASE  |                           OFF*  |
++---------------------------------+---------------------------------+
+|                  REGISTER_INIT  |                           ON**  |
++---------------------------------+---------------------------------+
+|   MASTER_PREAMBLE_TIMER_CYCLES  |                        600000*  |
++---------------------------------+---------------------------------+
+|                 SLAVE_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                 SLAVE_I2C_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                 SLAVE_I3C_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                      JTAG_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                      DONE_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                     INITN_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                  PROGRAMN_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                        TRANSFR  |                           OFF*  |
++---------------------------------+---------------------------------+
+|                MASTER_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                     MCCLK_FREQ  |                          3.5**  |
++---------------------------------+---------------------------------+
+|                COMPRESS_CONFIG  |                           OFF*  |
++---------------------------------+---------------------------------+
+|            BACKGROUND_RECONFIG  |                           OFF*  |
++---------------------------------+---------------------------------+
+|                  CONFIG_IOSLEW  |                          SLOW*  |
++---------------------------------+---------------------------------+
+|                        WAKE_UP  |              ENABLE_DONE_SYNC*  |
++---------------------------------+---------------------------------+
+|                       BOOTMODE  |                          DUAL*  |
++---------------------------------+---------------------------------+
+|         CONFIGIO_VOLTAGE_BANK0  |                            1.8  |
++---------------------------------+---------------------------------+
+|         CONFIGIO_VOLTAGE_BANK1  |                            3.3  |
++---------------------------------+---------------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+
+Creating bit map...
+ 
+Bitstream Status: Final           Version 2.3.
+ 
+WARNING <1009991> - Invalid primitive property name in BFD: USB23_CORE.GSR_DIS
+Saving bit stream in "C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/impl_1/u23_lifcl_nx33u_evalbd_ibd_impl_1.bit".
+Bitstream generation complete!
+
+Note: Found debugger inserted in the design
+
+Total CPU Time: 34 secs 
+Total REAL Time: 35 secs 
+Peak Memory Usage: 718 MB
+
+Thank you for using Radiant. Total CPU/Elapsed time: 0 secs /36 secs 

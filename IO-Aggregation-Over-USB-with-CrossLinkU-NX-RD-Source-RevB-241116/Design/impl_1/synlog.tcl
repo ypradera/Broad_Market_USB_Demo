@@ -1,0 +1,1 @@
+run_tcl -fg u23_lifcl_nx33u_evalbd_ibd_impl_1_synplify.tcl

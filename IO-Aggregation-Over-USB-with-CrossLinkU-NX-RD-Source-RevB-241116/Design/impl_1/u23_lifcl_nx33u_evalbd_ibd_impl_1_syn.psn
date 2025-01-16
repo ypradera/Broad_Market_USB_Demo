@@ -1,0 +1,115 @@
+POSTSYN: Post Synthesis Process Radiant Software (64-bit) 2024.2.b.23.0
+Command Line: postsyn -a LIFCL -p LIFCL-33U -t FCCSP104 -sp 7_High-Performance_1.0V -oc Commercial -top -w -o u23_lifcl_nx33u_evalbd_ibd_impl_1_syn.udb -ldc u23_lifcl_nx33u_evalbd_ibd_impl_1.ldc -gui -msgset C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/promote.xml u23_lifcl_nx33u_evalbd_ibd_impl_1.vm 
+   Architecture:     LIFCL
+   Device:           LIFCL-33U
+   Package:          FCCSP104
+   Performance:      7_High-Performance_1.0V
+Reading input file 'u23_lifcl_nx33u_evalbd_ibd_impl_1.vm' ...
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_311' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_312' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_313' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_314' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_315' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_316' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_317' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_318' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_319' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_320' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_321' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_322' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_323' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_324' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_325' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_326' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_327' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_329' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_330' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_331' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_332' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_333' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_334' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_335' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_336' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_337' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_338' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_339' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_340' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_341' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_342' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_343' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_344' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_345' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_3507' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_3509' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_3511' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_3513' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_3515' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_3517' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_3519' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_3521' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_3523' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_3525' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_3527' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_3529' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_3531' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_3533' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_3535' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_3801' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_3802' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_3803' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_3805' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_3807' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_4000' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_4001' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_4002' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_4003' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_4004' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_4005' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_4006' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_4007' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_4008' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_4009' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_4010' in Module 'secured_object_88' cannot be supported. It will be ignored.
+WARNING <35811117> - Attribute 'keep' on Wire 'secured_signal_88_4011' in Module 'secured_object_88' cannot be supported. It will be ignored.
+Reading constraint file 'u23_lifcl_nx33u_evalbd_ibd_impl_1.ldc' ...
+WARNING <1026001> - u23_lifcl_nx33u_evalbd_ibd_impl_1.ldc (57) : No port matched 'scl_io'.
+WARNING <1027013> - No port matched 'scl_io'.
+WARNING <1026001> - u23_lifcl_nx33u_evalbd_ibd_impl_1.ldc (57) : Can't resolve object 'scl_io' in constraint 'ldc_set_port -iobuf {PULLMODE=UP} [get_ports scl_io]'.
+WARNING <1011001> - Remove invalid constraint 'ldc_set_port -iobuf {PULLMODE=UP} [get_ports scl_io]'.
+Removing unused logic ...
+INFO <35811146> - Signal rs_pll_locked_60m/reset_n_f2.intGnd undriven or does not drive anything - clipped
+INFO <35811146> - Signal rs_pll_locked_60m/reset_n_f1_reg.intGnd undriven or does not drive anything - clipped
+INFO <35811146> - Signal rs_r5_sys_rstn_60m/reset_n_f2.intGnd undriven or does not drive anything - clipped
+INFO <35811146> - Signal rs_r5_sys_rstn_60m/reset_n_f1_reg.intGnd undriven or does not drive anything - clipped
+INFO <35811146> - Signal nxU_prpl_bldr/HW_ver_gpio_inst/lscc_gpio_inst/genblk1.lscc_gpio_lmmi_0/int_type_r_reg[0].intGnd undriven or does not drive anything - clipped
+INFO <35811146> - Signal nxU_prpl_bldr/HW_ver_gpio_inst/lscc_gpio_inst/genblk1.lscc_gpio_lmmi_0/int_type_r_reg[1].intGnd undriven or does not drive anything - clipped
+INFO <35811146> - Signal nxU_prpl_bldr/HW_ver_gpio_inst/lscc_gpio_inst/genblk1.lscc_gpio_lmmi_0/int_type_r_reg[2].intGnd undriven or does not drive anything - clipped
+INFO <35811146> - Signal nxU_prpl_bldr/HW_ver_gpio_inst/lscc_gpio_inst/genblk1.lscc_gpio_lmmi_0/int_type_r_reg[3].intGnd undriven or does not drive anything - clipped
+INFO <35811146> - Signal nxU_prpl_bldr/HW_ver_gpio_inst/lscc_gpio_inst/genblk1.lscc_gpio_lmmi_0/int_type_r_reg[4].intGnd undriven or does not drive anything - clipped
+INFO <35811146> - Signal nxU_prpl_bldr/HW_ver_gpio_inst/lscc_gpio_inst/genblk1.lscc_gpio_lmmi_0/int_type_r_reg[5].intGnd undriven or does not drive anything - clipped
+INFO <35811149> - ... More signals are undriven or does not drive anything - clipped
+INFO <35811145> - Instance nxU_prpl_bldr/gpio0_inst/lscc_gpio_inst/genblk1.lscc_gpio_lmmi_0/genblk2[1].genblk1.genblk1.u_BB_data.PIC_inst_out is optimized away.
+INFO <35811145> - Instance nxU_prpl_bldr/gpio0_inst/lscc_gpio_inst/genblk1.lscc_gpio_lmmi_0/genblk2[1].genblk1.genblk1.u_BB_data.PIC_inst_tristate is optimized away.
+INFO <35811145> - Instance nxU_prpl_bldr/gpio0_inst/lscc_gpio_inst/genblk1.lscc_gpio_lmmi_0/genblk2[0].genblk1.genblk1.u_BB_data.PIC_inst_out is optimized away.
+INFO <35811145> - Instance nxU_prpl_bldr/gpio0_inst/lscc_gpio_inst/genblk1.lscc_gpio_lmmi_0/genblk2[0].genblk1.genblk1.u_BB_data.PIC_inst_tristate is optimized away.
+INFO <35811145> - Instance axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/ext_mas_blk[0].u_ext_mas_port/WO_WR_BLK.EXT_MAS_CDC_DIS_BLK.CUSTOM_FF_BLK.u_ext_mas_awd_fifo/u_gen_memfile/Ram_ram_11.dpram_inst_0 is optimized away.
+INFO <35811145> - Instance axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/ext_mas_blk[0].u_ext_mas_port/WO_WR_BLK.EXT_MAS_CDC_DIS_BLK.CUSTOM_FF_BLK.u_ext_mas_awd_fifo/u_gen_memfile/Ram_ram_10.dpram_inst_1 is optimized away.
+INFO <35811145> - Instance axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/ext_mas_blk[0].u_ext_mas_port/WO_WR_BLK.EXT_MAS_CDC_DIS_BLK.CUSTOM_WDAT_FF_BLK.u_ext_mas_wr_fifo/u_gen_memfile/Ram_ram_17.dpram_inst_1 is optimized away.
+INFO <35811145> - Instance axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/ext_mas_blk[0].u_ext_mas_port/WO_WR_BLK.CUSTOM_BRESP_FF_BLK.u_mas_wresp_fifo/u_gen_memfile/Ram_ram_1.dpram_inst_1 is optimized away.
+INFO <35811145> - Instance axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/ext_mas_blk[0].u_ext_mas_port/RO_WR_BLK.EXT_MAS_CDC_DIS_BLK.CUSTOM_AR_FF_BLK.u_ext_mas_ard_fifo/u_gen_memfile/Ram_ram_11.dpram_inst_0 is optimized away.
+INFO <35811145> - Instance axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/ext_mas_blk[0].u_ext_mas_port/RO_WR_BLK.EXT_MAS_CDC_DIS_BLK.CUSTOM_AR_FF_BLK.u_ext_mas_ard_fifo/u_gen_memfile/Ram_ram_10.dpram_inst_1 is optimized away.
+INFO <35811148> - ... More instances are optimized away.
+Starting design annotation....
+WARNING <70001944> - No source clock for
+	generated clock	create_generated_clock -name {clk_pll_60m} -source [get_pins {pll_60m/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK}] -multiply_by 12 -divide_by 5 [get_pins {pll_60m/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP }] .
+ 
+Constraint Summary:
+   Total number of constraints: 4
+   Total number of constraints dropped: 1
+ 
+Writing output file 'u23_lifcl_nx33u_evalbd_ibd_impl_1_syn.udb'.
+POSTSYN finished successfully.
+Total CPU Time: 23 secs 
+Total REAL Time: 24 secs 
+Peak Memory Usage: 352 MB
+Checksum -- postsyn: b48a3e1991f869b73095670a6a95441a5e1a3f24

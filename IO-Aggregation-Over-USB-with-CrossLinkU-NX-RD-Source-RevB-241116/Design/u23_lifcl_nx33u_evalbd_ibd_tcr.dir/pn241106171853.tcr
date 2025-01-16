@@ -1,0 +1,6 @@
+#Start recording tcl command: 11/6/2024 17:11:24
+#Project Location: C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design; Project name: u23_lifcl_nx33u_evalbd_ibd
+prj_open "C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/u23_lifcl_nx33u_evalbd_ibd.rdf"
+prj_add_source "C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/ip/cpu0/2.7.0/cpu0.ipx"
+prj_remove_source "C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/ip/cpu0/2.5.0/cpu0.ipx"
+#Stop recording: 11/6/2024 17:18:53

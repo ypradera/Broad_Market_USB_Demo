@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *************************************************************************************
+FILE DESCRIPTION
+The file contains the job information from compiler to be displayed as part of the summary report.
+*******************************************************************************************-->
+
+<job_run_status name="compiler"> 
+  <report_link name="Detailed report">
+    <data>C:\Users\whan\Documents\AppProject\USB_LIFCL_NX33U\RD_IOA_USB2_REVB\Design\impl_1\synlog\u23_lifcl_nx33u_evalbd_ibd_impl_1_compiler.srr</data>
+    <title>Synopsys HDL Compiler</title>
+  </report_link> 
+  <job_status>
+    <data>Completed    </data>
+  </job_status>
+<job_info> 
+			<info name="Notes">
+  <data>400</data>
+  <report_link name="more"><data>C:\Users\whan\Documents\AppProject\USB_LIFCL_NX33U\RD_IOA_USB2_REVB\Design\impl_1\synlog\report\u23_lifcl_nx33u_evalbd_ibd_impl_1_compiler_notes.txt</data></report_link>
+  </info>
+			<info name="Warnings">
+  <data>373</data>
+  <report_link name="more"><data>C:\Users\whan\Documents\AppProject\USB_LIFCL_NX33U\RD_IOA_USB2_REVB\Design\impl_1\synlog\report\u23_lifcl_nx33u_evalbd_ibd_impl_1_compiler_warnings.txt</data></report_link>
+  </info>
+			<info name="Errors">
+  <data>0</data>
+  <report_link name="more"><data>C:\Users\whan\Documents\AppProject\USB_LIFCL_NX33U\RD_IOA_USB2_REVB\Design\impl_1\synlog\report\u23_lifcl_nx33u_evalbd_ibd_impl_1_compiler_errors.txt</data></report_link>
+  </info>
+			<info name="CPU Time">
+  <data>-</data>
+  </info>
+			<info name="Real Time">
+  <data>00h:02m:57s</data>
+  </info>
+			<info name="Peak Memory">
+  <data>-</data>
+  </info>
+			<info name="Date &amp;Time">
+  <data type="timestamp">1730960078</data>
+  </info>
+			</job_info>
+</job_run_status>

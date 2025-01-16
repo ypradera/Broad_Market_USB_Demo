@@ -1,0 +1,117 @@
+<html><body><samp><pre>
+<!@TC:1714175345>
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: U-2023.03LR-SP1-1
+Install: C:\lscc\radiant\2023.2\synpbase
+OS: Windows 10 or later
+Hostname: L101448
+
+Implementation : impl_1
+
+# Written on Fri Apr 26 16:49:05 2024
+
+##### DESIGN INFO #######################################################
+
+Top View:                "u23_lifcl_nx33u_evalbd_ibd"
+Constraint File(s):      "C:\Users\whan\Documents\AppProject\USB_LIFCL_NX33U\RD_IOA_USB2\Design\impl_1\u23_lifcl_nx33u_evalbd_ibd_impl_1_cpe.ldc"
+
+
+
+
+##### SUMMARY ############################################################
+
+Found 0 issues in 0 out of 4 constraints
+
+
+##### DETAILS ############################################################
+
+
+
+<a name=clockRelationships62></a>Clock Relationships</a>
+*******************
+
+Starting                                                                                          Ending                                                                                            |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                                                                            System                                                                                            |     5.000            |     No paths         |     No paths         |     No paths                         
+System                                                                                            pll_60m_ipgen_lscc_pll_Z1_layer0|clkop_o_inferred_clock                                           |     5.000            |     No paths         |     No paths         |     No paths                         
+System                                                                                            cpu0_ipgen_vex_jtag_bridge_0s_LIFCL_14s_0s_0b1_0b0_0b0_0x04000|bqAaKcoy7LeAHb1_inferred_clock     |     5.000            |     No paths         |     5.000            |     No paths                         
+pll_60m_ipgen_lscc_pll_Z1_layer0|clkop_o_inferred_clock                                           System                                                                                            |     5.000            |     No paths         |     No paths         |     No paths                         
+pll_60m_ipgen_lscc_pll_Z1_layer0|clkop_o_inferred_clock                                           pll_60m_ipgen_lscc_pll_Z1_layer0|clkop_o_inferred_clock                                           |     5.000            |     No paths         |     No paths         |     No paths                         
+pll_60m_ipgen_lscc_pll_Z1_layer0|clkop_o_inferred_clock                                           cpu0_ipgen_vex_jtag_bridge_0s_LIFCL_14s_0s_0b1_0b0_0b0_0x04000|bbICH_inferred_clock               |     Diff grp         |     No paths         |     No paths         |     No paths                         
+cpu0_ipgen_vex_jtag_bridge_0s_LIFCL_14s_0s_0b1_0b0_0b0_0x04000|bbICH_inferred_clock               System                                                                                            |     No paths         |     No paths         |     No paths         |     5.000                            
+cpu0_ipgen_vex_jtag_bridge_0s_LIFCL_14s_0s_0b1_0b0_0b0_0x04000|bbICH_inferred_clock               pll_60m_ipgen_lscc_pll_Z1_layer0|clkop_o_inferred_clock                                           |     Diff grp         |     No paths         |     No paths         |     No paths                         
+cpu0_ipgen_vex_jtag_bridge_0s_LIFCL_14s_0s_0b1_0b0_0b0_0x04000|bbICH_inferred_clock               cpu0_ipgen_vex_jtag_bridge_0s_LIFCL_14s_0s_0b1_0b0_0b0_0x04000|bbICH_inferred_clock               |     5.000            |     No paths         |     2.500            |     No paths                         
+cpu0_ipgen_vex_jtag_bridge_0s_LIFCL_14s_0s_0b1_0b0_0b0_0x04000|bqAaKcoy7LeAHb1_inferred_clock     System                                                                                            |     5.000            |     No paths         |     No paths         |     No paths                         
+cpu0_ipgen_vex_jtag_bridge_0s_LIFCL_14s_0s_0b1_0b0_0b0_0x04000|bqAaKcoy7LeAHb1_inferred_clock     cpu0_ipgen_vex_jtag_bridge_0s_LIFCL_14s_0s_0b1_0b0_0b0_0x04000|bbICH_inferred_clock               |     No paths         |     No paths         |     No paths         |     Diff grp                         
+cpu0_ipgen_vex_jtag_bridge_0s_LIFCL_14s_0s_0b1_0b0_0b0_0x04000|bqAaKcoy7LeAHb1_inferred_clock     cpu0_ipgen_vex_jtag_bridge_0s_LIFCL_14s_0s_0b1_0b0_0b0_0x04000|bqAaKcoy7LeAHb1_inferred_clock     |     5.000            |     5.000            |     2.500            |     2.500                            
+===============================================================================================================================================================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+<a name=UnconstrainedStartEndPointsCCK63></a>Unconstrained Start/End Points</a>
+******************************
+
+p:REFINCLKEXTM_i
+p:REFINCLKEXTP_i
+p:clk_25m_i
+p:dm_z (bidir end point)
+p:dm_z (bidir start point)
+p:dp_z (bidir end point)
+p:dp_z (bidir start point)
+p:gpio_0_z[0] (bidir end point)
+p:gpio_0_z[0] (bidir start point)
+p:gpio_0_z[1] (bidir end point)
+p:gpio_0_z[1] (bidir start point)
+p:i2cm_scl (bidir end point)
+p:i2cm_scl (bidir start point)
+p:i2cm_sda (bidir end point)
+p:i2cm_sda (bidir start point)
+p:spim_miso_i
+p:spim_mosi_o
+p:spim_sclk_o
+p:spim_ssn_o
+p:u2_reset_ext_z (bidir end point)
+p:u2_reset_ext_z (bidir start point)
+p:u3_rxm_i
+p:u3_rxp_i
+p:u3_txm_o
+p:u3_txp_o
+p:uart_rxd_i
+p:uart_txd_o
+p:vbus_z (bidir end point)
+p:vbus_z (bidir start point)
+
+
+<a name=InapplicableconstraintsCCK64></a>Inapplicable constraints</a>
+************************
+
+(none)
+
+
+<a name=ApplicableConstraintsWithIssuesCCK65></a>Applicable constraints with issues</a>
+**********************************
+
+(none)
+
+
+<a name=ConstraintsWithMatchingWildcardExpressionsCCK66></a>Constraints with matching wildcard expressions</a>
+**********************************************
+
+(none)
+
+
+<a name=LibraryReportCCK67></a>Library Report</a>
+**************
+
+
+# End of Constraint Checker Report
+
+</pre></samp></body></html>
+

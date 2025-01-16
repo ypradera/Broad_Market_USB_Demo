@@ -1,0 +1,7 @@
+C:\lscc\radiant\2024.2\synpbase\bin64\syn_nfilter.exe  -link  -top  u23_lifcl_nx33u_evalbd_ibd  -multisrs  C:\Users\whan\Documents\AppProject\USB_LIFCL_NX33U\RD_IOA_USB2_REVB\Design\impl_1\synwork\u23_lifcl_nx33u_evalbd_ibd_impl_1_comp.srs  -osyn  C:\Users\whan\Documents\AppProject\USB_LIFCL_NX33U\RD_IOA_USB2_REVB\Design\impl_1\synwork\u23_lifcl_nx33u_evalbd_ibd_impl_1_mult.srs  -log  C:\Users\whan\Documents\AppProject\USB_LIFCL_NX33U\RD_IOA_USB2_REVB\Design\impl_1\synlog\u23_lifcl_nx33u_evalbd_ibd_impl_1_multi_srs_gen.srr 
+relcom:..\..\..\..\..\..\..\..\..\lscc\radiant\2024.2\synpbase\bin64\syn_nfilter.exe -link -top u23_lifcl_nx33u_evalbd_ibd -multisrs ..\synwork\u23_lifcl_nx33u_evalbd_ibd_impl_1_comp.srs -osyn ..\synwork\u23_lifcl_nx33u_evalbd_ibd_impl_1_mult.srs -log ..\synlog\u23_lifcl_nx33u_evalbd_ibd_impl_1_multi_srs_gen.srr
+rc:0 success:1 runtime:8
+file:..\synwork\u23_lifcl_nx33u_evalbd_ibd_impl_1_comp.srs|io:i|time:1730960078|size:2244669|exec:0|csum:EA7BA862BB03447E801F81E2F0D8D103
+file:..\synwork\u23_lifcl_nx33u_evalbd_ibd_impl_1_mult.srs|io:o|time:1730960087|size:18027|exec:0|csum:
+file:..\synlog\u23_lifcl_nx33u_evalbd_ibd_impl_1_multi_srs_gen.srr|io:o|time:1730960087|size:1286|exec:0|csum:
+file:..\..\..\..\..\..\..\..\..\lscc\radiant\2024.2\synpbase\bin64\syn_nfilter.exe|io:i|time:1727995156|size:10549248|exec:1|csum:3501020B7559310BA5AA5C00F98234AE

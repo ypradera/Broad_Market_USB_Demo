@@ -1,0 +1,6 @@
+##================================================================================##
+## Copy these constraints to your top-level pdc and replace path with actual path 
+##================================================================================##
+
+set CLK_PERIOD 16.7
+create_clock -name {clk_i} -period $CLK_PERIOD [get_ports clk_i]

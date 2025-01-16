@@ -1,0 +1,34 @@
+set device "LIFCL-33U"
+set device_int "jd5u27a"
+set package "FCCSP104"
+set package_int "FCCSP104"
+set speed "7_High-Performance_1.0V"
+set speed_int "10"
+set operation "Commercial"
+set family "LIFCL"
+set architecture "je5d00"
+set partnumber "LIFCL-33U-7CTG104C"
+set WRAPPER_INST "lscc_spi_master_inst"
+set INTERFACE "APB"
+set SLAVE_COUNT 1
+set FAMILY "LIFCL"
+set LSB_FIRST 0
+set ONLY_WRITE 0
+set DATA_WIDTH 8
+set DATA_WIDTH_RESET 0
+set SSNP 1
+set CPOL 0
+set CPHA 0
+set SSPOL "8'h00"
+set SPI_EN 0
+set BB_PRIM_EN 0
+set FIFO_DEPTH 256
+set FIFO_IMPL "EBR"
+set TX_FIFO_AE_FLAG 128
+set RX_FIFO_AF_FLAG 128
+set SYS_CLOCK_FREQ 60.000000
+set PRESCALER 30
+set ACTUAL_CLOCK_FREQ 1.000000
+
+
+## Refer to the generated Post-Synthesis constraints at eval/constraint.pdc

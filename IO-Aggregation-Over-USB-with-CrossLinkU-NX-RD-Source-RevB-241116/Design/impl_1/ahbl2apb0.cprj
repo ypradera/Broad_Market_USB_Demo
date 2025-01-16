@@ -1,0 +1,7 @@
+-ver "C:/lscc/radiant/2024.2/ip/pmi/pmi_lifcl.v"
+-lib pmi -vhd "C:/lscc/radiant/2024.2/ip/pmi/pmi_lifcl.vhd"
+-sver "C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/module/ahbl2apb0/1.1.2/rtl/ahbl2apb0.sv"
+-path "C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/module/ahbl2apb0/1.1.2" "C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design"
+-top ahbl2apb0
+-a "LIFCL"
+-t "LIFCL-33U"

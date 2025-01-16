@@ -1,0 +1,3 @@
+@E: CS168 :"C:\Users\whan\Documents\AppProject\USB_LIFCL_NX33U\RefDes_USBIOA\Design\rtl\u23_lifcl_nx33u_evalbd_ibd.sv":319:46:319:46|Port i2cs0_scl does not exist
+@E::Errors while synthesizing top module u23_lifcl_nx33u_evalbd_ibd.
+

@@ -1,0 +1,511 @@
+#OPTIONS:"|-mixedhdl|-modhint|C:\\Users\\whan\\Documents\\AppProject\\USB_LIFCL_NX33U\\RD_IOA_USB2_REVB\\Design\\impl_1\\synwork\\_verilog_hintfile|-top|u23_lifcl_nx33u_evalbd_ibd|-layerid|0|-orig_srs|C:\\Users\\whan\\Documents\\AppProject\\USB_LIFCL_NX33U\\RD_IOA_USB2_REVB\\Design\\impl_1\\synwork\\u23_lifcl_nx33u_evalbd_ibd_impl_1_comp.srs|-prodtype|synplify_pro|-dspmac|-fixsmult|-infer_seqShift|-nram|-sdff_counter|-divnmod|-nostructver|-lattice|-I|C:\\Users\\whan\\Documents\\AppProject\\USB_LIFCL_NX33U\\RD_IOA_USB2_REVB\\Design|-I|C:\\Users\\whan\\Documents\\AppProject\\USB_LIFCL_NX33U\\RD_IOA_USB2_REVB\\Design\\rtl\\pll\\pll_60m|-I|C:\\Users\\whan\\Documents\\AppProject\\USB_LIFCL_NX33U\\RD_IOA_USB2_REVB\\Design\\u23_lifclu_nx33_prpl_bldr\\u23_lifclu_nx33_prpl_bldr\\lib\\latticesemi.com\\ip\\cpu0\\2.7.0|-I|C:\\Users\\whan\\Documents\\AppProject\\USB_LIFCL_NX33U\\RD_IOA_USB2_REVB\\Design\\u23_lifclu_nx33_prpl_bldr\\u23_lifclu_nx33_prpl_bldr\\lib\\latticesemi.com\\ip\\gpio0\\1.6.2|-I|C:\\Users\\whan\\Documents\\AppProject\\USB_LIFCL_NX33U\\RD_IOA_USB2_REVB\\Design\\u23_lifclu_nx33_prpl_bldr\\u23_lifclu_nx33_prpl_bldr\\lib\\latticesemi.com\\ip\\HW_ver_gpio\\1.6.2|-I|C:\\Users\\whan\\Documents\\AppProject\\USB_LIFCL_NX33U\\RD_IOA_USB2_REVB\\Design\\u23_lifclu_nx33_prpl_bldr\\u23_lifclu_nx33_prpl_bldr\\lib\\latticesemi.com\\ip\\lscc_i2cm1\\2.0.1|-I|C:\\Users\\whan\\Documents\\AppProject\\USB_LIFCL_NX33U\\RD_IOA_USB2_REVB\\Design\\u23_lifclu_nx33_prpl_bldr\\u23_lifclu_nx33_prpl_bldr\\lib\\latticesemi.com\\ip\\lscc_spim1\\2.1.0|-I|C:\\Users\\whan\\Documents\\AppProject\\USB_LIFCL_NX33U\\RD_IOA_USB2_REVB\\Design\\u23_lifclu_nx33_prpl_bldr\\u23_lifclu_nx33_prpl_bldr\\lib\\latticesemi.com\\ip\\sysmem0\\2.3.0|-I|C:\\Users\\whan\\Documents\\AppProject\\USB_LIFCL_NX33U\\RD_IOA_USB2_REVB\\Design\\u23_lifclu_nx33_prpl_bldr\\u23_lifclu_nx33_prpl_bldr\\lib\\latticesemi.com\\ip\\uart0\\1.3.0|-I|C:\\Users\\whan\\Documents\\AppProject\\USB_LIFCL_NX33U\\RD_IOA_USB2_REVB\\Design\\u23_lifclu_nx33_prpl_bldr\\u23_lifclu_nx33_prpl_bldr\\lib\\latticesemi.com\\module\\ahbl0\\1.3.2|-I|C:\\Users\\whan\\Documents\\AppProject\\USB_LIFCL_NX33U\\RD_IOA_USB2_REVB\\Design\\u23_lifclu_nx33_prpl_bldr\\u23_lifclu_nx33_prpl_bldr\\lib\\latticesemi.com\\module\\ahbl2apb0\\1.1.2|-I|C:\\Users\\whan\\Documents\\AppProject\\USB_LIFCL_NX33U\\RD_IOA_USB2_REVB\\Design\\u23_lifclu_nx33_prpl_bldr\\u23_lifclu_nx33_prpl_bldr\\lib\\latticesemi.com\\module\\apb0\\1.2.1|-I|C:\\Users\\whan\\Documents\\AppProject\\USB_LIFCL_NX33U\\RD_IOA_USB2_REVB\\Design\\u23_lifclu_nx33_prpl_bldr\\u23_lifclu_nx33_prpl_bldr\\lib\\latticesemi.com\\module\\u23_config_intf_feedthrough\\1.0.0|-I|C:\\Users\\whan\\Documents\\AppProject\\USB_LIFCL_NX33U\\RD_IOA_USB2_REVB\\Design\\impl_1\\|-I|C:\\lscc\\radiant\\2024.2\\synpbase\\lib|-sysv|-devicelib|C:\\lscc\\radiant\\2024.2\\synpbase\\lib\\lucent\\lifcl.v|-devicelib|C:\\lscc\\radiant\\2024.2\\synpbase\\lib\\lucent\\pmi_def.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-D_MULTIPLE_FILE_COMPILATION_UNIT_|-lib|work|-lib|work|-fsysv|-lib|work|-fsysv|-lib|work|-fsysv|-lib|work|-fsysv|-lib|work|-fv2001|-lib|work|-fsysv|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fsysv|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fsysv|-lib|work|-fsysv|-lib|work|-fsysv|-lib|work|-fsysv|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001"
+#CUR:"C:\\lscc\\radiant\\2024.2\\synpbase\\bin64\\c_ver.exe":1727995158
+#CUR:"C:\\Users\\whan\\Documents\\AppProject\\USB_LIFCL_NX33U\\RD_IOA_USB2_REVB\\Design\\impl_1\\synwork\\_verilog_hintfile":1730959902
+#CUR:"C:\\lscc\\radiant\\2024.2\\synpbase\\lib\\lucent\\lifcl.v":1730438607
+#CUR:"C:\\lscc\\radiant\\2024.2\\synpbase\\lib\\lucent\\pmi_def.v":1727995165
+#CUR:"C:\\lscc\\radiant\\2024.2\\synpbase\\lib\\vlog\\hypermods.v":1727995173
+#CUR:"C:\\lscc\\radiant\\2024.2\\synpbase\\lib\\vlog\\scemi_objects.v":1727995173
+#CUR:"C:\\lscc\\radiant\\2024.2\\synpbase\\lib\\vlog\\scemi_pipes.svh":1727995173
+#CUR:"C:\\lscc\\radiant\\2024.2\\ip\\pmi\\pmi_lifcl.v":1589160685
+#CUR:"C:\\lscc\\radiant\\2024.2\\ip\\pmi\\pmi_addsub.v":1562800400
+#CUR:"C:\\lscc\\radiant\\2024.2\\ip\\pmi\\../common/adder_subtractor/rtl/lscc_add_sub.v":1698730957
+#CUR:"C:\\lscc\\radiant\\2024.2\\ip\\pmi\\pmi_add.v":1562800366
+#CUR:"C:\\lscc\\radiant\\2024.2\\ip\\pmi\\../common/adder/rtl/lscc_adder.v":1722576391
+#CUR:"C:\\lscc\\radiant\\2024.2\\ip\\pmi\\pmi_complex_mult.v":1562800443
+#CUR:"C:\\lscc\\radiant\\2024.2\\ip\\pmi\\../common/complex_mult/rtl/lscc_complex_mult.v":1698224940
+#CUR:"C:\\lscc\\radiant\\2024.2\\ip\\pmi\\pmi_counter.v":1562800475
+#CUR:"C:\\lscc\\radiant\\2024.2\\ip\\pmi\\../common/counter/rtl/lscc_cntr.v":1564990907
+#CUR:"C:\\lscc\\radiant\\2024.2\\ip\\pmi\\pmi_distributed_dpram.v":1565060115
+#CUR:"C:\\lscc\\radiant\\2024.2\\ip\\pmi\\../common/distributed_dpram/rtl/lscc_distributed_dpram.v":1695018057
+#CUR:"C:\\lscc\\radiant\\2024.2\\ip\\pmi\\pmi_distributed_spram.v":1565060115
+#CUR:"C:\\lscc\\radiant\\2024.2\\ip\\pmi\\../common/distributed_spram/rtl/lscc_distributed_spram.v":1695018104
+#CUR:"C:\\lscc\\radiant\\2024.2\\ip\\pmi\\pmi_distributed_rom.v":1565060115
+#CUR:"C:\\lscc\\radiant\\2024.2\\ip\\pmi\\../common/distributed_rom/rtl/lscc_distributed_rom.v":1695018080
+#CUR:"C:\\lscc\\radiant\\2024.2\\ip\\pmi\\pmi_distributed_shift_reg.v":1666080348
+#CUR:"C:\\lscc\\radiant\\2024.2\\ip\\pmi\\../common/ram_shift_reg/rtl/lscc_shift_register.v":1695019042
+#CUR:"C:\\lscc\\radiant\\2024.2\\ip\\pmi\\pmi_fifo.v":1718705405
+#CUR:"C:\\lscc\\radiant\\2024.2\\ip\\pmi\\../common/fifo/rtl/lscc_fifo.v":1720503166
+#CUR:"C:\\lscc\\radiant\\2024.2\\ip\\pmi\\pmi_fifo_dc.v":1718705413
+#CUR:"C:\\lscc\\radiant\\2024.2\\ip\\pmi\\../common/fifo_dc/rtl/lscc_fifo_dc.v":1719968699
+#CUR:"C:\\lscc\\radiant\\2024.2\\ip\\pmi\\pmi_mac.v":1562800511
+#CUR:"C:\\lscc\\radiant\\2024.2\\ip\\pmi\\../common/mult_accumulate/rtl/lscc_mult_accumulate.v":1698226765
+#CUR:"C:\\lscc\\radiant\\2024.2\\ip\\pmi\\pmi_multaddsubsum.v":1562800615
+#CUR:"C:\\lscc\\radiant\\2024.2\\ip\\pmi\\../common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v":1698227216
+#CUR:"C:\\lscc\\radiant\\2024.2\\ip\\pmi\\pmi_multaddsub.v":1562800566
+#CUR:"C:\\lscc\\radiant\\2024.2\\ip\\pmi\\../common/mult_add_sub/rtl/lscc_mult_add_sub.v":1698227041
+#CUR:"C:\\lscc\\radiant\\2024.2\\ip\\pmi\\pmi_mult.v":1562800537
+#CUR:"C:\\lscc\\radiant\\2024.2\\ip\\pmi\\../common/multiplier/rtl/lscc_multiplier.v":1698227389
+#CUR:"C:\\lscc\\radiant\\2024.2\\ip\\pmi\\pmi_ram_dp.v":1716513609
+#CUR:"C:\\lscc\\radiant\\2024.2\\ip\\pmi\\../common/ram_dp/rtl/lscc_ram_dp.v":1712791629
+#CUR:"C:\\lscc\\radiant\\2024.2\\ip\\pmi\\pmi_ram_dp_be.v":1712795729
+#CUR:"C:\\lscc\\radiant\\2024.2\\ip\\pmi\\../common/ram_dp/rtl/lscc_ram_dp.v":1712791629
+#CUR:"C:\\lscc\\radiant\\2024.2\\ip\\pmi\\pmi_ram_dp_true.v":1716514614
+#CUR:"C:\\lscc\\radiant\\2024.2\\ip\\pmi\\../common/ram_dp_true/rtl/lscc_ram_dp_true.v":1724832932
+#CUR:"C:\\lscc\\radiant\\2024.2\\ip\\pmi\\pmi_ram_dq.v":1716514771
+#CUR:"C:\\lscc\\radiant\\2024.2\\ip\\pmi\\../common/ram_dq/rtl/lscc_ram_dq.v":1711896736
+#CUR:"C:\\lscc\\radiant\\2024.2\\ip\\pmi\\pmi_ram_dq_be.v":1712795739
+#CUR:"C:\\lscc\\radiant\\2024.2\\ip\\pmi\\../common/ram_dq/rtl/lscc_ram_dq.v":1711896736
+#CUR:"C:\\lscc\\radiant\\2024.2\\ip\\pmi\\pmi_rom.v":1712795741
+#CUR:"C:\\lscc\\radiant\\2024.2\\ip\\pmi\\../common/rom/rtl/lscc_rom.v":1711898000
+#CUR:"C:\\lscc\\radiant\\2024.2\\ip\\pmi\\pmi_sub.v":1562800650
+#CUR:"C:\\lscc\\radiant\\2024.2\\ip\\pmi\\../common/subtractor/rtl/lscc_subtractor.v":1564990995
+#CUR:"C:\\Users\\whan\\Documents\\AppProject\\USB_LIFCL_NX33U\\RD_IOA_USB2_REVB\\Design\\rtl\\u23_lifcl_nx33u_evalbd_ibd.sv":1716931401
+#CUR:"C:\\Users\\whan\\Documents\\AppProject\\USB_LIFCL_NX33U\\RD_IOA_USB2_REVB\\Design\\rtl\\clock_debug.sv":1716931371
+#CUR:"C:\\Users\\whan\\Documents\\AppProject\\USB_LIFCL_NX33U\\RD_IOA_USB2_REVB\\Design\\rtl\\resetn_sync.sv":1716931338
+#CUR:"C:\\Users\\whan\\Documents\\AppProject\\USB_LIFCL_NX33U\\RD_IOA_USB2_REVB\\Design\\u23_lifclu_nx33_prpl_bldr\\u23_lifclu_nx33_prpl_bldr\\u23_lifclu_nx33_prpl_bldr_des.v":1730941421
+#CUR:"C:\\Users\\whan\\Documents\\AppProject\\USB_LIFCL_NX33U\\RD_IOA_USB2_REVB\\Design\\rtl\\pll\\pll_60m\\rtl\\pll_60m.v":1712563474
+#CUR:"C:\\Users\\whan\\Documents\\AppProject\\USB_LIFCL_NX33U\\RD_IOA_USB2_REVB\\Design\\u23_lifclu_nx33_prpl_bldr\\u23_lifclu_nx33_prpl_bldr\\lib\\latticesemi.com\\ip\\cpu0\\2.7.0\\rtl\\cpu0.sv":1730940738
+#CUR:"C:\\Users\\whan\\Documents\\AppProject\\USB_LIFCL_NX33U\\RD_IOA_USB2_REVB\\Design\\u23_lifclu_nx33_prpl_bldr\\u23_lifclu_nx33_prpl_bldr\\lib\\latticesemi.com\\ip\\sysmem0\\2.3.0\\rtl\\sysmem0.v":1730941413
+#CUR:"C:\\Users\\whan\\Documents\\AppProject\\USB_LIFCL_NX33U\\RD_IOA_USB2_REVB\\Design\\u23_lifclu_nx33_prpl_bldr\\u23_lifclu_nx33_prpl_bldr\\lib\\latticesemi.com\\module\\ahbl0\\1.3.2\\rtl\\ahbl0.v":1730940826
+#CUR:"C:\\Users\\whan\\Documents\\AppProject\\USB_LIFCL_NX33U\\RD_IOA_USB2_REVB\\Design\\u23_lifclu_nx33_prpl_bldr\\u23_lifclu_nx33_prpl_bldr\\lib\\latticesemi.com\\module\\ahbl2apb0\\1.1.2\\rtl\\ahbl2apb0.sv":1730941200
+#CUR:"C:\\Users\\whan\\Documents\\AppProject\\USB_LIFCL_NX33U\\RD_IOA_USB2_REVB\\Design\\u23_lifclu_nx33_prpl_bldr\\u23_lifclu_nx33_prpl_bldr\\lib\\latticesemi.com\\module\\apb0\\1.2.1\\rtl\\apb0.v":1730941234
+#CUR:"C:\\Users\\whan\\Documents\\AppProject\\USB_LIFCL_NX33U\\RD_IOA_USB2_REVB\\Design\\u23_lifclu_nx33_prpl_bldr\\u23_lifclu_nx33_prpl_bldr\\lib\\latticesemi.com\\ip\\uart0\\1.3.0\\rtl\\uart0.v":1730941331
+#CUR:"C:\\Users\\whan\\Documents\\AppProject\\USB_LIFCL_NX33U\\RD_IOA_USB2_REVB\\Design\\u23_lifclu_nx33_prpl_bldr\\u23_lifclu_nx33_prpl_bldr\\lib\\latticesemi.com\\module\\u23_config_intf_feedthrough\\1.0.0\\rtl\\u23_config_intf_feedthrough.v":1730941259
+#CUR:"C:\\Users\\whan\\Documents\\AppProject\\USB_LIFCL_NX33U\\RD_IOA_USB2_REVB\\Design\\remote_files\\sources\\documents\\development_doc\\lattice_example\\verilog_modules\\AHBL_to_LMMI_converter.v":1712563473
+#CUR:"C:\\Users\\whan\\Documents\\AppProject\\USB_LIFCL_NX33U\\RD_IOA_USB2_REVB\\Design\\remote_files\\sources\\rtl\\source\\axi64_to_ahbl32_conv\\axi64_to_ahbl32_conv.v":1712563473
+#CUR:"C:\\Users\\whan\\Documents\\AppProject\\USB_LIFCL_NX33U\\RD_IOA_USB2_REVB\\Design\\remote_files\\sources\\rtl\\source\\axi64_to_ahbl32_conv\\lib\\latticesemi.com\\ip\\axi4_interconnect\\1.2.2\\rtl\\axi4_interconnect.sv":1712563473
+#CUR:"C:\\Users\\whan\\Documents\\AppProject\\USB_LIFCL_NX33U\\RD_IOA_USB2_REVB\\Design\\remote_files\\sources\\rtl\\source\\axi64_to_ahbl32_conv\\lib\\latticesemi.com\\ip\\axi4_to_ahbl_bridge\\1.1.1\\rtl\\axi4_to_ahbl_bridge.v":1712563474
+#CUR:"C:\\Users\\whan\\Documents\\AppProject\\USB_LIFCL_NX33U\\RD_IOA_USB2_REVB\\Design\\u23_lifclu_nx33_prpl_bldr\\u23_lifclu_nx33_prpl_bldr\\lib\\latticesemi.com\\ip\\lscc_i2cm1\\2.0.1\\rtl\\lscc_i2cm1.v":1730941323
+#CUR:"C:\\Users\\whan\\Documents\\AppProject\\USB_LIFCL_NX33U\\RD_IOA_USB2_REVB\\Design\\u23_lifclu_nx33_prpl_bldr\\u23_lifclu_nx33_prpl_bldr\\lib\\latticesemi.com\\ip\\lscc_spim1\\2.1.0\\rtl\\lscc_spim1.v":1730941299
+#CUR:"C:\\Users\\whan\\Documents\\AppProject\\USB_LIFCL_NX33U\\RD_IOA_USB2_REVB\\Design\\u23_lifclu_nx33_prpl_bldr\\u23_lifclu_nx33_prpl_bldr\\lib\\latticesemi.com\\ip\\HW_ver_gpio\\1.6.2\\rtl\\HW_ver_gpio.v":1730941269
+#CUR:"C:\\Users\\whan\\Documents\\AppProject\\USB_LIFCL_NX33U\\RD_IOA_USB2_REVB\\Design\\u23_lifclu_nx33_prpl_bldr\\u23_lifclu_nx33_prpl_bldr\\lib\\latticesemi.com\\ip\\gpio0\\1.6.2\\rtl\\gpio0.v":1730941287
+0			"C:\lscc\radiant\2024.2\ip\pmi\pmi_lifcl.v" verilog
+1		*	"C:\lscc\radiant\2024.2\ip\pmi\pmi_addsub.v" verilog
+2		*	"C:\lscc\radiant\2024.2\ip\pmi\../common/adder_subtractor/rtl\lscc_add_sub.v" verilog
+3		*	"C:\lscc\radiant\2024.2\ip\pmi\pmi_add.v" verilog
+4		*	"C:\lscc\radiant\2024.2\ip\pmi\../common/adder/rtl\lscc_adder.v" verilog
+5		*	"C:\lscc\radiant\2024.2\ip\pmi\pmi_complex_mult.v" verilog
+6		*	"C:\lscc\radiant\2024.2\ip\pmi\../common/complex_mult/rtl\lscc_complex_mult.v" verilog
+7		*	"C:\lscc\radiant\2024.2\ip\pmi\pmi_counter.v" verilog
+8		*	"C:\lscc\radiant\2024.2\ip\pmi\../common/counter/rtl\lscc_cntr.v" verilog
+9		*	"C:\lscc\radiant\2024.2\ip\pmi\pmi_distributed_dpram.v" verilog
+10		*	"C:\lscc\radiant\2024.2\ip\pmi\../common/distributed_dpram/rtl\lscc_distributed_dpram.v" verilog
+11		*	"C:\lscc\radiant\2024.2\ip\pmi\pmi_distributed_spram.v" verilog
+12		*	"C:\lscc\radiant\2024.2\ip\pmi\../common/distributed_spram/rtl\lscc_distributed_spram.v" verilog
+13		*	"C:\lscc\radiant\2024.2\ip\pmi\pmi_distributed_rom.v" verilog
+14		*	"C:\lscc\radiant\2024.2\ip\pmi\../common/distributed_rom/rtl\lscc_distributed_rom.v" verilog
+15		*	"C:\lscc\radiant\2024.2\ip\pmi\pmi_distributed_shift_reg.v" verilog
+16		*	"C:\lscc\radiant\2024.2\ip\pmi\../common/ram_shift_reg/rtl\lscc_shift_register.v" verilog
+17		*	"C:\lscc\radiant\2024.2\ip\pmi\pmi_fifo.v" verilog
+18		*	"C:\lscc\radiant\2024.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v" verilog
+19		*	"C:\lscc\radiant\2024.2\ip\pmi\pmi_fifo_dc.v" verilog
+20		*	"C:\lscc\radiant\2024.2\ip\pmi\../common/fifo_dc/rtl\lscc_fifo_dc.v" verilog
+21		*	"C:\lscc\radiant\2024.2\ip\pmi\pmi_mac.v" verilog
+22		*	"C:\lscc\radiant\2024.2\ip\pmi\../common/mult_accumulate/rtl\lscc_mult_accumulate.v" verilog
+23		*	"C:\lscc\radiant\2024.2\ip\pmi\pmi_multaddsubsum.v" verilog
+24		*	"C:\lscc\radiant\2024.2\ip\pmi\../common/mult_add_sub_sum/rtl\lscc_mult_add_sub_sum.v" verilog
+25		*	"C:\lscc\radiant\2024.2\ip\pmi\pmi_multaddsub.v" verilog
+26		*	"C:\lscc\radiant\2024.2\ip\pmi\../common/mult_add_sub/rtl\lscc_mult_add_sub.v" verilog
+27		*	"C:\lscc\radiant\2024.2\ip\pmi\pmi_mult.v" verilog
+28		*	"C:\lscc\radiant\2024.2\ip\pmi\../common/multiplier/rtl\lscc_multiplier.v" verilog
+29		*	"C:\lscc\radiant\2024.2\ip\pmi\pmi_ram_dp.v" verilog
+30		*	"C:\lscc\radiant\2024.2\ip\pmi\../common/ram_dp/rtl\lscc_ram_dp.v" verilog
+31		*	"C:\lscc\radiant\2024.2\ip\pmi\pmi_ram_dp_be.v" verilog
+32		*	"C:\lscc\radiant\2024.2\ip\pmi\pmi_ram_dp_true.v" verilog
+33		*	"C:\lscc\radiant\2024.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v" verilog
+34		*	"C:\lscc\radiant\2024.2\ip\pmi\pmi_ram_dq.v" verilog
+35		*	"C:\lscc\radiant\2024.2\ip\pmi\../common/ram_dq/rtl\lscc_ram_dq.v" verilog
+36		*	"C:\lscc\radiant\2024.2\ip\pmi\pmi_ram_dq_be.v" verilog
+37		*	"C:\lscc\radiant\2024.2\ip\pmi\pmi_rom.v" verilog
+38		*	"C:\lscc\radiant\2024.2\ip\pmi\../common/rom/rtl\lscc_rom.v" verilog
+39		*	"C:\lscc\radiant\2024.2\ip\pmi\pmi_sub.v" verilog
+40		*	"C:\lscc\radiant\2024.2\ip\pmi\../common/subtractor/rtl\lscc_subtractor.v" verilog
+41			"C:\Users\whan\Documents\AppProject\USB_LIFCL_NX33U\RD_IOA_USB2_REVB\Design\rtl\u23_lifcl_nx33u_evalbd_ibd.sv" verilog
+42			"C:\Users\whan\Documents\AppProject\USB_LIFCL_NX33U\RD_IOA_USB2_REVB\Design\rtl\clock_debug.sv" verilog
+43			"C:\Users\whan\Documents\AppProject\USB_LIFCL_NX33U\RD_IOA_USB2_REVB\Design\rtl\resetn_sync.sv" verilog
+44			"C:\Users\whan\Documents\AppProject\USB_LIFCL_NX33U\RD_IOA_USB2_REVB\Design\u23_lifclu_nx33_prpl_bldr\u23_lifclu_nx33_prpl_bldr\u23_lifclu_nx33_prpl_bldr_des.v" verilog
+45			"C:\Users\whan\Documents\AppProject\USB_LIFCL_NX33U\RD_IOA_USB2_REVB\Design\rtl\pll\pll_60m\rtl\pll_60m.v" verilog
+46			"C:\Users\whan\Documents\AppProject\USB_LIFCL_NX33U\RD_IOA_USB2_REVB\Design\u23_lifclu_nx33_prpl_bldr\u23_lifclu_nx33_prpl_bldr\lib\latticesemi.com\ip\cpu0\2.7.0\rtl\cpu0.sv" verilog
+47			"C:\Users\whan\Documents\AppProject\USB_LIFCL_NX33U\RD_IOA_USB2_REVB\Design\u23_lifclu_nx33_prpl_bldr\u23_lifclu_nx33_prpl_bldr\lib\latticesemi.com\ip\sysmem0\2.3.0\rtl\sysmem0.v" verilog
+48			"C:\Users\whan\Documents\AppProject\USB_LIFCL_NX33U\RD_IOA_USB2_REVB\Design\u23_lifclu_nx33_prpl_bldr\u23_lifclu_nx33_prpl_bldr\lib\latticesemi.com\module\ahbl0\1.3.2\rtl\ahbl0.v" verilog
+49			"C:\Users\whan\Documents\AppProject\USB_LIFCL_NX33U\RD_IOA_USB2_REVB\Design\u23_lifclu_nx33_prpl_bldr\u23_lifclu_nx33_prpl_bldr\lib\latticesemi.com\module\ahbl2apb0\1.1.2\rtl\ahbl2apb0.sv" verilog
+50			"C:\Users\whan\Documents\AppProject\USB_LIFCL_NX33U\RD_IOA_USB2_REVB\Design\u23_lifclu_nx33_prpl_bldr\u23_lifclu_nx33_prpl_bldr\lib\latticesemi.com\module\apb0\1.2.1\rtl\apb0.v" verilog
+51			"C:\Users\whan\Documents\AppProject\USB_LIFCL_NX33U\RD_IOA_USB2_REVB\Design\u23_lifclu_nx33_prpl_bldr\u23_lifclu_nx33_prpl_bldr\lib\latticesemi.com\ip\uart0\1.3.0\rtl\uart0.v" verilog
+52			"C:\Users\whan\Documents\AppProject\USB_LIFCL_NX33U\RD_IOA_USB2_REVB\Design\u23_lifclu_nx33_prpl_bldr\u23_lifclu_nx33_prpl_bldr\lib\latticesemi.com\module\u23_config_intf_feedthrough\1.0.0\rtl\u23_config_intf_feedthrough.v" verilog
+53			"C:\Users\whan\Documents\AppProject\USB_LIFCL_NX33U\RD_IOA_USB2_REVB\Design\remote_files\sources\documents\development_doc\lattice_example\verilog_modules\AHBL_to_LMMI_converter.v" verilog
+54			"C:\Users\whan\Documents\AppProject\USB_LIFCL_NX33U\RD_IOA_USB2_REVB\Design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\axi64_to_ahbl32_conv.v" verilog
+55			"C:\Users\whan\Documents\AppProject\USB_LIFCL_NX33U\RD_IOA_USB2_REVB\Design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_interconnect\1.2.2\rtl\axi4_interconnect.sv" verilog
+56			"C:\Users\whan\Documents\AppProject\USB_LIFCL_NX33U\RD_IOA_USB2_REVB\Design\remote_files\sources\rtl\source\axi64_to_ahbl32_conv\lib\latticesemi.com\ip\axi4_to_ahbl_bridge\1.1.1\rtl\axi4_to_ahbl_bridge.v" verilog
+57			"C:\Users\whan\Documents\AppProject\USB_LIFCL_NX33U\RD_IOA_USB2_REVB\Design\u23_lifclu_nx33_prpl_bldr\u23_lifclu_nx33_prpl_bldr\lib\latticesemi.com\ip\lscc_i2cm1\2.0.1\rtl\lscc_i2cm1.v" verilog
+58			"C:\Users\whan\Documents\AppProject\USB_LIFCL_NX33U\RD_IOA_USB2_REVB\Design\u23_lifclu_nx33_prpl_bldr\u23_lifclu_nx33_prpl_bldr\lib\latticesemi.com\ip\lscc_spim1\2.1.0\rtl\lscc_spim1.v" verilog
+59			"C:\Users\whan\Documents\AppProject\USB_LIFCL_NX33U\RD_IOA_USB2_REVB\Design\u23_lifclu_nx33_prpl_bldr\u23_lifclu_nx33_prpl_bldr\lib\latticesemi.com\ip\HW_ver_gpio\1.6.2\rtl\HW_ver_gpio.v" verilog
+60			"C:\Users\whan\Documents\AppProject\USB_LIFCL_NX33U\RD_IOA_USB2_REVB\Design\u23_lifclu_nx33_prpl_bldr\u23_lifclu_nx33_prpl_bldr\lib\latticesemi.com\ip\gpio0\1.6.2\rtl\gpio0.v" verilog
+#Dependency Lists(Uses List)
+0 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1
+1 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 0
+2 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 1 0
+3 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 2 1 0
+4 0 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 3 2 1
+5 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 4 3 2 1 0
+6 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 5 4 3 2 1 0
+7 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 6 5 4 3 2 1 0
+8 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 7 6 5 4 3 2 1 0
+9 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 8 7 6 5 4 3 2 1 0
+10 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 9 8 7 6 5 4 3 2 1 0
+11 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 10 9 8 7 6 5 4 3 2 1 0
+12 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 11 10 9 8 7 6 5 4 3 2 1 0
+13 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 12 11 10 9 8 7 6 5 4 3 2 1 0
+14 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+15 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+16 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+17 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+18 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+19 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+20 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+21 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+22 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+23 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+24 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+25 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+26 0 40 39 38 37 36 35 34 33 32 31 30 29 28 27 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1
+27 40 39 38 37 36 35 34 33 32 31 30 29 28 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+28 0 40 39 38 37 36 35 34 33 32 31 30 29 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1
+29 40 39 38 37 36 35 34 33 32 31 30 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+30 40 39 38 37 36 35 34 33 32 30 31 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+31 40 39 38 37 36 35 34 33 32 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+32 40 39 38 37 36 35 34 33 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+33 40 39 38 37 36 35 34 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+34 40 39 38 37 36 35 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+35 40 39 38 37 35 36 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+36 40 39 38 37 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+37 40 39 38 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+38 40 39 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+39 40 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+40 0 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1
+41 42 54 53 44 43 45
+42 -1
+43 -1
+44 51 52 47 58 57 60 46 50 49 48 59
+45 -1
+46 -1
+47 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+48 -1
+49 -1
+50 -1
+51 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+52 -1
+53 -1
+54 56 55
+55 -1
+56 -1
+57 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+58 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+59 -1
+60 -1
+#Dependency Lists(Users Of)
+0 58 57 51 47 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1
+1 58 57 51 47 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 0
+2 58 57 51 47 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 1 0
+3 58 57 51 47 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 2 1 0
+4 58 57 51 47 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 3 2 1 0
+5 58 57 51 47 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 4 3 2 1 0
+6 58 57 51 47 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 5 4 3 2 1 0
+7 58 57 51 47 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 6 5 4 3 2 1 0
+8 58 57 51 47 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 7 6 5 4 3 2 1 0
+9 58 57 51 47 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 8 7 6 5 4 3 2 1 0
+10 58 57 51 47 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 9 8 7 6 5 4 3 2 1 0
+11 58 57 51 47 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 10 9 8 7 6 5 4 3 2 1 0
+12 58 57 51 47 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 11 10 9 8 7 6 5 4 3 2 1 0
+13 58 57 51 47 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 12 11 10 9 8 7 6 5 4 3 2 1 0
+14 58 57 51 47 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+15 58 57 51 47 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+16 58 57 51 47 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+17 58 57 51 47 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+18 58 57 51 47 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+19 58 57 51 47 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+20 58 57 51 47 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+21 58 57 51 47 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+22 58 57 51 47 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+23 58 57 51 47 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+24 58 57 51 47 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+25 58 57 51 47 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+26 58 57 51 47 40 39 38 37 36 35 34 33 32 31 30 29 28 27 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+27 58 57 51 47 40 39 38 37 36 35 34 33 32 31 30 29 28 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+28 58 57 51 47 40 39 38 37 36 35 34 33 32 31 30 29 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+29 58 57 51 47 40 39 38 37 36 35 34 33 32 31 30 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+30 58 57 51 47 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+31 58 57 51 47 40 39 38 37 36 35 34 33 32 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+32 58 57 51 47 40 39 38 37 36 35 34 33 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+33 58 57 51 47 40 39 38 37 36 35 34 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+34 58 57 51 47 40 39 38 37 36 35 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+35 58 57 51 47 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+36 58 57 51 47 40 39 38 37 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+37 58 57 51 47 40 39 38 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+38 58 57 51 47 40 39 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+39 58 57 51 47 40 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+40 58 57 51 47 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+41 -1
+42 41
+43 41
+44 41
+45 41
+46 44
+47 44
+48 44
+49 44
+50 44
+51 44
+52 44
+53 41
+54 41
+55 54
+56 54
+57 44
+58 44
+59 44
+60 44
+#Design Unit to File Association
+module work gpio0_ipgen_lscc_gpio_lmmi 60
+module work gpio0_ipgen_lscc_apb2lmmi 60
+module work gpio0_ipgen_lscc_gpio 60
+module work HW_ver_gpio_ipgen_lscc_gpio_lmmi 59
+module work HW_ver_gpio_ipgen_lscc_apb2lmmi 59
+module work HW_ver_gpio_ipgen_lscc_gpio 59
+module work lscc_spim1_ipgen_lscc_spi_master_ssn_gen 58
+module work lscc_spim1_ipgen_lscc_spi_master_lmmi_device 58
+module work lscc_spim1_ipgen_lscc_spi_master_lmmi 58
+module work lscc_spim1_ipgen_lscc_apb2lmmi 58
+module work lscc_spim1_ipgen_lscc_ahbl2lmmi 58
+module work lscc_spim1_ipgen_lscc_spi_master_native 58
+module work lscc_spim1_ipgen_lscc_spi_master 58
+module work lscc_i2cm1_ipgen_lscc_i2c_master_lmmi 57
+module work lscc_i2cm1_ipgen_lscc_i2c_master_controller 57
+module work lscc_i2cm1_ipgen_lscc_i2c_master_cntrl_fsm_top 57
+module work lscc_i2cm1_ipgen_lscc_i2c_master_cntrl_fsm 57
+module work lscc_i2cm1_ipgen_lscc_i2c_master_byte_tx_fsm 57
+module work lscc_i2cm1_ipgen_lscc_i2c_master_byte_rx_fsm 57
+module work lscc_i2cm1_ipgen_lscc_i2c_glitch_filter 57
+module work lscc_i2cm1_ipgen_lscc_i2c_master_stop_gen 57
+module work lscc_i2cm1_ipgen_lscc_i2c_master_start_gen 57
+module work lscc_i2cm1_ipgen_lscc_sclk_gen 57
+module work lscc_i2cm1_ipgen_lscc_i2c_master_arbtr 57
+module work lscc_i2cm1_ipgen_lscc_i2c_bus_cntrl_fsm_top 57
+module work lscc_i2cm1_ipgen_lscc_delay_gen 57
+module work lscc_i2cm1_ipgen_lscc_apb2lmmi 57
+module work lscc_i2cm1_ipgen_lscc_i2c_master_native 57
+module work lscc_i2cm1_ipgen_lscc_i2c_master 57
+module work axi4_to_ahbl_bridge_ipgen_lscc_axi2ahb_lite 56
+module work axi4_interconnect_ipgen_lscc_sync_axi_interconnect 55
+module work axi4_interconnect_ipgen_gen_gray_counter 55
+module work axi4_interconnect_ipgen_gen_mux2 55
+module work axi4_interconnect_ipgen_gen_gray2binary 55
+module work axi4_interconnect_ipgen_gen_sync_scalar 55
+module work axi4_interconnect_ipgen_gen_fifo_async_wrctl 55
+module work axi4_interconnect_ipgen_gen_fifo_async_rdctl 55
+module work axi4_interconnect_ipgen_gen_memfile 55
+module work axi4_interconnect_ipgen_ext_slv_port 55
+module work axi4_interconnect_ipgen_fixed_arb 55
+module work axi4_interconnect_ipgen_fixed_arb_ext_mas 55
+module work axi4_interconnect_ipgen_rr_arb 55
+module work axi4_interconnect_ipgen_gen_fifo 55
+module work axi4_interconnect_ipgen_ext_mas_port 55
+module work axi4_interconnect_ipgen_ext_mas_adr_dec 55
+module work axi4_interconnect_ipgen_def_slave 55
+module work axi4_interconnect_ipgen_ext_slv_ard_arb 55
+module work axi4_interconnect_ipgen_ext_slv_rdresp_ifc 55
+module work axi4_interconnect_ipgen_ext_slv_dwr_arb 55
+module work axi4_interconnect_ipgen_ext_slv_awr_arb 55
+module work axi4_interconnect_ipgen_ext_slv_wrresp_ifc 55
+module work axi4_interconnect_ipgen_ext_mas_rdresp_arb 55
+module work axi4_interconnect_ipgen_ext_mas_rdresp_ord_suprt_arb 55
+module work axi4_interconnect_ipgen_ext_mas_ard_ifc 55
+module work axi4_interconnect_ipgen_ext_mas_wrresp_arb 55
+module work axi4_interconnect_ipgen_ext_mas_wrresp_ord_suprt_arb 55
+module work axi4_interconnect_ipgen_ext_mas_dwr_ifc 55
+module work axi4_interconnect_ipgen_ext_mas_awr_ifc 55
+module work axi4_interconnect_ipgen_axi_cross_bar 55
+module work axi4_interconnect_ipgen_rdata_cdc_ifc 55
+module work axi4_interconnect_ipgen_b_cdc_ifc 55
+module work axi4_interconnect_ipgen_wdata_cdc_ifc 55
+module work axi4_interconnect_ipgen_axi_cdc 55
+module work axi4_interconnect_ipgen_awr_cdc_ifc 55
+module work axi4_interconnect_ipgen_mem_1w1r 55
+module work axi4_interconnect_ipgen_gen_fifo_async_ctl 55
+module work axi4_interconnect_ipgen_ard_cdc_ifc 55
+module work axi4_interconnect_ipgen_lscc_axi_interconnect 55
+module work axi4_to_ahbl_bridge 56
+module work axi4_interconnect 55
+module work u23_config_intf_feedthrough_ipgen_lscc_ahb_lite_feedthrough 52
+module work uart0_ipgen_lscc_uart_txmitt 51
+module work uart0_ipgen_lscc_uart_rxcver 51
+module work uart0_ipgen_lscc_uart_rxcver_fifo 51
+module work uart0_ipgen_lscc_uart_intface 51
+module work uart0_ipgen_lscc_uart_txcver_fifo 51
+module work uart0_ipgen_lscc_uart 51
+module work apb0_ipgen_lscc_apb_decoder_comp 50
+module work apb0_ipgen_lscc_apb_decoder_prim 50
+module work apb0_ipgen_lscc_apb_crossbar 50
+module work apb0_ipgen_lscc_apb_multiplexor 50
+module work apb0_ipgen_lscc_apb_decoder 50
+module work apb0_ipgen_lscc_apb_bus 50
+module work apb0_ipgen_lscc_apb_arbmux 50
+module work apb0_ipgen_lscc_apb_thermo_mask 50
+module work apb0_ipgen_lscc_apb_prio_arb 50
+module work apb0_ipgen_lscc_apb_arbiter 50
+module work apb0_ipgen_lscc_apb_interconnect 50
+module work ahbl2apb0_ipgen_lscc_ahbl2apb 49
+module work ahbl0_ipgen_lscc_ahbl_decoder_comp 48
+module work ahbl0_ipgen_lscc_ahbl_decoder_prim 48
+module work ahbl0_ipgen_lscc_ahbl_input_stage 48
+module work ahbl0_ipgen_lscc_ahbl_crossbar 48
+module work ahbl0_ipgen_lscc_ahbl_default_slv 48
+module work ahbl0_ipgen_lscc_ahbl_multiplexor 48
+module work ahbl0_ipgen_lscc_ahbl_decoder 48
+module work ahbl0_ipgen_lscc_ahbl_bus 48
+module work ahbl0_ipgen_lscc_ahbl_arbmux 48
+module work ahbl0_ipgen_lscc_ahbl_prio_arb 48
+module work ahbl0_ipgen_lscc_ahbl_fair_arb 48
+module work ahbl0_ipgen_lscc_ahbl_arbiter 48
+module work ahbl0_ipgen_lscc_ahbl_interconnect 48
+module work sysmem0_ipgen_lscc_lram_core 47
+module work sysmem0_ipgen_lscc_smem_lram 47
+module work sysmem0_ipgen_lscc_mem 47
+module work sysmem0_ipgen_lscc_fifo_streamer 47
+module work sysmem0_ipgen_lscc_axi4stream_rx 47
+module work sysmem0_ipgen_lscc_axi4mem_subordinate 47
+module work sysmem0_ipgen_lscc_axi4mem_arbiter 47
+module work sysmem0_ipgen_lscc_ahblmem_subordinate 47
+module work sysmem0_ipgen_lscc_ahblmem_arbiter 47
+module work sysmem0_ipgen_lscc_sys_mem 47
+module work cpu0_ipgen_timer_32 46
+module work cpu0_ipgen_StreamFifo_NoDbg_IMC 46
+module work cpu0_ipgen_StreamFifoLowLatency_NoDbg_IMC 46
+module work cpu0_ipgen_Riscv_NoDbg_IMC 46
+module work cpu0_ipgen_StreamFifo_NoDbg_IC 46
+module work cpu0_ipgen_StreamFifoLowLatency_NoDbg_IC 46
+module work cpu0_ipgen_Riscv_NoDbg_IC 46
+module work cpu0_ipgen_StreamFifo_NoDbg_I 46
+module work cpu0_ipgen_StreamFifoLowLatency_NoDbg_I 46
+module work cpu0_ipgen_Riscv_NoDbg_I 46
+module work cpu0_ipgen_StreamFifo_Dbg_IMC_CFU 46
+module work cpu0_ipgen_StreamFifoLowLatency_Dbg_IMC_CFU 46
+module work cpu0_ipgen_Riscv_Dbg_IMC_CFU 46
+module work cpu0_ipgen_StreamFifo_Dbg_IMC 46
+module work cpu0_ipgen_StreamFifoLowLatency_Dbg_IMC 46
+module work cpu0_ipgen_Riscv_Dbg_IMC 46
+module work cpu0_ipgen_StreamFifo_Dbg_IC 46
+module work cpu0_ipgen_StreamFifoLowLatency_Dbg_IC 46
+module work cpu0_ipgen_Riscv_Dbg_IC 46
+module work cpu0_ipgen_StreamFifo_Dbg_I 46
+module work cpu0_ipgen_StreamFifoLowLatency_Dbg_I 46
+module work cpu0_ipgen_Riscv_Dbg_I 46
+module work cpu0_ipgen_DataCache_Cache_NoDbg_IMC 46
+module work cpu0_ipgen_InstructionCache_Cache_NoDbg_IMC 46
+module work cpu0_ipgen_Riscv_Cache_NoDbg_IMC 46
+module work cpu0_ipgen_DataCache_Cache_NoDbg_IC 46
+module work cpu0_ipgen_InstructionCache_Cache_NoDbg_IC 46
+module work cpu0_ipgen_Riscv_Cache_NoDbg_IC 46
+module work cpu0_ipgen_DataCache_Cache_NoDbg_I 46
+module work cpu0_ipgen_InstructionCache_Cache_NoDbg_I 46
+module work cpu0_ipgen_Riscv_Cache_NoDbg_I 46
+module work cpu0_ipgen_DataCache_Dbg_IMC_CFU 46
+module work cpu0_ipgen_InstructionCache_Dbg_IMC_CFU 46
+module work cpu0_ipgen_Riscv_Cache_Dbg_IMC_CFU 46
+module work cpu0_ipgen_DataCache_Cache_Dbg_IMC 46
+module work cpu0_ipgen_InstructionCache_Cache_Dbg_IMC 46
+module work cpu0_ipgen_Riscv_Cache_Dbg_IMC 46
+module work cpu0_ipgen_DataCache_Cache_Dbg_IC 46
+module work cpu0_ipgen_InstructionCache_Cache_Dbg_IC 46
+module work cpu0_ipgen_Riscv_Cache_Dbg_IC 46
+module work cpu0_ipgen_DataCache_Cache_Dbg_I 46
+module work cpu0_ipgen_InstructionCache_Cache_Dbg_I 46
+module work cpu0_ipgen_Riscv_Cache_Dbg_I 46
+module work cpu0_ipgen_pic 46
+module work cpu0_ipgen_lscc_cpu_ahbl_mux 46
+module work cpu0_ipgen_BufferCC_1_ 46
+module work cpu0_ipgen_FlowCCByToggle 46
+module work cpu0_ipgen_d_ff_plain_rst_we_t 46
+module work cpu0_ipgen_d_ff_plain_rst_t 46
+module work cpu0_ipgen_SystemDebugger 46
+module work cpu0_ipgen_JtagBridge 46
+module work cpu0_ipgen_vex_jtag_bridge 46
+module work cpu0_ipgen_vex_debug 46
+module work cpu0_ipgen_cfu_mux 46
+module work cpu0_ipgen_riscvsmall 46
+module work pll_60m_ipgen_lscc_apb2lmmi 45
+module work pll_60m_ipgen_lscc_pll 45
+module work uart0 51
+module work u23_config_intf_feedthrough 52
+module work sysmem0 47
+module work lscc_spim1 58
+module work lscc_i2cm1 57
+module work gpio0 60
+module work cpu0 46
+module work apb0 50
+module work ahbl2apb0 49
+module work ahbl0 48
+module work HW_ver_gpio 59
+module work axi64_to_ahbl32_conv 54
+module work AHBL_to_LMMI_converter 53
+module work u23_lifclu_nx33_prpl_bldr_des 44
+module work resetn_sync 43
+module work clock_debug 42
+module work pll_60m 45
+module work u23_lifcl_nx33u_evalbd_ibd 41
+module work pmi_sub 39
+module work pmi_rom 37
+module work lscc_rom_inst_core 38
+module work lscc_rom_inst 38
+module work lscc_rom 38
+module work pmi_ram_dq_be 36
+module work pmi_ram_dq 34
+module work lscc_ram_dq_core 35
+module work lscc_ram_dq_inst 35
+module work lscc_ram_dq_main 35
+module work lscc_ram_dq 35
+module work pmi_ram_dp_true 32
+module work lscc_ram_dp_true_core 33
+module work lscc_ram_dp_true_inst 33
+module work lscc_write_through 33
+module work lscc_ram_dp_true_main 33
+module work lscc_ram_dp_true 33
+module work pmi_ram_dp_be 31
+module work pmi_ram_dp 29
+module work lscc_ram_dp_core 30
+module work lscc_ram_dp_main 30
+module work lscc_ram_dp 30
+module work pmi_mult 27
+module work pmi_multaddsub 25
+module work pmi_multaddsubsum 23
+module work lscc_mult_add_sub_sum 24
+module work pmi_mac 21
+module work lscc_mult_accumulate 22
+module work pmi_fifo_dc 19
+module work lscc_fifo_mem_core 20
+module work lscc_fifo_mem_main 20
+module work lscc_fifo_soft_mem 20
+module work lscc_reset_async 20
+module work lscc_fifo_dc_hw_core 20
+module work lscc_soft_fifo_dc 20
+module work lscc_hard_fifo_dc 20
+module work lscc_fifo_dc_main 20
+module work lscc_fifo_dc_fwft_fabric 20
+module work lscc_fifo_dc 20
+module work pmi_fifo 17
+module work lscc_fifo_hw_core 18
+module work lscc_soft_fifo 18
+module work lscc_hard_fifo 18
+module work lscc_fifo_main 18
+module work lscc_fifo_fwft_fabric 18
+module work lscc_fifo 18
+module work pmi_distributed_shift_reg 15
+module work lscc_shift_register 16
+module work pmi_distributed_rom 13
+module work lscc_distributed_rom 14
+module work pmi_distributed_spram 11
+module work lscc_distributed_spram 12
+module work pmi_distributed_dpram 9
+module work lscc_distributed_dpram 10
+module work pmi_counter 7
+module work lscc_cntr 8
+module work pmi_complex_mult 5
+module work lscc_multiplier_dsp 6
+module work lscc_multiplier_lut 6
+module work lscc_multiplier 6
+module work lscc_mult_add_sub 6
+module work lscc_complex_mult 6
+module work pmi_add 3
+module work pmi_addsub 1
+module work lscc_subtractor 2
+module work lscc_adder 2
+module work lscc_add_sub 2

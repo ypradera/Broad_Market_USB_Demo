@@ -1,0 +1,115 @@
+<html> 
+ 			<head> 			<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+			<title>Project Status Summary Page</title>
+			<link rel="stylesheet" type="text/css" href="projectstatuspage.css" />
+			<script type = "text/javascript" src="projectstatuspage.js"></script>
+			</head>
+
+ 			<body style="background-color:#f0f0ff;">
+ 			
+<table style="border:none;" width="100%" ><tr> <td class="outline">
+<table width="100%" border="0" cellspacing="0" cellpadding="0"> 	     <thead class="tablehead"><tr><th colspan="4">Project Settings</th><tr> 
+ <tr> <td class="optionTitle" align="left"> Project Name</td> <td> proj_1</td> <td class="optionTitle" align="left"> Device Name</td> <td> impl_1: Lattice LIFCL : LIFCL_33U</td> </tr>
+<tr> <td class="optionTitle" align="left"> Implementation Name</td> <td> impl_1</td> <td class="optionTitle" align="left"> Top Module</td> <td> u23_lifcl_nx33u_evalbd_ibd</td> </tr>
+ 		 </thead> 
+		 <tbody> <tr> <td class="optionTitle" align="left"> Pipelining</td> <td> 1</td> <td class="optionTitle" align="left"> Retiming</td> <td> 0</td> </tr>
+<tr> <td class="optionTitle" align="left"> Resource Sharing</td> <td> 1</td> <td class="optionTitle" align="left"> Fanout Guide</td> <td> 1000</td> </tr>
+<tr> <td class="optionTitle" align="left"> Disable I/O Insertion</td> <td> 0</td> <td class="optionTitle" align="left"> Disable Sequential Optimizations</td> <td> 0</td> </tr>
+<tr> <td class="optionTitle" align="left"> Clock Conversion</td> <td> 0</td> <td class="optionTitle" align="left"> FSM Compiler</td> <td> 1</td> </tr>
+ 
+</tbody> 
+  </table><br>	 <table width="100%" border="1" cellspacing= "0" cellpadding= "0" >
+ 				   <thead class="tablehead"><tr><th   colspan="9">Run Status</th></tr></thead>
+         <tbody>
+ 		<tr>
+ 			<th align="left" width="17%">Job Name</th>
+			<th align="left">Status</th>
+ 			<td class="lnote" align="center" title="Notes"></td>
+ 			<td class="lwarn" align="center" title="Warnings"></td>
+ 			<td class="lerror" align="center" title="Errors"></td>
+ 			<th align="left">CPU Time</th>
+ 			<th align="left">Real Time</th>
+ 			<th align="left">Memory</th>
+ 			<th align="left">Date/Time</th>
+         </tr>
+  <tr>
+  <td class="optionTitle"> (compiler)</td><td>Complete</td>
+ <td>400</td>
+ <td>373</td>
+<td>0</td>
+<td>-</td>
+<td>02m:57s</td>
+<td>-</td>
+<td><font size="-1">11/6/2024</font><br/><font size="-2">10:14 PM</font></td>
+</tr> 
+
+ <tr>
+  <td class="optionTitle"> (premap)</td><td>Complete</td>
+ <td>145</td>
+ <td>28</td>
+<td>0</td>
+<td>0m:17s</td>
+<td>0m:17s</td>
+<td>344MB</td>
+<td><font size="-1">11/6/2024</font><br/><font size="-2">10:15 PM</font></td>
+</tr> 
+
+ <tr>
+  <td class="optionTitle"> (fpga_mapper)</td><td>Complete</td>
+ <td>406</td>
+ <td>4607</td>
+<td>0</td>
+<td>04m:10s</td>
+<td>04m:24s</td>
+<td>498MB</td>
+<td><font size="-1">11/6/2024</font><br/><font size="-2">10:19 PM</font></td>
+</tr> 
+
+<tr>
+  <td class="optionTitle">Multi-srs Generator</td>
+  <td>Complete</td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td>00m:08s</td><td class="empty"></td><td class="empty"></td><td><font size="-1">11/6/2024</font><br/><font size="-2">10:14 PM</font></td> 		</tbody>
+     </table>
+ <br> 
+ <table width="100%" border="1" cellspacing= "0" cellpadding= "0" >
+ 				   <thead class="tablehead"><tr><th   colspan="4">Area Summary</th></tr></thead>
+<tfoot> <tr> <td class="optionTitle" colspan="4"></td></tr> 
+ </tfoot> 
+ <tbody> <tr> 
+<td title ="Total Register bits used" class="optionTitle" align="left">Register bits</td> <td>5419</td>
+<td title ="Total I/O cells used" class="optionTitle" align="left">I/O cells</td> <td>11</td>
+</tr>
+<tr> 
+<td title ="Total Block RAMs used" class="optionTitle" align="left">Block RAMs
+(v_ram)</td> <td>7</td>
+<td title ="Total DSPs used" class="optionTitle" align="left">DSPs
+(dsp_used)</td> <td>4</td>
+</tr>
+<tr> 
+<td title ="Total LUTs used" class="optionTitle" align="left">LUTs
+(total_luts)</td> <td>7308</td>
+<td class="optionTitle"></td><td></td></tr> 
+</tbody>
+    </table><br>
+ <table width="100%" border="1" cellspacing= "0" cellpadding= "0" >
+ 				   <thead class="tablehead"><tr><th   colspan="4">Timing Summary</th></tr></thead>
+<tfoot> <tr> <td class="optionTitle" colspan="4"></td></tr> 
+ </tfoot> 
+<tbody> 
+   <tr><th class="optionTitle" align= "left ">Clock Name</th><th class="optionTitle" align= "left ">Req Freq</th><th class="optionTitle" align= "left ">Est Freq</th><th class="optionTitle" align= "left ">Slack</th></tr> 
+<tr> <td  align="left">cpu0_ipgen_vex_jtag_bridge_Z22_layer0|bbICH_inferred_clock</td><td  align="left">200.0 MHz</td><td  align="left">147.1 MHz</td><td  align="left">-0.899</td></tr> 
+<tr> <td  align="left">cpu0_ipgen_vex_jtag_bridge_Z22_layer0|bqAaKcoy7LeAHb1_inferred_clock</td><td  align="left">200.0 MHz</td><td  align="left">258.5 MHz</td><td  align="left">0.566</td></tr> 
+<tr> <td  align="left">pll_60m_ipgen_lscc_pll_Z1_layer0|clkop_o_inferred_clock</td><td  align="left">200.0 MHz</td><td  align="left">99.3 MHz</td><td  align="left">-5.071</td></tr> 
+<tr> <td  align="left">System</td><td  align="left">200.0 MHz</td><td  align="left">142.0 MHz</td><td  align="left">-2.045</td></tr> 
+</tbody> 
+ </table>
+<br>
+ <table width="100%" border="1" cellspacing= "0" cellpadding= "0" >
+ 				   <thead class="tablehead"><tr><th   colspan="4">Optimizations Summary</th></tr></thead>
+ <tbody> <tr> 
+<td title ="Non-gated/non-generated clock trees / Gated/generated clock trees" class="optionTitle" align="left">Combined Clock Conversion</td> <td>1 / 2</td>
+<td class="optionTitle"></td><td></td></tr> 
+</tbody>
+    </table><br>
+<br> 
+</td></tr></table></body> 
+ </html>

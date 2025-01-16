@@ -1,0 +1,325 @@
+<HTML>
+<HEAD>
+<TITLE>PAD Specification File</TITLE>
+<link href="file:///C:/lscc/radiant/2024.2/data/theme/css/light/report.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="file:///C:/lscc/radiant/2024.2/data/theme/css/print/report.css" rel="stylesheet" type="text/css" media="print"/>
+<style type="text/css">
+#toc {
+  position: fixed;
+  right: 2px;
+  top: 2px;
+  padding: 2px 5px 2px 5px;
+  background-color:rgba(210,210,210,0.1);
+  border-style: solid;
+  border-color: rgba(192,192,192,0.8);
+  border-width:1px;
+}
+#toc_list {
+  display: none;
+  }
+</style>
+
+<script type="text/javascript">
+<!--
+function showTocList() {
+var a = document.getElementById("toc_list");
+a.style.display = "block";
+}
+
+function hideTocList() {
+var a = document.getElementById("toc_list");
+if (a)
+    a.style.display = "none";
+}
+
+//-->
+</script>
+
+</HEAD>
+
+<BODY>
+
+<DIV id="content" onclick="hideTocList()"><PRE>
+<A name="Pad"></A>PAD Specification File
+***************************
+
+PART TYPE:        LIFCL-33U
+Performance Grade:      7_High-Performance_1.0V
+PACKAGE:          FCCSP104
+Package Status:                     Final          Version 2
+
+Thu Nov  7 14:12:48 2024
+
+Pinout by Port Name:
++----------------+----------+----------------+-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Port Name      | Pin/Bank | Buffer Type    | Site            | Properties                                                                                                                                                            |
++----------------+----------+----------------+-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| REFINCLKEXTM_i | E8/80    | AI             | REFIN_CLK_EXT_M |                                                                                                                                                                       |
+| REFINCLKEXTP_i | F8/80    | AI             | REFIN_CLK_EXT_P |                                                                                                                                                                       |
+| clk_25m_i      | G7/3     | LVCMOS12H_IN   | PB16A           | DRIVE:NA SLEWRATE:NA GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS12H DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:UP CLAMP:ON VREF:OFF       |
+| dm_z           | E7/80    | AIO            | DM              |                                                                                                                                                                       |
+| dp_z           | D7/80    | AIO            | DP              |                                                                                                                                                                       |
+| gpio_0_z[0]    | G6/3     | LVCMOS12H_BIDI | PB16B           | DRIVE:8mA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:OFF TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS12H DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:DOWN CLAMP:ON VREF:OFF |
+| gpio_0_z[1]    | L4/2     | LVCMOS18H_BIDI | PB36A           | DRIVE:8mA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS18H DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:DOWN CLAMP:ON VREF:OFF  |
+| i2cm_scl       | M5/2     | LVCMOS18H_BIDI | PB34A           | DRIVE:8mA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS18H DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:UP CLAMP:ON VREF:OFF    |
+| i2cm_sda       | M4/2     | LVCMOS18H_BIDI | PB34B           | DRIVE:8mA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS18H DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:UP CLAMP:ON VREF:OFF    |
+| spim_miso_i    | D3/0     | LVCMOS18_IN    | PT34B           | DRIVE:NA SLEWRATE:NA GLITCHFILTER:ON HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS18 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:DOWN CLAMP:ON VREF:OFF       |
+| spim_mosi_o    | D4/0     | LVCMOS18_OUT   | PT34A           | DRIVE:8mA SLEWRATE:FAST GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS18 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:OFF VREF:OFF  |
+| spim_sclk_o    | B4/0     | LVCMOS18_OUT   | PT32A           | DRIVE:8mA SLEWRATE:FAST GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS18 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:OFF VREF:OFF  |
+| spim_ssn_o     | B3/0     | LVCMOS18_OUT   | PT32B           | DRIVE:8mA SLEWRATE:FAST GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS18 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:OFF VREF:OFF  |
+| u2_reset_ext_z | C8/80    | AIO            | REXT            |                                                                                                                                                                       |
+| u3_rxm_i       | B8/80    | AI             | RX_M            |                                                                                                                                                                       |
+| u3_rxp_i       | A8/80    | AI             | RX_P            |                                                                                                                                                                       |
+| u3_txm_o       | A6/80    | AO             | TX_M            |                                                                                                                                                                       |
+| u3_txp_o       | A7/80    | AO             | TX_P            |                                                                                                                                                                       |
+| uart_rxd_i     | H2/2     | LVCMOS18H_IN   | PB44B           | DRIVE:NA SLEWRATE:NA GLITCHFILTER:OFF HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS18H DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:DOWN CLAMP:ON VREF:OFF     |
+| uart_txd_o     | J2/2     | LVCMOS18H_OUT  | PB44A           | DRIVE:8mA SLEWRATE:FAST GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS18H DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:ON VREF:OFF  |
+| vbus_z         | E5/80    | AI             | VBUS            |                                                                                                                                                                       |
++----------------+----------+----------------+-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Vccio by Bank:
++------+-------+
+| Bank | Vccio |
++------+-------+
+| 0    | 1.8V  |
+| 1    | 3.3V  |
+| 2    | 1.8V  |
+| 3    | 1.2V  |
+| 4    | 1.8V  |
++------+-------+
+
+
+<A name="pad_vref"></A><B><U><big>Vref by Bank:</big></U></B>
++------+-----+-----------------+---------+
+| Vref | Pin | Bank # / Vref # | Load(s) |
++------+-----+-----------------+---------+
++------+-----+-----------------+---------+
+
+<A name="pad_pin"></A><B><U><big>Pinout by Pin Number:</big></U></B>
++--------------+-----------------------+------------+----------------+-----------------+---------------------------------------+
+| Pin/Bank     | Pin Info              | Preference | Buffer Type    | Site            | Dual Function                         |
++--------------+-----------------------+------------+----------------+-----------------+---------------------------------------+
+| A1/1         | Reserved: sysCONFIG   |            |                | PT38B           | INITN                                 |
+| A3/0         |     unused, PULL:DOWN |            |                | PT30B           |                                       |
+| A4/0         | Reserved: sysCONFIG   |            |                | PT30A           | PROGRAMN                              |
+| A6/80        | u3_txm_o              | LOCATED    |                | TX_M            |                                       |
+| A7/80        | u3_txp_o              | LOCATED    |                | TX_P            |                                       |
+| A8/80        | u3_rxp_i              | LOCATED    |                | RX_P            |                                       |
+| B1/1         |     unused, PULL:DOWN |            |                | PT40B           | MCSNO/MSDO/S0_OUT                     |
+| B2/1         | Reserved: sysCONFIG   |            |                | PT40A           | TMS/SCSN/PCLKT1_0/S0_IN               |
+| B3/0         | spim_ssn_o            | LOCATED    | LVCMOS18_OUT   | PT32B           | MCSN                                  |
+| B4/0         | spim_sclk_o           | LOCATED    | LVCMOS18_OUT   | PT32A           | MCLK                                  |
+| B8/80        | u3_rxm_i              | LOCATED    |                | RX_M            |                                       |
+| C8/80        | u2_reset_ext_z        |            |                | REXT            |                                       |
+| C8/80        |                       |            |                | RES_EXT         |                                       |
+| D1/1         | Reserved: sysCONFIG   |            |                | PT42B           | PCLKT1_2/TDO/OSC_BURST/SSO/SD1/S1_OUT |
+| D2/1         | Reserved: sysCONFIG   |            |                | PT42A           | TDI/PCLKT1_1/OSC_HI/SSI/SD0/S1_IN     |
+| D3/0         | spim_miso_i           | LOCATED    | LVCMOS18_IN    | PT34B           | MISO/MD1/SD5                          |
+| D4/0         | spim_mosi_o           | LOCATED    | LVCMOS18_OUT   | PT34A           | MOSI/MD0/SD4                          |
+| D7/80        | dp_z                  | LOCATED    |                | DP              |                                       |
+| E1/1         |     unused, PULL:DOWN |            |                | PT44B           | SD2/SCL/USER_SCL/S2_OUT               |
+| E2/1         |     unused, PULL:DOWN |            |                | PT44A           | SD3/SDA/USER_SDA/S2_IN                |
+| E3/0         |     unused, PULL:DOWN |            |                | PT36B           | MD3/SD7                               |
+| E4/0         |     unused, PULL:DOWN |            |                | PT36A           | MD2/SD6                               |
+| E5/80        | vbus_z                | LOCATED    |                | VBUS            |                                       |
+| E6/3         |     unused, PULL:DOWN |            |                | PB14B           | PCLKC3_1                              |
+| E7/80        | dm_z                  | LOCATED    |                | DM              |                                       |
+| E8/80        | REFINCLKEXTM_i        | LOCATED    |                | REFIN_CLK_EXT_M |                                       |
+| F1/1         |     unused, PULL:DOWN |            |                | PT46B           | PMU_WAKEUP/S3_OUT                     |
+| F2/1         | Reserved: sysCONFIG   |            |                | PT46A           | TCK/SCLK/PCLKT1_3/S3_IN/PMU_EXT_CLK   |
+| F7/3         |     unused, PULL:DOWN |            |                | PB14A           | PCLKT3_1                              |
+| F8/80        | REFINCLKEXTP_i        | LOCATED    |                | REFIN_CLK_EXT_P |                                       |
+| G1/1         |     unused, PULL:DOWN |            |                | PT48B           |                                       |
+| G2/1         | Reserved: sysCONFIG   |            |                | PT48A           | DONE                                  |
+| G6/3         | gpio_0_z[0]           | LOCATED    | LVCMOS12H_BIDI | PB16B           | PCLKC3_2                              |
+| G7/3         | clk_25m_i             | LOCATED    | LVCMOS12H_IN   | PB16A           | PCLKT3_2                              |
+| G8/4         |     unused, PULL:DOWN |            |                | PB6B            | PCLKC4_1/LLC_GPLL0T_MFGOUT2/VREF4_2   |
+| H1/2         |     unused, PULL:DOWN |            |                | PB46B           | PCLKC2_3/ATB_SENSE/VREF2_2/S7_OUT     |
+| H2/2         | uart_rxd_i            | LOCATED    | LVCMOS18H_IN   | PB44B           |                                       |
+| H6/3         |     unused, PULL:DOWN |            |                | PB18B           | PCLKC3_3/S8_OUT                       |
+| H8/4         |     unused, PULL:DOWN |            |                | PB6A            | PCLKT4_1/LLC_GPLL0T_MFGOUT1           |
+| ID/80        |                       |            |                | ID              |                                       |
+| J1/2         |     unused, PULL:DOWN |            |                | PB46A           | PCLKT2_3/ATB_FORCE/S7_IN              |
+| J2/2         | uart_txd_o            | LOCATED    | LVCMOS18H_OUT  | PB44A           |                                       |
+| J6/3         |     unused, PULL:DOWN |            |                | PB18A           | PCLKT3_3/S8_IN/VREF3_2                |
+| K2/2         |     unused, PULL:DOWN |            |                | PB42B           | PCLKC2_2/S6_OUT                       |
+| K3/2         |     unused, PULL:DOWN |            |                | PB42A           | PCLKT2_2/S6_IN                        |
+| L3/2         |     unused, PULL:DOWN |            |                | PB36B           |                                       |
+| L4/2         | gpio_0_z[1]           | LOCATED    | LVCMOS18H_BIDI | PB36A           |                                       |
+| L6/3         |     unused, PULL:DOWN |            |                | PB12B           |                                       |
+| L7/3         |     unused, PULL:DOWN |            |                | PB12A           |                                       |
+| M1/81        |                       |            |                | AON_OUT         |                                       |
+| M2/2         |     unused, PULL:DOWN |            |                | PB40B           |                                       |
+| M3/2         |     unused, PULL:DOWN |            |                | PB40A           |                                       |
+| M4/2         | i2cm_sda              | LOCATED    | LVCMOS18H_BIDI | PB34B           | PCLKC2_0/S4_OUT                       |
+| M5/2         | i2cm_scl              | LOCATED    | LVCMOS18H_BIDI | PB34A           | PCLKT2_0/S4_IN                        |
+| M6/3         |     unused, PULL:DOWN |            |                | PB10B           | PCLKC3_0                              |
+| M7/3         |     unused, PULL:DOWN |            |                | PB10A           | PCLKT3_0                              |
+| M8/4         |     unused, PULL:DOWN |            |                | PB4B            | LLC_GPLL0C_IN                         |
+| N1/81        |                       |            |                | AON_INT         |                                       |
+| N2/2         |     unused, PULL:DOWN |            |                | PB38B           | PCLKC2_1/S5_OUT                       |
+| N3/2         |     unused, PULL:DOWN |            |                | PB38A           | PCLKT2_1/S5_IN                        |
+| N4/2         |     unused, PULL:DOWN |            |                | PB32B           |                                       |
+| N5/2         |     unused, PULL:DOWN |            |                | PB32A           | VREF2_1                               |
+| N6/3         |     unused, PULL:DOWN |            |                | PB8B            |                                       |
+| N7/3         |     unused, PULL:DOWN |            |                | PB8A            | VREF3_1                               |
+| N8/4         |     unused, PULL:DOWN |            |                | PB4A            | LLC_GPLL0T_IN/VREF4_1                 |
+| XO_IN_18/80  |                       |            |                | XO_IN_18        |                                       |
+| XO_OUT_18/80 |                       |            |                | XO_OUT_18       |                                       |
++--------------+-----------------------+------------+----------------+-----------------+---------------------------------------+
+
+sysCONFIG Pins:
++----------+---------------------------------------+----------+-------------+
+| Pad Name | sysCONFIG Pin Name                    | Pin/Bank | Buffer Type |
++----------+---------------------------------------+----------+-------------+
+| PT30A    | PROGRAMN                              | A4/0     |             |
+| PT38B    | INITN                                 | A1/1     |             |
+| PT40A    | TMS/SCSN/PCLKT1_0/S0_IN               | B2/1     |             |
+| PT42A    | TDI/PCLKT1_1/OSC_HI/SSI/SD0/S1_IN     | D2/1     |             |
+| PT42B    | PCLKT1_2/TDO/OSC_BURST/SSO/SD1/S1_OUT | D1/1     |             |
+| PT46A    | TCK/SCLK/PCLKT1_3/S3_IN/PMU_EXT_CLK   | F2/1     |             |
+| PT48A    | DONE                                  | G2/1     |             |
++----------+---------------------------------------+----------+-------------+
+
+
+Locate Constraints for each Pin: 
+
+ldc_set_location -site {G7} [ get_ports {clk_25m_i} ]
+ldc_set_location -site {G6} [ get_ports {gpio_0_z[0]} ]
+ldc_set_location -site {L4} [ get_ports {gpio_0_z[1]} ]
+ldc_set_location -site {M5} [ get_ports {i2cm_scl} ]
+ldc_set_location -site {M4} [ get_ports {i2cm_sda} ]
+ldc_set_location -site {D3} [ get_ports {spim_miso_i} ]
+ldc_set_location -site {D4} [ get_ports {spim_mosi_o} ]
+ldc_set_location -site {B4} [ get_ports {spim_sclk_o} ]
+ldc_set_location -site {B3} [ get_ports {spim_ssn_o} ]
+ldc_set_location -site {H2} [ get_ports {uart_rxd_i} ]
+ldc_set_location -site {J2} [ get_ports {uart_txd_o} ]
+
+#PLL
+ldc_set_location -site {PLL_LLC} [ get_cells {pll_60m/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst} ]
+# ldc_set_location -site {PLL_LLC} [ get_cells {pll_60m.lscc_pll_inst.gen_no_refclk_mon.u_PLL.PLL_inst} ]
+
+
+
+
+
+Copyright (c) 2002-2022 Lattice Semiconductor Corporation,  All rights reserved.
+
+Thu Nov  7 14:12:48 2024
+
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></DIV>
+
+<DIV id="toc" class="radiant"><span onmousemove="showTocList()">Contents</span>
+<UL id="toc_list">
+<LI><A href=#pad_vref>Vref by Bank</A></LI>
+<LI><A href=#pad_pin>Pinout by Pin Number</A></LI>
+</UL>
+</DIV>
+
+<button id="back_to_top" class="radiant" onclick="scrollToTop()">&lt;</button>
+<script type="text/javascript">
+<!--
+var scrollStep = 0;
+function scrollToTop(){
+  var funScroll = function() {
+    var top = document.body.scrollTop;
+    if (top == 0) {
+      scrollStep = 0;
+      return;
+    }
+    if (scrollStep == 0)
+      scrollStep = top/20 + 1;
+    top -= scrollStep;
+    if (top < 0)
+      top = 0;
+    document.body.scrollTop = top;
+    requestAnimationFrame(funScroll);
+  };
+  funScroll();
+}
+
+window.addEventListener('scroll', function(e) {
+  var backToTop = document.getElementById('back_to_top')
+  if (document.body.scrollTop > 0) {
+    backToTop.style.display = 'block';
+  } else {	backToTop.style.display = 'none'  }});
+
+//-->
+</script>
+
+<style type="text/css">
+#back_to_top {
+  bottom:20px; right:20px;
+  width:30px; height:30px;
+  font-size: 20px;
+  padding: 2px 5px 2px 5px;
+  position:fixed;
+  background-color:rgba(210,210,210,0.1);
+  border-style: solid;
+  border-color: rgba(192,192,192,0.8);
+  border-width:1px;
+  display:none;
+  -webkit-transform: rotate(90deg);
+  -webkit-transform-origin:50% 50%;
+}
+#back_to_top:focus {
+  outline-width:0px;
+}
+</style>
+
+</BODY>
+

@@ -1,0 +1,2171 @@
+---------------------------------------------------
+Report for cell u23_lifcl_nx33u_evalbd_ibd
+   Instance path: u23_lifcl_nx33u_evalbd_ibd
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                MULT18	       6.00        100.0
+                                  LUT4	      10219        100.0
+                               LUTGATE	       7743        100.0
+                                LUTRAM	       1146        100.0
+                                LUTCCU	       1330        100.0
+                                 IOREG	          3        100.0
+                                 IOBUF	         11        100.0
+                                PFUREG	       5471        100.0
+                                   EBR	          7        100.0
+                                  LRAM	          2        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+AHBL_to_LMMI_converter_32s_17s_255s_0s_8	          1         0.1
+                  axi64_to_ahbl32_conv	          1        35.6
+                               pll_60m	          1         0.0
+                           resetn_sync	          1         0.0
+                         resetn_sync_0	          1         0.0
+         u23_lifclu_nx33_prpl_bldr_des	          1        64.3
+---------------------------------------------------
+Report for cell pll_60m
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/pll_60m
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+      pll_60m_ipgen_lscc_pll_Z1_layer0	          1         0.0
+---------------------------------------------------
+Report for cell pll_60m_ipgen_lscc_pll_Z1_layer0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/pll_60m/lscc_pll_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+---------------------------------------------------
+Report for cell resetn_sync
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/rs_pll_locked_60m
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          2         0.0
+---------------------------------------------------
+Report for cell resetn_sync_0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/rs_r5_sys_rstn_60m
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          1         0.0
+                               LUTGATE	          1         0.0
+                                PFUREG	          2         0.0
+---------------------------------------------------
+Report for cell u23_lifclu_nx33_prpl_bldr_des
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                MULT18	       6.00        100.0
+                                  LUT4	       6570        64.3
+                               LUTGATE	       5426        70.1
+                                LUTRAM	         96         8.4
+                                LUTCCU	       1048        78.8
+                                 IOREG	          3        100.0
+                                 IOBUF	          4        36.4
+                                PFUREG	       3654        66.8
+                                   EBR	          4        57.1
+                                  LRAM	          2        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                           HW_ver_gpio	          1         2.6
+                      ahbl0_Z15_layer0	          1         3.4
+                             ahbl2apb0	          1         2.5
+                       apb0_Z20_layer0	          1         0.3
+cpu0_0s_0s_4294967295_0_4294967295_0_4294901760_23_layer0	          1        37.1
+                                 gpio0	          1         0.5
+                            lscc_i2cm1	          1         7.6
+                            lscc_spim1	          1         4.7
+                       sysmem0_sysmem0	          1         3.1
+                                 uart0	          1         2.5
+---------------------------------------------------
+Report for cell HW_ver_gpio
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/HW_ver_gpio_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        269         2.6
+                               LUTGATE	        269         3.5
+                                PFUREG	        268         4.9
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+ HW_ver_gpio_ipgen_lscc_gpio_Z2_layer0	          1         2.6
+---------------------------------------------------
+Report for cell HW_ver_gpio_ipgen_lscc_gpio_Z2_layer0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/HW_ver_gpio_inst/lscc_gpio_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        269         2.6
+                               LUTGATE	        269         3.5
+                                PFUREG	        268         4.9
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+HW_ver_gpio_ipgen_lscc_apb2lmmi_32s_6s_1s_1_2_4_8_4s	          1         0.1
+HW_ver_gpio_ipgen_lscc_gpio_lmmi_Z3_layer0	          1         2.5
+---------------------------------------------------
+Report for cell HW_ver_gpio_ipgen_lscc_gpio_lmmi_Z3_layer0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/HW_ver_gpio_inst/lscc_gpio_inst/genblk1.lscc_gpio_lmmi_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        259         2.5
+                               LUTGATE	        259         3.3
+                                PFUREG	        195         3.6
+---------------------------------------------------
+Report for cell HW_ver_gpio_ipgen_lscc_apb2lmmi_32s_6s_1s_1_2_4_8_4s
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/HW_ver_gpio_inst/lscc_gpio_inst/genblk2.lscc_apb2lmmi_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         10         0.1
+                               LUTGATE	         10         0.1
+                                PFUREG	         73         1.3
+---------------------------------------------------
+Report for cell ahbl0_Z15_layer0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/ahbl0_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        347         3.4
+                               LUTGATE	        347         4.5
+                                PFUREG	        107         2.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+ahbl0_ipgen_lscc_ahbl_interconnect_Z4_layer0	          1         3.4
+---------------------------------------------------
+Report for cell ahbl0_ipgen_lscc_ahbl_interconnect_Z4_layer0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/ahbl0_inst/lscc_ahbl_interconnect_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        347         3.4
+                               LUTGATE	        347         4.5
+                                PFUREG	        107         2.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+ahbl0_ipgen_lscc_ahbl_crossbar_Z5_layer0	          1         3.4
+---------------------------------------------------
+Report for cell ahbl0_ipgen_lscc_ahbl_crossbar_Z5_layer0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/ahbl0_inst/lscc_ahbl_interconnect_inst/ahbl_lite_crossbar.u_lscc_ahbl_crossbar
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        347         3.4
+                               LUTGATE	        347         4.5
+                                PFUREG	        107         2.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+ahbl0_ipgen_lscc_ahbl_arbmux_Z14_layer0_0	          1         0.0
+ahbl0_ipgen_lscc_ahbl_arbmux_Z14_layer0_1	          1         0.0
+ahbl0_ipgen_lscc_ahbl_arbmux_Z14_layer0_2	          1         0.8
+  ahbl0_ipgen_lscc_ahbl_bus_Z10_layer0	          1         1.0
+  ahbl0_ipgen_lscc_ahbl_bus_Z12_layer0	          1         0.5
+ahbl0_ipgen_lscc_ahbl_input_stage_32s_0_1_2_0	          1         0.3
+ahbl0_ipgen_lscc_ahbl_input_stage_32s_0_1_2_1	          1         0.7
+---------------------------------------------------
+Report for cell ahbl0_ipgen_lscc_ahbl_input_stage_32s_0_1_2_1
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/ahbl0_inst/lscc_ahbl_interconnect_inst/ahbl_lite_crossbar.u_lscc_ahbl_crossbar/input_stage_reg[0].u_lscc_ahbl_input_stage
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         76         0.7
+                               LUTGATE	         76         1.0
+                                PFUREG	         42         0.8
+---------------------------------------------------
+Report for cell ahbl0_ipgen_lscc_ahbl_input_stage_32s_0_1_2_0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/ahbl0_inst/lscc_ahbl_interconnect_inst/ahbl_lite_crossbar.u_lscc_ahbl_crossbar/input_stage_reg[1].u_lscc_ahbl_input_stage
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         27         0.3
+                               LUTGATE	         27         0.3
+                                PFUREG	         43         0.8
+---------------------------------------------------
+Report for cell ahbl0_ipgen_lscc_ahbl_bus_Z10_layer0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/ahbl0_inst/lscc_ahbl_interconnect_inst/ahbl_lite_crossbar.u_lscc_ahbl_crossbar/bus[0].u_lscc_ahbl_bus
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        105         1.0
+                               LUTGATE	        105         1.4
+                                PFUREG	          7         0.1
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+ahbl0_ipgen_lscc_ahbl_decoder_Z6_layer0	          1         0.2
+ahbl0_ipgen_lscc_ahbl_default_slv_32s_2s_0s_1s_2s_0_1_2_3	          1         0.0
+ahbl0_ipgen_lscc_ahbl_multiplexor_32s_32s_3s_0s_0	          1         0.8
+---------------------------------------------------
+Report for cell ahbl0_ipgen_lscc_ahbl_decoder_Z6_layer0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/ahbl0_inst/lscc_ahbl_interconnect_inst/ahbl_lite_crossbar.u_lscc_ahbl_crossbar/bus[0].u_lscc_ahbl_bus/u_lscc_ahbl_decoder
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         18         0.2
+                               LUTGATE	         18         0.2
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+ahbl0_ipgen_lscc_ahbl_decoder_prim_8s_32s_1s_1_7_layer0	          1         0.0
+ahbl0_ipgen_lscc_ahbl_decoder_prim_8s_32s_1s_1_8_layer0	          1         0.0
+ahbl0_ipgen_lscc_ahbl_decoder_prim_8s_32s_1s_1_9_layer0	          1         0.1
+---------------------------------------------------
+Report for cell ahbl0_ipgen_lscc_ahbl_decoder_prim_8s_32s_1s_1_7_layer0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/ahbl0_inst/lscc_ahbl_interconnect_inst/ahbl_lite_crossbar.u_lscc_ahbl_crossbar/bus[0].u_lscc_ahbl_bus/u_lscc_ahbl_decoder/genblk1[0].genblk1.u_lscc_ahbl_decoder_sel
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          2         0.0
+                               LUTGATE	          2         0.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+ahbl0_ipgen_lscc_ahbl_decoder_comp_1s_0_131072_32s_131071_17s	          1         0.0
+---------------------------------------------------
+Report for cell ahbl0_ipgen_lscc_ahbl_decoder_comp_1s_0_131072_32s_131071_17s
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/ahbl0_inst/lscc_ahbl_interconnect_inst/ahbl_lite_crossbar.u_lscc_ahbl_crossbar/bus[0].u_lscc_ahbl_bus/u_lscc_ahbl_decoder/genblk1[0].genblk1.u_lscc_ahbl_decoder_sel/genblk1[0].u_lscc_ahbl_decoder_comp
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          2         0.0
+                               LUTGATE	          2         0.0
+---------------------------------------------------
+Report for cell ahbl0_ipgen_lscc_ahbl_decoder_prim_8s_32s_1s_1_8_layer0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/ahbl0_inst/lscc_ahbl_interconnect_inst/ahbl_lite_crossbar.u_lscc_ahbl_crossbar/bus[0].u_lscc_ahbl_bus/u_lscc_ahbl_decoder/genblk1[1].genblk1.u_lscc_ahbl_decoder_sel
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          4         0.0
+                               LUTGATE	          4         0.1
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+ahbl0_ipgen_lscc_ahbl_decoder_comp_1s_262144_6144_32s_268287_13s	          1         0.0
+---------------------------------------------------
+Report for cell ahbl0_ipgen_lscc_ahbl_decoder_comp_1s_262144_6144_32s_268287_13s
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/ahbl0_inst/lscc_ahbl_interconnect_inst/ahbl_lite_crossbar.u_lscc_ahbl_crossbar/bus[0].u_lscc_ahbl_bus/u_lscc_ahbl_decoder/genblk1[1].genblk1.u_lscc_ahbl_decoder_sel/genblk1[0].u_lscc_ahbl_decoder_comp
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          4         0.0
+                               LUTGATE	          4         0.1
+---------------------------------------------------
+Report for cell ahbl0_ipgen_lscc_ahbl_decoder_prim_8s_32s_1s_1_9_layer0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/ahbl0_inst/lscc_ahbl_interconnect_inst/ahbl_lite_crossbar.u_lscc_ahbl_crossbar/bus[0].u_lscc_ahbl_bus/u_lscc_ahbl_decoder/genblk1[2].genblk1.u_lscc_ahbl_decoder_sel
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         12         0.1
+                               LUTGATE	         12         0.2
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+ahbl0_ipgen_lscc_ahbl_decoder_comp_1s_131072_131072_32s_262143_17s	          1         0.1
+---------------------------------------------------
+Report for cell ahbl0_ipgen_lscc_ahbl_decoder_comp_1s_131072_131072_32s_262143_17s
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/ahbl0_inst/lscc_ahbl_interconnect_inst/ahbl_lite_crossbar.u_lscc_ahbl_crossbar/bus[0].u_lscc_ahbl_bus/u_lscc_ahbl_decoder/genblk1[2].genblk1.u_lscc_ahbl_decoder_sel/genblk1[0].u_lscc_ahbl_decoder_comp
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         12         0.1
+                               LUTGATE	         12         0.2
+---------------------------------------------------
+Report for cell ahbl0_ipgen_lscc_ahbl_multiplexor_32s_32s_3s_0s_0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/ahbl0_inst/lscc_ahbl_interconnect_inst/ahbl_lite_crossbar.u_lscc_ahbl_crossbar/bus[0].u_lscc_ahbl_bus/u_lscc_ahbl_multiplexor
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         83         0.8
+                               LUTGATE	         83         1.1
+                                PFUREG	          5         0.1
+---------------------------------------------------
+Report for cell ahbl0_ipgen_lscc_ahbl_default_slv_32s_2s_0s_1s_2s_0_1_2_3
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/ahbl0_inst/lscc_ahbl_interconnect_inst/ahbl_lite_crossbar.u_lscc_ahbl_crossbar/bus[0].u_lscc_ahbl_bus/u_lscc_ahbl_default_slv
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          4         0.0
+                               LUTGATE	          4         0.1
+                                PFUREG	          2         0.0
+---------------------------------------------------
+Report for cell ahbl0_ipgen_lscc_ahbl_bus_Z12_layer0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/ahbl0_inst/lscc_ahbl_interconnect_inst/ahbl_lite_crossbar.u_lscc_ahbl_crossbar/bus[1].u_lscc_ahbl_bus
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         54         0.5
+                               LUTGATE	         54         0.7
+                                PFUREG	          5         0.1
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+ahbl0_ipgen_lscc_ahbl_decoder_Z11_layer0	          1         0.1
+ahbl0_ipgen_lscc_ahbl_default_slv_32s_2s_0s_1s_2s_0_1_2_0	          1         0.0
+ahbl0_ipgen_lscc_ahbl_multiplexor_32s_32s_3s_0s_1	          1         0.4
+---------------------------------------------------
+Report for cell ahbl0_ipgen_lscc_ahbl_decoder_Z11_layer0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/ahbl0_inst/lscc_ahbl_interconnect_inst/ahbl_lite_crossbar.u_lscc_ahbl_crossbar/bus[1].u_lscc_ahbl_bus/u_lscc_ahbl_decoder
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         12         0.1
+                               LUTGATE	         12         0.2
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+ahbl0_ipgen_lscc_ahbl_decoder_prim_8s_32s_1s_1_7_layer0_0	          1         0.1
+---------------------------------------------------
+Report for cell ahbl0_ipgen_lscc_ahbl_decoder_prim_8s_32s_1s_1_7_layer0_0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/ahbl0_inst/lscc_ahbl_interconnect_inst/ahbl_lite_crossbar.u_lscc_ahbl_crossbar/bus[1].u_lscc_ahbl_bus/u_lscc_ahbl_decoder/genblk1[0].genblk1.u_lscc_ahbl_decoder_sel
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         12         0.1
+                               LUTGATE	         12         0.2
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+ahbl0_ipgen_lscc_ahbl_decoder_comp_1s_0_131072_32s_131071_17s_0	          1         0.1
+---------------------------------------------------
+Report for cell ahbl0_ipgen_lscc_ahbl_decoder_comp_1s_0_131072_32s_131071_17s_0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/ahbl0_inst/lscc_ahbl_interconnect_inst/ahbl_lite_crossbar.u_lscc_ahbl_crossbar/bus[1].u_lscc_ahbl_bus/u_lscc_ahbl_decoder/genblk1[0].genblk1.u_lscc_ahbl_decoder_sel/genblk1[0].u_lscc_ahbl_decoder_comp
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         12         0.1
+                               LUTGATE	         12         0.2
+---------------------------------------------------
+Report for cell ahbl0_ipgen_lscc_ahbl_multiplexor_32s_32s_3s_0s_1
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/ahbl0_inst/lscc_ahbl_interconnect_inst/ahbl_lite_crossbar.u_lscc_ahbl_crossbar/bus[1].u_lscc_ahbl_bus/u_lscc_ahbl_multiplexor
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         40         0.4
+                               LUTGATE	         40         0.5
+                                PFUREG	          3         0.1
+---------------------------------------------------
+Report for cell ahbl0_ipgen_lscc_ahbl_default_slv_32s_2s_0s_1s_2s_0_1_2_0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/ahbl0_inst/lscc_ahbl_interconnect_inst/ahbl_lite_crossbar.u_lscc_ahbl_crossbar/bus[1].u_lscc_ahbl_bus/u_lscc_ahbl_default_slv
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          2         0.0
+                               LUTGATE	          2         0.0
+                                PFUREG	          2         0.0
+---------------------------------------------------
+Report for cell ahbl0_ipgen_lscc_ahbl_arbmux_Z14_layer0_2
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/ahbl0_inst/lscc_ahbl_interconnect_inst/ahbl_lite_crossbar.u_lscc_ahbl_crossbar/arbiter_mux[0].u_lscc_ahbl_arbmux
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         80         0.8
+                               LUTGATE	         80         1.0
+                                PFUREG	          8         0.1
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+ahbl0_ipgen_lscc_ahbl_arbiter_Z13_layer0_0	          1         0.3
+---------------------------------------------------
+Report for cell ahbl0_ipgen_lscc_ahbl_arbiter_Z13_layer0_0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/ahbl0_inst/lscc_ahbl_interconnect_inst/ahbl_lite_crossbar.u_lscc_ahbl_crossbar/arbiter_mux[0].u_lscc_ahbl_arbmux/u_lscc_ahbl_arbiter
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         30         0.3
+                               LUTGATE	         30         0.4
+                                PFUREG	          2         0.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+ahbl0_ipgen_lscc_ahbl_fair_arb_2s_1_1s_4s_2_0_0	          1         0.3
+---------------------------------------------------
+Report for cell ahbl0_ipgen_lscc_ahbl_fair_arb_2s_1_1s_4s_2_0_0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/ahbl0_inst/lscc_ahbl_interconnect_inst/ahbl_lite_crossbar.u_lscc_ahbl_crossbar/arbiter_mux[0].u_lscc_ahbl_arbmux/u_lscc_ahbl_arbiter/round_robin.u_fair_arb
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         30         0.3
+                               LUTGATE	         30         0.4
+                                PFUREG	          2         0.0
+---------------------------------------------------
+Report for cell ahbl0_ipgen_lscc_ahbl_arbmux_Z14_layer0_1
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/ahbl0_inst/lscc_ahbl_interconnect_inst/ahbl_lite_crossbar.u_lscc_ahbl_crossbar/arbiter_mux[1].u_lscc_ahbl_arbmux
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          1         0.0
+                               LUTGATE	          1         0.0
+                                PFUREG	          1         0.0
+---------------------------------------------------
+Report for cell ahbl0_ipgen_lscc_ahbl_arbmux_Z14_layer0_0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/ahbl0_inst/lscc_ahbl_interconnect_inst/ahbl_lite_crossbar.u_lscc_ahbl_crossbar/arbiter_mux[2].u_lscc_ahbl_arbmux
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          1         0.0
+                               LUTGATE	          1         0.0
+                                PFUREG	          1         0.0
+---------------------------------------------------
+Report for cell ahbl2apb0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/ahbl2apb0_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        257         2.5
+                               LUTGATE	        257         3.3
+                                PFUREG	        130         2.4
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+ahbl2apb0_ipgen_lscc_ahbl2apb_Z16_layer0	          1         2.5
+---------------------------------------------------
+Report for cell ahbl2apb0_ipgen_lscc_ahbl2apb_Z16_layer0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/ahbl2apb0_inst/lscc_ahbl2apb_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        257         2.5
+                               LUTGATE	        257         3.3
+                                PFUREG	        130         2.4
+---------------------------------------------------
+Report for cell apb0_Z20_layer0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/apb0_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         27         0.3
+                               LUTGATE	         27         0.3
+                                PFUREG	          6         0.1
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+apb0_ipgen_lscc_apb_interconnect_Z17_layer0	          1         0.3
+---------------------------------------------------
+Report for cell apb0_ipgen_lscc_apb_interconnect_Z17_layer0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/apb0_inst/lscc_apb_interconnect_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         27         0.3
+                               LUTGATE	         27         0.3
+                                PFUREG	          6         0.1
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+    apb0_ipgen_lscc_apb_bus_Z19_layer0	          1         0.3
+---------------------------------------------------
+Report for cell apb0_ipgen_lscc_apb_bus_Z19_layer0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/apb0_inst/lscc_apb_interconnect_inst/apb_bus.u_lscc_apb_bus
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         27         0.3
+                               LUTGATE	         27         0.3
+                                PFUREG	          6         0.1
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+apb0_ipgen_lscc_apb_decoder_Z18_layer0	          1         0.2
+apb0_ipgen_lscc_apb_multiplexor_32s_32s_32s_5s_0s	          1         0.1
+---------------------------------------------------
+Report for cell apb0_ipgen_lscc_apb_decoder_Z18_layer0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/apb0_inst/lscc_apb_interconnect_inst/apb_bus.u_lscc_apb_bus/u_lscc_apb_decoder
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         16         0.2
+                               LUTGATE	         16         0.2
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+apb0_ipgen_lscc_apb_decoder_prim_32s_1s_32s_1s_1_262144_1024	          1         0.0
+apb0_ipgen_lscc_apb_decoder_prim_32s_1s_32s_1s_1_263168_1024	          1         0.0
+apb0_ipgen_lscc_apb_decoder_prim_32s_1s_32s_1s_1_264192_1024	          1         0.0
+apb0_ipgen_lscc_apb_decoder_prim_32s_1s_32s_1s_1_265216_1024	          1         0.0
+apb0_ipgen_lscc_apb_decoder_prim_32s_1s_32s_1s_1_267264_1024	          1         0.0
+---------------------------------------------------
+Report for cell apb0_ipgen_lscc_apb_decoder_prim_32s_1s_32s_1s_1_263168_1024
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/apb0_inst/lscc_apb_interconnect_inst/apb_bus.u_lscc_apb_bus/u_lscc_apb_decoder/genblk1[0].u_lscc_apb_decoder_sel
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          5         0.0
+                               LUTGATE	          5         0.1
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+apb0_ipgen_lscc_apb_decoder_comp_32s_263168_1024_32s_1s_264191_10s	          1         0.0
+---------------------------------------------------
+Report for cell apb0_ipgen_lscc_apb_decoder_comp_32s_263168_1024_32s_1s_264191_10s
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/apb0_inst/lscc_apb_interconnect_inst/apb_bus.u_lscc_apb_bus/u_lscc_apb_decoder/genblk1[0].u_lscc_apb_decoder_sel/genblk1[0].u_lscc_apb_decoder_comp
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          5         0.0
+                               LUTGATE	          5         0.1
+---------------------------------------------------
+Report for cell apb0_ipgen_lscc_apb_decoder_prim_32s_1s_32s_1s_1_262144_1024
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/apb0_inst/lscc_apb_interconnect_inst/apb_bus.u_lscc_apb_bus/u_lscc_apb_decoder/genblk1[1].u_lscc_apb_decoder_sel
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          5         0.0
+                               LUTGATE	          5         0.1
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+apb0_ipgen_lscc_apb_decoder_comp_32s_262144_1024_32s_1s_263167_10s	          1         0.0
+---------------------------------------------------
+Report for cell apb0_ipgen_lscc_apb_decoder_comp_32s_262144_1024_32s_1s_263167_10s
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/apb0_inst/lscc_apb_interconnect_inst/apb_bus.u_lscc_apb_bus/u_lscc_apb_decoder/genblk1[1].u_lscc_apb_decoder_sel/genblk1[0].u_lscc_apb_decoder_comp
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          5         0.0
+                               LUTGATE	          5         0.1
+---------------------------------------------------
+Report for cell apb0_ipgen_lscc_apb_decoder_prim_32s_1s_32s_1s_1_264192_1024
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/apb0_inst/lscc_apb_interconnect_inst/apb_bus.u_lscc_apb_bus/u_lscc_apb_decoder/genblk1[2].u_lscc_apb_decoder_sel
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          1         0.0
+                               LUTGATE	          1         0.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+apb0_ipgen_lscc_apb_decoder_comp_32s_264192_1024_32s_1s_265215_10s	          1         0.0
+---------------------------------------------------
+Report for cell apb0_ipgen_lscc_apb_decoder_comp_32s_264192_1024_32s_1s_265215_10s
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/apb0_inst/lscc_apb_interconnect_inst/apb_bus.u_lscc_apb_bus/u_lscc_apb_decoder/genblk1[2].u_lscc_apb_decoder_sel/genblk1[0].u_lscc_apb_decoder_comp
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          1         0.0
+                               LUTGATE	          1         0.0
+---------------------------------------------------
+Report for cell apb0_ipgen_lscc_apb_decoder_prim_32s_1s_32s_1s_1_265216_1024
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/apb0_inst/lscc_apb_interconnect_inst/apb_bus.u_lscc_apb_bus/u_lscc_apb_decoder/genblk1[3].u_lscc_apb_decoder_sel
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          1         0.0
+                               LUTGATE	          1         0.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+apb0_ipgen_lscc_apb_decoder_comp_32s_265216_1024_32s_1s_266239_10s	          1         0.0
+---------------------------------------------------
+Report for cell apb0_ipgen_lscc_apb_decoder_comp_32s_265216_1024_32s_1s_266239_10s
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/apb0_inst/lscc_apb_interconnect_inst/apb_bus.u_lscc_apb_bus/u_lscc_apb_decoder/genblk1[3].u_lscc_apb_decoder_sel/genblk1[0].u_lscc_apb_decoder_comp
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          1         0.0
+                               LUTGATE	          1         0.0
+---------------------------------------------------
+Report for cell apb0_ipgen_lscc_apb_decoder_prim_32s_1s_32s_1s_1_267264_1024
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/apb0_inst/lscc_apb_interconnect_inst/apb_bus.u_lscc_apb_bus/u_lscc_apb_decoder/genblk1[4].u_lscc_apb_decoder_sel
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          2         0.0
+                               LUTGATE	          2         0.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+apb0_ipgen_lscc_apb_decoder_comp_32s_267264_1024_32s_1s_268287_10s	          1         0.0
+---------------------------------------------------
+Report for cell apb0_ipgen_lscc_apb_decoder_comp_32s_267264_1024_32s_1s_268287_10s
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/apb0_inst/lscc_apb_interconnect_inst/apb_bus.u_lscc_apb_bus/u_lscc_apb_decoder/genblk1[4].u_lscc_apb_decoder_sel/genblk1[0].u_lscc_apb_decoder_comp
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          2         0.0
+                               LUTGATE	          2         0.0
+---------------------------------------------------
+Report for cell apb0_ipgen_lscc_apb_multiplexor_32s_32s_32s_5s_0s
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/apb0_inst/lscc_apb_interconnect_inst/apb_bus.u_lscc_apb_bus/u_lscc_apb_multiplexor
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         11         0.1
+                               LUTGATE	         11         0.1
+                                PFUREG	          6         0.1
+---------------------------------------------------
+Report for cell cpu0_0s_0s_4294967295_0_4294967295_0_4294901760_23_layer0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/cpu0_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                MULT18	       6.00        100.0
+                                  LUT4	       3793        37.1
+                               LUTGATE	       3063        39.6
+                                LUTCCU	        730        54.9
+                                PFUREG	       1939        35.4
+                                   EBR	          2        28.6
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                      secured_design_1	          1        37.1
+---------------------------------------------------
+Report for cell secured_design_1
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/cpu0_inst/riscvsmall_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                MULT18	       6.00        100.0
+                                  LUT4	       3791        37.1
+                               LUTGATE	       3061        39.5
+                                LUTCCU	        730        54.9
+                                PFUREG	       1939        35.4
+                                   EBR	          2        28.6
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                      secured_design_2	          1         1.4
+                     secured_design_22	          1        30.6
+                      secured_design_3	          1         0.4
+                      secured_design_4	          1         3.3
+                      secured_design_5	          1         1.3
+---------------------------------------------------
+Report for cell secured_design_2
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/secured_instance_2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        142         1.4
+                               LUTGATE	        142         1.8
+                                PFUREG	          3         0.1
+---------------------------------------------------
+Report for cell secured_design_3
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/secured_instance_3
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         42         0.4
+                               LUTGATE	         42         0.5
+                                PFUREG	         27         0.5
+---------------------------------------------------
+Report for cell secured_design_4
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/secured_instance_4
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        342         3.3
+                               LUTGATE	        210         2.7
+                                LUTCCU	        132         9.9
+                                PFUREG	        137         2.5
+---------------------------------------------------
+Report for cell secured_design_5
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/secured_instance_5
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        132         1.3
+                               LUTGATE	        118         1.5
+                                LUTCCU	         14         1.1
+                                PFUREG	        267         4.9
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_18	          1         0.7
+                     secured_design_21	          1         0.1
+                      secured_design_6	          1         0.4
+---------------------------------------------------
+Report for cell secured_design_6
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/secured_instance_6
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         41         0.4
+                               LUTGATE	         27         0.3
+                                LUTCCU	         14         1.1
+                                PFUREG	         62         1.1
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_10	          1         0.0
+                     secured_design_11	          1         0.0
+                     secured_design_12	          1         0.0
+                     secured_design_13	          1         0.0
+                     secured_design_14	          1         0.0
+                     secured_design_15	          1         0.3
+                      secured_design_7	          1         0.0
+                      secured_design_8	          1         0.0
+                      secured_design_9	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_7
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/secured_instance_7
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          2         0.0
+---------------------------------------------------
+Report for cell secured_design_8
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/secured_instance_8
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_9
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/secured_instance_9
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_10
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/secured_instance_10
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_11
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/secured_instance_11
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_12
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/secured_instance_12
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_13
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/secured_instance_13
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_14
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/secured_instance_14
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_15
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/secured_instance_15
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         34         0.3
+                               LUTGATE	         20         0.3
+                                LUTCCU	         14         1.1
+                                PFUREG	         53         1.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_16	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_16
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/secured_instance_16
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          1         0.0
+                               LUTGATE	          1         0.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_17	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_17
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/secured_instance_17
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          1         0.0
+                               LUTGATE	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_18
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/secured_instance_18
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         76         0.7
+                               LUTGATE	         76         1.0
+                                PFUREG	        122         2.2
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_19	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_19
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/secured_instance_19
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          2         0.0
+                               LUTGATE	          2         0.0
+                                PFUREG	          9         0.2
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_20	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_20
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/secured_instance_20
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          2         0.0
+---------------------------------------------------
+Report for cell secured_design_21
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/secured_instance_21
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         14         0.1
+                               LUTGATE	         14         0.2
+                                PFUREG	         78         1.4
+---------------------------------------------------
+Report for cell secured_design_22
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/secured_instance_22
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                MULT18	       6.00        100.0
+                                  LUT4	       3132        30.6
+                               LUTGATE	       2548        32.9
+                                LUTCCU	        584        43.9
+                                PFUREG	       1504        27.5
+                                   EBR	          2        28.6
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_23	          1         0.4
+---------------------------------------------------
+Report for cell secured_design_23
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/secured_instance_23
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         39         0.4
+                               LUTGATE	         39         0.5
+                                PFUREG	         35         0.6
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_24	          1         0.4
+---------------------------------------------------
+Report for cell secured_design_24
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/secured_instance_24
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         39         0.4
+                               LUTGATE	         39         0.5
+                                PFUREG	         35         0.6
+---------------------------------------------------
+Report for cell gpio0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/gpio0_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         46         0.5
+                               LUTGATE	         46         0.6
+                                 IOREG	          2        66.7
+                                 IOBUF	          2        18.2
+                                PFUREG	         29         0.5
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+      gpio0_ipgen_lscc_gpio_Z24_layer0	          1         0.5
+---------------------------------------------------
+Report for cell gpio0_ipgen_lscc_gpio_Z24_layer0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/gpio0_inst/lscc_gpio_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         46         0.5
+                               LUTGATE	         46         0.6
+                                 IOREG	          2        66.7
+                                 IOBUF	          2        18.2
+                                PFUREG	         29         0.5
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+gpio0_ipgen_lscc_apb2lmmi_2s_6s_1s_1_2_4_8_4s	          1         0.1
+ gpio0_ipgen_lscc_gpio_lmmi_Z25_layer0	          1         0.4
+---------------------------------------------------
+Report for cell gpio0_ipgen_lscc_gpio_lmmi_Z25_layer0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/gpio0_inst/lscc_gpio_inst/genblk1.lscc_gpio_lmmi_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         36         0.4
+                               LUTGATE	         36         0.5
+                                 IOREG	          2        66.7
+                                 IOBUF	          2        18.2
+                                PFUREG	         16         0.3
+---------------------------------------------------
+Report for cell gpio0_ipgen_lscc_apb2lmmi_2s_6s_1s_1_2_4_8_4s
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/gpio0_inst/lscc_gpio_inst/genblk2.lscc_apb2lmmi_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         10         0.1
+                               LUTGATE	         10         0.1
+                                PFUREG	         13         0.2
+---------------------------------------------------
+Report for cell lscc_i2cm1
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/lscc_i2cm1_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        775         7.6
+                               LUTGATE	        533         6.9
+                                LUTRAM	         96         8.4
+                                LUTCCU	        146        11.0
+                                 IOBUF	          2        18.2
+                                PFUREG	        567        10.4
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_25	          1         7.6
+---------------------------------------------------
+Report for cell secured_design_25
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/lscc_i2cm1_inst/lscc_i2c_master_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        775         7.6
+                               LUTGATE	        533         6.9
+                                LUTRAM	         96         8.4
+                                LUTCCU	        146        11.0
+                                 IOBUF	          2        18.2
+                                PFUREG	        567        10.4
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_26	          1         7.5
+                     secured_design_50	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_26
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/secured_instance_26
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        770         7.5
+                               LUTGATE	        528         6.8
+                                LUTRAM	         96         8.4
+                                LUTCCU	        146        11.0
+                                 IOBUF	          2        18.2
+                                PFUREG	        541         9.9
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_27	          1         3.0
+                     secured_design_41	          1         4.5
+---------------------------------------------------
+Report for cell secured_design_27
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/secured_instance_27
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        306         3.0
+                               LUTGATE	        202         2.6
+                                LUTCCU	        104         7.8
+                                PFUREG	        205         3.7
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_28	          1         0.0
+                     secured_design_29	          1         0.0
+                     secured_design_30	          1         1.5
+                     secured_design_37	          1         1.3
+---------------------------------------------------
+Report for cell secured_design_28
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/secured_instance_28
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          5         0.0
+                               LUTGATE	          5         0.1
+                                PFUREG	          7         0.1
+---------------------------------------------------
+Report for cell secured_design_29
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/secured_instance_29
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          5         0.0
+                               LUTGATE	          5         0.1
+                                PFUREG	          8         0.1
+---------------------------------------------------
+Report for cell secured_design_30
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/secured_instance_30
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        158         1.5
+                               LUTGATE	         70         0.9
+                                LUTCCU	         88         6.6
+                                PFUREG	         83         1.5
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_31	          1         0.0
+                     secured_design_32	          1         0.4
+                     secured_design_33	          1         0.3
+                     secured_design_35	          1         0.3
+---------------------------------------------------
+Report for cell secured_design_31
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/secured_instance_31
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          3         0.0
+                               LUTGATE	          3         0.0
+                                PFUREG	          3         0.1
+---------------------------------------------------
+Report for cell secured_design_32
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/secured_instance_32
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         37         0.4
+                               LUTGATE	         25         0.3
+                                LUTCCU	         12         0.9
+                                PFUREG	         14         0.3
+---------------------------------------------------
+Report for cell secured_design_33
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/secured_instance_33
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         34         0.3
+                               LUTGATE	         14         0.2
+                                LUTCCU	         20         1.5
+                                PFUREG	         24         0.4
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_34	          1         0.2
+---------------------------------------------------
+Report for cell secured_design_34
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/secured_instance_34
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         23         0.2
+                               LUTGATE	          3         0.0
+                                LUTCCU	         20         1.5
+                                PFUREG	         12         0.2
+---------------------------------------------------
+Report for cell secured_design_35
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/secured_instance_35
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         31         0.3
+                               LUTGATE	         11         0.1
+                                LUTCCU	         20         1.5
+                                PFUREG	         18         0.3
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_36	          1         0.2
+---------------------------------------------------
+Report for cell secured_design_36
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/secured_instance_36
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         23         0.2
+                               LUTGATE	          3         0.0
+                                LUTCCU	         20         1.5
+                                PFUREG	         12         0.2
+---------------------------------------------------
+Report for cell secured_design_37
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/secured_instance_37
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        135         1.3
+                               LUTGATE	        119         1.5
+                                LUTCCU	         16         1.2
+                                PFUREG	        107         2.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_38	          1         0.9
+                     secured_design_39	          1         0.1
+                     secured_design_40	          1         0.1
+---------------------------------------------------
+Report for cell secured_design_38
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/secured_instance_38
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         92         0.9
+                               LUTGATE	         76         1.0
+                                LUTCCU	         16         1.2
+                                PFUREG	         45         0.8
+---------------------------------------------------
+Report for cell secured_design_39
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/secured_instance_39
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         10         0.1
+                               LUTGATE	         10         0.1
+                                PFUREG	         14         0.3
+---------------------------------------------------
+Report for cell secured_design_40
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/secured_instance_40
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         13         0.1
+                               LUTGATE	         13         0.2
+                                PFUREG	         21         0.4
+---------------------------------------------------
+Report for cell secured_design_41
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/secured_instance_41
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        463         4.5
+                               LUTGATE	        325         4.2
+                                LUTRAM	         96         8.4
+                                LUTCCU	         42         3.2
+                                PFUREG	        335         6.1
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_42	          1         1.5
+                     secured_design_46	          1         1.6
+---------------------------------------------------
+Report for cell secured_design_42
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/secured_instance_42
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        155         1.5
+                               LUTGATE	         91         1.2
+                                LUTRAM	         48         4.2
+                                LUTCCU	         16         1.2
+                                PFUREG	        119         2.2
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_43	          1         1.5
+---------------------------------------------------
+Report for cell secured_design_43
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/secured_instance_43
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        155         1.5
+                               LUTGATE	         91         1.2
+                                LUTRAM	         48         4.2
+                                LUTCCU	         16         1.2
+                                PFUREG	        119         2.2
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_44	          1         1.5
+---------------------------------------------------
+Report for cell secured_design_44
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/secured_instance_44
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        155         1.5
+                               LUTGATE	         91         1.2
+                                LUTRAM	         48         4.2
+                                LUTCCU	         16         1.2
+                                PFUREG	        119         2.2
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_45	          1         1.5
+---------------------------------------------------
+Report for cell secured_design_45
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/secured_instance_45
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        155         1.5
+                               LUTGATE	         91         1.2
+                                LUTRAM	         48         4.2
+                                LUTCCU	         16         1.2
+                                PFUREG	        119         2.2
+---------------------------------------------------
+Report for cell secured_design_46
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/secured_instance_46
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        162         1.6
+                               LUTGATE	         98         1.3
+                                LUTRAM	         48         4.2
+                                LUTCCU	         16         1.2
+                                PFUREG	        111         2.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_47	          1         1.6
+---------------------------------------------------
+Report for cell secured_design_47
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/secured_instance_47
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        162         1.6
+                               LUTGATE	         98         1.3
+                                LUTRAM	         48         4.2
+                                LUTCCU	         16         1.2
+                                PFUREG	        111         2.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_48	          1         1.6
+---------------------------------------------------
+Report for cell secured_design_48
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/secured_instance_48
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        162         1.6
+                               LUTGATE	         98         1.3
+                                LUTRAM	         48         4.2
+                                LUTCCU	         16         1.2
+                                PFUREG	        111         2.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_49	          1         1.6
+---------------------------------------------------
+Report for cell secured_design_49
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/secured_instance_49
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        162         1.6
+                               LUTGATE	         98         1.3
+                                LUTRAM	         48         4.2
+                                LUTCCU	         16         1.2
+                                PFUREG	        111         2.0
+---------------------------------------------------
+Report for cell secured_design_50
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/secured_instance_50
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          5         0.0
+                               LUTGATE	          5         0.1
+                                PFUREG	         25         0.5
+---------------------------------------------------
+Report for cell lscc_spim1
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/lscc_spim1_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        483         4.7
+                               LUTGATE	        375         4.8
+                                LUTCCU	        108         8.1
+                                PFUREG	        406         7.4
+                                   EBR	          2        28.6
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_51	          1         4.7
+---------------------------------------------------
+Report for cell secured_design_51
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/lscc_spim1_inst/lscc_spi_master_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        483         4.7
+                               LUTGATE	        375         4.8
+                                LUTCCU	        108         8.1
+                                PFUREG	        406         7.4
+                                   EBR	          2        28.6
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_52	          1         4.7
+                     secured_design_63	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_52
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/secured_instance_52
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        478         4.7
+                               LUTGATE	        370         4.8
+                                LUTCCU	        108         8.1
+                                PFUREG	        380         6.9
+                                   EBR	          2        28.6
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_53	          1         1.1
+                     secured_design_54	          1         1.1
+                     secured_design_58	          1         1.1
+                     secured_design_62	          1         1.2
+---------------------------------------------------
+Report for cell secured_design_53
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/secured_instance_53
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        117         1.1
+                               LUTGATE	         97         1.3
+                                LUTCCU	         20         1.5
+                                PFUREG	         75         1.4
+---------------------------------------------------
+Report for cell secured_design_54
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/secured_instance_54
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        115         1.1
+                               LUTGATE	         75         1.0
+                                LUTCCU	         40         3.0
+                                PFUREG	        131         2.4
+                                   EBR	          1        14.3
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_55	          1         1.1
+---------------------------------------------------
+Report for cell secured_design_55
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/secured_instance_55
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        115         1.1
+                               LUTGATE	         75         1.0
+                                LUTCCU	         40         3.0
+                                PFUREG	        131         2.4
+                                   EBR	          1        14.3
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_56	          1         1.1
+---------------------------------------------------
+Report for cell secured_design_56
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/secured_instance_56
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        115         1.1
+                               LUTGATE	         75         1.0
+                                LUTCCU	         40         3.0
+                                PFUREG	        131         2.4
+                                   EBR	          1        14.3
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_57	          1         1.1
+---------------------------------------------------
+Report for cell secured_design_57
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/secured_instance_57
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        115         1.1
+                               LUTGATE	         75         1.0
+                                LUTCCU	         40         3.0
+                                PFUREG	        131         2.4
+                                   EBR	          1        14.3
+---------------------------------------------------
+Report for cell secured_design_58
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/secured_instance_58
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        117         1.1
+                               LUTGATE	         87         1.1
+                                LUTCCU	         30         2.3
+                                PFUREG	        131         2.4
+                                   EBR	          1        14.3
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_59	          1         1.1
+---------------------------------------------------
+Report for cell secured_design_59
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/secured_instance_59
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        117         1.1
+                               LUTGATE	         87         1.1
+                                LUTCCU	         30         2.3
+                                PFUREG	        131         2.4
+                                   EBR	          1        14.3
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_60	          1         1.1
+---------------------------------------------------
+Report for cell secured_design_60
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/secured_instance_60
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        117         1.1
+                               LUTGATE	         87         1.1
+                                LUTCCU	         30         2.3
+                                PFUREG	        131         2.4
+                                   EBR	          1        14.3
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_61	          1         1.1
+---------------------------------------------------
+Report for cell secured_design_61
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/secured_instance_61
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        117         1.1
+                               LUTGATE	         87         1.1
+                                LUTCCU	         30         2.3
+                                PFUREG	        131         2.4
+                                   EBR	          1        14.3
+---------------------------------------------------
+Report for cell secured_design_62
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/secured_instance_62
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        125         1.2
+                               LUTGATE	        107         1.4
+                                LUTCCU	         18         1.4
+                                PFUREG	         43         0.8
+---------------------------------------------------
+Report for cell secured_design_63
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/secured_instance_63
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          5         0.0
+                               LUTGATE	          5         0.1
+                                PFUREG	         25         0.5
+---------------------------------------------------
+Report for cell sysmem0_sysmem0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/sysmem0_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        321         3.1
+                               LUTGATE	        303         3.9
+                                LUTCCU	         18         1.4
+                                PFUREG	         56         1.0
+                                  LRAM	          2        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+ sysmem0_ipgen_lscc_sys_mem_Z49_layer0	          1         3.1
+---------------------------------------------------
+Report for cell sysmem0_ipgen_lscc_sys_mem_Z49_layer0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/sysmem0_inst/lscc_sys_mem_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        321         3.1
+                               LUTGATE	        303         3.9
+                                LUTCCU	         18         1.4
+                                PFUREG	         56         1.0
+                                  LRAM	          2        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+sysmem0_ipgen_lscc_ahblmem_subordinate_Z50_layer0_0	          1         2.4
+sysmem0_ipgen_lscc_ahblmem_subordinate_Z50_layer0_1	          1         0.0
+     sysmem0_ipgen_lscc_mem_Z51_layer0	          1         0.7
+---------------------------------------------------
+Report for cell sysmem0_ipgen_lscc_ahblmem_subordinate_Z50_layer0_1
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/sysmem0_inst/lscc_sys_mem_inst/bridge_s0.genblk1.bridge_s0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          4         0.0
+                               LUTGATE	          4         0.1
+                                PFUREG	          3         0.1
+---------------------------------------------------
+Report for cell sysmem0_ipgen_lscc_ahblmem_subordinate_Z50_layer0_0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/sysmem0_inst/lscc_sys_mem_inst/bridge_s1.genblk1.bridge_s1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        250         2.4
+                               LUTGATE	        232         3.0
+                                LUTCCU	         18         1.4
+                                PFUREG	         49         0.9
+---------------------------------------------------
+Report for cell sysmem0_ipgen_lscc_mem_Z51_layer0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/sysmem0_inst/lscc_sys_mem_inst/CORE_MEMORY.genblk1.u_lscc_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         67         0.7
+                               LUTGATE	         67         0.9
+                                PFUREG	          4         0.1
+                                  LRAM	          2        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+sysmem0_ipgen_lscc_smem_lram_Z52_layer0	          1         0.7
+---------------------------------------------------
+Report for cell sysmem0_ipgen_lscc_smem_lram_Z52_layer0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/sysmem0_inst/lscc_sys_mem_inst/CORE_MEMORY.genblk1.u_lscc_mem0/intf_AHBL.lifcl_LAVAT.lram.dp.ulram_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         67         0.7
+                               LUTGATE	         67         0.9
+                                PFUREG	          4         0.1
+                                  LRAM	          2        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+sysmem0_ipgen_lscc_lram_core_Z53_layer0	          1         0.6
+sysmem0_ipgen_lscc_lram_core_Z54_layer0	          1         0.0
+---------------------------------------------------
+Report for cell sysmem0_ipgen_lscc_lram_core_Z53_layer0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/sysmem0_inst/lscc_sys_mem_inst/CORE_MEMORY.genblk1.u_lscc_mem0/intf_AHBL.lifcl_LAVAT.lram.dp.ulram_0/genblk2[0].genblk3.ulram_core0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         65         0.6
+                               LUTGATE	         65         0.8
+                                  LRAM	          1        50.0
+---------------------------------------------------
+Report for cell sysmem0_ipgen_lscc_lram_core_Z54_layer0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/sysmem0_inst/lscc_sys_mem_inst/CORE_MEMORY.genblk1.u_lscc_mem0/intf_AHBL.lifcl_LAVAT.lram.dp.ulram_0/genblk2[1].genblk3.ulram_core0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          1         0.0
+                               LUTGATE	          1         0.0
+                                  LRAM	          1        50.0
+---------------------------------------------------
+Report for cell uart0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/uart0_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        252         2.5
+                               LUTGATE	        206         2.7
+                                LUTCCU	         46         3.5
+                                 IOREG	          1        33.3
+                                PFUREG	        146         2.7
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+      uart0_ipgen_lscc_uart_Z56_layer0	          1         2.5
+---------------------------------------------------
+Report for cell uart0_ipgen_lscc_uart_Z56_layer0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/uart0_inst/lscc_uart_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        252         2.5
+                               LUTGATE	        206         2.7
+                                LUTCCU	         46         3.5
+                                 IOREG	          1        33.3
+                                PFUREG	        146         2.7
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+uart0_ipgen_lscc_uart_intface_Z55_layer0	          1         0.5
+uart0_ipgen_lscc_uart_rxcver_8s_0s_5s_1_2_4_8_16_MachXO3D	          1         1.0
+uart0_ipgen_lscc_uart_txmitt_8s_0s_7s_1_2_4_8_16_32_64	          1         0.9
+---------------------------------------------------
+Report for cell uart0_ipgen_lscc_uart_intface_Z55_layer0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/uart0_inst/lscc_uart_inst/u_intface
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         53         0.5
+                               LUTGATE	         53         0.7
+                                PFUREG	         48         0.9
+---------------------------------------------------
+Report for cell uart0_ipgen_lscc_uart_rxcver_8s_0s_5s_1_2_4_8_16_MachXO3D
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/uart0_inst/lscc_uart_inst/u_rxcver
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        107         1.0
+                               LUTGATE	         79         1.0
+                                LUTCCU	         28         2.1
+                                 IOREG	          1        33.3
+                                PFUREG	         56         1.0
+---------------------------------------------------
+Report for cell uart0_ipgen_lscc_uart_txmitt_8s_0s_7s_1_2_4_8_16_32_64
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/nxU_prpl_bldr/uart0_inst/lscc_uart_inst/u_txmitt
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         92         0.9
+                               LUTGATE	         74         1.0
+                                LUTCCU	         18         1.4
+                                PFUREG	         42         0.8
+---------------------------------------------------
+Report for cell AHBL_to_LMMI_converter_32s_17s_255s_0s_8
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/AHBL_to_LMMI_converter_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          8         0.1
+                               LUTGATE	          8         0.1
+                                PFUREG	         53         1.0
+---------------------------------------------------
+Report for cell axi64_to_ahbl32_conv
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	       3639        35.6
+                               LUTGATE	       2307        29.8
+                                LUTRAM	       1050        91.6
+                                LUTCCU	        282        21.2
+                                PFUREG	       1760        32.2
+                                   EBR	          3        42.9
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+axi4_interconnect_1s_2s_32s_32s_1s_32_4128_1_63_layer0	          1        30.2
+                   axi4_to_ahbl_bridge	          1         5.4
+---------------------------------------------------
+Report for cell axi4_interconnect_1s_2s_32s_32s_1s_32_4128_1_63_layer0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	       3089        30.2
+                               LUTGATE	       1801        23.3
+                                LUTRAM	       1050        91.6
+                                LUTCCU	        238        17.9
+                                PFUREG	       1548        28.3
+                                   EBR	          3        42.9
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+axi4_interconnect_ipgen_lscc_axi_interconnect_Z62_layer0	          1        30.2
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_lscc_axi_interconnect_Z62_layer0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	       3089        30.2
+                               LUTGATE	       1801        23.3
+                                LUTRAM	       1050        91.6
+                                LUTCCU	        238        17.9
+                                PFUREG	       1548        28.3
+                                   EBR	          3        42.9
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+axi4_interconnect_ipgen_lscc_sync_axi_interconnect_Z58_layer0	          1        30.2
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_lscc_sync_axi_interconnect_Z58_layer0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	       3089        30.2
+                               LUTGATE	       1801        23.3
+                                LUTRAM	       1050        91.6
+                                LUTCCU	        238        17.9
+                                PFUREG	       1548        28.3
+                                   EBR	          3        42.9
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+axi4_interconnect_ipgen_axi_cross_bar_Z57_layer0	          1         2.0
+axi4_interconnect_ipgen_def_slave_32s_32s_11s_64s_4s_0_1_2_1_2	          1         0.4
+axi4_interconnect_ipgen_ext_mas_port_Z59_layer0	          1         8.2
+axi4_interconnect_ipgen_ext_slv_port_Z61_layer0_0	          1         0.2
+axi4_interconnect_ipgen_ext_slv_port_Z61_layer0_1	          1        19.5
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_ext_mas_port_Z59_layer0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/ext_mas_blk[0].u_ext_mas_port
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        836         8.2
+                               LUTGATE	        448         5.8
+                                LUTRAM	        360        31.4
+                                LUTCCU	         28         2.1
+                                PFUREG	        495         9.0
+                                   EBR	          3        42.9
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+axi4_interconnect_ipgen_ext_mas_adr_dec_2s_32_1s_1_60_layer0	          1         0.2
+axi4_interconnect_ipgen_ext_mas_adr_dec_2s_32_1s_1_60_layer0_0	          1         0.1
+axi4_interconnect_ipgen_ext_mas_adr_dec_2s_32_1s_1_60_layer0_1	          1         0.2
+axi4_interconnect_ipgen_gen_fifo_2s_13s_0s_4s	          1         0.4
+axi4_interconnect_ipgen_gen_fifo_3s_21s_0s_8s_0	          1         0.0
+axi4_interconnect_ipgen_gen_fifo_3s_21s_0s_8s_1	          1         0.5
+axi4_interconnect_ipgen_gen_fifo_3s_72_0s_8	          1         0.9
+axi4_interconnect_ipgen_gen_fifo_3s_72_0s_8_0	          1         1.0
+axi4_interconnect_ipgen_gen_fifo_4s_32_0s_16s	          1         0.4
+axi4_interconnect_ipgen_gen_fifo_4s_77_0s_16s	          1         0.4
+axi4_interconnect_ipgen_gen_fifo_4s_78_0s_16s	          1         1.3
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_gen_fifo_3s_72_0s_8
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/ext_mas_blk[0].u_ext_mas_port/WO_WR_BLK.EXT_MAS_CDC_DIS_BLK.CUSTOM_FF_BLK.u_ext_mas_awd_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         97         0.9
+                               LUTGATE	         13         0.2
+                                LUTRAM	         84         7.3
+                                PFUREG	         10         0.2
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+axi4_interconnect_ipgen_gen_memfile_3s_72_0s_8	          1         0.8
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_gen_memfile_3s_72_0s_8
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/ext_mas_blk[0].u_ext_mas_port/WO_WR_BLK.EXT_MAS_CDC_DIS_BLK.CUSTOM_FF_BLK.u_ext_mas_awd_fifo/u_gen_memfile
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         85         0.8
+                               LUTGATE	          1         0.0
+                                LUTRAM	         84         7.3
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_ext_mas_adr_dec_2s_32_1s_1_60_layer0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/ext_mas_blk[0].u_ext_mas_port/WO_WR_BLK.EXT_MAS_CDC_DIS_BLK.u_ext_mas_awr_adr_dec
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         19         0.2
+                               LUTGATE	         19         0.2
+                                PFUREG	          1         0.0
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_gen_fifo_4s_78_0s_16s
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/ext_mas_blk[0].u_ext_mas_port/WO_WR_BLK.EXT_MAS_CDC_DIS_BLK.CUSTOM_WDAT_FF_BLK.u_ext_mas_wr_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        134         1.3
+                               LUTGATE	         14         0.2
+                                LUTRAM	        114         9.9
+                                LUTCCU	          6         0.5
+                                PFUREG	         16         0.3
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+axi4_interconnect_ipgen_gen_memfile_4s_78_0s_16s	          1         1.1
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_gen_memfile_4s_78_0s_16s
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/ext_mas_blk[0].u_ext_mas_port/WO_WR_BLK.EXT_MAS_CDC_DIS_BLK.CUSTOM_WDAT_FF_BLK.u_ext_mas_wr_fifo/u_gen_memfile
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        114         1.1
+                                LUTRAM	        114         9.9
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_gen_fifo_4s_32_0s_16s
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/ext_mas_blk[0].u_ext_mas_port/WO_WR_BLK.EXT_MAS_CDC_DIS_BLK.ID_ORDER_DISB_BLK.CUSTOM_FF_BLK.u_awaddr_dwrsel_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         44         0.4
+                               LUTGATE	         14         0.2
+                                LUTRAM	         24         2.1
+                                LUTCCU	          6         0.5
+                                PFUREG	         16         0.3
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+axi4_interconnect_ipgen_gen_memfile_4s_32_0s_16s	          1         0.2
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_gen_memfile_4s_32_0s_16s
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/ext_mas_blk[0].u_ext_mas_port/WO_WR_BLK.EXT_MAS_CDC_DIS_BLK.ID_ORDER_DISB_BLK.CUSTOM_FF_BLK.u_awaddr_dwrsel_fifo/u_gen_memfile
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         24         0.2
+                                LUTRAM	         24         2.1
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_ext_mas_adr_dec_2s_32_1s_1_60_layer0_0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/ext_mas_blk[0].u_ext_mas_port/WO_WR_BLK.EXT_MAS_CDC_DIS_BLK.u_ext_mas_dwr_adr_dec
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          6         0.1
+                               LUTGATE	          6         0.1
+                                PFUREG	          1         0.0
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_gen_fifo_2s_13s_0s_4s
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/ext_mas_blk[0].u_ext_mas_port/WO_WR_BLK.CUSTOM_BRESP_FF_BLK.u_mas_wresp_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         41         0.4
+                               LUTGATE	         23         0.3
+                                LUTRAM	         18         1.6
+                                PFUREG	          7         0.1
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+axi4_interconnect_ipgen_gen_memfile_2s_13s_0s_4s	          1         0.2
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_gen_memfile_2s_13s_0s_4s
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/ext_mas_blk[0].u_ext_mas_port/WO_WR_BLK.CUSTOM_BRESP_FF_BLK.u_mas_wresp_fifo/u_gen_memfile
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         18         0.2
+                                LUTRAM	         18         1.6
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_gen_fifo_3s_72_0s_8_0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/ext_mas_blk[0].u_ext_mas_port/RO_WR_BLK.EXT_MAS_CDC_DIS_BLK.CUSTOM_AR_FF_BLK.u_ext_mas_ard_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         99         1.0
+                               LUTGATE	         15         0.2
+                                LUTRAM	         84         7.3
+                                PFUREG	         10         0.2
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+axi4_interconnect_ipgen_gen_memfile_3s_72_0s_8_0	          1         0.8
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_gen_memfile_3s_72_0s_8_0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/ext_mas_blk[0].u_ext_mas_port/RO_WR_BLK.EXT_MAS_CDC_DIS_BLK.CUSTOM_AR_FF_BLK.u_ext_mas_ard_fifo/u_gen_memfile
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         85         0.8
+                               LUTGATE	          1         0.0
+                                LUTRAM	         84         7.3
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_ext_mas_adr_dec_2s_32_1s_1_60_layer0_1
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/ext_mas_blk[0].u_ext_mas_port/RO_WR_BLK.EXT_MAS_CDC_DIS_BLK.u_ext_mas_ard_adr_dec
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         20         0.2
+                               LUTGATE	         20         0.3
+                                PFUREG	          1         0.0
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_gen_fifo_3s_21s_0s_8s_1
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/ext_mas_blk[0].u_ext_mas_port/RO_WR_BLK.AXI4_EXTMAS_BLK.EXT_SLV_BLK[0].ACTUAL_SLV_BLK.EXTMAS_CNCT_EXTSLV_BLK.AXI4_EXTSLV_BLK.UP_BLK.CUSTOM_FF_BLK.u_saraddr_arsize_arlen_arburst_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         53         0.5
+                               LUTGATE	         17         0.2
+                                LUTRAM	         36         3.1
+                                PFUREG	         10         0.2
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+axi4_interconnect_ipgen_gen_memfile_3s_21s_0s_8s_0	          1         0.4
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_gen_memfile_3s_21s_0s_8s_0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/ext_mas_blk[0].u_ext_mas_port/RO_WR_BLK.AXI4_EXTMAS_BLK.EXT_SLV_BLK[0].ACTUAL_SLV_BLK.EXTMAS_CNCT_EXTSLV_BLK.AXI4_EXTSLV_BLK.UP_BLK.CUSTOM_FF_BLK.u_saraddr_arsize_arlen_arburst_fifo/u_gen_memfile
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         37         0.4
+                               LUTGATE	          1         0.0
+                                LUTRAM	         36         3.1
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_gen_fifo_3s_21s_0s_8s_0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/ext_mas_blk[0].u_ext_mas_port/RO_WR_BLK.AXI4_EXTMAS_BLK.EXT_SLV_BLK[1].ACTUAL_SLV_BLK.EXTMAS_CNCT_EXTSLV_BLK.AXI4_EXTSLV_BLK.UP_BLK.CUSTOM_FF_BLK.u_saraddr_arsize_arlen_arburst_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          5         0.0
+                               LUTGATE	          5         0.1
+                                PFUREG	          4         0.1
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_gen_fifo_4s_77_0s_16s
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/ext_mas_blk[0].u_ext_mas_port/RO_WR_BLK.CUSTOM_FF_BLK.u_ext_mas_rdata_ff
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         37         0.4
+                               LUTGATE	         31         0.4
+                                LUTCCU	          6         0.5
+                                PFUREG	         13         0.2
+                                   EBR	          3        42.9
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+axi4_interconnect_ipgen_gen_memfile_4s_77_0s_16s	          1         0.2
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_gen_memfile_4s_77_0s_16s
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/ext_mas_blk[0].u_ext_mas_port/RO_WR_BLK.CUSTOM_FF_BLK.u_ext_mas_rdata_ff/u_gen_memfile
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         19         0.2
+                               LUTGATE	         19         0.2
+                                   EBR	          3        42.9
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_axi_cross_bar_Z57_layer0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/u_axi_cross_bar
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        208         2.0
+                               LUTGATE	        180         2.3
+                                LUTRAM	          6         0.5
+                                LUTCCU	         22         1.7
+                                PFUREG	        375         6.9
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+axi4_interconnect_ipgen_ext_mas_ard_ifc_32s_2s_32s_6s_4s_32s_11s	          1         0.0
+axi4_interconnect_ipgen_ext_mas_awr_ifc_2s_32s_4s_6s_32s	          1         0.0
+axi4_interconnect_ipgen_ext_mas_dwr_ifc_2s_64s_4s	          1         0.0
+axi4_interconnect_ipgen_ext_mas_rdresp_arb_2s_6s_4s_32s_0s_32	          1         0.8
+axi4_interconnect_ipgen_ext_mas_wrresp_arb_2s_6s_4s_0s_32_3s	          1         0.3
+axi4_interconnect_ipgen_ext_slv_ard_arb_1s_32s_11s_4s_0s_6s_0_0s_1s_0	          1         0.0
+axi4_interconnect_ipgen_ext_slv_ard_arb_1s_32s_11s_4s_0s_6s_0_0s_1s_1	          1         0.1
+axi4_interconnect_ipgen_ext_slv_ard_arb_1s_32s_11s_4s_0s_6s_0_0s_1s_2	          1         0.1
+axi4_interconnect_ipgen_ext_slv_awr_arb_1s_32s_11s_4s_0_6s_0_0s_1s_1	          1         0.1
+axi4_interconnect_ipgen_ext_slv_awr_arb_1s_32s_11s_4s_0_6s_0_0s_1s_2	          1         0.1
+axi4_interconnect_ipgen_ext_slv_dwr_arb_1s_4s_64s_16s_0_4s_0	          1         0.3
+axi4_interconnect_ipgen_ext_slv_dwr_arb_1s_4s_64s_1s_0_1s	          1         0.1
+axi4_interconnect_ipgen_ext_slv_rdresp_ifc_1s_11s_32s_6s_4s_10s_6s_0	          1         0.0
+axi4_interconnect_ipgen_ext_slv_rdresp_ifc_1s_11s_32s_6s_4s_10s_6s_1	          1         0.1
+axi4_interconnect_ipgen_ext_slv_rdresp_ifc_1s_11s_32s_6s_4s_10s_6s_2	          1         0.0
+axi4_interconnect_ipgen_ext_slv_wrresp_ifc_1s_11s_6s_4s_10s_6s_0	          1         0.0
+axi4_interconnect_ipgen_ext_slv_wrresp_ifc_1s_11s_6s_4s_10s_6s_1	          1         0.0
+axi4_interconnect_ipgen_ext_slv_wrresp_ifc_1s_11s_6s_4s_10s_6s_2	          1         0.0
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_ext_mas_awr_ifc_2s_32s_4s_6s_32s
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/u_axi_cross_bar/extmas_blk[0].WO_WR_ACCESS_BLK.u_ext_mas_awr_ifc
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          1         0.0
+                               LUTGATE	          1         0.0
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_ext_mas_dwr_ifc_2s_64s_4s
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/u_axi_cross_bar/extmas_blk[0].WO_WR_ACCESS_BLK.u_ext_mas_dwr_ifc
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          4         0.0
+                               LUTGATE	          4         0.1
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_ext_mas_wrresp_arb_2s_6s_4s_0s_32_3s
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/u_axi_cross_bar/extmas_blk[0].WO_WR_ACCESS_BLK.wr_ord_disable_blk.u_ext_mas_wrresp_arb
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         35         0.3
+                               LUTGATE	         27         0.3
+                                LUTCCU	          8         0.6
+                                PFUREG	         18         0.3
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+   axi4_interconnect_ipgen_rr_arb_3s_1	          1         0.2
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_rr_arb_3s_1
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/u_axi_cross_bar/extmas_blk[0].WO_WR_ACCESS_BLK.wr_ord_disable_blk.u_ext_mas_wrresp_arb/genblk2.u_rr_ext_mas_wrresp_arb
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         18         0.2
+                               LUTGATE	         10         0.1
+                                LUTCCU	          8         0.6
+                                PFUREG	          6         0.1
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_ext_mas_ard_ifc_32s_2s_32s_6s_4s_32s_11s
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/u_axi_cross_bar/extmas_blk[0].RO_WR_ACCESS_BLK.u_ext_mas_ard_ifc
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          2         0.0
+                               LUTGATE	          2         0.0
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_ext_mas_rdresp_arb_2s_6s_4s_32s_0s_32
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/u_axi_cross_bar/extmas_blk[0].RO_WR_ACCESS_BLK.rd_ord_disable_blk.u_ext_mas_rdresp_arb
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         78         0.8
+                               LUTGATE	         70         0.9
+                                LUTCCU	          8         0.6
+                                PFUREG	         53         1.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+ axi4_interconnect_ipgen_rr_arb_3s_1_0	          1         0.2
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_rr_arb_3s_1_0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/u_axi_cross_bar/extmas_blk[0].RO_WR_ACCESS_BLK.rd_ord_disable_blk.u_ext_mas_rdresp_arb/genblk2.u_rr_ext_mas_rdresp_arb
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         19         0.2
+                               LUTGATE	         11         0.1
+                                LUTCCU	          8         0.6
+                                PFUREG	          6         0.1
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_ext_slv_wrresp_ifc_1s_11s_6s_4s_10s_6s_2
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/u_axi_cross_bar/extslv_blk[2].WO_WR_ACCESS_BLK.u_ext_slv_wrresp_ifc
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          2         0.0
+                               LUTGATE	          2         0.0
+                                PFUREG	          7         0.1
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_ext_slv_wrresp_ifc_1s_11s_6s_4s_10s_6s_1
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/u_axi_cross_bar/extslv_blk[1].WO_WR_ACCESS_BLK.u_ext_slv_wrresp_ifc
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          2         0.0
+                               LUTGATE	          2         0.0
+                                PFUREG	          1         0.0
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_ext_slv_wrresp_ifc_1s_11s_6s_4s_10s_6s_0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/u_axi_cross_bar/extslv_blk[0].WO_WR_ACCESS_BLK.u_ext_slv_wrresp_ifc
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          2         0.0
+                               LUTGATE	          2         0.0
+                                PFUREG	          8         0.1
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_ext_slv_awr_arb_1s_32s_11s_4s_0_6s_0_0s_1s_2
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/u_axi_cross_bar/extslv_blk[2].WO_WR_ACCESS_BLK.u_ext_slv_awr_arb
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          6         0.1
+                               LUTGATE	          6         0.1
+                                PFUREG	         10         0.2
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_ext_slv_awr_arb_1s_32s_11s_4s_0_6s_0_0s_1s_1
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/u_axi_cross_bar/extslv_blk[0].WO_WR_ACCESS_BLK.u_ext_slv_awr_arb
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          8         0.1
+                               LUTGATE	          8         0.1
+                                PFUREG	         55         1.0
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_ext_slv_dwr_arb_1s_4s_64s_1s_0_1s
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/u_axi_cross_bar/extslv_blk[2].WO_WR_ACCESS_BLK.def_slave.u_ext_slv_dwr_arb
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         10         0.1
+                               LUTGATE	         10         0.1
+                                PFUREG	          6         0.1
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+axi4_interconnect_ipgen_gen_fifo_1s_6s_0s_1s	          1         0.0
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_gen_fifo_1s_6s_0s_1s
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/u_axi_cross_bar/extslv_blk[2].WO_WR_ACCESS_BLK.def_slave.u_ext_slv_dwr_arb/CUSTOM_FF_BLK.u_ext_mas_awr_gnt_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          3         0.0
+                               LUTGATE	          3         0.0
+                                PFUREG	          3         0.1
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+axi4_interconnect_ipgen_gen_memfile_1s_6s_0s_1s	          1         0.0
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_gen_memfile_1s_6s_0s_1s
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/u_axi_cross_bar/extslv_blk[2].WO_WR_ACCESS_BLK.def_slave.u_ext_slv_dwr_arb/CUSTOM_FF_BLK.u_ext_mas_awr_gnt_fifo/u_gen_memfile
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          1         0.0
+                               LUTGATE	          1         0.0
+                                PFUREG	          1         0.0
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_ext_slv_dwr_arb_1s_4s_64s_16s_0_4s_0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/u_axi_cross_bar/extslv_blk[0].WO_WR_ACCESS_BLK.ext_slave.u_ext_slv_dwr_arb
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         33         0.3
+                               LUTGATE	         21         0.3
+                                LUTRAM	          6         0.5
+                                LUTCCU	          6         0.5
+                                PFUREG	         89         1.6
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+axi4_interconnect_ipgen_gen_fifo_4s_6s_0s_16s_0	          1         0.2
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_gen_fifo_4s_6s_0s_16s_0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/u_axi_cross_bar/extslv_blk[0].WO_WR_ACCESS_BLK.ext_slave.u_ext_slv_dwr_arb/CUSTOM_FF_BLK.u_ext_mas_awr_gnt_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         25         0.2
+                               LUTGATE	         13         0.2
+                                LUTRAM	          6         0.5
+                                LUTCCU	          6         0.5
+                                PFUREG	         14         0.3
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+axi4_interconnect_ipgen_gen_memfile_4s_6s_0s_16s_0	          1         0.1
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_gen_memfile_4s_6s_0s_16s_0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/u_axi_cross_bar/extslv_blk[0].WO_WR_ACCESS_BLK.ext_slave.u_ext_slv_dwr_arb/CUSTOM_FF_BLK.u_ext_mas_awr_gnt_fifo/u_gen_memfile
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          7         0.1
+                               LUTGATE	          1         0.0
+                                LUTRAM	          6         0.5
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_ext_slv_rdresp_ifc_1s_11s_32s_6s_4s_10s_6s_2
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/u_axi_cross_bar/extslv_blk[1].RO_WR_ACCESS_BLK.u_ext_slv_rdresp_ifc
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          2         0.0
+                               LUTGATE	          2         0.0
+                                PFUREG	          2         0.0
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_ext_slv_rdresp_ifc_1s_11s_32s_6s_4s_10s_6s_1
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/u_axi_cross_bar/extslv_blk[2].RO_WR_ACCESS_BLK.u_ext_slv_rdresp_ifc
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          6         0.1
+                               LUTGATE	          6         0.1
+                                PFUREG	         10         0.2
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_ext_slv_rdresp_ifc_1s_11s_32s_6s_4s_10s_6s_0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/u_axi_cross_bar/extslv_blk[0].RO_WR_ACCESS_BLK.u_ext_slv_rdresp_ifc
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          5         0.0
+                               LUTGATE	          5         0.1
+                                PFUREG	         42         0.8
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_ext_slv_ard_arb_1s_32s_11s_4s_0s_6s_0_0s_1s_2
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/u_axi_cross_bar/extslv_blk[0].RO_WR_ACCESS_BLK.u_ext_slv_ard_arb
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          6         0.1
+                               LUTGATE	          6         0.1
+                                PFUREG	         55         1.0
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_ext_slv_ard_arb_1s_32s_11s_4s_0s_6s_0_0s_1s_1
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/u_axi_cross_bar/extslv_blk[2].RO_WR_ACCESS_BLK.u_ext_slv_ard_arb
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          6         0.1
+                               LUTGATE	          6         0.1
+                                PFUREG	         18         0.3
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_ext_slv_ard_arb_1s_32s_11s_4s_0s_6s_0_0s_1s_0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/u_axi_cross_bar/extslv_blk[1].RO_WR_ACCESS_BLK.u_ext_slv_ard_arb
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          1         0.0
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_def_slave_32s_32s_11s_64s_4s_0_1_2_1_2
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/U_DEF_SLAVE
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         36         0.4
+                               LUTGATE	         26         0.3
+                                LUTCCU	         10         0.8
+                                PFUREG	         29         0.5
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_ext_slv_port_Z61_layer0_1
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/ext_slv_blk[0].u_ext_slv_port
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	       1988        19.5
+                               LUTGATE	       1134        14.6
+                                LUTRAM	        684        59.7
+                                LUTCCU	        170        12.8
+                                PFUREG	        635        11.6
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+axi4_interconnect_ipgen_gen_fifo_3s_13s_0s_8s_0	          1         0.4
+axi4_interconnect_ipgen_gen_fifo_3s_17s_0s_8s_0	          1         0.3
+axi4_interconnect_ipgen_gen_fifo_3s_1s_0s_8_1	          1         0.2
+axi4_interconnect_ipgen_gen_fifo_3s_1s_0s_8_1_0	          1         0.2
+axi4_interconnect_ipgen_gen_fifo_3s_77_0s_8_1	          1         1.1
+axi4_interconnect_ipgen_gen_fifo_3s_77_0s_8_1_0	          1         0.9
+axi4_interconnect_ipgen_gen_fifo_6s_42_0s_64s_0	          1         3.7
+axi4_interconnect_ipgen_gen_fifo_6s_50_0s_64s_0	          1         3.9
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_gen_fifo_3s_1s_0s_8_1
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/ext_slv_blk[0].u_ext_slv_port/WO_WR_ACCESS_BLK.AXI4_EXTSLV_AW_BLK.EXT_MAS_BLK[0].EXTSLV_CNCT_EXTMAS_BLK.AXI4_EXTMAS_BLK.DOWN_BLK.CUSTOM_FF_BLK.u_ext_slv_wlast_split_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         20         0.2
+                               LUTGATE	         14         0.2
+                                LUTRAM	          6         0.5
+                                PFUREG	         10         0.2
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+axi4_interconnect_ipgen_gen_memfile_3s_1s_0s_8	          1         0.1
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_gen_memfile_3s_1s_0s_8
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/ext_slv_blk[0].u_ext_slv_port/WO_WR_ACCESS_BLK.AXI4_EXTSLV_AW_BLK.EXT_MAS_BLK[0].EXTSLV_CNCT_EXTMAS_BLK.AXI4_EXTMAS_BLK.DOWN_BLK.CUSTOM_FF_BLK.u_ext_slv_wlast_split_fifo/u_gen_memfile
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          6         0.1
+                                LUTRAM	          6         0.5
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_gen_fifo_3s_77_0s_8_1
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/ext_slv_blk[0].u_ext_slv_port/WO_WR_ACCESS_BLK.CUSTOM_FF_BLK.u_ext_slv_aw_wr_issue_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        113         1.1
+                               LUTGATE	         35         0.5
+                                LUTRAM	         78         6.8
+                                PFUREG	         12         0.2
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+axi4_interconnect_ipgen_gen_memfile_3s_77_0s_8_0	          1         0.9
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_gen_memfile_3s_77_0s_8_0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/ext_slv_blk[0].u_ext_slv_port/WO_WR_ACCESS_BLK.CUSTOM_FF_BLK.u_ext_slv_aw_wr_issue_fifo/u_gen_memfile
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         97         0.9
+                               LUTGATE	         19         0.2
+                                LUTRAM	         78         6.8
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_gen_fifo_3s_13s_0s_8s_0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/ext_slv_blk[0].u_ext_slv_port/WO_WR_ACCESS_BLK.AXI4_EXTSLV_WDATA_BLK.EXT_MAS_LOOP_BLK[0].EXT_SLV_CONNECTED_BLK.AXI4_EXTMAS_BLK.DOWN_BLK.CUSTOM_FF_BLK.u_sawaddr_awsize_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         41         0.4
+                               LUTGATE	         17         0.2
+                                LUTRAM	         24         2.1
+                                PFUREG	         10         0.2
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+axi4_interconnect_ipgen_gen_memfile_3s_13s_0s_8s_0	          1         0.3
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_gen_memfile_3s_13s_0s_8s_0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/ext_slv_blk[0].u_ext_slv_port/WO_WR_ACCESS_BLK.AXI4_EXTSLV_WDATA_BLK.EXT_MAS_LOOP_BLK[0].EXT_SLV_CONNECTED_BLK.AXI4_EXTMAS_BLK.DOWN_BLK.CUSTOM_FF_BLK.u_sawaddr_awsize_fifo/u_gen_memfile
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         27         0.3
+                               LUTGATE	          3         0.0
+                                LUTRAM	         24         2.1
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_gen_fifo_6s_42_0s_64s_0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/ext_slv_blk[0].u_ext_slv_port/WO_WR_ACCESS_BLK.CUSTOM_EXT_SLV_WDATA_FF_BLK.u_ext_slv_wdata_ff
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        374         3.7
+                               LUTGATE	        118         1.5
+                                LUTRAM	        240        20.9
+                                LUTCCU	         16         1.2
+                                PFUREG	         19         0.3
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+axi4_interconnect_ipgen_gen_memfile_6s_42_0s_64s_0	          1         3.4
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_gen_memfile_6s_42_0s_64s_0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/ext_slv_blk[0].u_ext_slv_port/WO_WR_ACCESS_BLK.CUSTOM_EXT_SLV_WDATA_FF_BLK.u_ext_slv_wdata_ff/u_gen_memfile
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        345         3.4
+                               LUTGATE	        105         1.4
+                                LUTRAM	        240        20.9
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_gen_fifo_3s_17s_0s_8s_0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/ext_slv_blk[0].u_ext_slv_port/WO_WR_ACCESS_BLK.CUSTOM_EXT_SLV_WRESP_FF_BLK.u_ext_slv_wresp_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         27         0.3
+                               LUTGATE	         15         0.2
+                                LUTRAM	         12         1.0
+                                PFUREG	         10         0.2
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+axi4_interconnect_ipgen_gen_memfile_3s_17s_0s_8s_0	          1         0.1
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_gen_memfile_3s_17s_0s_8s_0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/ext_slv_blk[0].u_ext_slv_port/WO_WR_ACCESS_BLK.CUSTOM_EXT_SLV_WRESP_FF_BLK.u_ext_slv_wresp_fifo/u_gen_memfile
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         12         0.1
+                                LUTRAM	         12         1.0
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_gen_fifo_3s_1s_0s_8_1_0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/ext_slv_blk[0].u_ext_slv_port/RO_WR_ACCESS_BLK.AXI4_EXTSLV_AR_BLK.EXT_MAS_BLK[0].EXTSLV_CNCT_EXTMAS_BLK.AXI4_EXTMAS_BLK.DOWN_BLK.CUSTOM_FF_BLK.u_ext_slv_rlast_split_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         19         0.2
+                               LUTGATE	         13         0.2
+                                LUTRAM	          6         0.5
+                                PFUREG	         10         0.2
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+axi4_interconnect_ipgen_gen_memfile_3s_1s_0s_8_0	          1         0.1
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_gen_memfile_3s_1s_0s_8_0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/ext_slv_blk[0].u_ext_slv_port/RO_WR_ACCESS_BLK.AXI4_EXTSLV_AR_BLK.EXT_MAS_BLK[0].EXTSLV_CNCT_EXTMAS_BLK.AXI4_EXTMAS_BLK.DOWN_BLK.CUSTOM_FF_BLK.u_ext_slv_rlast_split_fifo/u_gen_memfile
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          7         0.1
+                               LUTGATE	          1         0.0
+                                LUTRAM	          6         0.5
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_gen_fifo_3s_77_0s_8_1_0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/ext_slv_blk[0].u_ext_slv_port/RO_WR_ACCESS_BLK.CUSTOM_EXT_SLV_RD_ISSUE_FF_BLK.u_ext_slv_ar_rd_issue_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         97         0.9
+                               LUTGATE	         19         0.2
+                                LUTRAM	         78         6.8
+                                PFUREG	         10         0.2
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+axi4_interconnect_ipgen_gen_memfile_3s_77_0s_8_0_0	          1         0.8
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_gen_memfile_3s_77_0s_8_0_0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/ext_slv_blk[0].u_ext_slv_port/RO_WR_ACCESS_BLK.CUSTOM_EXT_SLV_RD_ISSUE_FF_BLK.u_ext_slv_ar_rd_issue_fifo/u_gen_memfile
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         82         0.8
+                               LUTGATE	          4         0.1
+                                LUTRAM	         78         6.8
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_gen_fifo_6s_50_0s_64s_0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/ext_slv_blk[0].u_ext_slv_port/RO_WR_ACCESS_BLK.CUSTOM_FF_BLK.u_ext_slv_rd_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        394         3.9
+                               LUTGATE	        138         1.8
+                                LUTRAM	        240        20.9
+                                LUTCCU	         16         1.2
+                                PFUREG	         19         0.3
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+axi4_interconnect_ipgen_gen_memfile_6s_50_0s_64s_0	          1         3.6
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_gen_memfile_6s_50_0s_64s_0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/ext_slv_blk[0].u_ext_slv_port/RO_WR_ACCESS_BLK.CUSTOM_FF_BLK.u_ext_slv_rd_fifo/u_gen_memfile
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        364         3.6
+                               LUTGATE	        124         1.6
+                                LUTRAM	        240        20.9
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_ext_slv_port_Z61_layer0_0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/ext_slv_blk[1].u_ext_slv_port
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         21         0.2
+                               LUTGATE	         13         0.2
+                                LUTCCU	          8         0.6
+                                PFUREG	         14         0.3
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+axi4_interconnect_ipgen_gen_fifo_3s_17s_0s_8s_1	          1         0.0
+axi4_interconnect_ipgen_gen_fifo_6s_50_0s_64s_1	          1         0.1
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_gen_fifo_3s_17s_0s_8s_1
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/ext_slv_blk[1].u_ext_slv_port/WO_WR_ACCESS_BLK.CUSTOM_EXT_SLV_WRESP_FF_BLK.u_ext_slv_wresp_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          5         0.0
+                               LUTGATE	          5         0.1
+                                PFUREG	          4         0.1
+---------------------------------------------------
+Report for cell axi4_interconnect_ipgen_gen_fifo_6s_50_0s_64s_1
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_interconnect_inst/lscc_axi_interconnect_inst/u_lscc_sync_axi_interconnect/ext_slv_blk[1].u_ext_slv_port/RO_WR_ACCESS_BLK.CUSTOM_FF_BLK.u_ext_slv_rd_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         10         0.1
+                               LUTGATE	          2         0.0
+                                LUTCCU	          8         0.6
+                                PFUREG	          7         0.1
+---------------------------------------------------
+Report for cell axi4_to_ahbl_bridge
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_to_ahbl_bridge_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        550         5.4
+                               LUTGATE	        506         6.5
+                                LUTCCU	         44         3.3
+                                PFUREG	        212         3.9
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+axi4_to_ahbl_bridge_ipgen_lscc_axi2ahb_lite_Z64_layer0	          1         5.4
+---------------------------------------------------
+Report for cell axi4_to_ahbl_bridge_ipgen_lscc_axi2ahb_lite_Z64_layer0
+   Instance path: u23_lifcl_nx33u_evalbd_ibd/axi_ahb_conv/axi4_to_ahbl_bridge_inst/lscc_axi2ahb_lite_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        550         5.4
+                               LUTGATE	        506         6.5
+                                LUTCCU	         44         3.3
+                                PFUREG	        212         3.9

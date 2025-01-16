@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ipxact:component xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014">
+    <ipxact:vendor>latticesemi.com</ipxact:vendor>
+    <ipxact:library>module</ipxact:library>
+    <ipxact:name>i2c_slave</ipxact:name>
+    <ipxact:version>1.0.0</ipxact:version>
+    <ipxact:model>
+        <ipxact:moduleParameters>
+            <ipxact:moduleParameter configGroups="SystemBuilder" parameterId="CORE_CLK_MHZ" resolve="generated" type="int">
+                <ipxact:name>CORE_CLK_MHZ</ipxact:name>
+                <ipxact:matchname sequence_id="0">CORE_CLK_MHZ</ipxact:matchname>
+                <ipxact:description/>
+                <ipxact:value>50</ipxact:value>
+            </ipxact:moduleParameter>
+            <ipxact:moduleParameter configGroups="SystemBuilder" parameterId="ADDR_MODE" resolve="generated" type="int">
+                <ipxact:name>ADDR_MODE</ipxact:name>
+                <ipxact:matchname sequence_id="2">ADDR_MODE</ipxact:matchname>
+                <ipxact:description/>
+                <ipxact:value>7</ipxact:value>
+            </ipxact:moduleParameter>
+            <ipxact:moduleParameter configGroups="SystemBuilder" parameterId="APB_ENABLE" resolve="generated" type="bool">
+                <ipxact:name>APB_ENABLE</ipxact:name>
+                <ipxact:matchname sequence_id="0">APB_ENABLE</ipxact:matchname>
+                <ipxact:description/>
+                <ipxact:value>True</ipxact:value>
+            </ipxact:moduleParameter>
+            <ipxact:moduleParameter configGroups="SystemBuilder" parameterId="FAMILY" resolve="generated" type="string">
+                <ipxact:name>FAMILY</ipxact:name>
+                <ipxact:matchname sequence_id="0">FAMILY</ipxact:matchname>
+                <ipxact:description/>
+                <ipxact:value>LIFCL</ipxact:value>
+            </ipxact:moduleParameter>
+            <ipxact:moduleParameter configGroups="SystemBuilder" parameterId="SLAVE_ADDR_INPUT" resolve="generated" type="string">
+                <ipxact:name>SLAVE_ADDR_INPUT</ipxact:name>
+                <ipxact:matchname sequence_id="0">SLAVE_ADDR_INPUT</ipxact:matchname>
+                <ipxact:description/>
+                <ipxact:value>01</ipxact:value>
+            </ipxact:moduleParameter>
+            <ipxact:moduleParameter configGroups="SystemBuilder" parameterId="SLAVE_ADDR" resolve="generated" type="string">
+                <ipxact:name>SLAVE_ADDR</ipxact:name>
+                <ipxact:matchname sequence_id="1">SLAVE_ADDR</ipxact:matchname>
+                <ipxact:description/>
+                <ipxact:value>00</ipxact:value>
+            </ipxact:moduleParameter>
+            <ipxact:moduleParameter configGroups="SystemBuilder" parameterId="STRETCHING" resolve="generated" type="bool">
+                <ipxact:name>STRETCHING</ipxact:name>
+                <ipxact:matchname sequence_id="0">STRETCHING</ipxact:matchname>
+                <ipxact:description/>
+                <ipxact:value>False</ipxact:value>
+            </ipxact:moduleParameter>
+            <ipxact:moduleParameter configGroups="SystemBuilder" parameterId="TO_IE" resolve="generated" type="bool">
+                <ipxact:name>TO_IE</ipxact:name>
+                <ipxact:matchname sequence_id="0">TO_IE</ipxact:matchname>
+                <ipxact:description/>
+                <ipxact:value>False</ipxact:value>
+            </ipxact:moduleParameter>
+            <ipxact:moduleParameter configGroups="SystemBuilder" parameterId="RD_IE" resolve="generated" type="bool">
+                <ipxact:name>RD_IE</ipxact:name>
+                <ipxact:matchname sequence_id="0">RD_IE</ipxact:matchname>
+                <ipxact:description/>
+                <ipxact:value>False</ipxact:value>
+            </ipxact:moduleParameter>
+            <ipxact:moduleParameter configGroups="SystemBuilder" parameterId="WD_IE" resolve="generated" type="bool">
+                <ipxact:name>WD_IE</ipxact:name>
+                <ipxact:matchname sequence_id="0">WD_IE</ipxact:matchname>
+                <ipxact:description/>
+                <ipxact:value>False</ipxact:value>
+            </ipxact:moduleParameter>
+            <ipxact:moduleParameter configGroups="SystemBuilder" parameterId="IB_IE" resolve="generated" type="bool">
+                <ipxact:name>IB_IE</ipxact:name>
+                <ipxact:matchname sequence_id="0">IB_IE</ipxact:matchname>
+                <ipxact:description/>
+                <ipxact:value>False</ipxact:value>
+            </ipxact:moduleParameter>
+            <ipxact:moduleParameter configGroups="SystemBuilder" parameterId="SPD_IE" resolve="generated" type="bool">
+                <ipxact:name>SPD_IE</ipxact:name>
+                <ipxact:matchname sequence_id="0">SPD_IE</ipxact:matchname>
+                <ipxact:description/>
+                <ipxact:value>False</ipxact:value>
+            </ipxact:moduleParameter>
+            <ipxact:moduleParameter configGroups="SystemBuilder" parameterId="SRD_IE" resolve="generated" type="bool">
+                <ipxact:name>SRD_IE</ipxact:name>
+                <ipxact:matchname sequence_id="0">SRD_IE</ipxact:matchname>
+                <ipxact:description/>
+                <ipxact:value>False</ipxact:value>
+            </ipxact:moduleParameter>
+            <ipxact:moduleParameter configGroups="SystemBuilder" parameterId="TC_IE" resolve="generated" type="bool">
+                <ipxact:name>TC_IE</ipxact:name>
+                <ipxact:matchname sequence_id="0">TC_IE</ipxact:matchname>
+                <ipxact:description/>
+                <ipxact:value>False</ipxact:value>
+            </ipxact:moduleParameter>
+            <ipxact:moduleParameter configGroups="SystemBuilder" parameterId="BC_IE" resolve="generated" type="bool">
+                <ipxact:name>BC_IE</ipxact:name>
+                <ipxact:matchname sequence_id="0">BC_IE</ipxact:matchname>
+                <ipxact:description/>
+                <ipxact:value>False</ipxact:value>
+            </ipxact:moduleParameter>
+        </ipxact:moduleParameters>
+    </ipxact:model>
+</ipxact:component>

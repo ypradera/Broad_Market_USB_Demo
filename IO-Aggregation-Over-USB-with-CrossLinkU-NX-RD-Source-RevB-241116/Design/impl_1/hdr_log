@@ -1,0 +1,265 @@
+synthesis:  version Radiant Software (64-bit) 2024.1.1.259.1
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+Sat Oct 26 00:20:01 2024
+
+
+Command Line:  synthesis -comp -f u23_lifcl_nx33u_evalbd_ibd_impl_1_lattice.synproj -gui -msgset C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/promote.xml 
+
+Synthesis options:
+The -a option is LIFCL.
+The -t option is FCCSP104.
+The -sp option is 7_High-Performance_1.0V.
+The -p option is LIFCL-33U.
+                                                          
+
+
+##########################################################
+
+
+### Lattice Family     : LIFCL
+
+
+### Device             : LIFCL-33U
+
+
+### Package            : FCCSP104
+
+
+### Performance Grade  : 7_High-Performance_1.0V
+
+
+                                                         
+
+
+INFO <35001786> - synthesis: User-Selected Strategy Settings
+Optimization goal = Timing
+Top-level module name = u23_lifcl_nx33u_evalbd_ibd.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3 (default)
+RWCheckOnRam = 0
+
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+
+Mux style = auto (Default)
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = no
+Output HDL file name = u23_lifcl_nx33u_evalbd_ibd_impl_1.vm.
+ROM style = auto
+RAM style = auto
+The -comp option is TRUE.
+The -syn option is FALSE.
+Hardtimer checking is enabled (default). The -dt option is not used.
+-path C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design (searchpath added)
+-path C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/impl_1 (searchpath added)
+-path C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/rtl/pll/pll_60m (searchpath added)
+-path C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/ip/HW_ver_gpio/1.6.2 (searchpath added)
+-path C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/ip/cpu0/2.5.0 (searchpath added)
+-path C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/ip/gpio0/1.6.2 (searchpath added)
+-path C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/ip/lscc_i2cm1/2.0.0 (searchpath added)
+-path C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/ip/lscc_spim1/2.1.0 (searchpath added)
+-path C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/ip/sysmem0/2.1.0 (searchpath added)
+-path C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/ip/uart0/1.3.0 (searchpath added)
+-path C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/module/ahbl0/1.3.0 (searchpath added)
+-path C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/module/ahbl2apb0/1.1.0 (searchpath added)
+-path C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/module/apb0/1.2.0 (searchpath added)
+-path C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/module/u23_config_intf_feedthrough/1.0.0 (searchpath added)
+-path C:/lscc/radiant/2024.1/ispfpga/je5d00/data (searchpath added)
+Mixed language design
+Verilog design file = C:/lscc/radiant/2024.1/ip/pmi/pmi_lifcl.v
+Verilog design file = C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/rtl/pll/pll_60m/rtl/pll_60m.v
+Verilog design file = C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/ip/cpu0/2.5.0/rtl/cpu0.v
+Verilog design file = C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/ip/sysmem0/2.1.0/rtl/sysmem0.v
+Verilog design file = C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/module/ahbl0/1.3.0/rtl/ahbl0.v
+Verilog design file = C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/module/ahbl2apb0/1.1.0/rtl/ahbl2apb0.v
+Verilog design file = C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/module/apb0/1.2.0/rtl/apb0.v
+Verilog design file = C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/ip/uart0/1.3.0/rtl/uart0.v
+Verilog design file = C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/module/u23_config_intf_feedthrough/1.0.0/rtl/u23_config_intf_feedthrough.v
+Verilog design file = C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/ip/lscc_i2cm1/2.0.0/rtl/lscc_i2cm1.v
+Verilog design file = C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/ip/lscc_spim1/2.1.0/rtl/lscc_spim1.v
+Verilog design file = C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/ip/HW_ver_gpio/1.6.2/rtl/HW_ver_gpio.v
+Verilog design file = C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/ip/gpio0/1.6.2/rtl/gpio0.v
+Verilog design file = C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/rtl/u23_lifcl_nx33u_evalbd_ibd.sv
+Verilog design file = C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/rtl/clock_debug.sv
+Verilog design file = C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/rtl/resetn_sync.sv
+Verilog design file = C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr_des.v
+Verilog design file = C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/remote_files/sources/documents/development_doc/lattice_example/verilog_modules/AHBL_to_LMMI_converter.v
+Verilog design file = C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/remote_files/sources/rtl/source/axi64_to_ahbl32_conv/axi64_to_ahbl32_conv.v
+Verilog design file = C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/remote_files/sources/rtl/source/axi64_to_ahbl32_conv/lib/latticesemi.com/ip/axi4_interconnect/1.2.2/rtl/axi4_interconnect.sv
+Verilog design file = C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/remote_files/sources/rtl/source/axi64_to_ahbl32_conv/lib/latticesemi.com/ip/axi4_to_ahbl_bridge/1.1.1/rtl/axi4_to_ahbl_bridge.v
+VHDL library = pmi
+VHDL design file = C:/lscc/radiant/2024.1/ip/pmi/pmi_lifcl.vhd
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+WARNING <35935050> - synthesis: input port MBISTCLK is not connected on this instance. VDB-5050
+Compile design.
+Compile Design Begin
+Analyzing Verilog file c:/lscc/radiant/2024.1/ip/pmi/pmi_lifcl.v. VERI-1482
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_lifcl.v(1): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/pmi_addsub.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_addsub.v(40): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/../common/adder_subtractor/rtl/lscc_add_sub.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_lifcl.v(2): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/pmi_add.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_add.v(50): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/../common/adder/rtl/lscc_adder.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_lifcl.v(3): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/pmi_complex_mult.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_complex_mult.v(52): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/../common/complex_mult/rtl/lscc_complex_mult.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_lifcl.v(4): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/pmi_counter.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_counter.v(39): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/../common/counter/rtl/lscc_cntr.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_lifcl.v(5): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/pmi_distributed_dpram.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_distributed_dpram.v(43): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/../common/distributed_dpram/rtl/lscc_distributed_dpram.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_lifcl.v(6): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/pmi_distributed_spram.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_distributed_spram.v(42): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/../common/distributed_spram/rtl/lscc_distributed_spram.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_lifcl.v(7): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/pmi_distributed_rom.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_distributed_rom.v(42): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/../common/distributed_rom/rtl/lscc_distributed_rom.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_lifcl.v(8): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/pmi_distributed_shift_reg.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_distributed_shift_reg.v(41): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/../common/ram_shift_reg/rtl/lscc_shift_register.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_lifcl.v(9): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/pmi_fifo.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_fifo.v(44): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/../common/fifo/rtl/lscc_fifo.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_lifcl.v(10): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/pmi_fifo_dc.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_fifo_dc.v(47): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/../common/fifo_dc/rtl/lscc_fifo_dc.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_lifcl.v(11): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/pmi_mac.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_mac.v(52): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/../common/mult_accumulate/rtl/lscc_mult_accumulate.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_lifcl.v(12): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/pmi_multaddsubsum.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_multaddsubsum.v(53): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/../common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_lifcl.v(13): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/pmi_multaddsub.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_multaddsub.v(52): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/../common/mult_add_sub/rtl/lscc_mult_add_sub.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_lifcl.v(14): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/pmi_mult.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_mult.v(51): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/../common/multiplier/rtl/lscc_multiplier.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_lifcl.v(15): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/pmi_ram_dp.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_ram_dp.v(48): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/../common/ram_dp/rtl/lscc_ram_dp.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_lifcl.v(16): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/pmi_ram_dp_be.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_ram_dp_be.v(49): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/../common/ram_dp/rtl/lscc_ram_dp.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_lifcl.v(17): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/pmi_ram_dp_true.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_ram_dp_true.v(49): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/../common/ram_dp_true/rtl/lscc_ram_dp_true.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_lifcl.v(18): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/pmi_ram_dq.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_ram_dq.v(45): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/../common/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_lifcl.v(19): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/pmi_ram_dq_be.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_ram_dq_be.v(45): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/../common/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_lifcl.v(20): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/pmi_rom.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_rom.v(45): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/../common/rom/rtl/lscc_rom.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_lifcl.v(21): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/pmi_sub.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_sub.v(50): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/../common/subtractor/rtl/lscc_subtractor.v. VERI-1328
+Analyzing Verilog file c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/rtl/pll/pll_60m/rtl/pll_60m.v. VERI-1482
+Analyzing Verilog file c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/ip/cpu0/2.5.0/rtl/cpu0.v. VERI-1482
+WARNING <35901372> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/ip/cpu0/2.5.0/rtl/cpu0.v(0): redeclaration of ansi port resetCtrl_mainClkReset is not allowed. VERI-1372
+Analyzing Verilog file c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/ip/sysmem0/2.1.0/rtl/sysmem0.v. VERI-1482
+Analyzing Verilog file c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/module/ahbl0/1.3.0/rtl/ahbl0.v. VERI-1482
+Analyzing Verilog file c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/module/ahbl2apb0/1.1.0/rtl/ahbl2apb0.v. VERI-1482
+Analyzing Verilog file c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/module/apb0/1.2.0/rtl/apb0.v. VERI-1482
+Analyzing Verilog file c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/ip/uart0/1.3.0/rtl/uart0.v. VERI-1482
+Analyzing Verilog file c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/module/u23_config_intf_feedthrough/1.0.0/rtl/u23_config_intf_feedthrough.v. VERI-1482
+Analyzing Verilog file c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/ip/lscc_i2cm1/2.0.0/rtl/lscc_i2cm1.v. VERI-1482
+Analyzing Verilog file c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/ip/lscc_spim1/2.1.0/rtl/lscc_spim1.v. VERI-1482
+Analyzing Verilog file c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/ip/hw_ver_gpio/1.6.2/rtl/hw_ver_gpio.v. VERI-1482
+Analyzing Verilog file c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/ip/gpio0/1.6.2/rtl/gpio0.v. VERI-1482
+Analyzing Verilog file c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/rtl/u23_lifcl_nx33u_evalbd_ibd.sv. VERI-1482
+Analyzing Verilog file c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/rtl/clock_debug.sv. VERI-1482
+Analyzing Verilog file c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/rtl/resetn_sync.sv. VERI-1482
+Analyzing Verilog file c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr_des.v. VERI-1482
+Analyzing Verilog file c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/remote_files/sources/documents/development_doc/lattice_example/verilog_modules/ahbl_to_lmmi_converter.v. VERI-1482
+Analyzing Verilog file c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/remote_files/sources/rtl/source/axi64_to_ahbl32_conv/axi64_to_ahbl32_conv.v. VERI-1482
+Analyzing Verilog file c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/remote_files/sources/rtl/source/axi64_to_ahbl32_conv/lib/latticesemi.com/ip/axi4_interconnect/1.2.2/rtl/axi4_interconnect.sv. VERI-1482
+WARNING <35901208> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/remote_files/sources/rtl/source/axi64_to_ahbl32_conv/lib/latticesemi.com/ip/axi4_interconnect/1.2.2/rtl/axi4_interconnect.sv(8908): literal value truncated to fit in -734135376 bits. VERI-1208
+WARNING <35901208> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/remote_files/sources/rtl/source/axi64_to_ahbl32_conv/lib/latticesemi.com/ip/axi4_interconnect/1.2.2/rtl/axi4_interconnect.sv(12425): literal value truncated to fit in -731851040 bits. VERI-1208
+Analyzing Verilog file c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/remote_files/sources/rtl/source/axi64_to_ahbl32_conv/lib/latticesemi.com/ip/axi4_to_ahbl_bridge/1.1.1/rtl/axi4_to_ahbl_bridge.v. VERI-1482
+Analyzing VHDL file c:/lscc/radiant/2024.1/ip/pmi/pmi_lifcl.vhd. VHDL-1481
+Analyzing VHDL file c:/lscc/radiant/2024.1/ip/pmi/pmi_lifcl.vhd
+
+INFO <35921014> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_lifcl.vhd(4): analyzing package components. VHDL-1014
+INFO <35921504> - synthesis: The default VHDL library search path is now "C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/impl_1". VHDL-1504
+Top module language type = Verilog.
+Top module name (Verilog, mixed language): u23_lifcl_nx33u_evalbd_ibd
+INFO <35901018> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/rtl/u23_lifcl_nx33u_evalbd_ibd.sv(27): compiling module u23_lifcl_nx33u_evalbd_ibd. VERI-1018
+INFO <35901018> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/rtl/pll/pll_60m/rtl/pll_60m.v(11): compiling module pll_60m. VERI-1018
+WARNING <35901214> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/rtl/pll/pll_60m/rtl/pll_60m.v(643): assignment to input clki_i. VERI-1214
+INFO <35901018> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/rtl/pll/pll_60m/rtl/pll_60m.v(157): compiling module pll_60m_ipgen_lscc_pll(FVCO=1500.0,CLKI_FREQ=25.0,CLKOP_FREQ_ACTUAL=60.0,FRAC_N_EN=1,LOCK_EN=1,FBK_MODE="INTCLKOP",FBCLK_DIVIDER_ACTUAL_STR="60",DIVOP_ACTUAL_STR="24",DIVOS_ACTUAL_STR="7",DIVOS2_ACTUAL_STR="7",DIVOS3_ACTUAL_STR="7",DIVOS4_ACTUAL_STR="7",DIVOS5_ACTUAL_STR="7",SSC_N_CODE_STR="0b000111100",DELA="24",DELB="7",DELC="7",DELD="7",DELE="7",DELF="7",IPI_CMP="0b1100",CSET="8P",CRIPPLE="1P",IPP_CTRL="0b0110",BW_CTL_BIAS="0b1111",V2I_PP_RES="9K"). VERI-1018
+INFO <35901018> - synthesis: C:/lscc/radiant/2024.1/ispfpga/../cae_library/synthesis/verilog/lifcl.v(10022): compiling module PLL(BW_CTL_BIAS="0b1111",CRIPPLE="1P",CSET="8P",DELA="24",DELB="7",DELC="7",DELD="7",DELE="7",DELF="7",DIVA="24",DIVB="7",DIVC="7",DIVD="7",DIVE="7",DIVF="7",ENCLK_CLKOP="ENABLED",V2I_1V_EN="ENABLED",FBK_CUR_BLE="0b00001000",FBK_MASK="0b00010000",FBK_MMD_DIG="60",FBK_MMD_PULS_CTL="0b0111",FBK_PI_RC="0b0010",FBK_PR_CC="0b100   ....   I_KVCO_SEL="60",V2I_PP_ICTRL="0b11111",V2I_PP_RES="9K",DIV_DEL=72'b01100000110001000110000001100000011000100110001001100000011000000110000,SIM_FLOAT_PRECISION="0.1"). VERI-1018
+INFO <35901018> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/rtl/clock_debug.sv(24): compiling module clock_debug. VERI-1018
+INFO <35901018> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/rtl/resetn_sync.sv(26): compiling module resetn_sync. VERI-1018
+INFO <35901018> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr_des.v(54): compiling module u23_lifclu_nx33_prpl_bldr_des. VERI-1018
+INFO <35901018> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/ip/hw_ver_gpio/1.6.2/rtl/hw_ver_gpio.v(11): compiling module HW_ver_gpio. VERI-1018
+INFO <35901018> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/ip/hw_ver_gpio/1.6.2/rtl/hw_ver_gpio.v(512): compiling module HW_ver_gpio_ipgen_lscc_gpio(DIRECTION_DEF_VAL="32'h00000000",OUT_RESET_VAL="32'h00000000",EXTERNAL_BUF=1,IF_USER_INTF="APB"). VERI-1018
+INFO <35901018> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/ip/hw_ver_gpio/1.6.2/rtl/hw_ver_gpio.v(749): compiling module HW_ver_gpio_ipgen_lscc_gpio_lmmi(DIRECTION_DEF_VAL="32'h00000000",OUT_RESET_VAL="32'h00000000",EXTERNAL_BUF=1,IF_USER_INTF="APB"). VERI-1018
+INFO <35901018> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/ip/hw_ver_gpio/1.6.2/rtl/hw_ver_gpio.v(125): compiling module HW_ver_gpio_ipgen_lscc_apb2lmmi(ADDR_WIDTH=6). VERI-1018
+INFO <35901018> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/module/ahbl0/1.3.0/rtl/ahbl0.v(11): compiling module ahbl0(S0_ADDR_RANGE=32'b0100000000000000000,S1_BASE_ADDR=32'b01000000000000000000,S1_ADDR_RANGE=32'b01100000000000,S2_BASE_ADDR=32'b0100000000000000000,S2_ADDR_RANGE=32'b0100000000000000000). VERI-1018
+INFO <35901018> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/module/ahbl0/1.3.0/rtl/ahbl0.v(5839): compiling module ahbl0_ipgen_lscc_ahbl_interconnect(TOTAL_MASTER_CNT=2,TOTAL_SLAVE_CNT=3,S0_BASE_ADDR=256'b0,S0_ADDR_RANGE=256'b0100000000000000000,S0_M_PRIO_IDX=4'b1001,S0_MAX_BURST_SIZE=0,S1_BASE_ADDR=256'b01000000000000000000,S1_ADDR_RANGE=256'b01100000000000,S1_M_PRIO_IDX=4'b1001,S1_MAX_BURST_SIZE=0,S2_BASE_ADDR=256'b0100000000000000000   ....   00000000000,S31_ADDR_RANGE=256'b010000000000,S31_M_PRIO_IDX=4'b1001,S31_MAX_BURST_SIZE=0,M1_S1_CONNECT_EN=0,M1_S2_CONNECT_EN=0,M1_S3_CONNECT_EN=0,M1_S4_CONNECT_EN=0). VERI-1018
+INFO <35901018> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/module/ahbl0/1.3.0/rtl/ahbl0.v(2548): compiling module ahbl0_ipgen_lscc_ahbl_crossbar(TOTAL_MASTER_CNT=2,TOTAL_SLAVE_CNT=3,S0_BASE_ADDR=256'b0,S0_ADDR_RANGE=256'b0100000000000000000,S0_M_PRIO_IDX=4'b1001,S1_BASE_ADDR=256'b01000000000000000000,S1_ADDR_RANGE=256'b01100000000000,S1_M_PRIO_IDX=4'b1001,S2_BASE_ADDR=256'b0100000000000000000,S2_ADDR_RANGE=256'b0100000000000000000,S2_M   ....   M_PRIO_IDX=4'b1001,S31_BASE_ADDR=256'b0111110000000000000,S31_ADDR_RANGE=256'b010000000000,S31_M_PRIO_IDX=4'b1001,M1_CONNECT_EN=32'b11111111111111111111111111100001). VERI-1018
+WARNING <35901209> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/module/ahbl0/1.3.0/rtl/ahbl0.v(3117): expression size 128 truncated to fit in target size 12. VERI-1209
+WARNING <35901209> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/module/ahbl0/1.3.0/rtl/ahbl0.v(3181): expression size 1024 truncated to fit in target size 64. VERI-1209
+INFO <35901018> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/module/ahbl0/1.3.0/rtl/ahbl0.v(5419): compiling module ahbl0_ipgen_lscc_ahbl_input_stage. VERI-1018
+INFO <35901018> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/module/ahbl0/1.3.0/rtl/ahbl0.v(2178): compiling module ahbl0_ipgen_lscc_ahbl_bus(TOTAL_SLAVE_CNT=3,S0_FRAGMENT_EN=1,S0_BASE_ADDR=256'b0,S0_ADDR_RANGE=256'b0100000000000000000,S1_FRAGMENT_EN=1,S1_BASE_ADDR=256'b01000000000000000000,S1_ADDR_RANGE=256'b01100000000000,S2_FRAGMENT_EN=1,S2_BASE_ADDR=256'b0100000000000000000,S2_ADDR_RANGE=256'b0100000000000000000,S3_FRAGMENT_EN=1,S3_B   ....   =1,S30_BASE_ADDR=256'b0111100000000000000,S30_ADDR_RANGE=256'b010000000000,S31_FRAGMENT_EN=1,S31_BASE_ADDR=256'b0111110000000000000,S31_ADDR_RANGE=256'b010000000000). VERI-1018
+INFO <35901018> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/module/ahbl0/1.3.0/rtl/ahbl0.v(3590): compiling module ahbl0_ipgen_lscc_ahbl_decoder(TOTAL_SLAVE_CNT=3,S0_FRAGMENT_EN=1,S0_BASE_ADDR=256'b0,S0_ADDR_RANGE=256'b0100000000000000000,S1_FRAGMENT_EN=1,S1_BASE_ADDR=256'b01000000000000000000,S1_ADDR_RANGE=256'b01100000000000,S2_FRAGMENT_EN=1,S2_BASE_ADDR=256'b0100000000000000000,S2_ADDR_RANGE=256'b0100000000000000000,S3_FRAGMENT_EN=1,   ....   =1,S30_BASE_ADDR=256'b0111100000000000000,S30_ADDR_RANGE=256'b010000000000,S31_FRAGMENT_EN=1,S31_BASE_ADDR=256'b0111110000000000000,S31_ADDR_RANGE=256'b010000000000). VERI-1018
+WARNING <35901209> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/module/ahbl0/1.3.0/rtl/ahbl0.v(4156): expression size 993 truncated to fit in target size 96. VERI-1209
+WARNING <35901209> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/module/ahbl0/1.3.0/rtl/ahbl0.v(4188): expression size 7954 truncated to fit in target size 768. VERI-1209
+WARNING <35901209> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/module/ahbl0/1.3.0/rtl/ahbl0.v(4220): expression size 7947 truncated to fit in target size 768. VERI-1209
+INFO <35901018> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/module/ahbl0/1.3.0/rtl/ahbl0.v(4298): compiling module ahbl0_ipgen_lscc_ahbl_decoder_prim(FRAGMENT_EN=32'b01,BASE_ADDR=256'b0,ADDR_RANGE=256'b0100000000000000000). VERI-1018
+INFO <35901018> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/module/ahbl0/1.3.0/rtl/ahbl0.v(4368): compiling module ahbl0_ipgen_lscc_ahbl_decoder_comp(ADDR_RANGE=32'b0100000000000000000). VERI-1018
+INFO <35901018> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/module/ahbl0/1.3.0/rtl/ahbl0.v(4298): compiling module ahbl0_ipgen_lscc_ahbl_decoder_prim(FRAGMENT_EN=32'b01,BASE_ADDR=256'b01000000000000000000,ADDR_RANGE=256'b01100000000000). VERI-1018
+INFO <35901018> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/module/ahbl0/1.3.0/rtl/ahbl0.v(4368): compiling module ahbl0_ipgen_lscc_ahbl_decoder_comp(BASE_ADDR=32'b01000000000000000000,ADDR_RANGE=32'b01100000000000). VERI-1018
+INFO <35901018> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/module/ahbl0/1.3.0/rtl/ahbl0.v(4298): compiling module ahbl0_ipgen_lscc_ahbl_decoder_prim(FRAGMENT_EN=32'b01,BASE_ADDR=256'b0100000000000000000,ADDR_RANGE=256'b0100000000000000000). VERI-1018
+INFO <35901018> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/module/ahbl0/1.3.0/rtl/ahbl0.v(4368): compiling module ahbl0_ipgen_lscc_ahbl_decoder_comp(BASE_ADDR=32'b0100000000000000000,ADDR_RANGE=32'b0100000000000000000). VERI-1018
+INFO <35901018> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/module/ahbl0/1.3.0/rtl/ahbl0.v(5143): compiling module ahbl0_ipgen_lscc_ahbl_multiplexor(TOTAL_SLAVE_CNT=3). VERI-1018
+INFO <35901018> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/module/ahbl0/1.3.0/rtl/ahbl0.v(4455): compiling module ahbl0_ipgen_lscc_ahbl_default_slv. VERI-1018
+INFO <35901018> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/module/ahbl0/1.3.0/rtl/ahbl0.v(2178): compiling module ahbl0_ipgen_lscc_ahbl_bus(TOTAL_SLAVE_CNT=3,M_CONNECT_EN=32'b11111111111111111111111111100001,S0_FRAGMENT_EN=1,S0_BASE_ADDR=256'b0,S0_ADDR_RANGE=256'b0100000000000000000,S1_FRAGMENT_EN=1,S1_BASE_ADDR=256'b01000000000000000000,S1_ADDR_RANGE=256'b01100000000000,S2_FRAGMENT_EN=1,S2_BASE_ADDR=256'b0100000000000000000,S2_ADDR_RA   ....   =1,S30_BASE_ADDR=256'b0111100000000000000,S30_ADDR_RANGE=256'b010000000000,S31_FRAGMENT_EN=1,S31_BASE_ADDR=256'b0111110000000000000,S31_ADDR_RANGE=256'b010000000000). VERI-1018
+INFO <35901018> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/module/ahbl0/1.3.0/rtl/ahbl0.v(3590): compiling module ahbl0_ipgen_lscc_ahbl_decoder(TOTAL_SLAVE_CNT=3,S0_FRAGMENT_EN=1,M_CONNECT_EN=32'b11111111111111111111111111100001,S0_BASE_ADDR=256'b0,S0_ADDR_RANGE=256'b0100000000000000000,S1_FRAGMENT_EN=1,S1_BASE_ADDR=256'b01000000000000000000,S1_ADDR_RANGE=256'b01100000000000,S2_FRAGMENT_EN=1,S2_BASE_ADDR=256'b0100000000000000000,S2_ADD   ....   =1,S30_BASE_ADDR=256'b0111100000000000000,S30_ADDR_RANGE=256'b010000000000,S31_FRAGMENT_EN=1,S31_BASE_ADDR=256'b0111110000000000000,S31_ADDR_RANGE=256'b010000000000). VERI-1018
+WARNING <35901209> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/module/ahbl0/1.3.0/rtl/ahbl0.v(4156): expression size 993 truncated to fit in target size 96. VERI-1209
+WARNING <35901209> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/module/ahbl0/1.3.0/rtl/ahbl0.v(4188): expression size 7954 truncated to fit in target size 768. VERI-1209
+WARNING <35901209> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/module/ahbl0/1.3.0/rtl/ahbl0.v(4220): expression size 7947 truncated to fit in target size 768. VERI-1209
+INFO <35901018> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/module/ahbl0/1.3.0/rtl/ahbl0.v(1762): compiling module ahbl0_ipgen_lscc_ahbl_arbmux(TOTAL_MASTER_CNT=2,M_PRIO_WIDTH=2,M_PRIO_IDX=4'b1001). VERI-1018
+INFO <35901018> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/module/ahbl0/1.3.0/rtl/ahbl0.v(1499): compiling module ahbl0_ipgen_lscc_ahbl_arbiter(TOTAL_MASTER_CNT=2,M_PRIO_IDX=4'b1001). VERI-1018
+INFO <35901018> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/module/ahbl0/1.3.0/rtl/ahbl0.v(4574): compiling module ahbl0_ipgen_lscc_ahbl_fair_arb(NUM_REQ=2,ONEHOTPRIO=1'b1). VERI-1018
+INFO <35901018> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/module/ahbl2apb0/1.1.0/rtl/ahbl2apb0.v(11): compiling module ahbl2apb0. VERI-1018
+INFO <35901018> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/module/ahbl2apb0/1.1.0/rtl/ahbl2apb0.v(108): compiling module ahbl2apb0_ipgen_lscc_ahbl2apb. VERI-1018
+INFO <35901018> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/module/apb0/1.2.0/rtl/apb0.v(11): compiling module apb0(S0_BASE_ADDR=32'b01000000010000000000,S1_BASE_ADDR=32'b01000000000000000000,S2_BASE_ADDR=32'b01000000100000000000,S3_BASE_ADDR=32'b01000000110000000000,S4_BASE_ADDR=32'b01000001010000000000). VERI-1018
+INFO <35901018> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/module/apb0/1.2.0/rtl/apb0.v(3039): compiling module apb0_ipgen_lscc_apb_interconnect(TOTAL_MASTER_CNT=1,TOTAL_SLAVE_CNT=5,S_M_PRIO_IDX=1'b1,S0_BASE_ADDR=32'b01000000010000000000,S1_BASE_ADDR=32'b01000000000000000000,S2_BASE_ADDR=32'b01000000100000000000,S3_BASE_ADDR=32'b01000000110000000000,S4_BASE_ADDR=32'b01000001010000000000,S5_BASE_ADDR=32'b01010000000000,S6_BASE_ADDR=32   ....   DDR=32'b0110110000000000,S28_BASE_ADDR=32'b0111000000000000,S29_BASE_ADDR=32'b0111010000000000,S30_BASE_ADDR=32'b0111100000000000,S31_BASE_ADDR=32'b0111110000000000). VERI-1018
+INFO <35901018> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/module/apb0/1.2.0/rtl/apb0.v(1081): compiling module apb0_ipgen_lscc_apb_bus(F=1,TOTAL_SLAVE_CNT=5,S0_BASE_ADDR=32'b01000000010000000000,S0_ADDR_RANGE=32'b010000000000,S1_BASE_ADDR=32'b01000000000000000000,S1_ADDR_RANGE=32'b010000000000,S2_BASE_ADDR=32'b01000000100000000000,S2_ADDR_RANGE=32'b010000000000,S3_BASE_ADDR=32'b01000000110000000000,S3_ADDR_RANGE=32'b010000000000,S4_   ....   29_ADDR_RANGE=32'b010000000000,S30_BASE_ADDR=32'b0111100000000000,S30_ADDR_RANGE=32'b010000000000,S31_BASE_ADDR=32'b0111110000000000,S31_ADDR_RANGE=32'b010000000000). VERI-1018
+INFO <35901018> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/module/apb0/1.2.0/rtl/apb0.v(1696): compiling module apb0_ipgen_lscc_apb_decoder(F=1,TOTAL_SLAVE_CNT=5,S0_BASE_ADDR=32'b01000000010000000000,S0_ADDR_RANGE=32'b010000000000,S1_BASE_ADDR=32'b01000000000000000000,S1_ADDR_RANGE=32'b010000000000,S2_BASE_ADDR=32'b01000000100000000000,S2_ADDR_RANGE=32'b010000000000,S3_BASE_ADDR=32'b01000000110000000000,S3_ADDR_RANGE=32'b010000000000   ....   29_ADDR_RANGE=32'b010000000000,S30_BASE_ADDR=32'b0111100000000000,S30_ADDR_RANGE=32'b010000000000,S31_BASE_ADDR=32'b0111110000000000,S31_ADDR_RANGE=32'b010000000000). VERI-1018
+WARNING <35901209> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/module/apb0/1.2.0/rtl/apb0.v(2259): expression size 125 truncated to fit in target size 20. VERI-1209
+WARNING <35901209> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/module/apb0/1.2.0/rtl/apb0.v(2291): expression size 1007 truncated to fit in target size 160. VERI-1209
+WARNING <35901209> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/module/apb0/1.2.0/rtl/apb0.v(2323): expression size 1003 truncated to fit in target size 160. VERI-1209
+INFO <35901018> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/module/apb0/1.2.0/rtl/apb0.v(2394): compiling module apb0_ipgen_lscc_apb_decoder_prim(F=1,BASE_ADDR=32'b01000000010000000000,ADDR_RANGE=32'b010000000000). VERI-1018
+INFO <35901018> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/module/apb0/1.2.0/rtl/apb0.v(2464): compiling module apb0_ipgen_lscc_apb_decoder_comp(BASE_ADDR=32'b01000000010000000000). VERI-1018
+INFO <35901018> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/module/apb0/1.2.0/rtl/apb0.v(2394): compiling module apb0_ipgen_lscc_apb_decoder_prim(F=1,BASE_ADDR=32'b01000000000000000000,ADDR_RANGE=32'b010000000000). VERI-1018
+INFO <35901018> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/module/apb0/1.2.0/rtl/apb0.v(2464): compiling module apb0_ipgen_lscc_apb_decoder_comp(BASE_ADDR=32'b01000000000000000000). VERI-1018
+INFO <35901018> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/module/apb0/1.2.0/rtl/apb0.v(2394): compiling module apb0_ipgen_lscc_apb_decoder_prim(F=1,BASE_ADDR=32'b01000000100000000000,ADDR_RANGE=32'b010000000000). VERI-1018
+INFO <35901018> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/module/apb0/1.2.0/rtl/apb0.v(2464): compiling module apb0_ipgen_lscc_apb_decoder_comp(BASE_ADDR=32'b01000000100000000000). VERI-1018
+INFO <35901018> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/module/apb0/1.2.0/rtl/apb0.v(2394): compiling module apb0_ipgen_lscc_apb_decoder_prim(F=1,BASE_ADDR=32'b01000000110000000000,ADDR_RANGE=32'b010000000000). VERI-1018
+INFO <35901018> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/module/apb0/1.2.0/rtl/apb0.v(2464): compiling module apb0_ipgen_lscc_apb_decoder_comp(BASE_ADDR=32'b01000000110000000000). VERI-1018
+INFO <35901018> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/module/apb0/1.2.0/rtl/apb0.v(2394): compiling module apb0_ipgen_lscc_apb_decoder_prim(F=1,BASE_ADDR=32'b01000001010000000000,ADDR_RANGE=32'b010000000000). VERI-1018
+INFO <35901018> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/module/apb0/1.2.0/rtl/apb0.v(2464): compiling module apb0_ipgen_lscc_apb_decoder_comp(BASE_ADDR=32'b01000001010000000000). VERI-1018
+INFO <35901018> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/module/apb0/1.2.0/rtl/apb0.v(2670): compiling module apb0_ipgen_lscc_apb_multiplexor(TOTAL_SLAVE_CNT=5). VERI-1018
+INFO <35901018> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/ip/cpu0/2.5.0/rtl/cpu0.v(11): compiling module cpu0. VERI-1018
+INFO <35901018> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/ip/cpu0/2.5.0/rtl/cpu0.v(0): compiling module '**'. VERI-1018
+INFO <35901018> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/ip/cpu0/2.5.0/rtl/cpu0.v(0): compiling module '**'. VERI-1018
+INFO <35901018> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/ip/cpu0/2.5.0/rtl/cpu0.v(0): compiling module '**'. VERI-1018
+INFO <35901018> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/ip/cpu0/2.5.0/rtl/cpu0.v(0): compiling module '**'. VERI-1018
+INFO <35901018> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/ip/cpu0/2.5.0/rtl/cpu0.v(0): compiling module '**'. VERI-1018
+INFO <35901018> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/ip/cpu0/2.5.0/rtl/cpu0.v(0): compiling module '**'. VERI-1018
+INFO <35901018> - synthesis: C:/lscc/radiant/2024.1/ispfpga/../cae_library/synthesis/verilog/lifcl.v(11728): compiling module JTAGH19(IP_ENABLE_VAL="0x04000",HUB_14="0b1"). VERI-1018
+INFO <35901018> - synthesis: C:/lscc/radiant/2024.1/ispfpga/../cae_library/synthesis/verilog/lifcl.v(1464): compiling module DCC(DCCEN="1"). VERI-1018
+INFO <35901018> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/ip/cpu0/2.5.0/rtl/cpu0.v(0): compiling module '**'. VERI-1018
+INFO <35901018> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/ip/cpu0/2.5.0/rtl/cpu0.v(0): compiling module '**'. VERI-1018
+INFO <35901018> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/ip/cpu0/2.5.0/rtl/cpu0.v(0): compiling module '**'. VERI-1018
+WARNING <35931002> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/ip/cpu0/2.5.0/rtl/cpu0.v(0): net genblk3.tcka_i does not have a driver. VDB-1002
+INFO <35901018> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/ip/cpu0/2.5.0/rtl/cpu0.v(0): compiling module '**'. VERI-1018
+INFO <35901018> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/ip/cpu0/2.5.0/rtl/cpu0.v(0): compiling module '**'. VERI-1018
+INFO <35901018> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/ip/cpu0/2.5.0/rtl/cpu0.v(0): compiling module '**'. VERI-1018
+INFO <35901018> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/ip/cpu0/2.5.0/rtl/cpu0.v(0): compiling module '**'. VERI-1018
+INFO <35901018> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/ip/cpu0/2.5.0/rtl/cpu0.v(0): compiling module '**'. VERI-1018
+ERROR <35901012> - synthesis: c:/users/whan/documents/appproject/usb_lifcl_nx33u/rd_ioa_usb2_revb/design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/ip/cpu0/2.5.0/rtl/cpu0.v(0): cannot open file reginit.bin. VERI-1012

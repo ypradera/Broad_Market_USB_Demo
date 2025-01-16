@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<RadiantModule architecture="LIFCL" date="2024 02 27 10:56:32" device="LIFCL-33U" gen_platform="Propel" generator="ipgen" library="ip" module="i2c_target" name="lscc_i2cs1" package="FCCSP104" source_format="Verilog" speed="7_High-Performance_1.0V" vendor="latticesemi.com" version="2.1.0">
+ <Package>
+  <File modified="2024 02 27 10:56:31" name="rtl/lscc_i2cs1_bb.v" type="black_box_verilog"/>
+  <File modified="2024 02 27 10:56:31" name="lscc_i2cs1.cfg" type="cfg"/>
+  <File modified="2024 02 27 10:56:31" name="misc/lscc_i2cs1_tmpl.v" type="template_verilog"/>
+  <File modified="2024 02 27 10:56:31" name="misc/lscc_i2cs1_tmpl.vhd" type="template_vhdl"/>
+  <File modified="2024 02 27 10:56:32" name="rtl/lscc_i2cs1.v" type="top_level_verilog"/>
+  <File modified="2024 02 27 10:56:32" name="constraints/lscc_i2cs1.ldc" type="timing_constraints"/>
+  <File modified="2024 02 27 10:56:32" name="testbench/dut_params.v" type="dependency_file"/>
+  <File modified="2024 02 27 10:56:32" name="testbench/dut_inst.v" type="dependency_file"/>
+  <File modified="2024 02 27 10:56:32" name="component.xml" type="IP-XACT_component"/>
+  <File modified="2024 02 27 10:56:32" name="design.xml" type="IP-XACT_design"/>
+  <File modified="2023 12 06 00:08:25" name="testbench/lscc_i2c_controller.v" type="testbench_verilog"/>
+  <File modified="2023 12 06 00:08:23" name="testbench/lscc_lmmi2apb.v" type="testbench_verilog"/>
+  <File modified="2023 12 06 00:08:23" name="testbench/lscc_lmmi_initiator.v" type="testbench_verilog"/>
+  <File modified="2023 12 06 00:08:23" name="testbench/tb_top.v" type="testbench_verilog"/>
+  <File modified="2023 12 06 00:08:23" name="driver/i2c_slave.c" type="driver_source"/>
+  <File modified="2023 12 06 00:08:23" name="driver/i2c_slave.h" type="driver_header"/>
+  <File modified="2023 12 06 00:08:23" name="driver/i2c_slave.xml" type="driver_metadata"/>
+  <File modified="2023 12 06 00:08:23" name="driver/i2c_slave_regs.h" type="driver_header"/>
+ </Package>
+</RadiantModule>

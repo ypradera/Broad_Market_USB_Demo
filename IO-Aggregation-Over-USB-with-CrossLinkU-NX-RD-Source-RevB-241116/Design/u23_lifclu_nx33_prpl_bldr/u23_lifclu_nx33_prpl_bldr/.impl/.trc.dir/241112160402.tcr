@@ -1,0 +1,40 @@
+#Start recording tcl command: 11/6/2024 16:51:13
+sbp_design open -name u23_lifclu_nx33_prpl_bldr_des -path {C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr_des.sbx}
+sbp_config_ip -vlnv {latticesemi.com:ip:cpu0:2.7.0} -meta_vlnv {latticesemi.com:ip:riscv_mc:2.7.0} -cfg_value {DEBUG_ENABLE:true,IRQ_NUM:5,M_STANDALONE:true,SIMULATION:false,TIMER_ENABLE:true}
+sbp_replace -vlnv {latticesemi.com:ip:cpu0:2.7.0} -name {cpu0_inst} -component {u23_lifclu_nx33_prpl_bldr_des/cpu0_inst}
+sbp_config_ip -vlnv {latticesemi.com:module:ahbl0:1.3.2} -meta_vlnv {latticesemi.com:module:ahb_lite_interconnect:1.3.2} -cfg_value {TOTAL_MASTER_CNT:2,TOTAL_SLAVE_CNT:3,m1_s1_conn_en:false,m1_s2_conn_en:false}
+sbp_replace -vlnv {latticesemi.com:module:ahbl0:1.3.2} -name {ahbl0_inst} -component {u23_lifclu_nx33_prpl_bldr_des/ahbl0_inst}
+sbp_config_ip -vlnv {latticesemi.com:ip:sysmem0:2.3.0} -meta_vlnv {latticesemi.com:ip:system_memory:2.3.0} -cfg_value {ADDR_DEPTH:32768,DATA_WIDTH:32,INIT_FILE:../../../Riscv_FW/RDFW_IOA_USB/Debug/RDFW_IOA_USB.mem,INIT_MEM:true,MEMORY_TYPE:LRAM,PORT_COUNT:2,REGMODE_S0:true,REGMODE_S1:true}
+sbp_replace -vlnv {latticesemi.com:ip:sysmem0:2.3.0} -name {sysmem0_inst} -component {u23_lifclu_nx33_prpl_bldr_des/sysmem0_inst}
+sbp_config_ip -vlnv {latticesemi.com:module:ahbl2apb0:1.1.2} -meta_vlnv {latticesemi.com:module:ahb_lite_to_apb_bridge:1.1.2} -cfg_value {APB_CLK_EN:false}
+sbp_replace -vlnv {latticesemi.com:module:ahbl2apb0:1.1.2} -name {ahbl2apb0_inst} -component {u23_lifclu_nx33_prpl_bldr_des/ahbl2apb0_inst}
+sbp_config_ip -vlnv {latticesemi.com:module:apb0:1.2.1} -meta_vlnv {latticesemi.com:module:apb_interconnect:1.2.1} -cfg_value {TOTAL_MASTER_CNT:1,TOTAL_SLAVE_CNT:5}
+sbp_replace -vlnv {latticesemi.com:module:apb0:1.2.1} -name {apb0_inst} -component {u23_lifclu_nx33_prpl_bldr_des/apb0_inst}
+sbp_config_ip -vlnv {latticesemi.com:module:u23_config_intf_feedthrough:1.0.0} -meta_vlnv {latticesemi.com:module:ahb_lite_feedthrough:1.0.0} -cfg_value {INTERFACE_TYPE:Slave,M_ADDR_WIDTH:17}
+sbp_replace -vlnv {latticesemi.com:module:u23_config_intf_feedthrough:1.0.0} -name {u23_config_intf_feedthrough_inst} -component {u23_lifclu_nx33_prpl_bldr_des/u23_config_intf_feedthrough_inst}
+sbp_config_ip -vlnv {latticesemi.com:ip:HW_ver_gpio:1.6.2} -meta_vlnv {latticesemi.com:ip:gpio:1.6.2} -cfg_value {DIRECTION_DEF_VAL_INPUT:0,EXTERNAL_BUF:true,IO_LINES_COUNT:32,OUT_RESET_VAL_INPUT:0}
+sbp_replace -vlnv {latticesemi.com:ip:HW_ver_gpio:1.6.2} -name {HW_ver_gpio_inst} -component {u23_lifclu_nx33_prpl_bldr_des/HW_ver_gpio_inst}
+sbp_config_ip -vlnv {latticesemi.com:ip:gpio0:1.6.2} -meta_vlnv {latticesemi.com:ip:gpio:1.6.2} -cfg_value {DIRECTION_DEF_VAL_INPUT:1,EXTERNAL_BUF:false,IO_LINES_COUNT:2}
+sbp_replace -vlnv {latticesemi.com:ip:gpio0:1.6.2} -name {gpio0_inst} -component {u23_lifclu_nx33_prpl_bldr_des/gpio0_inst}
+sbp_config_ip -vlnv {latticesemi.com:ip:lscc_spim1:2.1.0} -meta_vlnv {latticesemi.com:ip:spi_controller:2.1.0} -cfg_value {BB_PRIM_EN:false,DATA_WIDTH:8,DESIRED_CLOCK_FREQ:1,FIFO_DEPTH:256,FIFO_IMPL:EBR,INTERFACE:APB,RX_FIFO_AF_FLAG:128,SLAVE_COUNT:1,SPI_EN_IN:false,SSNP:1,SYS_CLOCK_FREQ:60,TX_FIFO_AE_FLAG:128}
+sbp_replace -vlnv {latticesemi.com:ip:lscc_spim1:2.1.0} -name {lscc_spim1_inst} -component {u23_lifclu_nx33_prpl_bldr_des/lscc_spim1_inst}
+sbp_config_ip -vlnv {latticesemi.com:ip:lscc_i2cm1:2.0.1} -meta_vlnv {latticesemi.com:ip:i2c_controller:2.0.1} -cfg_value {DESIRED_CLOCK_FREQ:400,FIFO_DEPTH:64,RX_FIFO_AF_FLAG:62,SYS_CLOCK_FREQ:60}
+sbp_replace -vlnv {latticesemi.com:ip:lscc_i2cm1:2.0.1} -name {lscc_i2cm1_inst} -component {u23_lifclu_nx33_prpl_bldr_des/lscc_i2cm1_inst}
+sbp_config_ip -vlnv {latticesemi.com:ip:uart0:1.3.0} -meta_vlnv {latticesemi.com:ip:uart:1.3.0} -cfg_value {SYS_CLOCK_FREQ:60}
+sbp_replace -vlnv {latticesemi.com:ip:uart0:1.3.0} -name {uart0_inst} -component {u23_lifclu_nx33_prpl_bldr_des/uart0_inst}
+sbp_design save
+sbp_design generate
+sbp_design pge sge  -i {C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr_des.sbx} -o {C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/../} -nc
+sbp_config_ip -vlnv {latticesemi.com:ip:sysmem0:2.3.0} -meta_vlnv {latticesemi.com:ip:system_memory:2.3.0} -cfg_value {ADDR_DEPTH:32768,DATA_WIDTH:32,INIT_FILE_IN:../../../Riscv_FW/RDFW_IOA_USB/Debug/RDFW_IOA_USB.mem,INIT_MEM:true,MEMORY_TYPE:LRAM,PORT_COUNT:2,REGMODE_S0:true,REGMODE_S1:true}
+sbp_replace -vlnv {latticesemi.com:ip:sysmem0:2.3.0} -name {sysmem0_inst} -component {u23_lifclu_nx33_prpl_bldr_des/sysmem0_inst}
+sbp_design save
+sbp_design generate
+sbp_design pge sge  -i {C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr_des.sbx} -o {C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/../} -nc
+sbp_design generate
+sbp_design save
+sbp_design pge sge  -i {C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr_des.sbx} -o {C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/../} -nc
+sbp_design generate
+sbp_design save
+sbp_design pge sge  -i {C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr_des.sbx} -o {C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/../} -nc
+sbp_design close
+#Stop recording: 11/12/2024 16:04:02

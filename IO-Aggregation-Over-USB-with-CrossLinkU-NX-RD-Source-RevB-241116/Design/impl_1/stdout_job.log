@@ -1,0 +1,85 @@
+{
+"Synplify Pro (R) Job Log" : {
+	"Date" : "22:19:39    06-Nov-2024",
+	"Working Directory" : "C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/impl_1",
+	"Install" : "C:/lscc/radiant/2024.2/synpbase"
+},
+"impl_1" :{
+   "Job Flow" : "Sequential",
+   "Start Time" : "22:11:42",
+   "Runtime" : "07m:57s",
+   "Executable Run Time" : "07m:55s",
+   "synthesis" : {
+      "Job Flow" : "Sequential",
+      "Start Time" : "22:11:42",
+      "Runtime" : "07m:57s",
+      "Executable Run Time" : "07m:55s",
+      "compile" : {
+         "Job Flow" : "Sequential",
+         "Start Time" : "22:11:42",
+         "Runtime" : "03m:28s",
+         "Executable Run Time" : "03m:27s",
+         "compile_flow" : {
+            "Job Flow" : "Sequential",
+            "Start Time" : "22:11:42",
+            "Runtime" : "03m:06s",
+            "Executable Run Time" : "03m:05s",
+            "compiler" : {
+               "executable" : "bin64/c_hdl.exe",
+               "Run Directory" : "C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/impl_1",
+               "Run State" : "Complete",
+               "Return Code" : "0",
+               "Has Errors" : "no",
+               "Run Start Time" : "22:11:42",
+               "Run Time" : "02m:58s",
+               "Exe Run Time" : "02m:57s",
+               "Memory Usage" : "-",
+               "Up-to-date (run skipped)" : "no"
+            },
+            "multi_srs_gen" : {
+               "executable" : "bin64/syn_nfilter.exe",
+               "Run Directory" : "C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/impl_1",
+               "Run State" : "Complete",
+               "Return Code" : "0",
+               "Has Errors" : "no",
+               "Run Start Time" : "22:14:40",
+               "Run Time" : "08s",
+               "Exe Run Time" : "08s",
+               "Memory Usage" : "-",
+               "Up-to-date (run skipped)" : "no"
+            }
+         },
+         "premap" : {
+            "executable" : "bin64/m_gen_lattice.exe",
+            "Run Directory" : "C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/impl_1",
+            "Run State" : "Complete",
+            "Return Code" : "1",
+            "Has Errors" : "no",
+            "Run Start Time" : "22:14:48",
+            "Run Time" : "22s",
+            "Exe Run Time" : "22s",
+            "Memory Usage" : "-",
+            "Up-to-date (run skipped)" : "no"
+         }
+      },
+      "map" : {
+         "Job Flow" : "Sequential",
+         "Start Time" : "22:15:10",
+         "Runtime" : "04m:29s",
+         "Executable Run Time" : "04m:28s",
+         "fpga_mapper" : {
+            "executable" : "bin64/m_gen_lattice.exe",
+            "Run Directory" : "C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/impl_1",
+            "Run State" : "Complete",
+            "Return Code" : "1",
+            "Has Errors" : "no",
+            "Run Start Time" : "22:15:10",
+            "Run Time" : "04m:29s",
+            "Exe Run Time" : "04m:28s",
+            "Memory Usage" : "-",
+            "Up-to-date (run skipped)" : "no"
+         }
+      }
+   }
+}
+}

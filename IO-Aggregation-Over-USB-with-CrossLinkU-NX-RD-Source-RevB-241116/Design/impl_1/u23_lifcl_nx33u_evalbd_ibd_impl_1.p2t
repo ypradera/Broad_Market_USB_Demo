@@ -1,0 +1,9 @@
+-w
+-gui
+-msgset "C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/promote.xml"
+-n 1
+-t 1
+-s 1
+-cores 1
+-hsp m
+-exp parPathBased=OFF

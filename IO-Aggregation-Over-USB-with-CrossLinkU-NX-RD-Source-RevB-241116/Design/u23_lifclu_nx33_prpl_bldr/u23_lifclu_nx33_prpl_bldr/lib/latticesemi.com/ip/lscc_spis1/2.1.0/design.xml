@@ -1,0 +1,304 @@
+<?xml version="1.0" ?>
+<ipxact:design xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014" xmlns:lattice="http://www.latticesemi.com/lattice" xmlns:lsccip="http://www.latticesemi.com/XMLSchema/Radiant/ip">
+    <ipxact:vendor>latticesemi.com</ipxact:vendor>
+    <ipxact:library>ip</ipxact:library>
+    <ipxact:name>lscc_spis1</ipxact:name>
+    <ipxact:version>2.1.0</ipxact:version>
+    <ipxact:componentInstances>
+        <ipxact:componentInstance>
+            <ipxact:instanceName>lscc_spi_slave_inst</ipxact:instanceName>
+            <ipxact:componentRef library="ip" name="spi_target" vendor="latticesemi.com" version="2.1.0">
+                <ipxact:configurableElementValues>
+                    <ipxact:configurableElementValue referenceId="INTERFACE">APB</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="FAMILY">LIFCL</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="LSB_FIRST">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="IF_DATA_WIDTH">32</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="ADDR_WIDTH">6</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DATA_WIDTH">8</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DATA_WIDTH_RESET">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CPOL">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CPHA">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DAISY_CHAIN">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="SS_POL">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="SVAL_EN">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="SVAL_INPUT">00</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="SVAL">8'h00</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="BB_PRIM_EN">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="FIFO_WIDTH">8</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="FIFO_DEPTH">256</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="FIFO_IMPL">EBR</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="TX_FIFO_AE_FLAG">128</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="RX_FIFO_AF_FLAG">128</ipxact:configurableElementValue>
+                </ipxact:configurableElementValues>
+            </ipxact:componentRef>
+        </ipxact:componentInstance>
+    </ipxact:componentInstances>
+    <ipxact:adHocConnections>
+        <ipxact:adHocConnection>
+            <ipxact:name>lscc_spis1.clk_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="lscc_spis1" portRef="clk_i"/>
+                <ipxact:externalPortReference portRef="clk_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>lscc_spis1.rst_n_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="lscc_spis1" portRef="rst_n_i"/>
+                <ipxact:externalPortReference portRef="rst_n_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>lscc_spis1.sclk_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="lscc_spis1" portRef="sclk_i"/>
+                <ipxact:externalPortReference portRef="sclk_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>lscc_spis1.mosi_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="lscc_spis1" portRef="mosi_i"/>
+                <ipxact:externalPortReference portRef="mosi_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>lscc_spis1.miso_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="lscc_spis1" portRef="miso_o"/>
+                <ipxact:externalPortReference portRef="miso_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>lscc_spis1.ss_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="lscc_spis1" portRef="ss_i"/>
+                <ipxact:externalPortReference portRef="ss_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>lscc_spis1.lmmi_request_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="lscc_spis1" portRef="lmmi_request_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>lscc_spis1.lmmi_wr_rdn_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="lscc_spis1" portRef="lmmi_wr_rdn_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>lscc_spis1.lmmi_offset_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="lscc_spis1" portRef="lmmi_offset_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>lscc_spis1.lmmi_wdata_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="lscc_spis1" portRef="lmmi_wdata_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>lscc_spis1.lmmi_rdata_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="lscc_spis1" portRef="lmmi_rdata_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>lscc_spis1.lmmi_rdata_valid_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="lscc_spis1" portRef="lmmi_rdata_valid_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>lscc_spis1.lmmi_ready_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="lscc_spis1" portRef="lmmi_ready_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>lscc_spis1.int_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="lscc_spis1" portRef="int_o"/>
+                <ipxact:externalPortReference portRef="int_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>lscc_spis1.ahbl_hsel_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="lscc_spis1" portRef="ahbl_hsel_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>lscc_spis1.ahbl_hready_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="lscc_spis1" portRef="ahbl_hready_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>lscc_spis1.ahbl_haddr_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="lscc_spis1" portRef="ahbl_haddr_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>lscc_spis1.ahbl_hburst_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="lscc_spis1" portRef="ahbl_hburst_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>lscc_spis1.ahbl_hsize_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="lscc_spis1" portRef="ahbl_hsize_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>lscc_spis1.ahbl_hmastlock_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="lscc_spis1" portRef="ahbl_hmastlock_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>lscc_spis1.ahbl_hprot_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="lscc_spis1" portRef="ahbl_hprot_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>lscc_spis1.ahbl_htrans_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="lscc_spis1" portRef="ahbl_htrans_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>lscc_spis1.ahbl_hwrite_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="lscc_spis1" portRef="ahbl_hwrite_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>lscc_spis1.ahbl_hwdata_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="lscc_spis1" portRef="ahbl_hwdata_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>lscc_spis1.ahbl_hreadyout_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="lscc_spis1" portRef="ahbl_hreadyout_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>lscc_spis1.ahbl_hresp_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="lscc_spis1" portRef="ahbl_hresp_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>lscc_spis1.ahbl_hrdata_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="lscc_spis1" portRef="ahbl_hrdata_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>lscc_spis1.apb_penable_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="lscc_spis1" portRef="apb_penable_i"/>
+                <ipxact:externalPortReference portRef="apb_penable_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>lscc_spis1.apb_psel_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="lscc_spis1" portRef="apb_psel_i"/>
+                <ipxact:externalPortReference portRef="apb_psel_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>lscc_spis1.apb_pwrite_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="lscc_spis1" portRef="apb_pwrite_i"/>
+                <ipxact:externalPortReference portRef="apb_pwrite_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>lscc_spis1.apb_paddr_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="lscc_spis1" portRef="apb_paddr_i"/>
+                <ipxact:externalPortReference portRef="apb_paddr_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>5</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>lscc_spis1.apb_pwdata_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="lscc_spis1" portRef="apb_pwdata_i"/>
+                <ipxact:externalPortReference portRef="apb_pwdata_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>31</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>lscc_spis1.apb_pready_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="lscc_spis1" portRef="apb_pready_o"/>
+                <ipxact:externalPortReference portRef="apb_pready_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>lscc_spis1.apb_pslverr_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="lscc_spis1" portRef="apb_pslverr_o"/>
+                <ipxact:externalPortReference portRef="apb_pslverr_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>lscc_spis1.apb_prdata_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="lscc_spis1" portRef="apb_prdata_o"/>
+                <ipxact:externalPortReference portRef="apb_prdata_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>31</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+    </ipxact:adHocConnections>
+</ipxact:design>

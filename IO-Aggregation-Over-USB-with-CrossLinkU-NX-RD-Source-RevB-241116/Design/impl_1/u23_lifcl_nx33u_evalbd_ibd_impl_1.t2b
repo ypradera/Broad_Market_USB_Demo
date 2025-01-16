@@ -1,0 +1,4 @@
+-gui
+-msgset "C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/promote.xml"
+
+-g REGISTER_INIT:ON

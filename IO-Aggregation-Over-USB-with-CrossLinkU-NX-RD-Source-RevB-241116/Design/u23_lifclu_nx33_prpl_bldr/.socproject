@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<propelProject>
+    <builder-resource>
+        <socProject sbxfile="./nx33u_u23_jediD9_buider/nx33u_u23_jediD9_buider.sbx" />
+        <verifyProject sbxfile="./verification/nx33u_u23_jediD9_buider_v.sbx" />
+        <AddResources>
+            <AddResource SoC="False">./nx33u_u23_jediD9_buider/application</AddResource>
+        </AddResources>
+    </builder-resource>
+    <builderInfo version="2023.1.2306260112" />
+</propelProject>

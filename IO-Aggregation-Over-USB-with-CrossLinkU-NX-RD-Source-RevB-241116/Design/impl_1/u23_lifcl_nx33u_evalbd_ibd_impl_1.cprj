@@ -1,0 +1,8 @@
+-ver "C:/lscc/radiant/2024.2/ip/pmi/pmi_lifcl.v"
+-lib pmi -vhd "C:/lscc/radiant/2024.2/ip/pmi/pmi_lifcl.vhd"
+-sver "C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/rtl/u23_lifcl_nx33u_evalbd_ibd.sv" "C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/rtl/clock_debug.sv" "C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/rtl/resetn_sync.sv" "C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr_des.v" "C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/remote_files/sources/documents/development_doc/lattice_example/verilog_modules/AHBL_to_LMMI_converter.v" "C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/remote_files/sources/rtl/source/axi64_to_ahbl32_conv/axi64_to_ahbl32_conv.v" "C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/remote_files/sources/rtl/source/axi64_to_ahbl32_conv/lib/latticesemi.com/ip/axi4_interconnect/1.2.2/rtl/axi4_interconnect.sv" "C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/remote_files/sources/rtl/source/axi64_to_ahbl32_conv/lib/latticesemi.com/ip/axi4_to_ahbl_bridge/1.1.1/rtl/axi4_to_ahbl_bridge.v"
+-path "C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design"
+-top u23_lifcl_nx33u_evalbd_ibd
+-isTop
+-a "LIFCL"
+-t "LIFCL-33U"

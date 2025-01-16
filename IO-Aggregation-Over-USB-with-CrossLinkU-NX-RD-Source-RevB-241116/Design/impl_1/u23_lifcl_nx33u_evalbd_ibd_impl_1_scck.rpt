@@ -1,0 +1,59 @@
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: V-2023.09LR-2
+Install: C:\lscc\radiant\2024.2\synpbase
+OS: Windows 10 or later
+Hostname: L101448
+
+Implementation : impl_1
+
+# Written on Wed Nov  6 22:14:56 2024
+
+##### FILES SYNTAX CHECKED ##############################################
+Constraint File(s):      "C:\lscc\radiant\2024.2\scripts\tcl\flow\radiant_synplify_vars.tcl"
+                         "C:\Users\whan\Documents\AppProject\USB_LIFCL_NX33U\RD_IOA_USB2_REVB\Design\impl_1\u23_lifcl_nx33u_evalbd_ibd_impl_1_cpe.ldc"
+
+#Run constraint checker to find more issues with constraints.
+#########################################################################
+
+
+
+No issues found in constraint syntax.
+
+
+
+Clock Summary
+*************
+
+          Start                                                                    Requested     Requested     Clock        Clock                     Clock
+Level     Clock                                                                    Frequency     Period        Type         Group                     Load 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+0 -       System                                                                   200.0 MHz     5.000         system       system_clkgroup           0    
+                                                                                                                                                           
+0 -       pll_60m_ipgen_lscc_pll_Z1_layer0|clkop_o_inferred_clock                  200.0 MHz     5.000         inferred     Inferred_clkgroup_0_1     6541 
+                                                                                                                                                           
+0 -       cpu0_ipgen_vex_jtag_bridge_Z22_layer0|bbICH_inferred_clock               200.0 MHz     5.000         inferred     Inferred_clkgroup_0_2     83   
+                                                                                                                                                           
+0 -       cpu0_ipgen_vex_jtag_bridge_Z22_layer0|bqAaKcoy7LeAHb1_inferred_clock     200.0 MHz     5.000         inferred     Inferred_clkgroup_0_3     9    
+===========================================================================================================================================================
+
+
+Clock Load Summary
+******************
+
+                                                                         Clock     Source                                                        Clock Pin                                                                           Non-clock Pin     Non-clock Pin
+Clock                                                                    Load      Pin                                                           Seq Example                                                                         Seq Example       Comb Example 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                                                   0         -                                                             -                                                                                   -                 -            
+                                                                                                                                                                                                                                                                    
+pll_60m_ipgen_lscc_pll_Z1_layer0|clkop_o_inferred_clock                  6541      pll_60m.lscc_pll_inst.gen_no_refclk_mon\.u_PLL.CLKOP(PLL)     axi_ahb_conv.axi4_to_ahbl_bridge_inst.lscc_axi2ahb_lite_inst.axi_slv_bvalid_o.C     -                 -            
+                                                                                                                                                                                                                                                                    
+cpu0_ipgen_vex_jtag_bridge_Z22_layer0|bbICH_inferred_clock               83        -                                                             -                                                                                   -                 -            
+                                                                                                                                                                                                                                                                    
+cpu0_ipgen_vex_jtag_bridge_Z22_layer0|bqAaKcoy7LeAHb1_inferred_clock     9         -                                                             -                                                                                   -                 -            
+====================================================================================================================================================================================================================================================================

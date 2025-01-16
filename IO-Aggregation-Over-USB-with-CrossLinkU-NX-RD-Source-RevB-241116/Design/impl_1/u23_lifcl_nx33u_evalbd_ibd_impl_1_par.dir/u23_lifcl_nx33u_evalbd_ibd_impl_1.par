@@ -1,0 +1,21 @@
+                         Lattice PAR Report File
+Copyright (c) 2002-2022 Lattice Semiconductor Corporation,  All rights reserved.
+
+Radiant Software (64-bit) 2024.2.b.23.0
+Thu Nov  7 14:10:41 2024
+
+Command Line: par -w -n 1 -t 1 -s 1 -cores 1 -hsp m -exp parPathBased=OFF \
+	u23_lifcl_nx33u_evalbd_ibd_impl_1_map.udb \
+	u23_lifcl_nx33u_evalbd_ibd_impl_1.udb 
+
+
+Level/       Number       Estimated       Timing       Estimated Worst    Timing          Run      Run
+Cost [udb]   Unrouted     Worst Slack     Score        Slack(hold)        Score(hold)     Time     Status
+----------   --------     -----------     ------       ---------------    -----------     ----     ------
+5_1   *      0            1.627           0            -1.536             4008307         04:09    Completed
+
+* : Design saved.
+
+Total (real) run time for 1-seed: 4 mins 11 secs 
+
+par done!

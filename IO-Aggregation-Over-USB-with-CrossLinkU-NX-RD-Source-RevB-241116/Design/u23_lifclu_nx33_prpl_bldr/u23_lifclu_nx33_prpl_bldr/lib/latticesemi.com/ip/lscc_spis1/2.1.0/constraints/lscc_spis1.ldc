@@ -1,0 +1,26 @@
+set architecture "LIFCL"
+set device "LIFCL-33U"
+set package "FCCSP104"
+set speed "7_High-Performance_1.0V"
+set WRAPPER_INST "lscc_spi_slave_inst"
+set INTERFACE "APB"
+set FAMILY "LIFCL"
+set LSB_FIRST 0
+set IF_DATA_WIDTH 32
+set ADDR_WIDTH 6
+set DATA_WIDTH 8
+set DATA_WIDTH_RESET 0
+set CPOL 0
+set CPHA 0
+set DAISY_CHAIN 0
+set SS_POL 0
+set SVAL_EN 0
+set SVAL "8'h00"
+set BB_PRIM_EN 0
+set FIFO_DEPTH 256
+set FIFO_IMPL "EBR"
+set TX_FIFO_AE_FLAG 128
+set RX_FIFO_AF_FLAG 128
+
+
+## Refer to the generated Post-Synthesis constraints at eval/constraint.pdc

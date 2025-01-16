@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LatticeIPSummary>
+    <IpInfo IP_Module_Name="pll_60m" IP_Name="pll" License_Feature="-" License_Status="-" Vendor="latticesemi.com" Version="1.8.0" Vlnv="latticesemi.com:module:pll:1.8.0"/>
+    <IpInfo IP_Module_Name="cpu0" IP_Name="RISC-V MC" License_Feature="-" License_Status="-" Vendor="latticesemi.com" Version="2.7.0" Vlnv="latticesemi.com:ip:riscv_mc:2.7.0"/>
+    <IpInfo IP_Module_Name="sysmem0" IP_Name="System Memory" License_Feature="-" License_Status="-" Vendor="latticesemi.com" Version="2.3.0" Vlnv="latticesemi.com:ip:system_memory:2.3.0"/>
+    <IpInfo IP_Module_Name="ahbl0" IP_Name="AHB Lite Interconnect" License_Feature="-" License_Status="-" Vendor="latticesemi.com" Version="1.3.2" Vlnv="latticesemi.com:module:ahb_lite_interconnect:1.3.2"/>
+    <IpInfo IP_Module_Name="ahbl2apb0" IP_Name="AHB Lite to APB Bridge" License_Feature="-" License_Status="-" Vendor="latticesemi.com" Version="1.1.2" Vlnv="latticesemi.com:module:ahb_lite_to_apb_bridge:1.1.2"/>
+    <IpInfo IP_Module_Name="apb0" IP_Name="APB Interconnect" License_Feature="-" License_Status="-" Vendor="latticesemi.com" Version="1.2.1" Vlnv="latticesemi.com:module:apb_interconnect:1.2.1"/>
+    <IpInfo IP_Module_Name="uart0" IP_Name="UART" License_Feature="-" License_Status="-" Vendor="latticesemi.com" Version="1.3.0" Vlnv="latticesemi.com:ip:uart:1.3.0"/>
+    <IpInfo IP_Module_Name="u23_config_intf_feedthrough" IP_Name="AHB-Lite Feedthrough" License_Feature="-" License_Status="-" Vendor="latticesemi.com" Version="1.0.0" Vlnv="latticesemi.com:module:ahb_lite_feedthrough:1.0.0"/>
+    <IpInfo IP_Module_Name="lscc_i2cm1" IP_Name="I2C Controller" License_Feature="-" License_Status="-" Vendor="latticesemi.com" Version="2.0.1" Vlnv="latticesemi.com:ip:i2c_controller:2.0.1"/>
+    <IpInfo IP_Module_Name="lscc_spim1" IP_Name="SPI Controller" License_Feature="-" License_Status="-" Vendor="latticesemi.com" Version="2.1.0" Vlnv="latticesemi.com:ip:spi_controller:2.1.0"/>
+    <IpInfo IP_Module_Name="HW_ver_gpio" IP_Name="GPIO" License_Feature="-" License_Status="-" Vendor="latticesemi.com" Version="1.6.2" Vlnv="latticesemi.com:ip:gpio:1.6.2"/>
+    <IpInfo IP_Module_Name="gpio0" IP_Name="GPIO" License_Feature="-" License_Status="-" Vendor="latticesemi.com" Version="1.6.2" Vlnv="latticesemi.com:ip:gpio:1.6.2"/>
+</LatticeIPSummary>

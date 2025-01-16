@@ -1,0 +1,420 @@
+Runtime Summary:
+================
+
+	* Library: work, DesignUnit: axi4_interconnect_ipgen_ext_slv_port_Z61_layer0
+		Hardware Generation Phase   : 0h:00m:04s
+		Optimization Phase          : 0h:00m:01s
+
+	* Library: work, DesignUnit: axi4_interconnect_ipgen_ext_mas_port_Z59_layer0
+		Hardware Generation Phase   : 0h:00m:05s
+
+	* Library: work, DesignUnit: axi4_interconnect_ipgen_lscc_sync_axi_interconnect_Z58_layer0
+		Hardware Generation Phase   : 0h:00m:11s
+
+	* Library: work, DesignUnit: axi4_interconnect_ipgen_axi_cross_bar_Z57_layer0
+		Hardware Generation Phase   : 0h:00m:07s
+
+	* Library: work, DesignUnit: sysmem0_ipgen_lscc_smem_lram_Z52_layer0
+		Hardware Generation Phase   : 0h:00m:01s
+
+	* Library: work, DesignUnit: sysmem0_ipgen_lscc_mem_Z51_layer0
+		Hardware Generation Phase   : 0h:00m:01s
+
+	* Library: work, DesignUnit: sysmem0_ipgen_lscc_sys_mem_Z49_layer0
+		Hardware Generation Phase   : 0h:00m:03s
+
+	* Library: work, DesignUnit: gpio0_ipgen_lscc_gpio_Z24_layer0
+		Hardware Generation Phase   : 0h:00m:01s
+
+	* Library: work, DesignUnit: cpu0_ipgen_Riscv_Dbg_IMC
+		Optimization Phase          : 0h:00m:08s
+
+	* Library: work, DesignUnit: cpu0_ipgen_riscvsmall_Z21_layer0
+		Hardware Generation Phase   : 0h:00m:07s
+
+	* Library: work, DesignUnit: apb0_ipgen_lscc_apb_decoder_Z18_layer0
+		Hardware Generation Phase   : 0h:00m:03s
+
+	* Library: work, DesignUnit: apb0_ipgen_lscc_apb_interconnect_Z17_layer0
+		Hardware Generation Phase   : 0h:00m:04s
+
+	* Library: work, DesignUnit: ahbl0_ipgen_lscc_ahbl_decoder_Z6_layer0
+		Hardware Generation Phase   : 0h:00m:02s
+
+	* Library: work, DesignUnit: ahbl0_ipgen_lscc_ahbl_crossbar_Z5_layer0
+		Hardware Generation Phase   : 0h:00m:06s
+
+	* Library: work, DesignUnit: ahbl0_ipgen_lscc_ahbl_interconnect_Z4_layer0
+		Hardware Generation Phase   : 0h:00m:07s
+
+	* Library: work, DesignUnit: HW_ver_gpio_ipgen_lscc_gpio_Z2_layer0
+		Hardware Generation Phase   : 0h:00m:01s
+
+	The following design units have negligible CPU times:
+	=====================================================
+		* Library: work, DesignUnit: u23_lifcl_nx33u_evalbd_ibd
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: USB23_USB23_ENABLED
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: axi64_to_ahbl32_conv
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: axi4_to_ahbl_bridge
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: axi4_to_ahbl_bridge_ipgen_lscc_axi2ahb_lite_Z64_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: axi4_interconnect_1s_2s_32s_32s_1s_32_4128_1_63_layer0
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: axi4_interconnect_ipgen_lscc_axi_interconnect_Z62_layer0
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: axi4_interconnect_ipgen_gen_fifo_6s_50_0s_64s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: axi4_interconnect_ipgen_gen_memfile_6s_50_0s_64s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: axi4_interconnect_ipgen_gen_fifo_3s_17s_0s_8s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: axi4_interconnect_ipgen_gen_memfile_3s_17s_0s_8s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: axi4_interconnect_ipgen_gen_fifo_6s_42_0s_64s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: axi4_interconnect_ipgen_gen_memfile_6s_42_0s_64s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: axi4_interconnect_ipgen_gen_fifo_3s_13s_0s_8s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: axi4_interconnect_ipgen_gen_memfile_3s_13s_0s_8s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: axi4_interconnect_ipgen_gen_fifo_3s_77_0s_8
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: axi4_interconnect_ipgen_gen_memfile_3s_77_0s_8
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: axi4_interconnect_ipgen_gen_fifo_3s_1s_0s_8
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: axi4_interconnect_ipgen_gen_memfile_3s_1s_0s_8
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: axi4_interconnect_ipgen_gen_fifo_4s_77_0s_16s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: axi4_interconnect_ipgen_gen_memfile_4s_77_0s_16s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: axi4_interconnect_ipgen_gen_fifo_3s_21s_0s_8s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: axi4_interconnect_ipgen_gen_memfile_3s_21s_0s_8s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: axi4_interconnect_ipgen_gen_fifo_2s_13s_0s_4s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: axi4_interconnect_ipgen_gen_memfile_2s_13s_0s_4s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: axi4_interconnect_ipgen_gen_fifo_4s_32_0s_16s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: axi4_interconnect_ipgen_gen_memfile_4s_32_0s_16s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: axi4_interconnect_ipgen_gen_fifo_4s_78_0s_16s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: axi4_interconnect_ipgen_gen_memfile_4s_78_0s_16s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: axi4_interconnect_ipgen_gen_fifo_3s_72_0s_8
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: axi4_interconnect_ipgen_gen_memfile_3s_72_0s_8
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: axi4_interconnect_ipgen_ext_mas_adr_dec_2s_32_1s_1_60_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: axi4_interconnect_ipgen_def_slave_32s_32s_11s_64s_4s_0_1_2_1_2
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: axi4_interconnect_ipgen_gen_fifo_1s_6s_0s_1s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: axi4_interconnect_ipgen_gen_memfile_1s_6s_0s_1s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: axi4_interconnect_ipgen_ext_slv_dwr_arb_1s_4s_64s_1s_0_1s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: axi4_interconnect_ipgen_ext_slv_ard_arb_1s_32s_11s_4s_0s_6s_0_0s_1s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: axi4_interconnect_ipgen_ext_slv_rdresp_ifc_1s_11s_32s_6s_4s_10s_6s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: axi4_interconnect_ipgen_gen_fifo_4s_6s_0s_16s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: axi4_interconnect_ipgen_gen_memfile_4s_6s_0s_16s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: axi4_interconnect_ipgen_ext_slv_dwr_arb_1s_4s_64s_16s_0_4s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: axi4_interconnect_ipgen_rr_arb_1s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: axi4_interconnect_ipgen_ext_slv_awr_arb_1s_32s_11s_4s_0_6s_0_0s_1s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: axi4_interconnect_ipgen_ext_slv_wrresp_ifc_1s_11s_6s_4s_10s_6s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: axi4_interconnect_ipgen_ext_mas_rdresp_arb_2s_6s_4s_32s_0s_32
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: axi4_interconnect_ipgen_ext_mas_ard_ifc_32s_2s_32s_6s_4s_32s_11s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: axi4_interconnect_ipgen_rr_arb_3s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: axi4_interconnect_ipgen_ext_mas_wrresp_arb_2s_6s_4s_0s_32_3s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: axi4_interconnect_ipgen_ext_mas_dwr_ifc_2s_64s_4s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: axi4_interconnect_ipgen_ext_mas_awr_ifc_2s_32s_4s_6s_32s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: AHBL_to_LMMI_converter_32s_17s_255s_0s_8
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: u23_lifclu_nx33_prpl_bldr_des
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: uart0
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: uart0_ipgen_lscc_uart_Z56_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: uart0_ipgen_lscc_uart_txmitt_8s_0s_7s_1_2_4_8_16_32_64
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: uart0_ipgen_lscc_uart_rxcver_8s_0s_5s_1_2_4_8_16_MachXO3D
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: uart0_ipgen_lscc_uart_intface_Z55_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: u23_config_intf_feedthrough
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: u23_config_intf_feedthrough_ipgen_lscc_ahb_lite_feedthrough_17s_32s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: sysmem0_sysmem0
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: sysmem0_ipgen_lscc_ahblmem_arbiter_R/W_R/W_15_sync_0s_0s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: sysmem0_ipgen_lscc_lram_core_Z54_layer0
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: sysmem0_ipgen_lscc_lram_core_Z53_layer0
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: sysmem0_ipgen_lscc_ahblmem_subordinate_Z50_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lscc_spim1
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lscc_spim1_ipgen_lscc_apb2lmmi_32s_6s_1s_0s_1_2_4_8_4s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lscc_spim1_ipgen_lscc_spi_master_Z48_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lscc_spim1_ipgen_lscc_spi_master_native_Z47_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lscc_spim1_ipgen_lscc_spi_master_ssn_gen_1s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lscc_spim1_ipgen_lscc_spi_master_lmmi_device_8s_16s_0s_1s_2s_3s_4s_5s_4s_4294967295s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: pmi_fifo_Z46_layer0
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lscc_fifo_Z45_layer0
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lscc_soft_fifo_Z44_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lscc_fifo_main_Z43_layer0
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: pmi_fifo_Z42_layer0
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lscc_fifo_Z41_layer0
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lscc_soft_fifo_Z40_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lscc_fifo_main_Z39_layer0
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lscc_spim1_ipgen_lscc_spi_master_lmmi_Z38_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lscc_i2cm1
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lscc_i2cm1_ipgen_lscc_apb2lmmi_8s_4s_1s_0s_1_2_4_8_4s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lscc_i2cm1_ipgen_lscc_i2c_master_Z37_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lscc_i2cm1_ipgen_lscc_i2c_master_native_Z36_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lscc_i2cm1_ipgen_lscc_i2c_master_lmmi_Z35_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: pmi_fifo_Z34_layer0
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lscc_fifo_Z33_layer0
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lscc_soft_fifo_Z32_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lscc_fifo_main_Z31_layer0
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lscc_fifo_fwft_fabric_noreg_0s_8s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: pmi_fifo_Z30_layer0
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lscc_fifo_Z29_layer0
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lscc_soft_fifo_Z28_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lscc_fifo_main_Z27_layer0
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lscc_fifo_fwft_fabric_reg_0s_8s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lscc_i2cm1_ipgen_lscc_i2c_master_controller_60s_ON_32
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lscc_i2cm1_ipgen_lscc_i2c_master_cntrl_fsm_top
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lscc_i2cm1_ipgen_lscc_i2c_master_byte_rx_fsm
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lscc_i2cm1_ipgen_lscc_i2c_master_byte_tx_fsm
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lscc_i2cm1_ipgen_lscc_i2c_master_cntrl_fsm
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lscc_i2cm1_ipgen_lscc_i2c_master_arbtr
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lscc_i2cm1_ipgen_lscc_i2c_bus_cntrl_fsm_top_60s_ON_10s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lscc_i2cm1_ipgen_lscc_i2c_master_stop_gen_10s_60s_283s_79s_31s_0_1_2_3
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lscc_i2cm1_ipgen_lscc_i2c_master_start_gen_Z26_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lscc_i2cm1_ipgen_lscc_delay_gen_10s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lscc_i2cm1_ipgen_lscc_sclk_gen
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lscc_i2cm1_ipgen_lscc_i2c_glitch_filter_60s_16s_3s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: gpio0
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: gpio0_ipgen_lscc_apb2lmmi_2s_6s_1s_1_2_4_8_4s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: gpio0_ipgen_lscc_gpio_lmmi_Z25_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: cpu0_0s_0s_4294967295_0_4294967295_0_4294901760_23_layer0
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: cpu0_ipgen_Riscv_Dbg_IMC
+			Hardware Generation Phase, Initial Cleanup Phase: Negligible CPU time
+		* Library: work, DesignUnit: cpu0_ipgen_StreamFifoLowLatency_Dbg_IMC
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: cpu0_ipgen_StreamFifo_Dbg_IMC
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: cpu0_ipgen_vex_debug_0s_LIFCL_14s_0s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: cpu0_ipgen_SystemDebugger
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: cpu0_ipgen_JtagBridge
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: cpu0_ipgen_FlowCCByToggle
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: cpu0_ipgen_BufferCC_1_
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: cpu0_ipgen_vex_jtag_bridge_Z22_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: cpu0_ipgen_d_ff_plain_rst_we_t_2s_0_0_0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: cpu0_ipgen_d_ff_plain_rst_we_t_1s_0_0_0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: cpu0_ipgen_d_ff_plain_rst_t_1s_0_0_0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: cpu0_ipgen_timer_32
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: cpu0_ipgen_pic_5s_0_4_8_12
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: cpu0_ipgen_lscc_cpu_ahbl_mux_4294901760
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: apb0_Z20_layer0
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: apb0_ipgen_lscc_apb_bus_Z19_layer0
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: apb0_ipgen_lscc_apb_multiplexor_32s_32s_32s_5s_0s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: apb0_ipgen_lscc_apb_decoder_comp_32s_267264_1024_32s_1s_268287_10s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: apb0_ipgen_lscc_apb_decoder_prim_32s_1s_32s_1s_1_267264_1024
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: apb0_ipgen_lscc_apb_decoder_comp_32s_265216_1024_32s_1s_266239_10s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: apb0_ipgen_lscc_apb_decoder_prim_32s_1s_32s_1s_1_265216_1024
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: apb0_ipgen_lscc_apb_decoder_comp_32s_264192_1024_32s_1s_265215_10s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: apb0_ipgen_lscc_apb_decoder_prim_32s_1s_32s_1s_1_264192_1024
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: apb0_ipgen_lscc_apb_decoder_comp_32s_262144_1024_32s_1s_263167_10s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: apb0_ipgen_lscc_apb_decoder_prim_32s_1s_32s_1s_1_262144_1024
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: apb0_ipgen_lscc_apb_decoder_comp_32s_263168_1024_32s_1s_264191_10s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: apb0_ipgen_lscc_apb_decoder_prim_32s_1s_32s_1s_1_263168_1024
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: ahbl2apb0
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: ahbl2apb0_ipgen_lscc_ahbl2apb_Z16_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: ahbl0_Z15_layer0
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: ahbl0_ipgen_lscc_ahbl_arbmux_Z14_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: ahbl0_ipgen_lscc_ahbl_fair_arb_2s_1_1s_4s_2_0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: ahbl0_ipgen_lscc_ahbl_arbiter_Z13_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: ahbl0_ipgen_lscc_ahbl_bus_Z12_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: ahbl0_ipgen_lscc_ahbl_decoder_Z11_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: ahbl0_ipgen_lscc_ahbl_bus_Z10_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: ahbl0_ipgen_lscc_ahbl_default_slv_32s_2s_0s_1s_2s_0_1_2_3
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: ahbl0_ipgen_lscc_ahbl_multiplexor_32s_32s_3s_0s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: ahbl0_ipgen_lscc_ahbl_decoder_comp_1s_131072_131072_32s_262143_17s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: ahbl0_ipgen_lscc_ahbl_decoder_prim_8s_32s_1s_1_9_layer0
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: ahbl0_ipgen_lscc_ahbl_decoder_comp_1s_262144_6144_32s_268287_13s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: ahbl0_ipgen_lscc_ahbl_decoder_prim_8s_32s_1s_1_8_layer0
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: ahbl0_ipgen_lscc_ahbl_decoder_comp_1s_0_131072_32s_131071_17s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: ahbl0_ipgen_lscc_ahbl_decoder_prim_8s_32s_1s_1_7_layer0
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: ahbl0_ipgen_lscc_ahbl_input_stage_32s_0_1_2_3
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: HW_ver_gpio
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: HW_ver_gpio_ipgen_lscc_apb2lmmi_32s_6s_1s_1_2_4_8_4s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: HW_ver_gpio_ipgen_lscc_gpio_lmmi_Z3_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: resetn_sync
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: clock_debug
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: pll_60m
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: pll_60m_ipgen_lscc_pll_Z1_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: axi4_interconnect_ipgen_ext_slv_port_Z61_layer0
+			Initial Cleanup Phase: Negligible CPU time
+		* Library: work, DesignUnit: axi4_interconnect_ipgen_ext_mas_port_Z59_layer0
+			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: LRAM
+			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: sysmem0_ipgen_lscc_smem_lram_Z52_layer0
+			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: sysmem0_ipgen_lscc_mem_Z51_layer0
+			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: BB
+			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: DCC
+			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: JTAGH19
+			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: cpu0_ipgen_riscvsmall_Z21_layer0
+			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: apb0_ipgen_lscc_apb_decoder_Z18_layer0
+			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: ahbl0_ipgen_lscc_ahbl_decoder_Z6_layer0
+			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: ahbl0_ipgen_lscc_ahbl_crossbar_Z5_layer0
+			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: PLL
+			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: axi4_interconnect_ipgen_lscc_sync_axi_interconnect_Z58_layer0
+			Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: axi4_interconnect_ipgen_axi_cross_bar_Z57_layer0
+			Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: sysmem0_ipgen_lscc_sys_mem_Z49_layer0
+			Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: gpio0_ipgen_lscc_gpio_Z24_layer0
+			Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: apb0_ipgen_lscc_apb_interconnect_Z17_layer0
+			Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: ahbl0_ipgen_lscc_ahbl_interconnect_Z4_layer0
+			Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: HW_ver_gpio_ipgen_lscc_gpio_Z2_layer0
+			Optimization Phase: Negligible CPU time

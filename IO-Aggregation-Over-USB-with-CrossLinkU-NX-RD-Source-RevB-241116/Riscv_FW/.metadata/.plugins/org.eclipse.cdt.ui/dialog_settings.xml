@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="completion_proposal_size">
+	</section>
+	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration">
+	</section>
+	<section name="PDOMSearchPage">
+		<item key="caseSensitive" value="false"/>
+		<item key="searchFlags" value="227191"/>
+		<list key="previousPatterns">
+			<item value="lsc_usb_ep0_send"/>
+			<item value="spi_cmd_param_err"/>
+			<item value="process_spi_request"/>
+			<item value="RESPONSE:"/>
+			<item value="lsc_usb_ep_event"/>
+			<item value="MAINUSBCONTROLLERINTERRUPHANDLER"/>
+			<item value="lsc_usb_int_handler"/>
+			<item value="*EP0_SETUP_PHASE*"/>
+			<item value="EP0_SETUP_PHASE*"/>
+			<item value="EP0_SETUP_PHASE"/>
+			<item value="lsc_usb_ep0_status_cmplt"/>
+			<item value="usb_vendor_req_handler"/>
+			<item value="lsc_usb_vendor_req"/>
+			<item value="LSCVendorOUT"/>
+			<item value="i2c_master_config"/>
+		</list>
+	</section>
+</section>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BuildStatus>
+    <Strategy name="Strategy1">
+        <Milestone name="Export" build_result="2" build_time="1731017891">
+            <Task name="Bitgen" build_result="2" update_result="0" update_time="1731017891"/>
+            <Task name="IBIS" build_result="0" update_result="2" update_time="1716931574"/>
+            <Task name="TimingSimFileVlg" build_result="0" update_result="2" update_time="1716931574"/>
+        </Milestone>
+        <Milestone name="Map" build_result="2" build_time="1731017383">
+            <Task name="Map" build_result="2" update_result="0" update_time="1731017383"/>
+            <Task name="MapTrace" build_result="0" update_result="3" update_time="0"/>
+        </Milestone>
+        <Milestone name="PAR" build_result="2" build_time="1731017693">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1731017693"/>
+            <Task name="PostParVM" build_result="0" update_result="3" update_time="0"/>
+            <Task name="PARTrace" build_result="2" update_result="0" update_time="1731017715"/>
+            <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
+        </Milestone>
+        <Milestone name="Synthesis" build_result="2" build_time="1730960406">
+            <Task name="Synplify_Synthesis" build_result="2" update_result="0" update_time="1730960406"/>
+            <Task name="Synplify_Lint" build_result="0" update_result="2" update_time="1730959748"/>
+            <Task name="SynTrace" build_result="0" update_result="2" update_time="1730959748"/>
+            <Task name="SynVerilogSimFile" build_result="0" update_result="2" update_time="1730959748"/>
+            <Task name="LSE_Compile" build_result="0" update_result="2" update_time="1730959748"/>
+        </Milestone>
+        <Report name="IBIS/u23_lifcl_nx33u_evalbd_ibd_impl_1.ibs" last_build_time="1714176214" last_build_size="225825"/>
+        <Report name="u23_lifcl_nx33u_evalbd_ibd_impl_1.bgn" last_build_time="1731017890" last_build_size="4732"/>
+        <Report name="u23_lifcl_nx33u_evalbd_ibd_impl_1.bit" last_build_time="1731017890" last_build_size="856500"/>
+        <Report name="u23_lifcl_nx33u_evalbd_ibd_impl_1.twr.html" last_build_time="1731017714" last_build_size="1214839"/>
+        <Report name="u23_lifcl_nx33u_evalbd_ibd_impl_1.udb" last_build_time="1731017692" last_build_size="2705461"/>
+        <Report name="u23_lifcl_nx33u_evalbd_ibd_impl_1_map.udb" last_build_time="1731017377" last_build_size="1751618"/>
+        <Report name="u23_lifcl_nx33u_evalbd_ibd_impl_1_rtl.udb" last_build_time="0" last_build_size="0"/>
+        <Report name="u23_lifcl_nx33u_evalbd_ibd_impl_1_syn.udb" last_build_time="1730960394" last_build_size="972361"/>
+        <Report name="u23_lifcl_nx33u_evalbd_ibd_impl_1_vo.sdf" last_build_time="1714176246" last_build_size="31042489"/>
+        <Report name="u23_lifcl_nx33u_evalbd_ibd_impl_1_vo.vo" last_build_time="1714176242" last_build_size="34199699"/>
+    </Strategy>
+</BuildStatus>
+                              

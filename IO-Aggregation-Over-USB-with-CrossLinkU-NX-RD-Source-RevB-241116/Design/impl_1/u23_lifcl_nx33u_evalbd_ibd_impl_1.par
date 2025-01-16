@@ -1,0 +1,314 @@
+                         Lattice PAR Report File
+Copyright (c) 2002-2022 Lattice Semiconductor Corporation,  All rights reserved.
+
+Radiant Software (64-bit) 2024.2.b.23.0
+Thu Nov  7 14:10:41 2024
+
+Command Line: par -w -n 1 -t 1 -s 1 -cores 1 -hsp m -exp parPathBased=OFF \
+	u23_lifcl_nx33u_evalbd_ibd_impl_1_map.udb \
+	u23_lifcl_nx33u_evalbd_ibd_impl_1.udb 
+
+
+Level/       Number       Estimated       Timing       Estimated Worst    Timing          Run      Run
+Cost [udb]   Unrouted     Worst Slack     Score        Slack(hold)        Score(hold)     Time     Status
+----------   --------     -----------     ------       ---------------    -----------     ----     ------
+5_1   *      0            1.627           0            -1.536             4008307         04:09    Completed
+
+* : Design saved.
+
+Total (real) run time for 1-seed: 4 mins 11 secs 
+
+par done!
+
+PAR: Place And Route Radiant Software (64-bit) 2024.2.b.23.0.
+PARed on: Thu Nov  7 14:10:41 2024
+
+Command Line: par -w -t 1 -cores 1 -hsp m -exp parPathBased=OFF \
+	u23_lifcl_nx33u_evalbd_ibd_impl_1_map.udb \
+	u23_lifcl_nx33u_evalbd_ibd_impl_1_par.dir/5_1.udb 
+
+Loading u23_lifcl_nx33u_evalbd_ibd_impl_1_map.udb ...
+Loading device for application GENERIC from file 'jd5u27a.nph' in environment: C:/lscc/radiant/2024.2/ispfpga.
+Package Status:                     Final          Version 2.
+Performance Hardware Data Status:   Final          Version 1.6.
+
+
+
+Design:  u23_lifcl_nx33u_evalbd_ibd
+Family:  LIFCL
+Device:  LIFCL-33U
+Package: FCCSP104
+Performance Grade:   7_High-Performance_1.0V
+
+Constraint Summary
+   Total number of constraints: 34
+   Total number of constraints dropped: 0
+
+WARNING <71241014> - par: The PLL clock port [clk_25m_i] is assigned to a non-PLL clock dedicated pin [G7], which might affect the clock performance. Use dedicated PLL clock resources for the port.
+
+Device SLICE utilization summary after final SLICE packing:
+   SLICE          10367/13824        74% used
+
+WARNING <70001949> - par: The object rs_pll_locked_60m/reset_n_f1_reg.ff_inst/CLK in the option "-from" of constraint set_false_path -from [get_pins -hierarchical -regexp .*reset_n_f1.*] is not valid.
+WARNING <70001949> - par: The object rs_pll_locked_60m/reset_n_f1_reg.ff_inst/LSR in the option "-from" of constraint set_false_path -from [get_pins -hierarchical -regexp .*reset_n_f1.*] is not valid.
+WARNING <70001949> - par: The object rs_r5_sys_rstn_60m/reset_n_f1_reg.ff_inst/CLK in the option "-from" of constraint set_false_path -from [get_pins -hierarchical -regexp .*reset_n_f1.*] is not valid.
+WARNING <70001949> - par: The object rs_r5_sys_rstn_60m/reset_n_f1_reg.ff_inst/LSR in the option "-from" of constraint set_false_path -from [get_pins -hierarchical -regexp .*reset_n_f1.*] is not valid.
+WARNING <70001949> - par: The object rs_pll_locked_60m/reset_n_f2.ff_inst/DF in the option "-from" of constraint set_false_path -from [get_pins -hierarchical -regexp .*reset_n_f2.*] is not valid.
+WARNING <70001949> - par: The object rs_pll_locked_60m/reset_n_f2.ff_inst/CLK in the option "-from" of constraint set_false_path -from [get_pins -hierarchical -regexp .*reset_n_f2.*] is not valid.
+WARNING <70001949> - par: The object rs_pll_locked_60m/reset_n_f2.ff_inst/LSR in the option "-from" of constraint set_false_path -from [get_pins -hierarchical -regexp .*reset_n_f2.*] is not valid.
+WARNING <70001949> - par: The object rs_r5_sys_rstn_60m/reset_n_f2_RNIMHRC/A in the option "-from" of constraint set_false_path -from [get_pins -hierarchical -regexp .*reset_n_f2.*] is not valid.
+WARNING <70001949> - par: The object rs_r5_sys_rstn_60m/reset_n_f2.ff_inst/DF in the option "-from" of constraint set_false_path -from [get_pins -hierarchical -regexp .*reset_n_f2.*] is not valid.
+WARNING <70001949> - par: The object rs_r5_sys_rstn_60m/reset_n_f2.ff_inst/CLK in the option "-from" of constraint set_false_path -from [get_pins -hierarchical -regexp .*reset_n_f2.*] is not valid.
+WARNING <70001949> - par: The object rs_r5_sys_rstn_60m/reset_n_f2.ff_inst/LSR in the option "-from" of constraint set_false_path -from [get_pins -hierarchical -regexp .*reset_n_f2.*] is not valid.
+Number of Signals: 19045
+Number of Connections: 58132
+Device utilization summary:
+
+   VHI                   1/1           100% used
+   DCC                   1/38            3% used
+   EBR                   7/64           11% used
+   MULT9                12/128           9% used
+   MULT18                6/64            9% used
+   MULT18X36             2/32            6% used
+   REG18                10/128           8% used
+   PREADD9              12/128           9% used
+   LRAM                  2/5            40% used
+   IOLOGIC               3/32            9% used
+   SEIO18                7/32           22% used
+                         7/32           21% bonded
+   SEIO33                4/51            8% used
+                         4/19           21% bonded
+   PLL                   1/1           100% used
+   CONFIG_JTAG           1/1           100% used
+   APIO                 10/16           63% used
+   USB23                 1/1           100% used
+   SLICE             10367/13824        75% used
+     LUT             10219/27648        37% used
+     REG              5471/27648        20% used
+
+
+Pin Constraint Summary:
+   11 out of 11 pins locked (100% locked).
+INFO: signal 'nxU_prpl_bldr.cpu0_inst.riscvsmall_inst.Ib1w9tjglomgvCgAIkup60xKDx.IbCuo3aEvk5cF25j4DHzkJGG2F.NbqAaKcoy7LeAHb1' driving mixed DCC load types requires multi-feedlines.
+
+INFO: PLL REFCLK driver locked at CLKPIN 'G7' is not a dedicated PLL input pin, assign signal 'clk_25m_i_c' to PCLK tree.
+INFO: signal 'nxU_prpl_bldr.cpu0_inst.riscvsmall_inst.Ib1w9tjglomgvCgAIkup60xKDx.IbCuo3aEvk5cF25j4DHzkJGG2F.NbqAaKcoy7LeAHb1' driving mixed DCC load types requires multi-feedlines.
+Starting Placer Phase 0 (HIER). CPU time: 27 secs , REAL time: 28 secs 
+...........
+Finished Placer Phase 0 (HIER). CPU time: 38 secs , REAL time: 39 secs 
+
+
+.   
+Starting Placer Phase 1. CPU time: 39 secs , REAL time: 40 secs 
+..  ..
+....................
+
+Placer score = 5369974.
+Finished Placer Phase 1. CPU time: 1 mins 55 secs , REAL time: 1 mins 57 secs 
+
+Starting Placer Phase 2.
+.
+
+Placer score =  5269543
+Finished Placer Phase 2.  CPU time: 1 mins 58 secs , REAL time: 2 mins 
+
+
+------------------ Clock Report ------------------
+
+Global Clock Resources:
+  CLK_PIN    : 1 out of 13 (7%)
+  PLL        : 1 out of 1 (100%)
+  DCS        : 0 out of 1 (0%)
+  DCC        : 1 out of 38 (2%)
+  ECLKDIV    : 0 out of 12 (0%)
+  PCLKDIV    : 0 out of 1 (0%)
+  OSC        : 0 out of 1 (0%)
+
+Global Clocks:
+  PRIMARY "clk_pll_60m" from CLKOP on comp "pll_60m.lscc_pll_inst.gen_no_refclk_mon.u_PLL.PLL_inst" on PLL site "PLL_LLC", clk load = 5255, ce load = 0, sr load = 0
+  PRIMARY "nxU_prpl_bldr.cpu0_inst.riscvsmall_inst.Ib1w9tjglomgvCgAIkup60xKDx.IbCuo3aEvk5cF25j4DHzkJGG2F.NbqAaKcoy7LeAHb1" from JTCK on comp "nxU_prpl_bldr.cpu0_inst.riscvsmall_inst.Ib1w9tjglomgvCgAIkup60xKDx.IbCuo3aEvk5cF25j4DHzkJGG2F.genblk3.jtag.jtagg_u" on site "TCONFIG_JTAG_CORE31", clk load = 58, ce load = 0, sr load = 0
+  PRIMARY "risc_v_system_reset_n_60m_i" from F0 on comp "rs_r5_sys_rstn_60m.reset_n_f2_RNIMHRC" on site "R38C25A", clk load = 0, ce load = 0, sr load = 1650
+  PRIMARY "nxU_prpl_bldr.risc_v_system_reset_n" from Q0 on comp "nxU_prpl_bldr.cpu0_inst.riscvsmall_inst.Ib1w9tjglomgvCgAIkup60xKDx.IdmsCC83jqGag9CKFl9b1a3AFBjxqdlgK.ff_inst" on site "R38C26A", clk load = 0, ce load = 0, sr load = 1127
+  PRIMARY "clk_25m_i_c" from comp "clk_25m_i" on CLK_PIN site "G7 (PB16A)", clk load = 1, ce load = 0, sr load = 0
+  PRIMARY DCC "nxU_prpl_bldr.cpu0_inst.riscvsmall_inst.Ib1w9tjglomgvCgAIkup60xKDx.NbbICH" from comp "nxU_prpl_bldr.cpu0_inst.riscvsmall_inst.Ib1w9tjglomgvCgAIkup60xKDx.IbCuo3aEvk5cF25j4DHzkJGG2F.Iohm428if6nkdrszemy5wAmC" on DCC site "DCC_T0", total # of clk loads = 83
+     - DCC input "nxU_prpl_bldr.cpu0_inst.riscvsmall_inst.Ib1w9tjglomgvCgAIkup60xKDx.IbCuo3aEvk5cF25j4DHzkJGG2F.NbqAaKcoy7LeAHb1" from JTCK on comp "nxU_prpl_bldr.cpu0_inst.riscvsmall_inst.Ib1w9tjglomgvCgAIkup60xKDx.IbCuo3aEvk5cF25j4DHzkJGG2F.genblk3.jtag.jtagg_u" on site "TCONFIG_JTAG_CORE31"
+
+  PRIMARY  : 6 out of 16 (37%)
+
+Edge Clocks:
+
+  No edge clock selected.
+
+
+--------------- End of Clock Report ---------------
+
+
+I/O Usage Summary (final):
+   4 out of 51 (7.8%) SEIO33 sites used.
+   4 out of 19 (21.1%) bonded SEIO33 sites used.
+   Number of SEIO33 components: 4; differential: 0
+   Number of Vref pins used: 0
+   7 out of 32 (21.9%) SEIO18 sites used.
+   7 out of 32 (21.9%) bonded SEIO18 sites used.
+   Number of SEIO18 components: 7; differential: 0
+   0 out of 16 (0.0%) DIFFIO18 sites used.
+   0 out of 16 (0.0%) bonded DIFFIO18 sites used.
+   Number of DIFFIO18 components: 0; differential: 0
+
+I/O Bank Usage Summary:
++----------+---------------+------------+------------+------------+
+| I/O Bank | Usage         | Bank Vccio | Bank Vref1 | Bank Vref2 |
++----------+---------------+------------+------------+------------+
+| 0        | 4 / 8 ( 50%)  | 1.8V       | -          | -          |
+| 1        | 0 / 11 (  0%) | 3.3V       | -          | -          |
+| 2        | 5 / 16 ( 31%) | 1.8V       | -          | -          |
+| 3        | 2 / 12 ( 16%) | 1.2V       | -          | -          |
+| 4        | 0 / 4 (  0%)  | 1.8V       | -          | -          |
++----------+---------------+------------+------------+------------+
+
+Total Placer CPU time: 1 mins 59 secs , REAL time: 2 mins 
+
+
+Checksum -- place: f0226d5d778b5c5e7cd85706b21992f72b30dd74
+Writing design to file u23_lifcl_nx33u_evalbd_ibd_impl_1_par.dir/5_1.udb ...
+
+WARNING <71241014> - par: The PLL clock port [clk_25m_i] is assigned to a non-PLL clock dedicated pin [G7], which might affect the clock performance. Use dedicated PLL clock resources for the port.
+
+Start NBR router at 14:12:49 11/07/24
+
+*****************************************************************
+Info: NBR allows conflicts(one node used by more than one signal)
+      in the earlier iterations. In each iteration, it tries to  
+      solve the conflicts while keeping the critical connections 
+      routed as short as possible. The routing process is said to
+      be completed when no conflicts exist and all connections   
+      are routed.                                                
+Note: NBR uses a different method to calculate timing slacks. The
+      worst slack and total negative slack may not be the same as
+      that in timing report. You should always run the timing    
+      tool to verify your design.                                
+*****************************************************************
+
+Starting routing resource preassignment
+Preassignment Summary:
+--------------------------------------------------------------------------------
+3245 connections routed with dedicated routing resources
+6 global clock signals routed
+16348 connections routed (of 58132 total) (28.12%)
+---------------------------------------------------------
+Clock routing summary:
+Primary clocks (12 used out of 32 available):
+    Signal "clk_25m_i_c" (9, 25)
+       Clock   loads: 1     out of     1 routed (100.00%)
+    Signal "clk_pll_60m" (2, 18)
+       Clock   loads: 5255  out of  5255 routed (100.00%)
+    Signal "risc_v_system_reset_n_60m_i" (0, 16)
+       Control loads: 1650  out of  1650 routed (100.00%)
+    Signal "nxU_prpl_bldr.risc_v_system_reset_n" (10, 26)
+       Control loads: 1127  out of  1127 routed (100.00%)
+       Data    loads: 0     out of    40 routed (  0.00%)
+    Signal "nxU_prpl_bldr.cpu0_inst.riscvsmall_inst.Ib1w9tjglomgvCgAIkup60xKDx.IbCuo3aEvk5cF25j4DHzkJGG2F.NbqAaKcoy7LeAHb1" (3, 19)
+       Clock   loads: 58    out of    58 routed (100.00%)
+       Data    loads: 1     out of     1 routed (100.00%)
+    Signal "nxU_prpl_bldr.cpu0_inst.riscvsmall_inst.Ib1w9tjglomgvCgAIkup60xKDx.NbbICH" (4, 20)
+       Clock   loads: 83    out of    83 routed (100.00%)
+Other clocks:
+    Signal "pll_60m.lscc_pll_inst.intclkop_w"
+       Clock   loads: 1     out of     1 routed (100.00%)
+---------------------------------------------------------
+--------------------------------------------------------------------------------
+Completed routing resource preassignment
+WARNING <70001949> - par: The object rs_pll_locked_60m/reset_n_f1_reg.ff_inst/CLK in the option "-from" of constraint set_false_path -from [get_pins -hierarchical -regexp .*reset_n_f1.*] is not valid.
+WARNING <70001949> - par: The object rs_pll_locked_60m/reset_n_f1_reg.ff_inst/LSR in the option "-from" of constraint set_false_path -from [get_pins -hierarchical -regexp .*reset_n_f1.*] is not valid.
+WARNING <70001949> - par: The object rs_r5_sys_rstn_60m/reset_n_f1_reg.ff_inst/CLK in the option "-from" of constraint set_false_path -from [get_pins -hierarchical -regexp .*reset_n_f1.*] is not valid.
+WARNING <70001949> - par: The object rs_r5_sys_rstn_60m/reset_n_f1_reg.ff_inst/LSR in the option "-from" of constraint set_false_path -from [get_pins -hierarchical -regexp .*reset_n_f1.*] is not valid.
+WARNING <70001949> - par: The object rs_pll_locked_60m/reset_n_f2.ff_inst/DF in the option "-from" of constraint set_false_path -from [get_pins -hierarchical -regexp .*reset_n_f2.*] is not valid.
+WARNING <70001949> - par: The object rs_pll_locked_60m/reset_n_f2.ff_inst/CLK in the option "-from" of constraint set_false_path -from [get_pins -hierarchical -regexp .*reset_n_f2.*] is not valid.
+WARNING <70001949> - par: The object rs_pll_locked_60m/reset_n_f2.ff_inst/LSR in the option "-from" of constraint set_false_path -from [get_pins -hierarchical -regexp .*reset_n_f2.*] is not valid.
+WARNING <70001949> - par: The object rs_r5_sys_rstn_60m/reset_n_f2_RNIMHRC/A in the option "-from" of constraint set_false_path -from [get_pins -hierarchical -regexp .*reset_n_f2.*] is not valid.
+WARNING <70001949> - par: The object rs_r5_sys_rstn_60m/reset_n_f2.ff_inst/DF in the option "-from" of constraint set_false_path -from [get_pins -hierarchical -regexp .*reset_n_f2.*] is not valid.
+WARNING <70001949> - par: The object rs_r5_sys_rstn_60m/reset_n_f2.ff_inst/CLK in the option "-from" of constraint set_false_path -from [get_pins -hierarchical -regexp .*reset_n_f2.*] is not valid.
+WARNING <70001949> - par: The object rs_r5_sys_rstn_60m/reset_n_f2.ff_inst/LSR in the option "-from" of constraint set_false_path -from [get_pins -hierarchical -regexp .*reset_n_f2.*] is not valid.
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Routing in Serial Mode ......
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Start NBR section for initial routing at 14:13:11 11/07/24
+Level 4, iteration 1
+7218(0.47%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 1.606ns/0.000ns; real time: 49 secs 
+
+Info: Initial congestion level at 75.00% usage is 0
+Info: Initial congestion area  at 75.00% usage is 2 (0.05%)
+
+Start NBR section for normal routing at 14:13:38 11/07/24
+Level 4, iteration 1
+5749(0.38%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 1.627ns/0.000ns; real time: 1 mins 11 secs 
+Level 4, iteration 2
+1302(0.09%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 1.627ns/0.000ns; real time: 1 mins 21 secs 
+Level 4, iteration 3
+495(0.03%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 1.627ns/0.000ns; real time: 1 mins 26 secs 
+Level 4, iteration 4
+203(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 1.627ns/0.000ns; real time: 1 mins 30 secs 
+Level 4, iteration 5
+67(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 1.627ns/0.000ns; real time: 1 mins 32 secs 
+Level 4, iteration 6
+29(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 1.627ns/0.000ns; real time: 1 mins 34 secs 
+Level 4, iteration 7
+14(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 1.627ns/0.000ns; real time: 1 mins 35 secs 
+Level 4, iteration 8
+6(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 1.627ns/0.000ns; real time: 1 mins 37 secs 
+Level 4, iteration 9
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 1.627ns/0.000ns; real time: 1 mins 37 secs 
+
+Start NBR section for setup/hold timing optimization with effort level 3 at 14:14:25 11/07/24
+CRITICAL <62001129> - par: The number of hold timing errors (8416) exceeds the threshold value (250) so hold timing correction is disabled. You can use "-exp parHoldUnlimited=1" to force hold correction, but it may significantly increase the runtime.
+
+Start NBR section for post-routing at 14:14:37 11/07/24
+
+End NBR router with 0 unrouted connection(s)
+
+Checksum -- route: bee977d2a3f942267b99f8533c1266d26f7d90c
+
+Total CPU time 1 mins 57 secs 
+Total REAL time: 1 mins 58 secs 
+Completely routed.
+End of route.  58132 routed (100.00%); 0 unrouted.
+
+Writing design to file u23_lifcl_nx33u_evalbd_ibd_impl_1_par.dir/5_1.udb ...
+
+
+All signals are completely routed.
+
+
+PAR_SUMMARY::Run status = Completed
+PAR_SUMMARY::Number of unrouted conns = 0
+PAR_SUMMARY::Estimated worst slack<setup/<ns>> = 1.627
+PAR_SUMMARY::Timing score<setup/<ns>> = 0.000
+PAR_SUMMARY::Estimated worst slack<hold/<ns>> = -1.536
+PAR_SUMMARY::Timing score<hold/<ns>> = 4008.307
+PAR_SUMMARY::Number of errors = 0
+
+Note: user must run 'timing' for timing closure signoff.
+
+Total CPU  Time: 4 mins 8 secs 
+Total REAL Time: 4 mins 11 secs 
+Peak Memory Usage: 974.00 MB
+
+
+par done!
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.

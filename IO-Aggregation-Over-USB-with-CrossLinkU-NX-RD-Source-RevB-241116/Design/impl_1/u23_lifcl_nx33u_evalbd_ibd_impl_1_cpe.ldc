@@ -1,0 +1,10 @@
+###File created by Lattice CPE. Do not modify.###
+set_hierarchy_separator /
+ldc_set_port -iobuf {PULLMODE=UP} [get_ports i2cm_scl]
+##Original File: C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/ip/lscc_i2cm1/2.0.1/constraints/lscc_i2cm1.ldc
+ldc_set_port -iobuf {PULLMODE=UP} [get_ports scl_io]
+##Original File: C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/ip/lscc_i2cm1/2.0.1/constraints/lscc_i2cm1.ldc
+ldc_set_port -iobuf {PULLMODE=UP} [get_ports i2cm_sda]
+##Original File: C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/u23_lifclu_nx33_prpl_bldr/u23_lifclu_nx33_prpl_bldr/lib/latticesemi.com/ip/lscc_i2cm1/2.0.1/constraints/lscc_i2cm1.ldc
+# IO_TYPE constraint - Refclk
+##Original File: C:/Users/whan/Documents/AppProject/USB_LIFCL_NX33U/RD_IOA_USB2_REVB/Design/rtl/pll/pll_60m/constraints/pll_60m.ldc

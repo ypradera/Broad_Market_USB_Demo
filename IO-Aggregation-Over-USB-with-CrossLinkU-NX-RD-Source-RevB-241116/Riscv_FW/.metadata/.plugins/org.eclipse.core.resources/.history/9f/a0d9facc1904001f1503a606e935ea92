@@ -1,0 +1,718 @@
+/****************************************************************************/
+/**
+ *
+ * @file lsc_spi_req_mng.c
+ * @addtogroup lscusb Overview
+ * @{
+ *
+ *
+ *
+ *****************************************************************************/
+/**
+ *  @file lsc_spi_req_mng.c
+ *  @brief This file contains logic to manage SPI requests coming via USB.
+ *
+ *
+ */
+
+#include "usbio/spi/lsc_spi.h"
+#include "usbio/spi/lsc_spi_req_mng.h"
+#include "../lsc_usb_dev.h"
+
+//Previous bulk out SPI command complete flag
+uint8_t previous_ctrl_spi_cmd_cmp = 1;
+
+//#if ENABLE_SPI
+#define DEBUG_LSC_SPI_REQ_MNG
+
+#ifdef DEBUG_LSC_SPI_REQ_MNG
+#define LSC_SPI_REQ_MNG(msg, ...) sprintf(print_buf, msg, ##__VA_ARGS__); lsc_uart_tx(print_buf)
+#else
+#define LSC_SPI_REQ_MNG(msg,x...)
+#endif
+
+// SPI Request Management
+//extern bo_pkt_u_t bo_pkt_u;
+//extern spi_bo_pkt_u_t spi_bo_pkt_u;
+//extern volatile uint16_t spi_rd_tracker;
+//extern volatile uint8_t word_count_reg ;
+extern struct plat *pdata;
+//extern _Response *resp;
+
+uint8_t spi_bo_cmd_param_err = 0, spi_cmd_param_err=0;
+
+// SPI Command Packet (SCP) Transmit Payload Position
+uint16_t scp_tx_payload_position = 0;
+
+// SPI Command Packet (SCP) Transmit Payload Length
+uint16_t scp_tx_payload_len = 0;
+
+uint16_t spi_tx_bufr_tracker = 0;
+
+//extern uint16_t bi_tx_bufr_tracker;
+uint16_t spi_rx_bufr_tracker=0;
+//extern uint16_t bi_tx_len;
+//extern uint8_t bi_tx_bufr[512];
+
+
+uint8_t spi_rx_bufr[256] = { 0 };
+uint16_t spi_tx_len = 0;
+
+uint8_t spi_tx_bufr[256] = { 0 };
+uint16_t spi_rx_len = 0;
+uint8_t spi_op_err = 0;
+
+uint16_t spi_no_of_bytes_successfully_written = 0,spi_no_of_bytes_successfully_read=0;
+
+//changes: void
+uint8_t process_spi_request(struct lsc_usb_dev *usb_dev,  uint8_t *buf, uint8_t dir){
+
+	uint8_t spi_chip_sel_id=0;
+	uint16_t idx = 0;
+	idx = ( usb_dev->setup_data.wIndex >> 8 );
+
+    // If Previous command was complete, this is a new request.
+    // So, we will reset some variables before starting processing of this new command.
+    if(previous_ctrl_spi_cmd_cmp == 1) {
+
+        //Reset the previous bulk out command complete flag as this is new command received which is in process.
+    	previous_ctrl_spi_cmd_cmp = 0;
+
+        spi_tx_bufr_tracker = 0;
+        spi_tx_len = 0;
+        scp_tx_payload_len = 0;
+        spi_rx_len = 0;
+
+    }
+
+	LSC_SPI_REQ_MNG( "  bRequestType =  0x%02x \r\n", usb_dev->setup_data.bRequestType); //1byte
+	LSC_SPI_REQ_MNG( "  bRequest =      0x%02x \r\n", usb_dev->setup_data.bRequest);// 1 byte
+	LSC_SPI_REQ_MNG( "  wValue =        0x%02x \r\n", usb_dev->setup_data.wValue);// 2 bytes
+	LSC_SPI_REQ_MNG( "  wIndex =        0x%02x \r\n", usb_dev->setup_data.wIndex);// 2 bytes
+	LSC_SPI_REQ_MNG( "  wLength =       0x%02x \r\n", usb_dev->setup_data.wLength);// 2 bytes
+
+	if (dir == LSC_EP_DIR_OUT){ //H2D
+
+			LSC_SPI_REQ_MNG( " Request Buffer: ");
+			for (int i =0; i < usb_dev->setup_data.wLength; i ++){
+				LSC_SPI_REQ_MNG( " 0x%x ", buf[i]);
+			}
+			LSC_SPI_REQ_MNG("\r\n");
+
+		   spi_tx_len = ((buf[1] << 8) | buf[0]);  // buf[1] MSB buf[0]LSB
+		   spi_rx_len = ((buf[3]<< 8)  | buf[2]);   // buf[3] MSB buf[2]LSB
+
+		   ///////////////////////////////////////////
+		   scp_tx_payload_len = spi_tx_len;
+
+		   if(spi_tx_bufr_tracker > 0)
+		   {
+			   spi_tx_len = scp_tx_payload_len + spi_tx_bufr_tracker;
+		   }
+		   else{
+			   spi_tx_len = scp_tx_payload_len;
+		   }
+
+		   LSC_SPI_REQ_MNG("\r\nspi_tx_len = 0x%02x spi_rx_len = 0%02x\r\n",spi_tx_len,spi_rx_len);
+		   /////////////////////////////////////
+		   // According to SPI IP core user guide the Target word count register need to be loaded
+		   // with sum of write and read lengths. This register is of 8 bit (i.e. maximum value it can have is 255).
+		   // Hence we should not perform SPI operation when write + read length is greater than 255 and send error in this request.
+		   // Also when sum is zero we should not perform SPI operation.
+		   if (((spi_tx_len  + spi_rx_len ) > 255)
+				   || ((spi_tx_len + spi_rx_len) == 0)){
+			   LSC_SPI_REQ_MNG("SPI TX Len + SPI RX Len should not exceed 255 bits \r\n");
+			   return  1;
+
+		   }else {
+
+			   // Copy SPI transmit data into transmit buffer
+				LSC_SPI_REQ_MNG( "-- SPI TX Buffer: ");
+				for (int i = 4; i < scp_tx_payload_len + 4 ; i ++){
+
+					spi_tx_bufr[spi_tx_bufr_tracker] = buf[i];
+
+					LSC_SPI_REQ_MNG( " [%d] =  0x%x  ", spi_tx_bufr_tracker, spi_tx_bufr[spi_tx_bufr_tracker]);
+
+					spi_tx_bufr_tracker++;
+					//scp_tx_payload_position++;
+				}
+				LSC_SPI_REQ_MNG("\r\n");
+		   }
+
+	}else if (dir == LSC_EP_DIR_IN){ //D2H
+		LSC_SPI_REQ_MNG( " Process SPI Transfer request D2H !!!\r\n");
+
+		spi_rx_len = usb_dev->setup_data.wLength;
+		spi_tx_len = 0;
+
+	}
+	else{
+		LSC_SPI_REQ_MNG( "Error: SPI: Not Spected direction parameter\r\n");
+		return 1;
+	}
+
+
+		if(usb_dev->setup_data.wValue == 0)
+		{
+			LSC_SPI_REQ_MNG( " SPI Transfer request \r\n");
+
+		  // Perform requested SPI operation
+			spi_read_write(pdata->pSpiDev[idx],
+					(uint8_t*) spi_tx_bufr, spi_tx_len, (uint8_t*)  pdata->pSpiDev[idx]->spi_rx_bufr,
+					spi_rx_len);
+
+			previous_ctrl_spi_cmd_cmp = 1; //Done
+
+		}
+		else if(usb_dev->setup_data.wValue == 1)
+		{
+			LSC_SPI_REQ_MNG( " SPI config not supported at the moment \r\n");
+
+
+			//Config parameter handling
+			switch(usb_dev->setup_data.wIndex){
+							case 0:
+								LSC_SPI_REQ_MNG( " SPI Config Param 0 not supported \r\n");
+								break;
+							case 1:
+								LSC_SPI_REQ_MNG( " SPI Config Param 1 not supported \r\n");
+								break;
+							case 2:
+								LSC_SPI_REQ_MNG( " SPI Config Param 2 not supported \r\n");
+								break;
+
+							default:
+								LSC_SPI_REQ_MNG( " Error parameter not supported \r\n");
+								break;
+			}
+			return 1; // Because no config parameter is supported at the moment
+
+		}
+		else{
+			LSC_SPI_REQ_MNG( " wValue Descriptor Type Not Supported \r\n");
+			return 1;
+		}
+
+   return 0;
+
+}
+
+
+/**
+ *  @fn void process_spi_bo_pkt (struct plat *pdata)
+ *  @brief This function will process packet we received via bulk out request.
+ *  @param pdata Pointer to plat structure.
+ *  @param    usb_dev is pointer to lsc_usb_dev instance.
+ *
+ *  @return void
+ *
+ */
+/*
+void process_spi_bo_pkt(struct plat *pdata,struct lsc_usb_dev *usb_dev)
+{
+    uint16_t i = 0;
+    uint8_t spi_chip_sel_id=0;
+
+
+    // If Previous command was complete, this is a new request.
+    // So, we will reset some variables before starting processing of this new command.
+    if(previous_bo_spi_cmd_cmp == 1) {
+
+        //Reset the previous bulk out command complete flag as this is new command received which is in process.
+        previous_bo_spi_cmd_cmp = 0;
+
+        spi_tx_bufr_tracker = 0;
+        spi_tx_len = 0;
+        scp_tx_payload_len = 0;
+        spi_rx_len = 0;
+        spi_cmd_param_err = 0;
+        spi_op_err = 0;
+        spi_no_of_bytes_successfully_written = 0;
+        spi_no_of_bytes_successfully_read = 0;
+
+    }
+
+
+
+    //If it is not SPI,it shall be considered as an error.
+    if (bo_pkt_u.spi.spi_cmn_pkt_s.cmd_type != SPI_CMD_TYPE) {
+               LSC_SPI_REQ_MNG( "Command Type Invalid.\r\n");
+        // Bulk OUT Command parameter error.
+        spi_bo_cmd_param_err = 1;
+    } else {
+        switch (bo_pkt_u.spi.spi_cmn_pkt_s.cmd) {
+
+        case SPI_READ:
+            spi_rx_len = bo_pkt_u.spi.spi_rd_pkt_s.rd_size;
+            spi_tx_len = 0;
+            break;
+        case SPI_WRITE:
+            scp_tx_payload_position = SPI_WR_PAYLOAD_POSITION;
+            scp_tx_payload_len = bo_pkt_u.spi.spi_wr_pkt_s.wr_size;
+            spi_rx_len = 0;
+            break;
+
+        case SPI_WRITE_READ:
+            scp_tx_payload_position = SPI_WR_RD_PAYLOAD_POSITION;
+            scp_tx_payload_len = bo_pkt_u.spi.spi_wr_rd_pkt_s.wr_size;
+            spi_rx_len = bo_pkt_u.spi.spi_wr_rd_pkt_s.rd_size;
+            break;
+
+        default:
+            scp_tx_payload_position = 0;
+            scp_tx_payload_len = 0;
+            spi_tx_len = 0;
+            spi_rx_len = 0;
+        }
+
+         if(spi_tx_bufr_tracker > 0)
+         {
+             spi_tx_len = scp_tx_payload_len + spi_tx_bufr_tracker;
+         }
+         else{
+             spi_tx_len = scp_tx_payload_len;
+         }
+
+        LSC_SPI_REQ_MNG("spi_tx_len:%x spi_rx_len:%x\r\n",spi_tx_len,spi_rx_len);
+        // According to SPI IP core user guide the Target word count register need to be loaded
+        // with sum of write and read lengths. This register is of 8 bit (i.e. maximum value it can have is 255).
+        // Hence we should not perform SPI operation when write + read length is greater than 255 and send error in this request.
+        // Also when sum is zero we should not perform SPI operation.
+        if (((spi_tx_len  + spi_rx_len ) > 255)
+                || ((spi_tx_len + spi_rx_len) == 0)){
+            LSC_SPI_REQ_MNG("INVALID LEN\r\n");
+            spi_cmd_param_err = 1;
+        }
+        else{
+            // Copy SPI transmit data into transmit buffer
+           LSC_SPI_REQ_MNG( "SPI TX Buffer\r\n");
+            for (i = 0; i < scp_tx_payload_len; i++) {
+                spi_tx_bufr[spi_tx_bufr_tracker] =
+                        bo_pkt_u.bufr[scp_tx_payload_position];
+
+               LSC_SPI_REQ_MNG( "[%d] = 0x%x\r\n", spi_tx_bufr_tracker,
+                        spi_tx_bufr[spi_tx_bufr_tracker]);
+
+                spi_tx_bufr_tracker++;
+                scp_tx_payload_position++;
+            }
+        }
+        if((bo_pkt_u.spi.spi_cmn_pkt_s.cmd == SPI_INIT)||(bo_pkt_u.spi.spi_cmn_pkt_s.cmd ==SPI_DEINIT ))
+        {
+            spi_cmd_param_err=0;
+        }
+    }
+
+    if ((bo_pkt_u.spi.spi_cmn_pkt_s.flags & PKT_COMPLETE_FLAG_MSK) == 0) {
+           LSC_SPI_REQ_MNG( "Bulk OUT command packet is partial.\r\n");
+            // Packet is partial. So, return and wait for next packet.
+            return;
+        } else {
+            // Packet is complete.
+           LSC_SPI_REQ_MNG( "Bulk OUT command packet is complete.\r\n");
+
+           // Set flag to indicate packet is complete.
+           previous_bo_spi_cmd_cmp = 1 ;
+        }
+
+    if (spi_bo_cmd_param_err == 0) {
+        // FIX_ME - To be implemented in function
+        // verify_spi_number;
+
+        if ((bo_pkt_u.spi.spi_cmn_pkt_s.bus_id != 0x0)
+               /* && (bo_pkt_u.spi.spi_cmn_pkt_s.bus_id != 0x1)*//*) {
+           LSC_SPI_REQ_MNG( "SPI Bus Controller Index invalid.\r\n");
+            spi_cmd_param_err = 1;
+        }
+    //}
+
+    // At present lattice SPI IP core do not support 3 wire mode it supports 4 wire mode.
+    if (bo_pkt_u.spi.spi_cmn_pkt_s.config & SPI_3_WIRE_MODE) {
+       LSC_SPI_REQ_MNG(
+                "SPI 3 wire mode is not supported.\r\n");
+        spi_cmd_param_err = 1;
+    } else {
+//       LSC_SPI_REQ_MNG("SPI 4 wire mode.\r\n");
+        spi_chip_sel_id = bo_pkt_u.spi.spi_cmn_pkt_s.config & SPI_CHIP_SEL;
+
+        switch (spi_chip_sel_id) {
+        case CHIP_SEL_0:
+           LSC_SPI_REQ_MNG(
+                    "SPI chip select id %x \r\n",spi_chip_sel_id);
+            break;
+        case CHIP_SEL_1:
+           LSC_SPI_REQ_MNG(
+                    "SPI chip select id %x not supported\r\n",spi_chip_sel_id);
+            spi_cmd_param_err = 1;
+            break;
+        case CHIP_SEL_2:
+           LSC_SPI_REQ_MNG(
+                    "SPI chip select id %x not supported\r\n",spi_chip_sel_id);
+            spi_cmd_param_err = 1;
+            break;
+        case CHIP_SEL_3:
+           LSC_SPI_REQ_MNG(
+                    "SPI chip select id %x not supported\r\n",spi_chip_sel_id);
+            spi_cmd_param_err = 1;
+            break;
+        default:
+           LSC_SPI_REQ_MNG(
+                    "SPI chip select id %x is not supported.\r\n",spi_chip_sel_id);
+            spi_cmd_param_err = 1;
+        }
+    }
+
+    // Process packet if there is no error.
+    if (spi_cmd_param_err == 0) {
+        //Transmit length
+        spi_tx_len = spi_tx_bufr_tracker;
+        // SPI Operation
+//      printf("bo_pkt_u.spi.spi_cmn_pkt_s.cmd:%x\r\n",bo_pkt_u.spi.spi_cmn_pkt_s.cmd);
+        switch (bo_pkt_u.spi.spi_cmn_pkt_s.cmd) {
+        case SPI_DEINIT:
+           LSC_SPI_REQ_MNG( "SPI Deinit Command\r\n");
+            // Do we need to take any action here?
+           prepare_spi_bulk_in_resp_buf(usb_dev);
+            break;
+
+        case SPI_INIT:
+           LSC_SPI_REQ_MNG( "SPI Init Command\r\n");
+            // Do we need to take any action here?
+           prepare_spi_bulk_in_resp_buf(usb_dev);
+            break;
+
+        case SPI_WRITE:
+        case SPI_READ:
+        case SPI_WRITE_READ:
+
+           LSC_SPI_REQ_MNG(
+                    "Performing requested SPI Operation...\r\n");
+            // Perform requested SPI operation
+            spi_read_write(pdata->pSpiDev[bo_pkt_u.spi.spi_cmn_pkt_s.bus_id],
+                    (uint8_t*) spi_tx_bufr, spi_tx_len, (uint8_t*) spi_rx_bufr,
+                    spi_rx_len);
+
+            break;
+
+        default:
+           LSC_SPI_REQ_MNG( "Unsupported SPI Command\r\n");
+            spi_cmd_param_err = 1;
+        }
+    }
+    else{
+
+    }
+    }
+    if (spi_bo_cmd_param_err || spi_cmd_param_err/* || spi_op_err*///) {
+       // prepare_spi_bulk_in_resp_buf(usb_dev);
+    //}
+//}
+
+
+/**
+ *  @brief This function is used to Prepare Bulk IN response.
+ *  @param usb_dev is a pointer to the lsc_usb_dev instance.
+ *
+ * @return   None.
+ *
+ * @note     None.
+ *
+ */
+
+    	/*
+void prepare_spi_bulk_in_resp_buf(struct lsc_usb_dev *usb_dev)
+{
+    uint16_t max_rd_size = 0,i=0;
+    uint16_t payload_hdr_size = 0;
+    uint8_t partial_resp = 0;
+    uint16_t rd_size = 0;
+    uint16_t payload_len = 0;
+    uint16_t no_of_spi_rx_bytes_yet_to_copy = 0;
+
+    if (!spi_cmd_param_err) {
+        if ((bo_pkt_u.spi.spi_cmn_pkt_s.cmd != SPI_DEINIT)
+                && (bo_pkt_u.spi.spi_cmn_pkt_s.cmd != SPI_INIT))
+        {
+        spi_no_of_bytes_successfully_written = spi_tx_len;
+
+        spi_no_of_bytes_successfully_read = spi_rd_tracker;
+        LSC_SPI_REQ_MNG(
+                "No of bytes successfully written = 0x%x \r\n",
+                spi_no_of_bytes_successfully_written);LSC_SPI_REQ_MNG(
+                "No of bytes successfully read = 0x%x \r\n",
+                spi_no_of_bytes_successfully_read);
+        }
+    }
+
+    // Response preparation
+    if (bo_pkt_u.spi.spi_cmn_pkt_s.flags & 0x1) // Needs response.
+            {
+        if (spi_bo_cmd_param_err == 0) {
+
+            switch (bo_pkt_u.spi.spi_cmn_pkt_s.cmd) {
+            case SPI_DEINIT:
+                LSC_SPI_REQ_MNG( "SPI Deinit Response Preparation.\r\n");
+                // Type
+                bi_tx_bufr[0] = bo_pkt_u.bufr[0];
+                // Command
+                bi_tx_bufr[1] = bo_pkt_u.bufr[1];
+
+                // Flags
+                if (spi_cmd_param_err || spi_op_err) {
+                    bi_tx_bufr[2] = ERR_FULL_RESP_FLAGS;
+                } else {
+                    bi_tx_bufr[2] = NO_ERR_FULL_RESP_FLAGS;
+                }
+                // Payload Length
+                bi_tx_bufr[3] = bo_pkt_u.bufr[3];
+                bi_tx_bufr[4] = bo_pkt_u.bufr[4];
+                // Bus ID
+                bi_tx_bufr[5] = bo_pkt_u.bufr[5];
+
+                // Config bytes
+                bi_tx_bufr[6] = bo_pkt_u.bufr[6];
+
+                bi_tx_len = 5 + ((bo_pkt_u.bufr[4] << 8) + bo_pkt_u.bufr[3]); //7;
+
+                break;
+            case SPI_INIT:
+                // Type
+                bi_tx_bufr[0] = bo_pkt_u.bufr[0];
+                // Command
+                bi_tx_bufr[1] = bo_pkt_u.bufr[1];
+
+                // Flags
+                if (spi_cmd_param_err ||spi_op_err) {
+                    bi_tx_bufr[2] = ERR_FULL_RESP_FLAGS;
+                } else {
+                    bi_tx_bufr[2] = NO_ERR_FULL_RESP_FLAGS;
+                }
+                // Payload Length
+                bi_tx_bufr[3] = bo_pkt_u.bufr[3];
+                bi_tx_bufr[4] = bo_pkt_u.bufr[4];
+                // Bus ID
+                bi_tx_bufr[5] = bo_pkt_u.bufr[5];
+
+                // Config bytes
+                bi_tx_bufr[6] = bo_pkt_u.bufr[6];
+
+                // Speed bytes
+                bi_tx_bufr[7] = bo_pkt_u.bufr[7];
+                bi_tx_bufr[8] = bo_pkt_u.bufr[8];
+                bi_tx_bufr[9] = bo_pkt_u.bufr[9];
+                bi_tx_bufr[10] = bo_pkt_u.bufr[10];
+
+                bi_tx_len = 5 + ((bo_pkt_u.bufr[4] << 8) + bo_pkt_u.bufr[3]); //11;
+                break;
+            case SPI_WRITE:
+                LSC_SPI_REQ_MNG( "SPI Write Response Preparation.\r\n");
+                // Type
+                bi_tx_bufr[0] = bo_pkt_u.bufr[0];
+                // Command
+                bi_tx_bufr[1] = bo_pkt_u.bufr[1];
+
+                // Flags
+                if (spi_cmd_param_err || spi_op_err) {
+                    bi_tx_bufr[2] = ERR_FULL_RESP_FLAGS;
+                } else {
+                    bi_tx_bufr[2] = NO_ERR_FULL_RESP_FLAGS;
+                }
+                // Payload Length - 4
+                bi_tx_bufr[3] = 0x4;
+                bi_tx_bufr[4] = 0;
+                // Bus ID
+                bi_tx_bufr[5] = bo_pkt_u.bufr[5];
+
+                // Config bytes
+                bi_tx_bufr[6] = bo_pkt_u.bufr[6];
+
+                // Size
+                bi_tx_bufr[7] = (uint8_t) spi_no_of_bytes_successfully_written;
+                bi_tx_bufr[8] = (uint8_t) (spi_no_of_bytes_successfully_written
+                        >> 8);
+
+                bi_tx_len = 9;
+                break;
+            case SPI_READ:
+            case SPI_WRITE_READ:
+                LSC_SPI_REQ_MNG(
+                        "SPI Read/WriteRead Response Preparation.\r\n");
+                bi_tx_bufr_tracker = 0;
+                spi_rx_bufr_tracker = 0;
+                struct lsc_ep *ep;
+                uint8_t phy_ep_num = lsc_physicalep(1, LSC_EP_DIR_IN);
+                ep = &usb_dev->eps[phy_ep_num];
+
+                if (bo_pkt_u.spi.spi_cmn_pkt_s.cmd == SPI_READ) {
+                    payload_hdr_size = SPI_RD_PKT_HDR_SIZE;
+                } else {
+                    payload_hdr_size = SPI_WR_RD_PKT_HDR_SIZE;
+                }
+                max_rd_size = ep->max_ep_size - payload_hdr_size;
+
+                no_of_spi_rx_bytes_yet_to_copy =
+                        spi_no_of_bytes_successfully_read; //spi_rx_len;
+
+                LSC_SPI_REQ_MNG( "Maximum Read Size = 0x%x \r\n",
+                        max_rd_size);
+                LSC_SPI_REQ_MNG(
+                        "Number of SPI bytes yet to be copied = 0x%x \r\n",
+                        no_of_spi_rx_bytes_yet_to_copy);
+                LSC_SPI_REQ_MNG(
+                        "Requested SPI Transmit Length = 0x%x \r\n",
+                        spi_tx_len);
+                LSC_SPI_REQ_MNG(
+                        "Requested SPI Receive Length = 0x%x \r\n",
+                        spi_rx_len);
+
+                do {
+                    // Let's see whether we can send all received bytes in
+                    // this response packet or not.
+                    if (no_of_spi_rx_bytes_yet_to_copy > max_rd_size) {
+                        rd_size = max_rd_size;
+                        partial_resp = 1;
+                    } else {
+                        rd_size = no_of_spi_rx_bytes_yet_to_copy;
+                        partial_resp = 0;
+                    }
+
+                    no_of_spi_rx_bytes_yet_to_copy =
+                            no_of_spi_rx_bytes_yet_to_copy - rd_size;
+
+                    // Type
+                    bi_tx_bufr[bi_tx_bufr_tracker++] =
+                            bo_pkt_u.spi.spi_cmn_pkt_s.cmd_type;
+                    // Command
+                    bi_tx_bufr[bi_tx_bufr_tracker++] =
+                            bo_pkt_u.spi.spi_cmn_pkt_s.cmd;
+
+                    // Flags
+                    if (spi_cmd_param_err || spi_op_err) {
+                        if (spi_cmd_param_err) {
+                            rd_size = 0;
+                        }
+                        if (partial_resp) {
+                            LSC_SPI_REQ_MNG(
+                                    "Partial Response with ERROR.\r\n");
+                            bi_tx_bufr[bi_tx_bufr_tracker++] =
+                            ERR_PARTIAL_RESP_FLAGS;
+                        } else {
+                            LSC_SPI_REQ_MNG(
+                                    "Complete Response with ERROR.\r\n");
+                            bi_tx_bufr[bi_tx_bufr_tracker++] =
+                            ERR_FULL_RESP_FLAGS;
+                        }
+                    } else {
+                        if (partial_resp) {
+                            LSC_SPI_REQ_MNG(
+                                    "Partial Response without error.\r\n");
+                            bi_tx_bufr[bi_tx_bufr_tracker++] =
+                            NO_ERR_PARTIAL_RESP_FLAGS;
+                        } else {
+                            LSC_SPI_REQ_MNG(
+                                    "Complete Response without error.\r\n");
+                            bi_tx_bufr[bi_tx_bufr_tracker++] =
+                            NO_ERR_FULL_RESP_FLAGS;
+                        }
+                    }
+
+                    // Payload Length
+                    // Following indicates only payload size. Hence, we have subtracted packet header
+                    // size.
+                    payload_len = (payload_hdr_size - SPI_PKT_HDR_SIZE) + rd_size;
+
+                    LSC_SPI_REQ_MNG( "Payload Length = 0x%x, read size = 0x%x \r\n",
+                        payload_len,rd_size);
+
+                    bi_tx_bufr[bi_tx_bufr_tracker++] = (uint8_t) payload_len;
+                    bi_tx_bufr[bi_tx_bufr_tracker++] = (uint8_t) (payload_len
+                            >> 8);
+
+                    // Bus ID
+                    bi_tx_bufr[bi_tx_bufr_tracker++] =
+                            bo_pkt_u.spi.spi_cmn_pkt_s.bus_id;
+
+                    // Config Bytes
+                    bi_tx_bufr[bi_tx_bufr_tracker++] =
+                            (uint8_t) (bo_pkt_u.spi.spi_cmn_pkt_s.config);
+
+                    // WrSize incase of SPI_WR_RD command
+                    if (bo_pkt_u.spi.spi_cmn_pkt_s.cmd == SPI_WRITE_READ) {
+                        bi_tx_bufr[bi_tx_bufr_tracker++] =
+                                (uint8_t) (spi_no_of_bytes_successfully_written);
+                        bi_tx_bufr[bi_tx_bufr_tracker++] =
+                                (uint8_t) (spi_no_of_bytes_successfully_written
+                                        >> 8);
+                    }
+
+                    // RdSize
+                    bi_tx_bufr[bi_tx_bufr_tracker++] = (uint8_t) (rd_size);
+                    bi_tx_bufr[bi_tx_bufr_tracker++] = (uint8_t) (rd_size >> 8);
+
+                    LSC_SPI_REQ_MNG( "SPI RX Buffer\r\n");
+
+                    // Copy SPI received bytes into response buffer
+                    for (i = 0; i < rd_size; i++) {
+                        LSC_SPI_REQ_MNG( "[%d] = 0x%x\r\n",
+                                spi_rx_bufr_tracker,
+                                spi_rx_bufr[spi_rx_bufr_tracker]);
+                        bi_tx_bufr[bi_tx_bufr_tracker++] =
+                                spi_rx_bufr[spi_rx_bufr_tracker++];
+                    }
+
+                } while (no_of_spi_rx_bytes_yet_to_copy != 0);
+                // Bulk IN Transmit Length
+                bi_tx_len = bi_tx_bufr_tracker;
+
+                // Followin default case shall get executed if
+                // there is some issue in the command received.
+                break;
+            default:
+                // We are not supposed to here.
+                LSC_SPI_REQ_MNG(
+                        "SPI response default case: Error Response\r\n");
+                bi_tx_bufr[0] = bo_pkt_u.spi.spi_cmn_pkt_s.cmd_type;
+                bi_tx_bufr[1] = bo_pkt_u.spi.spi_cmn_pkt_s.cmd;
+                bi_tx_bufr[2] = ERR_FULL_RESP_FLAGS;
+                // Payload Length
+                bi_tx_bufr[3] = 0x0;
+                bi_tx_bufr[4] = 0;
+                bi_tx_len = 5;
+            }
+        } else {
+            // Error response if command type was not SPI or some error in received command.
+            LSC_SPI_REQ_MNG(
+                    "Invalid Command Type : Error Response\r\n");
+            bi_tx_bufr[0] = bo_pkt_u.spi.spi_cmn_pkt_s.cmd_type;
+            bi_tx_bufr[1] = bo_pkt_u.spi.spi_cmn_pkt_s.cmd;
+            bi_tx_bufr[2] = ERR_FULL_RESP_FLAGS;
+            // Payload Length
+            bi_tx_bufr[3] = 0x0;
+            bi_tx_bufr[4] = 0;
+            bi_tx_len = 5;
+        }
+
+        LSC_SPI_REQ_MNG( "Bulk IN Response\r\n");
+        bi_tx_bufr_tracker = 0;
+        // Print Bulk IN Response
+        for (i = 0; i < bi_tx_len; i++) {
+            LSC_SPI_REQ_MNG( "[%d] = 0x%x \r\n", i, bi_tx_bufr[i]);
+        }
+
+        // Pass bulk IN data to IP core
+        pass_bulk_in_ep1_data(pdata, usb_dev);
+    }
+     //Reset spi variables to default value.
+    spi_tx_bufr_tracker = 0;
+    spi_tx_len = 0;
+    scp_tx_payload_len = 0;
+    spi_rx_len = 0;
+    spi_cmd_param_err = 0;
+//  spi_op_err = 0;
+    spi_no_of_bytes_successfully_written = 0;
+    spi_no_of_bytes_successfully_read = 0;
+
+}*/
+//#endif
+/** @} */
